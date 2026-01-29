@@ -1,0 +1,2003 @@
+@charset "UTF-8";
+/* Custom Stylesheet
+ * Version: 0.1.0.4
+ * Updated 1-23-24
+ *
+ * Coded by Mike Kong, MK Design Marketing
+ *
+ Changes
+ - added styles for ul lists in article pages.
+ 
+
+ * 01. Helpers
+ * 02. Page Styles
+ * 03. Components
+ */
+
+/* 01. Helpers */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #16161b;
+}
+.w-700 {
+    max-width: 700px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600;
+    color: unset;
+    margin-bottom: 0px;
+}
+.h1-giant-heading {
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: 88px;
+    padding-bottom: 40px;
+}
+
+.giant-subheading {
+    font-size: 28px;
+    line-height: 32px;
+}
+.h1-page-subtitle {
+    font-size: 26px;
+}
+.h1-small {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 16px;
+    letter-spacing: 7px;
+    margin-bottom: 40px;
+}
+.section-lead {
+    margin-bottom: 50px;
+}
+
+.h2-big {
+    font-size: 50px;
+    line-height: 55px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+p {
+    font-size: 16px;
+}
+p a {
+    color: #016ba3;
+    text-decoration: none;
+}
+p a:hover {
+    color: #016ba3;
+}
+.body-ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.body-text .btn {
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.dark-background p a {
+    color: #f0ce12;
+    text-decoration: underline;
+}
+.bg-fixed {
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-heading-text {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    color: unset;
+    margin-bottom: 0px;
+}
+.article-lead {
+    font-weight: 600;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.form-control {
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+.form-control::placeholder {
+    color: #ffffff96;
+}
+.blue-text {
+    color: #016BA3 !important;
+}
+.single-col-text p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+::selection {
+    color: #000000;
+    background-color: #f0ce12;
+}
+.text-accent-1 {
+    color: #016BA3 !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-section {
+    padding: 20px 40px;
+}
+
+.display-none {
+    display: none;
+}
+.hand-underline-yellow {
+    position: relative;
+}
+.hand-underline-yellow::after {
+    content: "";
+    position: absolute;
+    background-image: url("/images/hand-underline-yellow.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 118%;
+    height: 16px;
+    left: -16%;
+    bottom: -3px;
+}
+.inline-block {
+    display: inline-block;
+}
+
+.sub-heading {
+    font-size: 22px;
+}
+.no-break {
+    white-space: nowrap;
+}
+.full-width {
+    width: 100%;
+    max-width: 100%;
+}
+.white-text {
+    color: #fff;
+}
+.dark-text {
+    color: #000;
+}
+.bg-lightrays h1, .bg-lightrays h2, .bg-lightrays h3, .bg-lightrays h4 {
+    color: #fff;
+}
+.white-background {
+    background-color: #fff;
+    color: #000;
+}
+.white-background p,.white-background h1, .white-background h2, .white-background h3, .white-background h4 {
+    color: #000;
+}
+
+.yellow-link a, .yellow-link {
+    color: #f0ce12 !important;
+    text-decoration: underline !important;
+}
+.pano-section .disclaimer {
+    font-size: 12px;
+}
+
+.btn-max-width {
+    max-width: 300px;
+}
+
+
+figcaption {
+    font-size: 12px;
+    padding: 10px;
+}
+.photo-caption {
+    font-size: 16px;
+    padding: 0px 20px;
+    margin-top: -32px;
+    margin-bottom: 50px;
+}
+
+.underline-strong li strong {
+    text-decoration: underline;
+}
+
+/* Forms */
+.white-text input, .white-text input::placeholder, .white-text textarea, .white-text textarea::placeholder  {
+    color: #fff !important;
+}
+.form-control:focus {
+    border-color: initial;
+}
+
+/* Navigaton */
+.nav .nav-link, .nav .nav-link.active {
+    color: #fff;
+}
+.navbar-topbar .nav-contacts svg {
+    margin-right: 15px;
+    color: #f0ce12;
+}
+/* Mobile Navigation Bar */
+.navbar-topbar {
+    display: none;
+}
+.navbar-mobile-style-1 {
+    width: 100% !important;
+}
+.navbar-brand img { /* Main header logo */
+    max-width: 200px;
+    padding-top: 20px;
+}
+.navbar .navbar-toggle { /* Main nav hamburger icon */
+    color: #ffffff;
+}
+.navbar-mobile {
+    background-color: #064175e3 !important;
+}
+.navbar-mobile .navbar-head {
+    background-color: transparent;
+}
+.navbar-mobile .nav-link, .navbar-mobile .navbar-footer {
+    color: #fff !important;
+    font-family: 'Poppins', sans-serif;
+
+}
+.navbar-mobile .nav-link {
+    font-size:26px;
+}
+.navbar-mobile .navbar-footer {
+    font-size: 16px;
+}
+.navbar-scroll .navbar-top {
+    background-color: #0000001c;
+}
+/*.navbar-scroll .navbar-top .container {
+    padding-bottom: 16px;
+}*/
+
+/* Buttons & Links */
+.link-plain, .link-plain:hover, .link-plain:visited, .link-plain:active {
+    color: inherit;
+    text-decoration: inherit;
+}
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
+    padding: 7px 16px 3px 14px;
+    margin-bottom: 14px;
+    min-width: 130px;
+}
+.btn:hover, .btn:focus {
+    transform: none;
+}
+.btn span {
+    margin-top: 1px;
+}
+.btn-accent-1 {
+    color: #000;
+    background-color: #f0ce12;
+}
+.btn-accent-1:hover, .btn-accent-1:focus {
+    color: #000 !important;
+    background-color: #f3e79c !important;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border: solid #fff 2px;
+    padding: 4px 12px !important;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #ffffff26;
+    border: solid #fff 2px;
+}
+.btn span:after {
+    content: url(/images/chevron-black-v1r1.svg);
+    position: relative;
+    top: 2px;
+    margin-left: 5px;
+}
+.btn-secondary span:after {
+    content: url(/images/chevron-v1r1.svg) !important;
+}
+.cta-buttons-pair {
+    margin-top: 24px !important;
+}
+.cta-buttons-pair .btn-secondary {
+    margin-right: 10px;
+}
+.section-CTA-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.big-button {
+    padding: 20px 40px 13px 40px !important;
+    min-width: 290px;
+    font-size: 27px;
+}
+.big-button:hover {
+    padding: 20px 40px 13px 40px !important;
+    min-width: 290px;
+    font-size: 27px;
+}
+
+#fixed-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #fixed-button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/* Backgrounds */
+.bg-black {
+    background-color: #000;
+    color: #fff;
+}
+.bg-dark-blue {
+    background-color: #064175;
+    color: #fff;
+}
+.bg-white {
+    background-color: #fff;
+    color: #000;
+}
+.bg-lt-gray {
+    background-color: #f3f3f5 !important;
+    color: #000;
+}
+.bg-dark {
+    color: #fff;
+}
+.bg-shark-topper-lt {
+    position: absolute;
+    min-height: 260px;
+    background-image: url("/images/background-shark-section-toper-light.jpg");
+    background-position: top;
+    background-repeat: repeat-x;
+    background-position-x: center;
+    background-size: 555%;
+}
+.bg-lightrays {
+    background-image: url("/images/background-blue-sea-lightrays.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #064175;
+    background-size: contain;
+    color: #fff;
+}
+
+/* Sections */
+.logo-section-head {
+    max-width: 290px;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+.inner-page {
+    margin-top: -118px;
+    padding-top: 160px;
+    padding-bottom: 0px;
+}
+.page-title-img {
+    max-width: 350px;
+    padding-bottom: 30px;
+}
+
+.listable-content-card {
+    border-top: 1px solid #ffffffa1;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.listable-content-card img {
+    max-width: 100%;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.listable-content-card h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 10px;
+}
+.listable-content-card h3 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: left;
+}
+.listable-content-card h2 a {
+    color: inherit;
+    text-decoration: none;
+}
+.listable-content-card h2 a:hover {
+    color: #f0ce12;
+}
+
+/* Lists */
+.list-style-none li {
+    list-style: none !important;
+}
+
+/* Icons */
+.feature-icon {
+    max-width: 80px;
+    padding-bottom: 10px;
+}
+
+/* Swiper / Carousel Styles */
+.swiper-button-dark {
+    color: #000000;
+    background-color: #f0ce12;
+}
+.swiper-button-dark:hover {
+    color: #fff;
+    background-color: #032f50;
+}
+
+/*Photo Grid Gallery */
+#photo-grid-gallery {
+    background-color: #000;
+}
+#photo-grid-gallery .logo {
+    margin-bottom: 50px;
+    max-width: 310px;
+}
+.photo-grid-gallery .card {
+    border-radius: 0px;
+}
+.photo-grid-gallery .gallery-grid-image {
+    padding: 2px;
+}
+.photo-grid-gallery img {
+    width: 100%;
+    padding: 2px;
+}
+
+
+/* 02. Page Styles */
+
+/* Homepage Layout */
+.homepage .hero-banner {
+    max-height: 550px;
+}
+.homepage .hero-banner .video-overlay-image {
+    background-image: url("/images/homepage-banner-mobile.webp");
+    background-size: contain;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-color: #064175;
+    z-index: -1;
+}
+.homepage .hero-banner .banner-contents {
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+#as-seen-on img {
+    width: 100%;
+}
+#as-seen-on h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/* Reviews Section */
+.review-card {
+    background-color: #fff;
+    padding: 20px 10px;
+    border-radius: 20px;
+    color: #424242;
+    text-align: center;
+}
+.review-card .brand-logo {
+    width: 80px;
+    height: 52px;
+    margin-bottom: 10px;
+}
+.review-card .review-count {
+    display: block;
+    max-width: 125px;
+    margin: auto;
+    margin-top: -4px;
+    margin-bottom: 15px;
+}
+.review-card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.review-card .reviews-text {
+    margin-bottom: 10px;
+}
+.reviews-signature {
+    font-size: 16px;
+    margin-bottom: 0px;
+    text-align: right;
+    margin-right: 23px;
+}
+.five-stars {
+    max-width: 100px;
+}
+#around-the-web h2, #around-the-web h3, #around-the-web h4, #around-the-web p {
+    color: #fff;
+}
+#around-the-web h1 span {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#around-the-web h4 {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.review-block a {
+    color: #FFF !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+#why-us {
+    background-color: #08386f;
+    background-image: url(/images/section-footer-image-north-shore-shark-diving.jpg);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    padding-bottom: 350px;
+}
+#why-us h2 {
+    font-size: 28px;
+}
+#why-us h3 {
+    font-size: 20px;
+    color: #f0ce12;
+    margin-bottom: 0px;
+}
+#why-us p {
+    color: #fff;
+}
+
+/* Homepage Product Cards */
+#product-cards > .content-wrap {
+    background-image: url(/images/sharks-swimming-bgd-mobile.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.homepage .product-card {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.homepage .product-card img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: #00000078 0px 0px 7px;
+}
+.homepage .product-card .container-fluid {
+    padding: 0px;
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+}
+.homepage .product-card .card-buttons {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 92%;
+}
+.product-card .card-buttons .btn-secondary {
+    margin-right: 10px;
+}
+
+.service-box img {
+    max-width: 100%;
+}
+.service-box .circle-icon, .list li.active::before {
+    background-color: #016ba3 !important;
+}
+
+/* Tour Pages */
+ul.tour-times {
+    font-size: 20px;;
+    padding: 0px;
+}
+ul.tour-times li {
+    list-style: none;
+}
+
+.tour-times a, .tour-times a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+#faq a {
+    color: #016ba3;
+    text-decoration: underline;
+}
+
+/* Product Landing Page General Styles */
+.page-title-img-wrapper h1 {
+    font-size: 13px !important;
+    text-transform: uppercase !important;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 8px;
+    margin-bottom: 30px !important;
+    padding-top: 20px;
+}
+.h1-small-leader-text {
+    font-size: 13px !important;
+    line-height: 22px;
+    text-transform: uppercase !important;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin-bottom: 10px !important;
+    padding-bottom: 20px;
+}
+
+/* Shark Tour Page */
+.shark-tour-page .hero-banner {
+    background-color: #023a6b;
+}
+.shark-tour-page .hero-banner .video-overlay-image {
+    background-image: url("/images/shark-tour-main-banner-img-mobile.jpeg");
+    background-size: contain;
+    background-position-y: -80px;
+    z-index: -1;
+}
+
+/* Panoramic Hero Section Styles - General */
+.pano-section {
+    position: relative;
+    z-index: 0;
+}
+.pano-section .container-fluid {
+    position: relative;
+    overflow: hidden;
+}
+.pano-section .pano-bgd {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position-y: center;
+}
+.pano-section .section-content, .pano-section .hero-img, .media-cards .media-card img {
+    width: 100%;
+}
+.pano-section .text-box {
+    padding: 0px 20px;
+}
+.pano-section h2 {
+    font-size: 48px;
+    line-height: 49px;
+}
+.pano-section p {
+    font-size: 20px;
+}
+.pano-section .credit {
+    font-size: 10px;
+}
+
+/* Shark Tour Page - Mobile Panoramic Hero Section Styles - Specific */
+
+#be-inspired .container-fluid {
+    background-color: #003b61;
+}
+#be-inspired .text-box {
+    margin-top: -90px;
+}
+
+#get-the-shot .container-fluid {
+    background-color: #0d233f;
+}
+
+#no-limits .container-fluid {
+    background-color: #005f97;
+}
+#no-limits .text-box {
+    margin-top: -40px;
+}
+
+#private-tours .container-fluid {
+    background-color: #4277ad;
+}
+#private-tours .hero-img {
+    position: relative;
+    z-index: 0;
+}
+#private-tours .text-box {
+    position: relative;
+    z-index: 1;
+    margin-top: 90px;
+    margin-bottom: -130px;
+}
+
+#snorkel-gear {
+    padding-bottom: 30px;
+}
+#snorkel-gear .text-box {
+    padding-top: 30px;
+}
+#snorkel-gear .disclaimer {
+    margin-top: -20px;
+}
+
+
+#tour-duration .text-box {
+    padding-top: 30px;
+}
+
+/* Whale Watching Tour Page - Mobile Panoramic Hero Section Styles - Specific */
+
+#business-info p {
+    margin-bottom: 0px;
+}
+#business-info .phone {
+    margin-top: 20px;
+}
+
+.media-cards .media-card {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.media-cards .media-card img {
+    position: relative;
+    z-index: 0;
+}
+.media-cards .media-card .insta-link {
+    top: -54px;
+    left: 20px;
+}
+.insta-link {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url(/images/insta-icon-rainbow-trans.png);
+    background-size: contain;
+    text-decoration: none;
+    z-index: 1;
+}
+.insta-link span {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    width: 200px;
+    top: 8px;
+    left: 41px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .8;
+}
+.listable-content-card .img-wrapper {
+    position: relative;
+}
+.listable-content-card .insta-link {
+    bottom: 28px;
+    left: 16px;
+}
+.media-cards h2 {
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.media-cards h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #F0CE10
+}
+.media-cards .text {
+    position: relative;
+    padding: 20px;
+}
+.media-cards p {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.price-section .product-card {
+    margin-bottom: 20px;
+}
+#price-section .text-box .disclaimer {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Whale Watching Tour Page */
+.whale-watching-tour-page .video-overlay-image {
+    background-image: url("/images/whale-watching-tour-main-banner-img-desktop.webp");
+}
+
+/* Article / Articles Page */
+.article-page .h1-small-leader-text {
+    margin-bottom: -14px !important;
+}
+.article-title {
+    margin-bottom: 30px;
+}
+.article-page h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.article-page ul li, .article-page ol li {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 3. Components */
+#contactForm {
+    position: relative;
+    z-index: 10;
+}
+.requiredContact {
+    position: absolute;
+    top: -80px;
+    z-index: -10;
+    opacity: 0;
+}
+.form-preloader {
+    width: 26px;
+    height: 26px;
+}
+.contact-form #status {
+    margin-bottom: 20px;
+    border-radius: 100px;
+    padding: 6px 0px !important;
+    background-color: #c60404;
+}
+.contact-form .green-bgd {
+    background-color: #00b100 !important;
+}
+#contact-form #last-name {
+    position: absolute;
+    top: -82px;
+    z-index: -10;
+    opacity: 0;
+}
+.hide {
+    display: none;
+}
+
+.mini-section {
+    padding: 35px 15px 15px 15px;
+}
+.mini-section img {
+    max-width: 340px;
+    margin-bottom: 5px;
+}
+.mini-section h2 {
+    font-size: 24px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+/* Fading black bacground on scroll */
+#scrollingBlackFade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0);
+    /* Adjust the color as needed */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for the opacity change */
+}
+.scrolling-black-fade footer {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navigation */
+.navbar-brand-wrapper {
+    min-height: 116px;
+}
+.navbar-head {
+    padding-top:142px;
+}
+.navbar-brand {
+    position: absolute;
+    top: 47px;
+    left: -105px;
+    margin-left: 50%;
+}
+.popup-modal-dismiss {
+    position: absolute;
+    top: 87px;
+    left: 13px;
+}
+
+/* Mobile Top bar */
+.top-bar {
+    display: block !important;
+    overflow: hidden;
+    height: fit-content;
+    background-color: #000;
+    padding: 8px 8px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff !important;
+}
+
+.top-bar .phone-number {
+    min-width: 170px;
+    font-size: 19px;
+    margin-top: 4px;
+    max-height: 20px;
+    margin-bottom: 0px;
+    color: #fff !important;
+}
+.top-bar .phone-number a {
+    color: #fff !important;
+}
+.top-bar .btn {
+    font-size: 13px;
+    margin-bottom: 0px;
+}
+.top-bar .btn ::after {
+    content: " ";
+    width: 12px;
+    height: 12px;
+    top: px;
+    margin-left: 5px;
+    background-image: url(/images/chevron-black-v1r1.svg);
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+/* Links */
+.link-hit-area {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: end;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.hero-banner .banner-logo {
+    text-align: center;
+    padding-bottom: 0px;
+    padding-top: 120px;
+}
+.hero-banner .banner-logo img {
+    max-width: 400px;
+}
+#banner-video-overlay {
+    background-repeat: no-repeat;
+}
+
+.hero-banner .banner-contents {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    top: 0px;
+    padding-top: 170px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hero-banner h1 {
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.hero-banner h2 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.tour-page .hero-banner {
+    margin-top: -120px;
+}
+
+/* Video Background */
+.hero-banner .video-container {
+    position: absolute;
+    top: 0px;
+    z-index: -3;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position-y: center;
+}
+.hero-banner .video-overlay-image {
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+.hero-banner .video-overlay-color {
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+    width: 100%;
+    height: 100vh;
+    min-height: 1550px;
+    background-color: #062c4d7a;
+}
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.video-container iframe {
+    position: absolute;
+    width: 57vh;
+    height: 185vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+
+/* Accordion Styles */
+.section-heading-underlined {
+    border-bottom: solid 1px #ffffff82;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+.accordion-header .accordion-button {
+    font-size: 22px;
+    padding: 20px;
+    font-weight: 700;
+    line-height: 23px;
+}
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 10'%3e%3cpath fill='' d='m8 30-.707.707.707.707.707-.707L8 8ZM.293 1.707l7 7 1.414-1.414-7-7L.293 1.707Zm8.414 7 7-7L14.293.293l-7 7 1.414 1.414Z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 10'%3e%3cpath fill='' d='m8 30-.707.707.707.707.707-.707L8 8ZM.293 1.707l7 7 1.414-1.414-7-7L.293 1.707Zm8.414 7 7-7L14.293.293l-7 7 1.414 1.414Z'/%3e%3c/svg%3e");
+}
+.accordion-body {
+    font-size: 18px;
+    padding: 0px 20px 20px 20px;
+}
+.accordion-body img {
+    max-width: 100%;
+}
+.dark-background .accordion-body a {
+    color: #f0ce12;
+    font-weight: bold;
+}
+.accordion-item {
+    background-color: transparent;
+}
+.dark-background .accordion-header .accordion-button, .dark-background .accordion-header .accordion-button[aria-expanded=true] {
+    color: #f0ce12 !important;
+}
+
+/* Tour Pages */
+.tour-page #page-banner .hero-img {
+    position: absolute;
+    width: 100%;
+    margin-top: -140px;
+}
+.main-hero-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 140px;
+    background-color: #062c4d9c;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.page-title-img-wrapper img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.price-CTA-block {
+    position: relative;
+    text-align: center;
+}
+.price-CTA-block .price {
+    font-size: 20px;
+    font-weight: 700;
+}
+.price-CTA-block .price-leader-text {
+    font-size: 16px;
+    margin-bottom: -8px;
+}
+.bg-white .price-leader-text {
+    color: #ffffffa3;
+}
+#price-section .text-box {
+    max-width: 700px;
+    margin: auto;
+}
+.price-strikethrough {
+    color: red;
+    text-decoration: line-through;
+    margin-right: 5px;
+}
+.price-CTA-block .disclaimer {
+    font-size: 12px;
+}
+#price-block-2 .big-button {
+    font-size: 18px !important;
+}
+.product-tags {
+    padding: 10px 0px;
+}
+.product-tags ul {
+    margin: 0px;
+    padding: 0px;
+}
+.product-tags ul li {
+    list-style: none;
+    background-color: #006795;
+    display: inline;
+    border-radius: 30px;
+    padding: 4px 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+#business-info .star-icons {
+    max-width: 100px;
+    position: relative;
+    top: -2px;
+}
+
+#product-gallery-main .card {
+    border-radius: 0px;
+}
+ 
+.price-section .product-card {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.price-section .product-card img {
+    width: 100%;
+}
+.price-section .product-card .text {
+    padding: 20px;
+}
+.price-section .product-card h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.price-section .product-card h2 span {
+    font-size: 15px;
+}
+.price-section .product-card .price {
+    font-size: 25px;
+    color: #F0CE10;
+    margin-top: 20px;
+    line-height: 20px;
+}
+.whale-watching-tour-page .price-section .product-card .price {
+    font-size: 40px;
+}
+.price-section .product-card .price .sub-text {
+    font-size: 12px;
+}
+.price-section .product-card h2, .price-section .product-card h3 {
+    margin-bottom: 20px;
+}
+.price-section .product-card p {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+/* Article Page Styles - All Screen Widths */
+.article-text-block h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+.article-text-block .full-width {
+    margin-bottom: 40px;
+    margin-top: -10px;
+}
+.article-feature-image, .article-text-block img {
+    border-radius: 20px;
+}
+
+.article-page .breakout-box {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 26px;
+    margin-bottom: 30px;    
+}
+
+.article-page .breakout-box p, .article-page .breakout-box h1, .article-page .breakout-box h2, .article-page .breakout-box h3, .article-page .breakout-box li {
+    color: #000;
+}
+
+
+
+/* 404 Page */
+.page-404 .main-content {
+    min-height: 560px;
+}
+.page-404 .bg-lightrays {
+    background-size: cover;
+}
+
+
+.accordion-item {
+    border-radius: 0px !important;
+}
+.accordion-item:not(:first-of-type) {
+    border-top: 0px;
+}
+.accordion-item + .accordion-item {
+    margin-top: 0px;
+}
+.accordion-header .accordion-button {
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.accordion-body {
+    padding: 0px 0px 20px 0px;
+}
+.accordion-header .accordion-button[aria-expanded=true] {
+    color: #000000;
+}
+.accordion-button::after {
+    position: relative;
+    left: 10px;
+}
+
+
+.tour-quick-guide {
+    background-color: #f7f7f7 !important;
+    text-align: center;
+}
+.tour-quick-guide .col-4 {
+    padding: 20px;
+}
+.tour-quick-guide .icon {
+    width: 30px;
+    margin-bottom: 10px;
+}
+.tour-quick-guide h2 {
+    font-size: 14px;
+}
+.tour-quick-guide p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+
+/* Swiper Styles (Carousel and Slider) */
+.card-img img {
+    border-radius: 20px;
+}
+
+
+/* Quick Links */
+#quick-links ul {
+    padding: 0px;
+}
+#quick-links a {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #474747;
+    width: 100%;
+}
+#quick-links a:hover {
+    background-color: #e7e7e7;
+}
+#quick-links a span::after {
+    content: url(/images/chevron-black-v1r1.svg);
+    position: relative;
+    top: 2px;
+    margin-left: 8px;
+}
+#quick-links img {
+    max-width: 68px;
+    margin-right: 6px;
+}
+
+/* Pre Footer */
+.big-CTA-pre-footer {
+    padding-top: 320px;
+    background-color: #fff;
+}
+/* Footer */
+.footer-logo {
+    max-width: 150px;
+}
+.footer-branding {
+    color: #818181;
+}
+.footer-menu .nav-link:hover{
+    color: #f0ce12;
+}
+
+.footer-menu .nav-link-accent-1 {
+    color: #f0ce12;
+    opacity: .8 !important;
+    font-weight: 600;
+}
+.footer-menu .nav-link-accent-1:hover {
+    opacity: 1 !important;
+}
+/* ========================================================== */
+/* PHONE STYLES 
+/* ========================================================== */
+@media screen and (max-width: 576px) {
+    .mobile-hide {
+        display: none;
+    }
+    .article-page ol, .article-page ul {
+        padding-left: 20px;
+    }
+    
+    .giant-subheading {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .article-page ul li, .article-page ol li {
+        font-size: 16px;
+    }
+    .photo-caption {
+        font-size: 13px;
+        margin-bottom: 30px;
+        padding: 0px 10px;
+    }
+
+    /* As Seen On */
+    #as-seen-on .tv-logos div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    #as-seen-on .tv-logos div img {
+        max-height: 40px;
+        width: auto;
+    }
+    #around-the-web .ratings-group {
+        max-width: 300px;
+        margin: auto;
+    }
+}
+/* ========================================================== */
+/* 577px And UP
+/* ========================================================== */
+@media screen and (min-width: 577px) {
+    .video-container iframe {
+        width: 190vh;
+        height: 72vw;
+    }
+}
+
+/* ========================================================== */
+/* PHONE & TABLET STYLES 
+/* ========================================================== */
+@media screen and (max-width: 1023px) {
+    .desktop-only, .desktop {
+        display: none !important;
+    }
+    .w-sm-100 {
+        max-width: 100%;
+    }
+    .main-content-home {
+        margin-top: -120px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .text-center-sm {
+        text-align: center;
+    }
+}
+
+/* ========================================================== */
+/* 1024px - 1199px 
+/* ========================================================== */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: initial;
+    }
+    
+}
+
+/* ========================================================== */
+/* 2200px PLUS
+/* ========================================================== */
+@media screen and (min-width: 2200px) {
+    .video-container iframe {
+        width: 273vh;
+        height: 72vw;
+    }
+    .navbar .navbar-nav {
+        display: flex;
+        flex-direction: initial;
+    }
+    .shark-tour-page #page-banner {
+        max-height: initial;
+    }
+    .shark-tour-page #page-banner .container-fluid {
+        padding-bottom: 160px;
+    }
+}
+
+
+/* ========================================================== */
+/* DESKTOP STYLES 
+/* ========================================================== */
+@media screen and (min-width: 1024px) {
+    /* 01. Helpers */
+    .mobile-only, .mobile {
+        display: none !important;
+    }
+    p {
+        font-size: 20px;
+    }
+    .h1-page-subtitle {
+        font-size: 46px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .section-heading-text {
+        font-size: 44px;
+        line-height: 58px;
+    }
+    .pl-lg-30 {
+        padding-left: 30px;
+    }
+    .pr-lg-30 {
+        padding-right: 30px;
+    }
+
+    .bg-lightrays {
+        background-size: 100%;
+        background-position-y: -200px;   
+    }
+    .text-right-md {
+        text-align: right;
+    }
+    .text-center-md, .md-text-center {
+        text-align: center;
+    }
+    /*
+    .text-box {
+        max-width: 1200px;
+        margin: auto;
+    }
+    */
+    .heading-404 {
+        font-size: 90px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    /* Lists */
+    .list-lg-inline {
+
+    }
+    .list-lg-inline li {
+        display: inline-block;
+        padding-right: 60px;
+    }
+    
+    /* Sections */
+    .inner-page {
+        margin-top: -76px;
+        padding-top: 90px;
+    }
+    .logo-section-head {
+        max-width: 370px;
+    }
+    .page-head-logo {
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    .page-head-logo a {
+        display: block;
+        width: initial;
+    }
+    .page-head-logo img {
+        max-width: 300px;
+        margin: auto;
+    }
+    .bg-shark-topper-lt {
+        background-size: auto;
+    }
+
+    /* Footer */
+    #quick-links img {
+        max-width: 42px;
+    }
+
+    /* 02. Page Styles */
+
+    /* Homepage Layout */
+    .homepage .hero-banner {
+        max-height: 1000px;
+    }
+    .main-content-home {
+        margin-top: -76px;
+    }
+    .homepage .hero-banner .banner-logo {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .homepage .hero-banner .video-overlay-image {
+        top: 60px;
+        background-image: url('/images/homepage-banner-desktop.webp');
+        background-size: cover;
+        background-position-y: center;
+        z-index: -2;
+    } 
+    .homepage .hero-banner .banner-contents {
+        justify-content: start;
+    }
+    .homepage .hero-banner .banner-contents .banner-CTA {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+    .homepage .hero-banner h1 {
+        font-size: 50px;
+    }
+    .homepage .hero-banner h2 {
+        font-size: 20px;
+        line-height: 31px;
+    }
+    
+    #as-seen-on h2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+    #as-seen-on .tv-logos {
+        max-width: 960px;
+        margin: auto;
+        padding-top: 10px;
+    }
+    .two-products-row {
+        max-width: 840px;
+        margin: auto;
+    }
+    #product-cards > .content-wrap {
+        background-image: url("/images/sharks-swimming-bgd.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #why-us {
+        background-color: unset;
+        background-image: none;
+        padding-bottom: 0px;
+    }
+    #around-the-web h4 {
+        font-size: 20px;
+    }
+
+    /* Product Landing Pages General Styles */
+    .page-title-img-wrapper h1 {
+        font-size: 18px !important;
+        padding-top: 0px;
+        margin-top: -20px;
+    }
+    .media-cards .media-card {
+        min-height: 610px;
+    }
+
+    /* Shark Tour Page Desktop */
+    .shark-tour-page .hero-banner .video-overlay-image {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        z-index: -2;
+        background-image: url("/images/shark-tour-main-banner-img-desktop.webp");
+        background-size: cover;
+        background-position-y: 50%;
+    }
+    #business-info p {
+        font-size: 16px;
+    }
+    #business-info .phone {
+        margin-top: initial;
+    }
+
+
+    /* Desktop Panoramic Hero Section Styles - General */
+    .pano-section .container-fluid {
+        display: flex;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+        justify-content: center;
+        max-height: 900px;
+        background-color: unset !important;
+    }
+    .pano-section .pano-bgd {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background-size: cover;
+        background-position-y: center;
+    }
+    .pano-section .section-content {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        max-width: 1200px;
+    }
+    .pano-section h2 {
+        font-size: 48px;
+    }
+    .pano-section p {
+        font-size: 20px;
+    }
+
+    .white-text h1, .white-text h2,.white-text h3,.white-text h4,.white-text p {
+        color: #fff !important;
+    }
+
+
+    /* Desktop Specific Panoramic Hero Section Styles */
+    #be-inspired .section-content {
+        align-items: flex-end;
+        padding-bottom: 100px;
+    }
+    #be-inspired .pano-bgd {
+        background-image: url("/images/section-bgd-school-of-sharks-tiny.jpeg");
+    }
+    .pano-section .text-box {
+        width: 50%;
+    }
+
+    #get-the-shot .section-content {
+        align-items: center;
+        justify-content: end;
+    }
+    #get-the-shot .pano-bgd {
+        background-image: url("/images/section-bgd-get-the-shot.jpeg");
+    }
+    #get-the-shot .text-box {
+        padding-left: 160px;
+    }
+    
+    #no-limits .section-content {
+        align-items: center;
+    }
+    #no-limits .pano-bgd {
+        background-image: url("/images/section-bgd-no-limits.jpeg");
+    }
+
+    #private-tours .pano-bgd {
+        background-image: url("/images/section-bgd-private-tours.jpeg");
+    }
+    #private-tours .section-content {
+        padding-top: 100px;
+    }
+    #private-tours .text-box {
+        width: 40%;
+    }
+
+    #snorkel-gear .section-content {
+        align-items: center;
+        justify-content: end;
+    }
+    #snorkel-gear .pano-bgd {
+        background-image: url("/images/section-bgd-snorkel-gear.jpeg");
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+    }
+    #snorkel-gear .text-box {
+        padding-left: 60px;
+    }
+
+    #team .container-fluid {
+        display: block;
+        height: initial;
+    }
+    #team .media-cards {
+        max-width: 1860px;
+        margin: auto;
+    }
+    #team .text-block {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    #tour-duration .container-fluid {
+        max-height: 600px;
+    }
+    #tour-duration .pano-bgd {
+        background-image: url("/images/section-bgd-tour-duration.jpeg");
+        background-size: contain;
+        background-position-y: bottom;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+    }
+    #tour-duration .section-content {
+        align-items: center;
+        justify-content: end;
+    }
+
+    .media-card {
+        background-color: #000;
+        color: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .media-card .text {
+        padding: 20px;
+    }
+    .media-card h2 {
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .media-card h3 {
+        font-size: 18px;
+        color: #F0CE10;
+    }
+    .media-card h2, .media-card h3 {
+        margin-bottom: 10px;
+    }
+    .media-card p {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    #price-section .text-box .disclaimer {
+        margin-top: 0px;
+    }
+
+    /* Whale Watching Tour Page */
+    #whale-watching-1 .section-content {
+        align-items: center;
+    }
+    #whale-watching-1 .text-box {
+        margin-top: -26vh;
+    }
+    #whale-watching-1 .pano-bgd {
+        background-image: url("/images/section-bgd-whale-watching-1.webp");
+    }
+
+    #whale-watching-2 .section-content {
+        align-items: center;
+    }
+    #whale-watching-2 .pano-bgd {
+        background-image: url("/images/section-bgd-whale-watching-2.webp");
+    }
+
+    #whale-watching-duration .section-content {
+        align-items: center;
+        justify-content: end;
+    }
+    #whale-watching-duration .container-fluid {
+        max-height: 750px;
+    }
+    #whale-watching-duration .pano-bgd {
+        width: 1400px;
+        left: 50%;
+        margin-left: -990px;
+        background-image: url("/images/section-bgd-whale-watching-duration.webp");
+        background-size: initial;
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+
+    /* Contact Page */
+    .contact-page .contact-email {
+        font-size: 16px;
+    }
+
+    /* 404 Page */
+    .page-404 .main-content {
+        min-height: 670px;
+    }    
+
+    /* 3. Components */
+
+    /* Navigation Bar */
+    .navbar > .container {
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    .top-bar {
+        display: none !important;
+    }
+    .navbar-top {
+        min-height: initial;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    .navbar-brand-wrapper {
+        min-height: initial;
+    }
+    .navbar-brand-wrapper .top-level {
+        padding: 0px !important;
+    }
+    .navbar-brand-wrapper .top-level span {
+        padding: 10px 18px;
+    }
+    .navbar-brand-wrapper .top-level span, .navbar-brand-wrapper .dropdown-menu span {
+        border-bottom: 3px solid #f0cf1200;
+    }
+    .navbar-brand-wrapper .top-level span:hover, .navbar-brand-wrapper .dropdown-menu span:hover {
+        border-color: #f0ce12;
+        transition: border-color .3s ease-in-out;
+    }
+    .navbar-brand {
+        /*left: -135px;
+        margin-top: 40px;*/
+        display: none;
+    }
+    .navbar-brand img {
+        max-width: 270px;
+        padding-top: 24px;
+    }
+    .navbar-scroll .navbar-top {
+        background-color: #000;
+    }
+    .navbar .navbar-nav .nav-link, .navbar .navbar-nav {
+        color: #ffffff;
+    }
+    .nav-link.active {
+
+    }
+    .navbar-home {
+        display: none;
+    }
+    .top-bar p {
+        font-size: 22px;
+    }
+    .dropdown-menu {
+        padding: 6px 0px !important;
+    }
+    .navbar-top .navbar-nav:not(.nav-social) > .nav-item > .dropdown-menu > .navbar-nav > .nav-item > .nav-link {
+        padding: 8px 16px !important;
+    }
+
+    .hero-banner {
+        height: 100vh;
+        min-height: 700px;
+        max-height: 1000px;
+        margin-top: -120px;
+    }
+    .hero-banner .banner-contents {
+        padding-top: 150px;
+    }
+
+
+    /* Tour Pages */
+    .tour-page .page-head-logo {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+    .main-hero-banner {
+        justify-content: space-between;
+        padding-top: 130px;
+        padding-bottom: 10px;
+        max-height: 100%;
+        background-color: #062c4d;
+    }
+    .page-title-img-wrapper {
+        height: initial;
+        padding: 0px;
+    }
+    
+    .product-tags ul {
+        margin-top: 6px;
+    }
+
+    /* Photo Gallery Grid */
+    .photo-grid-gallery img {
+        width: 25%;
+    }
+
+    /* Reviews / Testimonials Section */
+    .reviews-text, .review-block p {
+        font-size: 16px;
+    }
+    .review-card h2 {
+        font-size: 24px;
+    }
+
+    .cta-buttons-pair .btn-secondary {
+        margin-right: 10px;
+    }
+
+
+
+}
+
+/* ========================================================== */
+/* XL SCREEN STYLES 
+/* ========================================================== */
+@media screen and (min-width: 2200px) {
+    /*.bg-lightrays {
+        background-size: cover;
+        background-position-y: 80%;
+    }*/
+}

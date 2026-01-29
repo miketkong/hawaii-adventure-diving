@@ -1,0 +1,130 @@
+<?php
+if($thisPage == "sharks") {
+    $tourText = "Our team, comprised of Hawaii's and the world's top shark handlers, offers unrivaled expertise in shark behavior and safety. Their knowledge enables us to offer guests unprecedented freedom to swim and dive with sharks for truly immersive and interactive experiences. Dive with us and experience why our guests recommend us over any other tours.";
+}elseif($thisPage == "whales") {
+    $tourText = "Our crew have the experience and qualifications to make your experience whale watching thrilling, educational, and safe.";
+}
+?>
+
+<section id="team" class="pano-section bg-white text-left">
+            <div class="container pt-30">
+                <div class="row text-center-md">
+                    <div class="col-lg-10 offset-lg-1">
+                        <h1 class="h1-small-leader-text md-text-center" style="color: #000;">Hawaii's Best Shark <span class="no-break">Diving Tour</span></h1>
+                        <h2 class="blue-text">A Legendary Team</h2>
+                        <p><?php echo($tourText); ?></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid pb-40">
+                <div class="row media-cards">
+                    
+                <?php   
+
+                    //Randomly choose 4 bios to display
+
+                    $bio1 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-stacy.jpeg" alt="Photo of Hawaii Adventure Diving boat captain, Stacy Lieser snorkeling next to a large tiger shark.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/stacylieser/?hl=en"><span>@Stacylieser</span></a>
+                                            <h2>Stacy Lieser</h2>
+                                            <h3>Safety Diver, Captain</h3>
+                                            <p>A USCG licensed captain, Divemaster, and graduate of the University of Hawaii, Stacy has earned a reputation as a highly capable boat captain and tour leader passionate about marine conservation.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+
+                    $bio2 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-nick.jpeg" alt="Photo of Hawaii Adventure Diving safety diver Nick Lowenstine pressing his hand over the nose of a large tiger shark with another diver in the background taking an underwater photo.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/lifeofasharkdiver/?hl=en"><span>@Lifeofasharkdiver</span></a>
+                                            <h2>Nick Loewenstine</h2>
+                                            <h3>Safety Diver</h3>
+                                            <p>A lifelong adventurer and wild man with a passion for large predators, Nick has been around the world diving with sharks. He is a certified Dive Master, emergency first response instructor, and world-class shark handler.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+
+                    $bio3 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-annika.jpeg" alt="Photo of Hawaii Adventure Diving safety diver Annika Zerne Young in the ocean petting the nose of a tiger shark while holding a GoPro.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/nani.moana/?hl=en"><span>@nani.moana</span></a>
+                                            <h2>Annika Zerne Young</h2>
+                                            <h3>Safety Diver</h3>
+                                            <p>A graduate of the University of Hawai\'i, Annika is a passionate marine conservationist as well as a certified PADI Divemaster. She\'s been working with sharks on the North Shore of O\'ahu since 2016.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+
+                    $bio4 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-sammy.jpeg" alt="Photo of Hawaii Adventure Diving safety diver and photographer Sammy taking a picture of a shark with a professional underwater camera system.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/snappysammyphotos/?hl=en"><span>@Snappysammyphotos</span></a>
+                                            <h2>SAMMY FALGIANI</h2>
+                                            <h3>Safety Diver, Photographer</h3>
+                                            <p>Certified PADI Divemaster and FII Freediver, Sammy discovered her passion for shark diving through her photography career. The talent behind many images on this site, she serves as our primary tour photographer.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+
+                    $bio5 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-sava.webp" alt="Photo of Hawaii Adventure Diving captain and safety diver Sava under water swimming upright directly infront of a very large great white shark staring directly eye to eye, about two feet away from each other.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/sava.bien.hawaii/?hl=en"><span>@Sava.Bien.Hawaii</span></a>
+                                            <h2>Sava Mankovskiy</h2>
+                                            <h3>Captain & Safety Diver</h3>
+                                            <p>A freediver, scuba divemaster/instructor, boat captain and sailor, Sava loves the depth, the wildlife, diving on old sunken ships and the art of being like water.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+
+                    $bio6 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-danny.webp" alt="Photo of Hawaii Adventure Diving photographer and safety diver Danny Mako snorkeling underwater with a swirling swarm of menacing looking sharks.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/danny_mako/?hl=en"><span>@Danny_mako</span></a>
+                                            <h2>Danny Mako</h2>
+                                            <h3>Photographer & Safety Diver</h3>
+                                            <p>Photographer and Biologist/Marine Scientist with a Bachelor of Science from the University of Tampa, as well as a PADI Divemaster, surfer, swimmer, and overall waterman.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+                    
+                    $bio7 =     '<div class="col-sm-6 col-lg-3">
+                                    <div class="media-card">
+                                        <img src="/images/bio-pic-sq-ro.webp" alt="Headshot of Hawaii Adventure Diving captain Ro O\'Rourke looking toward the camera on the Hawaii Adventure Diving Boat getting ready for a tour.">
+                                        <div class="text">
+                                            <a class="insta-link" target="_blank" href="https://www.instagram.com/rowouldgo/?hl=en"><span>@Rowouldgo</span></a>
+                                            <h2>Ro O\'Rourke</h2>
+                                            <h3>Captain</h3>
+                                            <p>A keen student of life, certified first responder and fearles captain, Ro is a skilled free diver as well as photographer; capturing the unforgettable moments were able to share with each other.</p>
+                                        </div>
+                                    </div>
+                                </div>';
+
+                    $input = array("$bio1", "$bio2", "$bio3", "$bio4", "$bio5", "$bio6", "$bio7");
+                    $rand_keys = array_rand($input, 4);
+                    echo $input[$rand_keys[0]] . "\n";
+                    echo $input[$rand_keys[1]] . "\n";
+                    echo $input[$rand_keys[2]] . "\n";
+                    echo $input[$rand_keys[3]] . "\n";
+                    echo $input[$rand_keys[4]] . "\n";
+                    echo $input[$rand_keys[5]] . "\n";
+                    echo $input[$rand_keys[6]] . "\n";
+                    echo $input[$rand_keys[7]] . "\n";
+                ?>
+
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <a class="btn btn-accent-1 big-button" href="/about-us.php">View all</a>
+                    </div>
+                </div>
+            </div>
+        </section>

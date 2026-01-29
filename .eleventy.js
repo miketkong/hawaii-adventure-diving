@@ -1,0 +1,18 @@
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("shark-diving-oahu");
+  eleventyConfig.addPassthroughCopy("shark-diving-tours");
+  eleventyConfig.addPassthroughCopy("snorkel-tour");
+  eleventyConfig.addPassthroughCopy("whale-watching-tour");
+  eleventyConfig.addPassthroughCopy("robots.txt");
+
+  return {
+    dir: {
+      input: ".",
+      includes: "_includes",
+      data: "_data",
+      output: "_site",
+    },
+  };
+};

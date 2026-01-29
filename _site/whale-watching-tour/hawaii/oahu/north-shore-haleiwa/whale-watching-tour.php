@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- GTM and other top level stuff -->
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
+    <meta charset="utf-8">
+
+
+    <title>Oahu Whale Watching Tours | Hawaii Adventure Diving</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+
+    <!-- Generic Open Graph Data -->
+    <meta property="og:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
+    <meta property="og:description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Open Graph Data -->
+    <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
+    <meta property="twitter:description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+    <meta property="twitter:image" content="">
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Private Whale Watching Group Tour (Seasonal: November - May)",
+            "description": "Witness humpback whales in their natural habitat during our 2-hour guided tour. Amenities include comfortable boat seating, expert guides, and educational commentary. Price is per group. Available November through May.",
+            "image": "https://hawaiiadventurediving.com/images/product-card-img-whale-watching-tour.webp",
+            "offers": {
+                "@type": "Offer",
+                "price": "450",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/LimitedAvailability"
+            }
+        }
+    </script>
+    <!--// Schema Structured Data -->
+
+    <!-- head.php include -->
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
+
+</head>
+
+<body class="has-topbar whale-watching-tour-page tour-page bg-white">
+    <!-- nav.php include -->
+    <?php
+    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php';
+    $thisPage = "whales";
+    ?>
+
+    <script>
+        if (window.innerWidth > 1024) {
+            console.log("Window width greater than 1024");
+            mobile = false;
+            devicetype = "";
+        } else {
+            console.log("Window width less than 1024");
+            mobile = true;
+            devicetype = "-desktop";
+        }
+    </script>
+
+    <div class="content-wrap">
+        <section id="page-banner" class="hero-video-banner hero-banner">
+            <div class="container-fluid gx-0">
+                <div id="banner-video-overlay" class="video-overlay-image"></div>
+                <div class="video-overlay-color"></div>
+                <div id="banner-video-bgd" class="video-container">
+                    <div id="player"></div>
+
+                    <script>
+                        var tag = document.createElement('script');
+
+                        //tag.src = "https://www.youtube.com/iframe_api";
+                        var firstScriptTag = document.getElementsByTagName('script')[0];
+                        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                        var player;
+                        var bannerVideoOverlay = document.getElementById("banner-video-overlay");
+
+                        function onYouTubeIframeAPIReady() {
+                            //alert("In onYouTubeIframeAPIReady function.");
+                            player = new YT.Player('player', {
+                                height: '390',
+                                width: '640',
+                                videoId: 'R5rGICvc9ro',
+                                playerVars: {
+                                    'start': 30,
+                                    'loop': 1,
+                                    'playlist': 'R5rGICvc9ro',
+                                    'playsinline': 1,
+                                    'autoplay': 1,
+                                    'controls': 0,
+                                    'mute': 1
+                                },
+                                events: {
+                                    'onReady': onPlayerReady,
+                                    'onStateChange': onPlayerStateChange
+                                }
+                            });
+                        }
+
+                        function onPlayerReady(event) {
+                            event.target.playVideo();
+                        }
+                        var doneLoading = false;
+
+                        function onPlayerStateChange(event) {
+                            if (event.data == YT.PlayerState.PLAYING && !doneLoading) {
+                                doneLoading = true;
+                                fadeOutVideoOverlay();
+                            }
+                        }
+
+                        function fadeOutVideoOverlay() {
+                            //alert("In fadOut function.");
+                            bannerVideoOverlay.classList.add("fade-out");
+                        }
+                    </script>
+                </div>
+
+                <div class="banner-contents">
+                    <div class="row page-head-logo desktop">
+                        <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
+                    </div>
+
+                    <div class="page-title-img-wrapper"><img src="/images/page-title-whale-watching-tour.png" alt="Cage Free Shark Diving"></div>
+
+                    <div class="price-CTA-block text-white">
+                        <!--<p class="price-leader-text">from</p>
+                        <p class="price mb-10"><span class="price-strikethrough">$149</span>$129 per person</p>-->
+                        <a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" target="_self">Book Now</a>
+                        <p class="disclaimer">Pricing subject to change. Click to view updated rates and to schedule your next tour.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <?php //include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/as-seen-on.php' 
+        ?>
+
+
+
+        <section class="tour-quick-guide bg-white" class="desktop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-2">
+                        <img class="icon" src="/images/icon-duration-placeholder.jpg">
+                        <h2>Duration</h2>
+                        <p>2 hrs</p>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <img class="icon" src="/images/icon-time-placeholder.jpg">
+                        <h2>Start & End Time</h2>
+                        <p>Varies</p>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <img class="icon" src="/images/icon-pickup-placeholder.jpg">
+                        <h2>Pick-up & Drop-Off</h2>
+                        <p>Not Included</p>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <img class="icon" src="/images/icon-age-placeholder.jpg">
+                        <h2>Minimum Age</h2>
+                        <p>5 with adult</p>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <img class="icon" src="/images/icon-fitness-placeholder.jpg">
+                        <h2>Fitness Level</h2>
+                        <p>Any</p>
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <img class="icon" src="/images/icon-start-end-location-placeholder.jpg">
+                        <h2>Start & End Location</h2>
+                        <p>Haleiwa</p>
+                    </div>
+                </div>
+                <!--// row -->
+            </div>
+            <!--// container -->
+        </section>
+        <!--// Tour Quick Guide -->
+
+        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/business-info.php' ?>
+
+        <section id="tour-days-and-times">
+            <div class="container pt-30">
+                <div class="row">
+                    <div class="col-12 text-center-md">
+                        <h2 class="blue-text mb-20">Tour Days & Times</h2>
+                    </div>
+                    <div class="col-12 text-center-md tour-times">
+                        <p><strong>Monday - Sunday</strong><br>
+                            <a href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/">4:30pm - 6:30pm</a>
+                        </p>
+                    </div>
+                    <div class="col-12 text-center-md"><a class="btn btn-accent-1 big-button btn-max-width" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" target="_self">Calendar</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="price-section" class="price-section bg-white py-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2 text-center-md">
+                        <h2 class="blue-text">Reservations</h2>
+                        <p>All whale watching tours are 6 person maximum and 2 hours in length. Reserve your tour today!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+
+                        <!-- Product Card - Private Charter -->
+                        <div class="row text-center">
+                            <div class="col-md-4 offset-lg-4">
+                                <div class="product-card">
+                                    <img src="/images/product-card-img-whale-watching-tour.webp" alt="">
+                                    <div class="text">
+                                        <h2>Whale Watching Tour - Private Charter</h2>
+                                        <h3 class="price">$575<br><span class="sub-text">(Plus taxes & fees)</span></h3>
+                                        <a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Product Card - Private Charter -->
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <!-- Product Card - Private Charter -->
+                        <div class="row text-center">
+                            <div class="col-md-4">
+                                <div class="product-card">
+                                    <img src="/images/whale-breaching-product-photo.jpg" alt="">
+                                    <div class="text">
+                                        <h2>Whale Watching Tour - Per Person</h2>
+                                        <h3 class="price">$125<br><span class="sub-text">(Plus taxes & fees. Minimum 4 guests.)</span></h3>
+                                        <a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// Product Card - Private Charter -->
+                    </div>
+                </div>
+
+
+
+
+                <div class="row">
+                    <div class="col text-center text-box">
+                        <p class="disclaimer">Prices subject to change. Click the Book Now buttons to see the latest rates.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="faq" class="bg-white pt-40 pb-30">
+            <div class="container w-700">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="blue-text">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion accordion-flush dark-text" id="faq">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        What types of whales can I see on the tour?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne">
+                                    <div class="accordion-body">
+                                        <p>There are actually a lot of types of whales in Hawaii, including the humpback whale, southern right whale, Beluga whale, and sperm whale. These marine mammals are all found throughout the Hawaiian Islands and can be seen from boats or from shorelines during migrations.</p>
+                                        <p>The humpback whale is the most common type of whale found in Hawaii. These gentle giants can reach up to 30 feet long and weigh up to 150 tons, making them some of the largest animals on Earth. They are well known for their singing capabilities, which can be heard from miles away!</p>
+                                        <p>Other types of whales that can be spotted in Hawaii include sperm Whales, Killer Whales, dolphins (tricycles), and porpoises.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        When is the best time of year to go whale watching in Hawaii?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo">
+                                    <div class="accordion-body">The best time to go whale watching in Hawaii is typically from November to May, when humpback whales migrate to the islands to mate and give birth.</div>
+                                </div>
+                            </div>
+
+                            <!--<div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEleven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                                How long is the tour and where does it depart from?
+                                </button>
+                                </h2>
+                                <div id="faq-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingEleven">
+                                <div class="accordion-body">The Hawaii Adventure Diving whale watching tour is 2 hours long and departs from Haleiwa Harbor on the north shore of Oahu.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Is the tour suitable for children and elderly people?
+                                </button>
+                                </h2>
+                                <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
+                                <div class="accordion-body">Our tour is suitable for children and elderly people, but it's always a good idea to check first if you have any doubts or special needs. Feel free to <a href="/contact.php">contact us</a> if you have any questions.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Can I bring food and drinks on the tour?
+                                </button>
+                                </h2>
+                                <div id="faq-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour">
+                                <div class="accordion-body">Yes, you are welcome to bring food and drinks on the tour.</div>
+                                </div>
+                            </div>-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                        Is there a chance that we won't see any whales on the tour?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive">
+                                    <div class="accordion-body">There is always a chance that you won't see any whales on the tour, as wildlife sightings are never guaranteed. However, the chances of seeing whales are generally high during the peak migration seasons.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                        Is there a dress code for the tour?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix">
+                                    <div class="accordion-body">There is no specific dress code, but you may want to bring a hat and jacket to protect from the elements as well as sunscreen. Polarized sunglasses are also great for eliminating some of the reflections on the surface of the water and seeing sealife under the surface.</div>
+                                </div>
+                            </div>
+
+                            <!--<div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                Can I bring my own camera or do you provide photography services?
+                                </button>
+                                </h2>
+                                <div id="faq-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven">
+                                <div class="accordion-body">Yes, you are welcome and encouraged to bring your own camera.</div>
+                                </div>
+                            </div>
+
+                           <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                Are there any age or physical requirements for the tour?
+                                </button>
+                                </h2>
+                                <div id="faq-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight">
+                                <div class="accordion-body">There is a minimum age limit of 5 years old as long as they're accompanied by an adult. As far as physical requirements, guests should be able to climb stairs and navigate uneven terrain. Feel free to <a href="/contact.php">contact us</a> if you have any special needs or questions about specific requirements.</div>
+                                </div>
+                            </div>-->
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                        What's your cancellation policy?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen">
+                                    <div class="accordion-body">Cancellations are accepted with at least 48 hours notice. Any cancellations or No Shows within the 48 hours cancellation policy will result in your credit card being charged for the full amount of the tour you have reserved.</div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                        Do you offer any discounts for military personnel, students, or large groups?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine">
+                                    <div class="accordion-body">While our tours are limited to 6 people per tour, we may be offering discounts for local residents as well as military. Feel free to <a href="/contact.php">contact us</a> to find out if we are running any discounts that may apply to you or your ggroup.</div>
+                                </div>
+                            </div>
+
+                        </div><!--// accordions -->
+                    </div><!--// col -->
+                </div><!--// row -->
+            </div>
+            <!--// container -->
+        </section>
+        <!--// FAQ -->
+
+        <!--
+        <section class="bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+    </div>
+    <!--// Content Wrap -->
+
+
+    <?php
+    $btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" >Book Now</a>';
+    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/big-CTA-pre-footer.php';
+    ?>
+
+    <!-- footer.php include -->
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>{{ pageTitle | default("Hawaii Adventure Diving") }}</title>
+
+    <link rel="icon" type="image/png" href="/assets/img/root/favicon.png">
+
+    {% include "head-top.njk" %}
+    
+    <meta name="description" content="{{ pageDescription }}">   
+    <link rel="canonical" href="{{ pageURL }}"> 
+
+    <!-- Open Grap Stuff -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ ogTitle }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+
+    <meta property="og:url" content="{{ pageURL }}">
+    <meta property="og:site_name" content="Hawaii Adventure Diving" />
+    <meta property="article:modified_time" content="<?php echo $formattedTime; ?>" />
+
+    <meta property="og:image" content="{{ ogImage }}">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="twitter:title" content="{{ ogTitle }}">
+    <meta property="twitter:description" content="{{ pageDescription }}">
+    <meta property="twitter:url" content="{{ pageURL }}">
+    <meta property="twitter:image" content="{{ ogImage }}">
+    <!--// Open Grap Stuff -->
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [{
+                "@type": "WebPage",
+                "@id": "https://hawaiiadventurediving.com/",
+                "url": "https://hawaiiadventurediving.com/",
+                "name": "Hawaii Adventure Diving - Cage Free Shark Diving Tours",
+                "isPartOf": {
+                    "@id": "https://hawaiiadventurediving.com/#website"
+                },
+                "about": {
+                    "@id": "https://hawaiiadventurediving.com/#organization"
+                },
+                "primaryImageOfPage": {
+                    "@id": "https://hawaiiadventurediving.com/#primaryimage"
+                },
+                "image": {
+                    "@id": "https://hawaiiadventurediving.com/#primaryimage"
+                },
+                "thumbnailUrl": "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu.jpg",
+                "datePublished": "2023-11-01T07:46:10+00:00",
+                "dateModified": "2023-11-01T07:46:10+00:00",
+                "description": "Shark Dive Oahu - Looking for the Best Hawaii Shark Tour? We offer the top Hawaii Shark Tour throughout the Hawaiian Islands!",
+                "breadcrumb": {
+                    "@id": "https://hawaiiadventurediving.com/#breadcrumb"
+                },
+                "inLanguage": "en-US",
+                "potentialAction": [{
+                    "@type": "ReadAction",
+                    "target": ["https://hawaiiadventurediving.com/"]
+                }]
+            }, {
+                "@type": "ImageObject",
+                "inLanguage": "en-US",
+                "@id": "https://hawaiiadventurediving.com/#primaryimage",
+                "url": "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu.jpg",
+                "contentUrl": "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu.jpg",
+                "width": 600,
+                "height": 400,
+                "caption": "Hawaii Adventure Diving"
+            }, {
+                "@type": "BreadcrumbList",
+                "@id": "https://hawaiiadventurediving.com/#breadcrumb",
+                "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home"
+                }]
+            }, {
+                "@type": "WebSite",
+                "@id": "https://hawaiiadventurediving.com/#website",
+                "url": "https://hawaiiadventurediving.com/",
+                "name": "Hawaii Adventure Diving",
+                "description": "Discover the Best Shark Tours Oahu, HI has to offer!",
+                "publisher": {
+                    "@id": "https://hawaiiadventurediving.com/#organization"
+                },
+                "inLanguage": "en-US"
+            }, {
+                "@type": "Organization",
+                "@id": "https://hawaiiadventurediving.com/#organization",
+                "name": "Hawaii Adventure Diving",
+                "url": "https://hawaiiadventurediving.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "inLanguage": "en-US",
+                    "@id": "https://hawaiiadventurediving.com/#/schema/logo/image/",
+                    "url": "https://hawaiiadventurediving.com/logo.jpg",
+                    "contentUrl": "https://hawaiiadventurediving.com/logo.jpg",
+                    "width": 600,
+                    "height": 600,
+                    "caption": "Hawaii Adventure Diving"
+                },
+                "image": {
+                    "@id": "https://hawaiiadventurediving.com/#/schema/logo/image/"
+                }
+            }]
+        }
+    </script>
+    <!--// Schema Structured Data -->
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="/assets/vendors/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/vendors/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- MK Design Customizations -->
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.0.5.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- jQuery-->
+    <script src="/assets/vendors/js/jquery.min.js"></script>
+
+</head>
+
+<body class="has-topbar homepage">
+
+    {% include "nav.njk" %}
+
+    {% include "fixed-booking-btn.njk" %}
+
+    <!-- Main Content -->
+    {{ content | safe }}
+
+    <!-- footer.php include -->
+    {% include "footer.njk" %}
+
+    <script>
+        let youtubeVideoID;
+        let bannerVideoOverlay = document.getElementById("banner-video-overlay");
+        let doneLoading = false;
+        let player;
+
+        // Start the video loading process after the page has finished loading
+        // Hopefully this speeds up the page loading
+        document.addEventListener('DOMContentLoaded', function() {
+            youtubeVideoID = getYoutubeVideoID();
+            startYouTubeEmbedAPI();
+        });
+
+        // Get YouTube Video ID based on window width
+        function getYoutubeVideoID() {
+            if (window.innerWidth > 576) {
+                mobile = false;
+                youtubeVideoID = "asEnYgaGBV8";
+                return youtubeVideoID;
+            } else {
+                mobile = true;
+                youtubeVideoID = "cg5OSCuulWE";
+                return youtubeVideoID;
+            }
+        }
+
+        function startYouTubeEmbedAPI() {
+            console.log("Inside startYouTubeEmbedAPI()");
+
+            var tag = document.createElement('script');
+            tag.src = "https://www.youtube.com/iframe_api";
+
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }
+
+        // Hawaii Adventure Diving 
+        function onYouTubeIframeAPIReady() {
+            console.log("Inside onYouTubeIframeAPIReady()");
+            player = new YT.Player('player', {
+                height: '390',
+                width: '640',
+                videoId: youtubeVideoID,
+                playerVars: {
+                    'loop': 1,
+                    'playlist': youtubeVideoID,
+                    'playsinline': 1,
+                    'autoplay': 1,
+                    'controls': 0,
+                    'mute': 1
+                },
+                events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !doneLoading) {
+                doneLoading = true;
+                fadeOutVideoOverlay();
+            }
+        }
+
+        function fadeOutVideoOverlay() {
+            bannerVideoOverlay.classList.add("fade-out");
+        }
+    </script>
+
+</body>
+
+</html>

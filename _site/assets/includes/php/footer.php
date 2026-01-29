@@ -1,0 +1,86 @@
+    <!-- Footer-->
+    <footer class="bg-dark  pt-70 pb-30 footerNext">
+        <div class="container">
+            <div class="row gy-50">
+                <div class="col-12 col-lg-3 footer-branding">
+                    <a class="d-block mb-10" href="/">
+                        <img class="footer-logo" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+                    </a>
+                    <p class="font-size-15 mb-35" style="font-style: italic"><!--Find your adventure.-->Oahu's best cage free shark tour.</p>
+                    <ul class="nav  align-items-center mb-20 nav-gap-md nav-no-opacity">
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/HawaiiAdventureDiving/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" fill="none">
+                                    <path fill="currentColor" d="M6.318 2.8h1.391V.202A16.842 16.842 0 0 0 5.683.088c-2.006 0-3.38 1.353-3.38 3.837v2.287H.089v2.902h2.214v7.303h2.713V9.114H7.14l.338-2.902H5.016v-2c0-.839.21-1.413 1.302-1.413Z" />
+                                </svg></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/hawaiiadventurediving/?hl=en" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+                                    <path fill="currentColor" d="M8.788 4.097C6.47 4.097 4.6 5.95 4.6 8.25c0 2.298 1.87 4.153 4.188 4.153 2.318 0 4.188-1.855 4.188-4.153 0-2.3-1.87-4.153-4.188-4.153Zm0 6.853c-1.498 0-2.723-1.211-2.723-2.7 0-1.49 1.221-2.7 2.723-2.7 1.502 0 2.723 1.21 2.723 2.7 0 1.489-1.225 2.7-2.723 2.7Zm5.336-7.023a.97.97 0 0 1-.977.968.97.97 0 0 1-.976-.968c0-.535.437-.969.976-.969.54 0 .977.434.977.969Zm2.774.983c-.062-1.298-.36-2.447-1.32-3.394C14.624.569 13.465.272 12.156.207c-1.349-.076-5.39-.076-6.74 0C4.113.27 2.954.565 1.995 1.512 1.035 2.46.74 3.61.674 4.906c-.076 1.338-.076 5.346 0 6.683.063 1.298.361 2.447 1.32 3.394.959.947 2.114 1.244 3.423 1.309 1.348.076 5.39.076 6.739 0 1.308-.062 2.468-.358 3.422-1.309.956-.947 1.254-2.096 1.32-3.394.076-1.337.076-5.342 0-6.68Zm-1.742 8.114a2.745 2.745 0 0 1-1.553 1.54c-1.075.423-3.627.325-4.815.325-1.188 0-3.743.095-4.815-.325a2.746 2.746 0 0 1-1.552-1.54c-.427-1.066-.329-3.596-.329-4.774 0-1.179-.094-3.712.329-4.775a2.745 2.745 0 0 1 1.552-1.54C5.048 1.512 7.6 1.61 8.788 1.61c1.188 0 3.743-.094 4.815.325a2.745 2.745 0 0 1 1.553 1.54c.426 1.066.328 3.596.328 4.775 0 1.178.098 3.712-.328 4.774Z" />
+                                </svg></a></li>
+                    </ul>
+
+                </div>
+                <!--<div class="col-1 d-none d-lg-block"></div>-->
+                <div class="col-12 col-lg-9 mt-20 footer-menu">
+                    <div class="row gy-50">
+                        <div class="col-6 col-md-4">
+                            <h6 class="display-6  mb-20">Tours</h6>
+                            <ul class="nav flex-column  nav-opacity nav-gap-sm">
+                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php">Oahu Shark Diving Tours</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">Oahu Whale Watching Tours</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/?flow=17337">Reservations</a></li>
+                                <!--<li class="nav-item"><a class="nav-link" href="/what-to-bring.php">What To Bring</a></li>-->
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <h6 class="display-6  mb-20">About</h6>
+                            <ul class="nav flex-column  nav-opacity nav-gap-sm">
+                                <li class="nav-item"><a class="nav-link" href="/about-us.php">About us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/about-sharks.php">About Sharks</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife.php">Hawaiian Sea Life</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/conservation.php">Conservation</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h6 class="display-6  mb-20">Contact</h6>
+                            <ul class="nav flex-column  nav-opacity nav-gap-sm">
+                                <li class="nav-item"><a class="nav-link" href="/contact.php">Contact us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="tel:{{ siteData.contact.phoneLink }}">{{ siteData.contact.phonePretty }}</a></li>
+                                <li class="nav-item"><a class="nav-link" href="mailto:{{ siteData.contact.contactEmail }}">{{ siteData.contact.contactEmail }}</a></li>
+                                <li class="nav-item"><a class="nav-link nav-link-accent-1" href="/contact-custom-charters.php">Custom Charters</a></li>
+                                <li class="nav-item"><a class="nav-link" href="https://goo.gl/maps/iquNkMPaRdngjLKS8">66-105 Haleiwa Rd,<br>Haleiwa, HI 96712</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="font-size-13 text-muted m-0">© 2023 Hawaii Adventure Diving</p>
+                    <p class="font-size-13 text-muted m-0"><a class="link-plain" href="https://mkdesignmarketing.com/" target="_blank">Website Design</a> by <a class="link-plain" href="https://mkdesignmarketing.com/" target="_blank">MK Design Marketing</a></p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- Vendors-->
+
+    <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
+    <script src="https://fareharbor.com/embeds/api/v1/?autolightframe=yes"></script>
+
+    <!-- build:js -->
+    <script src="/assets/vendors/js/bootstrap.js"></script>
+    <script src="/assets/vendors/js/imagesloaded.pkgd.js"></script>
+    <script src="/assets/vendors/js/isotope.pkgd.js"></script>
+    <script src="/assets/vendors/js/jarallax.js"></script>
+    <script src="/assets/vendors/js/jarallax-element.js"></script>
+    <script src="/assets/vendors/js/jquery.countdown.js"></script>
+    <script src="/assets/vendors/js/jquery.magnific-popup.js"></script>
+    <script src="/assets/vendors/js/ofi.js"></script>
+    <script src="/assets/vendors/js/jquery.inview.js"></script>
+    <script src="/assets/vendors/js/swiper-bundle.js"></script>
+    <script src="/assets/vendors/js/gist-embed.min.js"></script>
+    <script src="/assets/js/helpers.js"></script>
+    <script src="/assets/js/controllers/show-on-scroll.js"></script>
+    <script src="/assets/js/controllers/countdown.js"></script>
+    <script src="/assets/js/controllers/isotope.js"></script>
+    <script src="/assets/js/controllers/navbar.js"></script>
+    <script src="/assets/js/controllers/stretch-column.js"></script>
+    <script src="/assets/js/controllers/swiper.js"></script>
+    <script src="/assets/js/controllers/others.js"></script><!-- endbuild -->
+
+    <!-- MKD Custom JS -->
+    <script src="/assets/js/mkd-custom.js"></script>

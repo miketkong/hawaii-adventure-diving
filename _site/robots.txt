@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /home-dev.php
+Disallow: /shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour-dev.php

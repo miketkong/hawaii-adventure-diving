@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- GTM and other top level stuff -->
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <meta charset="utf-8">
+
+
+    <title>Marine Stewardship: Resources and Allies for Ocean Conservation</title>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Explore our curated resources and discover ways to contribute to the preservation of our world's magnificent oceans.">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/conservation.php">
+
+    <!-- Generic Open Graph Data -->
+    <meta property="og:title" content="Meet The Crew | Hawaii Adventure Diving">
+    <meta property="og:description" content="Explore our curated resources and discover ways to contribute to the preservation of our world's magnificent oceans.">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/conservation.php">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Open Graph Data -->
+    <meta property="twitter:title" content="Meet The Crew | Hawaii Adventure Diving"> 
+    <meta property="twitter:description" content="Explore our curated resources and discover ways to contribute to the preservation of our world's magnificent oceans.">
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/conservation.php"> 
+    <meta property="twitter:image" content="">
+    
+    <!-- head.php include -->
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+
+</head>
+
+<body class=" has-topbar">
+    <!-- nav.php include -->
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php' ?>
+
+
+
+    <!-- Main Content-->
+    <div class="content-wrap main-content inner-page bg-lightrays">
+        <div class="container">
+            
+            <div class="row page-head-logo desktop-only">
+                <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
+            </div>
+
+            <div class="row pb-40">
+                <div class="col-12 text-center" data-show="startbox"  data-show-delay="100">
+                    <a href="/"><img src="/images/page-title-conservation.png" alt="Marine Conservation" class="page-title-img"></a>
+                </div>
+                <div class="col" data-show="startbox"  data-show-delay="200">
+                    <p>Welcome to our dedicated hub for marine conservation, a platform where we unite with individuals passionate about preserving the vast, beautiful blue. Dive into a wealth of resources, find organizations leading the fight against oceanic harm, and uncover how you can contribute to protecting our seas. Whether you're new to conservation or an experienced advocate, this is your gateway to meaningful marine stewardship. Let's journey together to make waves in ocean protection!</p>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://www.whoi.edu/" target="_blank"><img src="/images/conservation-woods-hole-oceanographic-institution-feature.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Woods Hole Oceanographic Institution</h2>
+                    <p>Woods Hole Oceanographic Institution is the world's leading, independent non-profit organization dedicated to ocean research, exploration, and education. Our scientists and engineers push the boundaries of knowledge about the ocean to reveal its impacts on our planet and our lives.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://www.whoi.edu/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://seashepherd.org/" target="_blank"><img src="/images/conservation-seashepherd-2.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Sea Shepherd</h2>
+                    <p>Sea Shepherd's sole mission is to protect and conserve the world's oceans and marine wildlife. We work to defend all marine wildlife, from whales and dolphins, to sharks and rays, to fish and krill, without exception.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://seashepherd.org/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://scripps.ucsd.edu/" target="_blank"><img src="/images/conservation-scripps.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Scripps Institution of Oceanography</h2>
+                    <p>Scripps Institution of Oceanography at UC San Diego works to understand and protect the planet and find solutions to our most pressing environmental challenges. They lead research in climate change impacts and adaptation, resilience to hazards, conservation and biodiversity, oceans and human health, national security, and innovative technology to observe the planet.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://scripps.ucsd.edu/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://www.oceandefenders.org/" target="_blank"><img src="/images/conservation-ocean-defenders-alliance.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Ocean Defenders Alliance</h2>
+                    <p>Ocean Defenders Alliance works to clean and protect marine ecosystems through documentation, education, and meaningful action. Working with affected communities, we focus primarily on the reduction and removal of man-made debris which poses serious threats to ocean wildlife and habitats.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://www.oceandefenders.org/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://ocean.si.edu/" target="_blank"><img src="/images/conservation-smithsonian-ocean-portal.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Smithsonian Institution - Ocean Portal</h2>
+                    <p>The Ocean Portal is part of the Smithsonian Institution's Ocean Initiative. Together with the National Museum of Natural History's Sant Ocean Hall and the Sant Marine Science Chair, the Ocean Portal supports the Smithsonian's mission to increase the public's understanding and stewardship of the Ocean.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://ocean.si.edu/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://coralreef.noaa.gov/" target="_blank"><img src="/images/conservation-NOAA-reef-conservation.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>NOAA Coral Reef Conservation Program</h2>
+                    <p>The Coral Reef Conservation Program is a partnership between the NOAA Line Offices that work on coral reef issues bringing together expertise from across NOAA for a multidisciplinary approach to understanding and conserving coral reef ecosystems.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://coralreef.noaa.gov/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://www.sharks.org/" target="_blank"><img src="/images/conservation-shark-research-institute.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Shark Research Institute</h2>
+                    <p>Founded by renowned environmental artist Wyland, the Wyland Foundation inspires people everywhere to discover the importance of healthy oceans and waterways through public art programs, classroom science education, and live events to become creative, positive, and solution-oriented stewards of our marine resources.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://www.sharks.org/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://oceanconservancy.org/" target="_blank"><img src="/images/conservation-ocean-conservancy.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Ocean Conservancy</h2>
+                    <p>Ocean Conservancy was founded in 1972 to promote healthy and safe ocean ecosystems and to help prevent things that threaten oceanic and human life. Through several program areas, Ocean Conservancy advocates for protecting special marine habitats, restoring sustainable fisheries, reducing the human impact on ocean ecosystems and managing U.S. ocean resources.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://oceanconservancy.org/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://www.nfwf.org/programs/coral-reefs" target="_blank"><img src="/images/conservation-NFWF.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>National Fish & Wildlife Foundation Coral Reef Progam</h2>
+                    <p>Since 2000, NFWF has responded to the decline of the world's coral reef ecosystems through conservation initiatives, increased public awareness, and reduced threats to coral reefs around the world.</p>
+                    <p>NFWF works with gevernments and regional partners to explore new techniques for addressing challenges faced by coral reef managers such as non-point source pollution, over harvest of functional reef species, vessel damage and environmental stressors.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://www.nfwf.org/programs/coral-reefs" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://sharkallies.org/" target="_blank"><img src="/images/conservation-shark-allies-2.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Shark Allies</h2>
+                    <p>Established in 2007 in Hawaii and incorporated in California in 2014, Shark Allies is a non-profit organization dedicated to the protection and conservation of sharks and rays. Their focus is on taking action, on raising awareness and guiding initiatives that reduce the destructive overfishing of sharks on a global scale.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://sharkallies.org/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+                <div class="col-lg-7 order-lg-2">
+                    <a href="https://wylandfoundation.org/" target="_blank"><img src="/images/conservation-wyland-foundation.webp"></a>
+                </div>
+                <div class="col-lg-5 pr-lg-30 order-lg-1">
+                    <h2>Wyland Foundation</h2>
+                    <p>Founded by renowned environmental artist Wyland, the Wyland Foundation inspires people everywhere to discover the importance of healthy oceans and waterways through public art programs, classroom science education, and live events to become creative, positive, and solution-oriented stewards of our marine resources.</p>
+                    <div><a class="btn btn-accent-1 big-button" href="https://wylandfoundation.org/" target="_blank">Visit Site</a></div>
+                </div>
+            </div>
+
+        </div>
+        <!--// Container -->
+
+        <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/prefooter-CTA.php' ?>
+    
+    </div>
+
+
+    
+    <!-- footer.php include -->
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
+</body>
+
+</html>
