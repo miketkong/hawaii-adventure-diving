@@ -7,6 +7,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("snorkel-tour");
   eleventyConfig.addPassthroughCopy("whale-watching-tour");
   eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("_redirects");
 
   return {
     dir: {
