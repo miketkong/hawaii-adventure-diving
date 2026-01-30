@@ -31,29 +31,29 @@
             <ul class="nav navbar-nav order-2 nav-no-opacity">
                 <li class="nav-item"><a class="nav-link top-level" href="/"><span>Home</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link top-level" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php"><span>Oahu Shark Diving</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link top-level" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Oahu Shark Diving</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php"><span>Hawaii Shark Diving Tour</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq.php"><span>Shark Diving Tour FAQ</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/about-our-experience.php"><span>About the Tour</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Hawaii Shark Diving Tour</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq/"><span>Shark Diving Tour FAQ</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/about-our-experience/"><span>About the Tour</span></a></li>
                             <li class="nav-item"><a class="nav-link" href="/articles"><span>Shark Diving Articles</span></a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link top-level" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php"><span>Whale Watching</span></a>
+                <li class="nav-item"><a class="nav-link top-level" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/"><span>Whale Watching</span></a>
                 </li>
-                <li class="nav-item navbar-dropdown"><a class="nav-link top-level" href="/about-us.php"><span>About</span></a>
+                <li class="nav-item navbar-dropdown"><a class="nav-link top-level" href="/about-us/"><span>About</span></a>
                     <div class="dropdown-menu rounded-2 shadow">
                         <ul class="nav navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="/about-us.php"><span>Meet The Crew</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about-sharks.php"><span>Sharks of Hawaii</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife.php"><span>Hawaiian Sea & Wild Life</span></a></li>
-                            <li class="nav-item"><a class="nav-link" href="/conservation.php"><span>Conservation</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about-us/"><span>Meet The Crew</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about-sharks/"><span>Sharks of Hawaii</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife/"><span>Hawaiian Sea & Wild Life</span></a></li>
+                            <li class="nav-item"><a class="nav-link" href="/conservation/"><span>Conservation</span></a></li>
                         </ul>
                     </div>
                 </li>
-                <li class="nav-item"><a class="nav-link top-level" href="/contact.php"><span>Contact</span></a>
+                <li class="nav-item"><a class="nav-link top-level" href="/contact/"><span>Contact</span></a>
                 </li>
             </ul>
             <!-- Button-->
@@ -78,26 +78,26 @@
                     <li class="nav-item navbar-collapse"><a class="nav-link" href="#navbarCollapseSharkDiving" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbarCollapseSharkDiving"><span>Oahu Shark Diving</span></a>
                         <div class="navbar-collapse-menu collapse" id="navbarCollapseSharkDiving">
                             <ul class="nav navbar-nav">
-                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php"><span>Hawaii Shark Diving Tour</span></a></li>
-                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq.php"><span>Shark Diving Tour FAQ</span></a></li>
-                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/about-our-experience.php"><span>About the Tour</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Hawaii Shark Diving Tour</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq/"><span>Shark Diving Tour FAQ</span></a></li>
+                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/about-our-experience/"><span>About the Tour</span></a></li>
                                 <li class="nav-item"><a class="nav-link" href="/articles"><span>Shark Diving Articles</span></a></li>
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php" role="button"><span>Whale Watching</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/" role="button"><span>Whale Watching</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/about-us.php" role="button"><span>Meet The Crew</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/about-us/" role="button"><span>Meet The Crew</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/about-sharks.php" role="button"><span>Sharks of Hawaii</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/about-sharks/" role="button"><span>Sharks of Hawaii</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife.php" role="button"><span>Hawaiian Sea & Wild Life</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife/" role="button"><span>Hawaiian Sea & Wild Life</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/conservation.php" role="button"><span>Conservation</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/conservation/" role="button"><span>Conservation</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/contact.php" role="button"><span>Contact</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/contact/" role="button"><span>Contact</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="/contact-custom-charters.php" role="button"><span>Custom Charters</span></a>
+                    <li class="nav-item"><a class="nav-link" href="/contact-custom-charters/" role="button"><span>Custom Charters</span></a>
                     </li>
                 </ul>
             </div>

@@ -3,7 +3,7 @@
 
 <head>
     <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
     <meta charset="utf-8">
 
 
@@ -11,24 +11,24 @@
     <title>Discover the Treasures of Hawaiian Wildlife: A Land and Sea Safari</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="Discover Hawaii's mesmerizing wildlife, a splendid array of creatures on both land and sea. Learn about the distinctive species that enrich the Hawaiian islands, and deepen your appreciation for nature's wonders.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/hawaiian-sea-wildlife.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/hawaiian-sea-wildlife/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
     <meta property="og:description" content="Discover Hawaii's mesmerizing wildlife, a splendid array of creatures on both land and sea. Learn about the distinctive species that enrich the Hawaiian islands, and deepen your appreciation for nature's wonders.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/hawaiian-sea-wildlife.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/hawaiian-sea-wildlife/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving"> 
+    <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
     <meta property="twitter:description" content="Discover Hawaii's mesmerizing wildlife, a splendid array of creatures on both land and sea. Learn about the distinctive species that enrich the Hawaiian islands, and deepen your appreciation for nature's wonders.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/hawaiian-sea-wildlife.php"> 
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/hawaiian-sea-wildlife/">
     <meta property="twitter:image" content="">
 
 
-    
+
     <!-- head.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
 
     <!-- permission test #2 -->
 
@@ -36,20 +36,20 @@
 
 <body class=" has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
     <!-- Main Content-->
     <div class="content-wrap main-content inner-page bg-lightrays">
         <div class="container">
-            
+
             <div class="row page-head-logo desktop-only">
                 <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
             </div>
 
             <div class="row pb-40">
-                <div class="col-12 text-center" data-show="startbox"  data-show-delay="100">
+                <div class="col-12 text-center" data-show="startbox" data-show-delay="100">
                     <a href="/"><img src="/images/page-title-hawaiian-sea-wildlife.png" alt="Hawaiian Sea and Wildlife" class="page-title-img"></a>
                     <div class="text-left">
                         <p>Enjoy this photo collage of Hawaiian sea and wildlife that call the North Shore of Oahu home! You may see many of these beautiful creatures during your dive or from the boat on the way to and from the dive site (with the exception of the Hawaiian Owl, which is a rare sighting anywhere in Hawai'i). Be sure to look in the water at the Haleiwa Harbor while at the dock, we have lots of “visitors” here as well!</p>
@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <img src="/images/hawaii-adventure-diving-pueo.webp" alt="Photo of a Hawaiian owl perched on a tree">
                 </div>
@@ -66,7 +66,7 @@
                     <h2>Hawaiian Owl (Pueo)</h2>
                     <h3>Asio flammeus sandwichensis</h3>
                     <p>The Hawaiian 'Aumāku is a spiritual belief of both a heavenly and earthly nature involving animals, sea life and even plants. 'Aumāku is thought to be an ancestor that has crossed over to the afterlife and then come back in a physical form from nature to provide for the Hawaiian family as a guardian, a spiritual guide, and communicator.</p>
-                    <p>The relationship between the Hawaiian family and their 'Aumāku is personal and also reciprocal as the 'Aumāku tends to the family, the Hawaiian family tends to and respects the 'Aumāku in a role of worship with prayer and offerings. As with any elder, 'Aumāku will also discipline when warranted, and the family member must repent and ask forgiveness for any wrong doing.</p>                    
+                    <p>The relationship between the Hawaiian family and their 'Aumāku is personal and also reciprocal as the 'Aumāku tends to the family, the Hawaiian family tends to and respects the 'Aumāku in a role of worship with prayer and offerings. As with any elder, 'Aumāku will also discipline when warranted, and the family member must repent and ask forgiveness for any wrong doing.</p>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@
                     <p>Due to the spinner dolphin foraging and feeding at night, in certain regions, such as Hawaii and northern Brazil, dolphins spend the daytime resting in shallow bays near deep water.</p>
                 </div>
             </div>
-            
+
             <div class="row listable-content-card gx-0" data-show="startbox">
                 <div class="col-lg-7 order-lg-2">
                     <img src="/images/hawaii-adventure-diving-sea-turtle.webp" alt="">
@@ -93,7 +93,7 @@
                     <p>Green sea turtles migrate long distances between feeding sites and nesting sites; some swim more than 1,600 mi (2,600 km) to reach their spawning grounds.</p>
                 </div>
             </div>
-            
+
             <div class="row listable-content-card gx-0" data-show="startbox">
                 <div class="col-lg-7 order-lg-2">
                     <img src="/images/hawaii-adventure-diving-albatross.webp" alt="">
@@ -102,7 +102,7 @@
                     <h2>Albatross</h2>
                     <h3>Diomedeidae</h3>
                     <p>Albatrosses, of the biological family Diomedeidae, are large seabirds related to the procellariids, storm petrels, and diving petrels in the order Procellariiformes (the tubenoses). They are highly efficient in the air, using dynamic soaring and slope soaring to cover great distances with little exertion. They feed on squid, fish, and krill by either scavenging, surface seizing, or diving.</p>
-                    <p>The wingspans of the largest great albatrosses are the largest of any bird, exceeding 11.2 ft (3.40 m). Of the 22 species of albatrosses recognised by the IUCN, 21 are listed as at some level of concern; two species are critically endangered, seven species are endangered, six species are near threatened, and six species are vulnerable.</p>                
+                    <p>The wingspans of the largest great albatrosses are the largest of any bird, exceeding 11.2 ft (3.40 m). Of the 22 species of albatrosses recognised by the IUCN, 21 are listed as at some level of concern; two species are critically endangered, seven species are endangered, six species are near threatened, and six species are vulnerable.</p>
                 </div>
             </div>
 
@@ -115,7 +115,7 @@
                     <h3>Megaptera novaeangliae</h3>
                     <p>The humpback whale is a species of baleen whale. Found in oceans and seas around the world, humpback whales typically migrate up to 16,000 km (9,900 mi) each year. They feed in polar waters and migrate to tropical or subtropical waters to breed and give birth.</p>
                     <p>Their diet consists mostly of krill and small fish, and they use bubbles to catch prey. They are promiscuous breeders, with both sexes having multiple partners. Orcas are the main natural predators of humpback whales.</p>
-                    <p>Adults range in length from 46-56 ft (14-17 m) and weigh up to 40 metric tons. The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. Males produce a complex song typically lasting 4 to 33 minutes.</p>                
+                    <p>Adults range in length from 46-56 ft (14-17 m) and weigh up to 40 metric tons. The humpback has a distinctive body shape, with long pectoral fins and a knobbly head. It is known for breaching and other distinctive surface behaviors, making it popular with whale watchers. Males produce a complex song typically lasting 4 to 33 minutes.</p>
                 </div>
             </div>
 
@@ -162,8 +162,8 @@
                 <div class="col-lg-5 pr-lg-30 order-lg-1">
                     <h2>Hawaiian Monk Seal</h2>
                     <h3>Neomonachus schauinslandi</h3>
-                    <p>The Hawaiian monk seal is an endangered species of earless seal in the family Phocidae that is endemic to the Hawaiian Islands. The small population of about 1,400 individuals is threatened by human encroachment, very low levels of genetic variation, entanglement in fishing nets, marine debris, disease, and past commercial hunting for skins.</p>             
-                    <p>Monk seals spend much of their time foraging in deeper water outside of shallow lagoon reefs at sub-photic depths of 300 metres or more.</p>   
+                    <p>The Hawaiian monk seal is an endangered species of earless seal in the family Phocidae that is endemic to the Hawaiian Islands. The small population of about 1,400 individuals is threatened by human encroachment, very low levels of genetic variation, entanglement in fishing nets, marine debris, disease, and past commercial hunting for skins.</p>
+                    <p>Monk seals spend much of their time foraging in deeper water outside of shallow lagoon reefs at sub-photic depths of 300 metres or more.</p>
                 </div>
             </div>
 
@@ -211,21 +211,21 @@
                     <h3>Galeocerdo Cuvier</h3>
                     <p>A species of requiem shark, the tiger shark attains length of up to over 16 ft. Found in tropical and temperate waters, especially in central Pacific islands. The name derives from the dark stripes down its body resembling a tiger's pattern.</p>
                     <p>Often found close to the coast in tropical and subtropical waters throughout the world, its behavior is primarily nomadic, but is guided by warmer currents, it stays closer to the equator throughout colder months.</p>
-                    <p>Attacks by tiger sharks in Hawaiian waters have been shown to increase between September and November, when tiger shark females are believed to migrate to give birth.</p>                    
+                    <p>Attacks by tiger sharks in Hawaiian waters have been shown to increase between September and November, when tiger shark females are believed to migrate to give birth.</p>
                 </div>
             </div>
 
         </div>
         <!--// Container -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/prefooter-CTA.php' ?>
-    
+        {% include "prefooter-CTA.njk" %}
+
     </div>
 
 
-    
+
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

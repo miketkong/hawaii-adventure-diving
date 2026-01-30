@@ -11,7 +11,7 @@
                         <p>Call or text: <a href="tel:{{ siteData.contact.phoneLink }}">{{ siteData.contact.phonePretty }}</a></p>
                     </div>
                     <div class="col-md-3">
-                        <p><a href="/contact.php">Send a message</a></p>
+                        <p><a href="/contact/">Send a message</a></p>
                     </div>
                 </div>
             </div>

@@ -1,58 +1,22 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+---
+layout: base
 
-<head>
-    <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
-    <meta charset="utf-8">
+pageTitle: "Oahu Whale Watching Tours | Hawaii Adventure Diving"
 
+ogTitle: "Oahu Whale Watching Tours by Hawaii Adventure Diving"
 
-    <title>Oahu Whale Watching Tours | Hawaii Adventure Diving</title>
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+pageDescription: "Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits."
 
-    <!-- Generic Open Graph Data -->
-    <meta property="og:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
-    <meta property="og:description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
-    <meta property="og:image" content="">
+pageURL: "https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/"
 
-    <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
-    <meta property="twitter:description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
-    <meta property="twitter:image" content="">
-
-    <!-- Schema Structured Data -->
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "name": "Private Whale Watching Group Tour (Seasonal: November - May)",
-            "description": "Witness humpback whales in their natural habitat during our 2-hour guided tour. Amenities include comfortable boat seating, expert guides, and educational commentary. Price is per group. Available November through May.",
-            "image": "https://hawaiiadventurediving.com/images/product-card-img-whale-watching-tour.webp",
-            "offers": {
-                "@type": "Offer",
-                "price": "450",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/LimitedAvailability"
-            }
-        }
-    </script>
-    <!--// Schema Structured Data -->
-
-    <!-- head.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
-
-</head>
+ogImage: ""
+---
 
 <body class="has-topbar whale-watching-tour-page tour-page bg-white">
     <!-- nav.php include -->
-    <?php
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php';
-    $thisPage = "whales";
-    ?>
+    {% include "nav.njk" %}
+
+    {% set thisPage = "whales" %}
 
     <script>
         if (window.innerWidth > 1024) {
@@ -142,10 +106,7 @@
             </div>
         </section>
 
-        <?php //include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/as-seen-on.php' 
-        ?>
-
-
+        
 
         <section class="tour-quick-guide bg-white" class="desktop">
             <div class="container">
@@ -187,7 +148,7 @@
         </section>
         <!--// Tour Quick Guide -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/business-info.php' ?>
+        {% include "business-info.njk" %}
 
         <section id="tour-days-and-times">
             <div class="container pt-30">
@@ -210,7 +171,7 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center-md">
                         <h2 class="blue-text">Reservations</h2>
-                        <p>All whale watching tours are 6 person maximum reserved by group and 2 hours in length. Reserve your tour today!</p>
+                        <p>All whale watching tours are 6 person maximum and 2 hours in length. Reserve your tour today!</p>
                     </div>
                 </div>
                 <div class="row">
@@ -223,7 +184,7 @@
                                     <img src="/images/product-card-img-whale-watching-tour.webp" alt="">
                                     <div class="text">
                                         <h2>Whale Watching Tour - Private Charter</h2>
-                                        <h3 class="price">$525-$575<br><span class="sub-text">(Plus taxes & fees)</span></h3>
+                                        <h3 class="price">$575<br><span class="sub-text">(Plus taxes & fees)</span></h3>
                                         <a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/">Book Now</a>
                                     </div>
                                 </div>
@@ -317,7 +278,7 @@
                                 </button>
                                 </h2>
                                 <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
-                                <div class="accordion-body">Our tour is suitable for children and elderly people, but it's always a good idea to check first if you have any doubts or special needs. Feel free to <a href="/contact.php">contact us</a> if you have any questions.</div>
+                                <div class="accordion-body">Our tour is suitable for children and elderly people, but it's always a good idea to check first if you have any doubts or special needs. Feel free to <a href="/contact/">contact us</a> if you have any questions.</div>
                                 </div>
                             </div>
 
@@ -372,7 +333,7 @@
                                 </button>
                                 </h2>
                                 <div id="faq-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight">
-                                <div class="accordion-body">There is a minimum age limit of 5 years old as long as they're accompanied by an adult. As far as physical requirements, guests should be able to climb stairs and navigate uneven terrain. Feel free to <a href="/contact.php">contact us</a> if you have any special needs or questions about specific requirements.</div>
+                                <div class="accordion-body">There is a minimum age limit of 5 years old as long as they're accompanied by an adult. As far as physical requirements, guests should be able to climb stairs and navigate uneven terrain. Feel free to <a href="/contact/">contact us</a> if you have any special needs or questions about specific requirements.</div>
                                 </div>
                             </div>-->
 
@@ -394,7 +355,7 @@
                                     </button>
                                 </h2>
                                 <div id="faq-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine">
-                                    <div class="accordion-body">While our tours are limited to 6 people per tour, we may be offering discounts for local residents as well as military. Feel free to <a href="/contact.php">contact us</a> to find out if we are running any discounts that may apply to you or your ggroup.</div>
+                                    <div class="accordion-body">While our tours are limited to 6 people per tour, we may be offering discounts for local residents as well as military. Feel free to <a href="/contact/">contact us</a> to find out if we are running any discounts that may apply to you or your ggroup.</div>
                                 </div>
                             </div>
 
@@ -420,15 +381,31 @@
 
     </div>
     <!--// Content Wrap -->
+    
 
-
-    <?php
-    $btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" >Book Now</a>';
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/big-CTA-pre-footer.php';
-    ?>
+    {% set btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" >Book Now</a>' %}
+    {% include "big-CTA-pre-footer.njk" %}
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
-</body>
+    {% include "footer.njk" %}
 
-</html>
+
+    <!-- Schema Stuff -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Private Whale Watching Group Tour (Seasonal: November - May)",
+            "description": "Witness humpback whales in their natural habitat during our 2-hour guided tour. Amenities include comfortable boat seating, expert guides, and educational commentary. Price is per group. Available November through May.",
+            "image": "https://hawaiiadventurediving.com/images/product-card-img-whale-watching-tour.webp",
+            "offers": {
+                "@type": "Offer",
+                "price": "450",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/LimitedAvailability"
+            }
+        }
+    </script>
+    <!--// Schema Stuff -->
+
+</body>

@@ -3,262 +3,260 @@
 
 <head>
     <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
     <meta charset="utf-8">
 
 
     <title>Cage-Free Shark Diving Tour FAQs | Hawaii Adventure Diving</title>
-    <meta name="robots" content="index,follow"> 
+    <meta name="robots" content="index,follow">
     <meta name="description" content="Dive into answers about our immersive shark diving experience in Oahu's open waters. From safety protocols to what you'll see, get all your questions answered before embarking on the adventure of a lifetime with Hawaii Adventure Diving.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Cage-Free Shark Diving Tour FAQs">
     <meta property="og:description" content="Dive into answers about our immersive shark diving experience in Oahu's open waters. From safety protocols to what you'll see, get all your questions answered before embarking on the adventure of a lifetime with Hawaii Adventure Diving.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Cage-Free Shark Diving Tour FAQs"> 
+    <meta property="twitter:title" content="Cage-Free Shark Diving Tour FAQs">
     <meta property="twitter:description" content="Dive into answers about our immersive shark diving experience in Oahu's open waters. From safety protocols to what you'll see, get all your questions answered before embarking on the adventure of a lifetime with Hawaii Adventure Diving.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq.php"> 
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-oahu-shark-diving-faq/">
     <meta property="twitter:image" content="">
 
 
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How do I book a shark diving tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You can book directly through our website from our Cage-Free Shark Diving Tour page or by contacting our customer service team at (808) 829-2203 Monday - Friday, 9am - 5pm HST."
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+                    "@type": "Question",
+                    "name": "How do I book a shark diving tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You can book directly through our website from our Cage-Free Shark Diving Tour page or by contacting our customer service team at (808) 829-2203 Monday - Friday, 9am - 5pm HST."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What payment methods do you accept?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We accept credit/debit cards, PayPal, and bank transfers."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need to pay in advance or can I pay on the day?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We require advance payment to secure your spot."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Are there any age or health restrictions for participants?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Participants should be at least 5 years old with parental consent. It's advised that anyone with serious health conditions consult with their physician before booking."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do you offer group or family discounts?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Discounts are occasionally available for groups of 4 or more. Contact us for more details."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I purchase the optional shark tour photography package?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Shark diving tour photography packages are available to all guests and include high-end, edited underwater photographs of both the guests and the sharks. We do try to have a photographer on board for all tour but to guarantee one, please call to add it to your reservation. Payment for photography packages can be made at the tour location via credit card, cash, or Venmo."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How often do the shark tours run?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Tours are available daily, weather permitting."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What times are the tours available?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We have morning and afternoon slots. Specific timings can be found on our Cage-Free Shark Diving Tour page."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How long is the tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Each tour lasts approximately 2 hours."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "When should I arrive for my scheduled tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Please arrive at least 30 minutes before your scheduled departure."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What is the cancellation policy?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "You'll have 48 hours to cancel prior to the date of your tour. Any cancellations or No Shows within the 48 hours cancellation policy will result in your credit card being charged for the full amount of the tour you have reserved."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can I reschedule my booking?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, rescheduling can be done up to 48 hours prior to the tour, based on availability."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What happens if there's bad weather on the day of my tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "In case of bad weather, we'll offer a rescheduled date or a full refund."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How will I be informed of any changes or cancellations?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We'll contact you via the email or phone number you provided during booking."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is it safe to swim with sharks in the open ocean?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, Hawaii Adventure Diving has some of the top shark handlers in Hawaii and even the world. They possess an exceptionally high understanding of how to safely handle and redirect sharks as well as understanding their behavior, body language, and how to appropriately behave around them and protect guests in all scenarios."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What safety measures do you have in place?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We have highly trained and certified safety divers, first aid equipment, and communication devices on board."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Are there trained safety divers in the water during the tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, our safety divers will be with you throughout the swim."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What should I do in case of an emergency during the tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Always follow the crew's instructions. If you feel uncomfortable, signal a safety diver or crew member immediately."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Do I need any previous diving experience?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No previous experience is required, just basic swimming skills."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How close will I get to the sharks?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It's typical for sharks to come quite close, but it's always important to respect their space. The high level of experience and understanding by our staff allows us to grant guests a high level of freedom to dive and swim when shark behavior allows for it. In other words, we aim for more immersive interactions opposed to other boats who may be more of just observing, but if you prefer to keep your distance you are more than welcome to do that and our safety divers will ensure that you have a safe, comfortable, and enjoyable experience."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What species of sharks can I expect to see?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Common species include Galapagos, Hammerhead, and Tiger Sharks, among others."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Will I receive any training or briefing before the swim?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, a comprehensive safety and informational briefing is provided before each dive.Yes, a comprehensive safety and informational briefing is provided before each dive."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is snorkel gear provided or should I bring my own?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We provide snorkel gear, but you're welcome to bring your own if you prefer."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How does the tour impact the local shark populations and marine environment?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "We adhere to eco-friendly practices to minimize impact and support conservation initiatives. Our staff are passionate stuards of the environment, several of which have formal training and degrees in biology and environmental sciences."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does the company support any conservation or environmental initiatives?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Yes, a portion of our proceeds goes towards marine conservation projects."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "What can I do to minimize my impact on the marine environment during the tour?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Avoid touching marine life, use reef-safe sunscreens, and always follow our guidelines."
+                    }
                 }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What payment methods do you accept?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We accept credit/debit cards, PayPal, and bank transfers."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Do I need to pay in advance or can I pay on the day?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We require advance payment to secure your spot."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Are there any age or health restrictions for participants?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Participants should be at least 5 years old with parental consent. It's advised that anyone with serious health conditions consult with their physician before booking."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Do you offer group or family discounts?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Discounts are occasionally available for groups of 4 or more. Contact us for more details."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "How do I purchase the optional shark tour photography package?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Shark diving tour photography packages are available to all guests and include high-end, edited underwater photographs of both the guests and the sharks. We do try to have a photographer on board for all tour but to guarantee one, please call to add it to your reservation. Payment for photography packages can be made at the tour location via credit card, cash, or Venmo."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "How often do the shark tours run?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Tours are available daily, weather permitting."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What times are the tours available?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We have morning and afternoon slots. Specific timings can be found on our Cage-Free Shark Diving Tour page."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "How long is the tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Each tour lasts approximately 2 hours."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "When should I arrive for my scheduled tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Please arrive at least 30 minutes before your scheduled departure."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What is the cancellation policy?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You'll have 48 hours to cancel prior to the date of your tour. Any cancellations or No Shows within the 48 hours cancellation policy will result in your credit card being charged for the full amount of the tour you have reserved."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Can I reschedule my booking?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, rescheduling can be done up to 48 hours prior to the tour, based on availability."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What happens if there's bad weather on the day of my tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "In case of bad weather, we'll offer a rescheduled date or a full refund."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "How will I be informed of any changes or cancellations?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We'll contact you via the email or phone number you provided during booking."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Is it safe to swim with sharks in the open ocean?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, Hawaii Adventure Diving has some of the top shark handlers in Hawaii and even the world. They possess an exceptionally high understanding of how to safely handle and redirect sharks as well as understanding their behavior, body language, and how to appropriately behave around them and protect guests in all scenarios."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What safety measures do you have in place?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We have highly trained and certified safety divers, first aid equipment, and communication devices on board."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Are there trained safety divers in the water during the tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, our safety divers will be with you throughout the swim."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What should I do in case of an emergency during the tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Always follow the crew's instructions. If you feel uncomfortable, signal a safety diver or crew member immediately."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Do I need any previous diving experience?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No previous experience is required, just basic swimming skills."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "How close will I get to the sharks?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "It's typical for sharks to come quite close, but it's always important to respect their space. The high level of experience and understanding by our staff allows us to grant guests a high level of freedom to dive and swim when shark behavior allows for it. In other words, we aim for more immersive interactions opposed to other boats who may be more of just observing, but if you prefer to keep your distance you are more than welcome to do that and our safety divers will ensure that you have a safe, comfortable, and enjoyable experience."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What species of sharks can I expect to see?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Common species include Galapagos, Hammerhead, and Tiger Sharks, among others."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Will I receive any training or briefing before the swim?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, a comprehensive safety and informational briefing is provided before each dive.Yes, a comprehensive safety and informational briefing is provided before each dive."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Is snorkel gear provided or should I bring my own?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We provide snorkel gear, but you're welcome to bring your own if you prefer."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "How does the tour impact the local shark populations and marine environment?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We adhere to eco-friendly practices to minimize impact and support conservation initiatives. Our staff are passionate stuards of the environment, several of which have formal training and degrees in biology and environmental sciences."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "Does the company support any conservation or environmental initiatives?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes, a portion of our proceeds goes towards marine conservation projects."
-                }
-            }, 
-            {
-                "@type": "Question",
-                "name": "What can I do to minimize my impact on the marine environment during the tour?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Avoid touching marine life, use reef-safe sunscreens, and always follow our guidelines."
-                }
-            }
-        ]
-    }
+            ]
+        }
     </script>
 
-    
+
     <!-- Head Includes (CSS Styles, Fonts, Generic Meta Data, etc.) -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
 
 </head>
 
 <body class="has-topbar">
     <!-- nav.php include -->
-    <?php 
-    include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php';
-    $thisPage = "sharks";
-    ?>
+    {% include "nav.njk" %}
+
+    {% set thisPage = "sharks" %}
 
     <!-- Main Content-->
     <div class="content-wrap main-content inner-page bg-lightrays dark-background">
         <div class="container">
-            
+
 
             <section id="page-logo-and-title">
                 <div class="row page-head-logo desktop-only">
@@ -266,13 +264,13 @@
                 </div>
 
                 <div class="row pb-40 text-center">
-                    <div class="col-12" data-show="startbox"  data-show-delay="100">
+                    <div class="col-12" data-show="startbox" data-show-delay="100">
                         <a href="/"><img src="/images/page-title-faq.png" alt="Meet The Crew" class="page-title-img"></a>
                     </div>
                     <!--<div class="col-lg-8 offset-lg-2" data-show="startbox"  data-show-delay="200">
                         <h1 class="h1-page-subtitle">Cage-Free Shark Diving Tour FAQs</h1>
                     </div>-->
-                    <div class="col-lg-10 offset-lg-1" data-show="startbox"  data-show-delay="200">
+                    <div class="col-lg-10 offset-lg-1" data-show="startbox" data-show-delay="200">
                         <h1>Shark Diving <span class="no-break">Tour FAQ</span></h1>
                         <p>Dive into answers about our immersive shark diving experience with Oahu's premiere shark diving tour by Hawaii Adventure Diving.</p>
                     </div>
@@ -294,7 +292,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapse-one" class="accordion-collapse collapse" aria-labelledby="flush-heading-one" data-bs-parent="#accordionFlush">
-                                <div class="accordion-body">You can book directly through our website from our <a href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php">Cage-Free Shark Diving Tour</a> page or by contacting our customer service team at <a href="tel:+18088292203">(808) 829-2203</a> Monday - Friday, 9am - 5pm HST.
+                                <div class="accordion-body">You can book directly through our website from our <a href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">Cage-Free Shark Diving Tour</a> page or by contacting our customer service team at <a href="tel:+18088292203">(808) 829-2203</a> Monday - Friday, 9am - 5pm HST.
                                 </div>
                             </div>
                         </div>
@@ -369,7 +367,7 @@
                             </div>
                         </div>
                         <!--// Accordion Item -->
-                        
+
                     </div>
                     <!--// Accordion Group -->
                 </div>
@@ -405,7 +403,7 @@
                                 </button>
                             </h2>
                             <div id="flush-collapse-eight" class="accordion-collapse collapse" aria-labelledby="flush-heading-eight" data-bs-parent="#accordionFlushTwo">
-                                <div class="accordion-body"> We have morning and afternoon slots. Specific timings can be found on our <a href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php">Cage-Free Shark Diving Tour</a> page.
+                                <div class="accordion-body"> We have morning and afternoon slots. Specific timings can be found on our <a href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">Cage-Free Shark Diving Tour</a> page.
                                 </div>
                             </div>
                         </div>
@@ -711,17 +709,18 @@
             <!--// CONSERVATION -->
 
             <!-- Footer CTA Blue Background -->
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/prefooter-CTA.php' ?>
+            {% include "prefooter-CTA.njk" %}
 
         </div>
         <!--// Container -->
-    
+
     </div>
     <!--// Main Content -->
-    
-    
+
+
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
-    
+    {% include "footer.njk" %}
+
 </body>
+
 </html>

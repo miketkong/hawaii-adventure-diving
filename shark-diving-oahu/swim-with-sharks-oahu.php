@@ -9,7 +9,7 @@
     <?php
     $contentTitle = "Swim with Sharks in Oahu: An Unforgettable Encounter";
     $contentDescription = "Dive into the thrilling experience of swimming with sharks in Oahu. Explore the best tours, safety tips, and the incredible marine life you'll encounter in Hawaii's crystal-clear waters.";
-    $contentURL = "https://hawaiiadventurediving.com/shark-diving-oahu/swim-with-sharks-oahu.php";
+    $contentURL = "https://hawaiiadventurediving.com/shark-diving-oahu/swim-with-sharks-oahu/";
     $contentFeatureImageURL = "https://hawaiiadventurediving.com/articles/images/2024/shark-diving-tour-guests-hold-safety-rope.jpg";
     ?>
 
@@ -40,7 +40,7 @@
 
 <body class="has-topbar scrolling-black-fade">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
@@ -98,14 +98,14 @@
 
                     <p>This article aims to be personable, informative, and captures the essence of the unique, transformative experience offered by the cage-free shark diving experiences made possible by Hawaii Adventure Diving. Please let us know if there are any questions that you'd like answered. We'd love to hear from you!</p>
 
-                    <div class="text-center"><a class="btn btn-accent-1 mb-50" style="margin-top: -15px" href="/contact.php">Contact Us</a></div>
+                    <div class="text-center"><a class="btn btn-accent-1 mb-50" style="margin-top: -15px" href="/contact/">Contact Us</a></div>
 
 
                 </div>
             </div>
 
 
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/prefooter-CTA.php' ?>
+            {% include "prefooter-CTA.njk" %}
 
         </div>
         <!--// Container -->
@@ -115,7 +115,7 @@
 
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

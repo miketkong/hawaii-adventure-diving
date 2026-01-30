@@ -18,7 +18,7 @@
 
 <body class="has-topbar page-404 homepage">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
@@ -36,7 +36,7 @@
             <div class="row text-center">
                 <div class="col-lg-8 offset-lg-2 pb-60 pt-40" data-show="startbox" data-show-delay="200">
                     <h1 class="heading-404">Whoops!</h1>
-                    <p>We couldn't find that page. If you think this is an error, please <a class="yellow-link" href="/contact.php">contact us</a> today. You can also click the button below to go to the Hawaii Adventure Diving home page.</p>
+                    <p>We couldn't find that page. If you think this is an error, please <a class="yellow-link" href="/contact/">contact us</a> today. You can also click the button below to go to the Hawaii Adventure Diving home page.</p>
                     <div>
                         <!-- Button--><a class="btn btn-accent-1" href="/">Go To Home Page</a>
                     </div>
@@ -45,7 +45,7 @@
         </div>
         <!--// Logo and 404 Text Blurb -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/as-seen-on.php' ?>
+        {% include "as-seen-on.njk" %}
 
         <!-- PRODUCT CARDS & REVIEWS SECTION -->
         <section id="product-cards" class="dark-background">
@@ -66,9 +66,9 @@
                         <!-- PRODUCT CARD - SHARK DIVING -->
                         <div class="product-card col-12 col-sm-6 mb-20" id="cage-free-shark-diving" data-show="startbox">
                             <img src="/images/product-card-divers-rope-sharks.webp" alt="Cage Free Shark Diving">
-                            <a class="link-hit-area" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php"></a>
+                            <a class="link-hit-area" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"></a>
                             <div class="card-buttons">
-                                <a class="btn btn-md btn-secondary" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php"><span>Learn More</span></a>
+                                <a class="btn btn-md btn-secondary" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Learn More</span></a>
                                 <a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Book Now</span></a>
                             </div>
                         </div>
@@ -77,9 +77,9 @@
                         <!-- PRODUCT CARD - WHALE WATCHING -->
                         <div class="product-card col-12 col-sm-6 mb-20" id="whale-watching" data-show="startbox">
                             <img src="/images/product-card-whale-watching.jpg" alt="Cage Free Shark Diving">
-                            <a class="link-hit-area" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php"></a>
+                            <a class="link-hit-area" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/"></a>
                             <div class="card-buttons">
-                                <a class="btn btn-md btn-secondary" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php"><span>Learn More</span></a>
+                                <a class="btn btn-md btn-secondary" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/"><span>Learn More</span></a>
                                 <a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/"><span>Book Now</span></a>
                             </div>
                         </div>
@@ -106,7 +106,7 @@
                             <div class="row">
                                 <div class="col-lg-8 offset-lg-2 text-center">
                                     <img class="mb-50 logo w-sm-100" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
-                                    <h2 class="mb-25 text-white"><a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php" class="link-plain">Book <span class="hand-underline-yellow">Your</span> Adventure Today.</a></h2>
+                                    <h2 class="mb-25 text-white"><a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/" class="link-plain">Book <span class="hand-underline-yellow">Your</span> Adventure Today.</a></h2>
                                     <p class="mb-50 text-white" data-show-delay="100">Embrace the thrill of open ocean, cage-free shark diving with Hawaii Adventure Diving, the top-rated adventure outfit on the island with a perfect 5-star Google rating. With a passion that extends beyond business, our highly-skilled crew delivers transformative experiences, offering unparalleled service where safety, education, and an unforgettable journey are our hallmarks.</p>
                                     <div>
                                         <!-- Button--><a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/">Book Now</a>
@@ -128,7 +128,7 @@
 
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

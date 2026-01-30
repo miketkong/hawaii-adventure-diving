@@ -1,0 +1,57 @@
+{% if thisPage == "sharks" %}
+  {% set tourText = "Our team, comprised of Hawaii's and the world's top shark handlers, offers unrivaled expertise in shark behavior and safety. Their knowledge enables us to offer guests unprecedented freedom to swim and dive with sharks for truly immersive and interactive experiences. Dive with us and experience why our guests recommend us over any other tours." %}
+{% elif thisPage == "whales" %}
+  {% set tourText = "Our crew have the experience and qualifications to make your experience whale watching thrilling, educational, and safe." %}
+{% endif %}
+
+<section id="team" class="pano-section bg-white text-left">
+  <div class="container pt-30">
+    <div class="row text-center-md">
+      <div class="col-lg-10 offset-lg-1">
+        <h1 class="h1-small-leader-text md-text-center" style="color: #000;">
+          Hawaii's Best Shark <span class="no-break">Diving Tour</span>
+        </h1>
+        <h2 class="blue-text">A Legendary Team</h2>
+        <p>{{ tourText }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pb-40">
+    <div class="row media-cards" id="team-cards">
+      {% for bio in siteData.teamBios %}
+      <div class="col-sm-6 col-lg-3 team-bio">
+        <div class="media-card">
+          <img src="{{ bio.image }}" alt="{{ bio.alt }}" />
+          <div class="text">
+            <a class="insta-link" target="_blank" rel="noreferrer" href="{{ bio.instagramUrl }}"><span>{{ bio.instagram }}</span></a>
+            <h2>{{ bio.name }}</h2>
+            <h3>{{ bio.role }}</h3>
+            <p>{{ bio.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <a class="btn btn-accent-1 big-button" href="/about-us/">View all</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("team-cards");
+    if (!container) return;
+    const cards = Array.from(container.querySelectorAll(".team-bio"));
+    const shuffled = cards.slice();
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    container.innerHTML = "";
+    shuffled.slice(0, 4).forEach((card) => container.appendChild(card));
+  });
+</script>

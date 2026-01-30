@@ -10,18 +10,18 @@
     <title>Oahu Whale Watching Tours | Hawaii Adventure Diving</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
     <meta property="og:description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
     <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
     <meta property="twitter:description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/">
     <meta property="twitter:image" content="">
 
     <!-- Schema Structured Data -->
@@ -49,10 +49,9 @@
 
 <body class="has-topbar whale-watching-tour-page tour-page bg-white">
     <!-- nav.php include -->
-    <?php
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php';
-    $thisPage = "whales";
-    ?>
+    {% include "nav.njk" %}
+
+    {% set thisPage = "whales" %}
 
     <script>
         if (window.innerWidth > 1024) {
@@ -142,8 +141,7 @@
             </div>
         </section>
 
-        <?php //include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/as-seen-on.php' 
-        ?>
+
 
 
 
@@ -187,7 +185,7 @@
         </section>
         <!--// Tour Quick Guide -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/business-info.php' ?>
+        {% include "business-info.njk" %}
 
         <section id="tour-days-and-times">
             <div class="container pt-30">
@@ -317,7 +315,7 @@
                                 </button>
                                 </h2>
                                 <div id="faq-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree">
-                                <div class="accordion-body">Our tour is suitable for children and elderly people, but it's always a good idea to check first if you have any doubts or special needs. Feel free to <a href="/contact.php">contact us</a> if you have any questions.</div>
+                                <div class="accordion-body">Our tour is suitable for children and elderly people, but it's always a good idea to check first if you have any doubts or special needs. Feel free to <a href="/contact/">contact us</a> if you have any questions.</div>
                                 </div>
                             </div>
 
@@ -372,7 +370,7 @@
                                 </button>
                                 </h2>
                                 <div id="faq-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight">
-                                <div class="accordion-body">There is a minimum age limit of 5 years old as long as they're accompanied by an adult. As far as physical requirements, guests should be able to climb stairs and navigate uneven terrain. Feel free to <a href="/contact.php">contact us</a> if you have any special needs or questions about specific requirements.</div>
+                                <div class="accordion-body">There is a minimum age limit of 5 years old as long as they're accompanied by an adult. As far as physical requirements, guests should be able to climb stairs and navigate uneven terrain. Feel free to <a href="/contact/">contact us</a> if you have any special needs or questions about specific requirements.</div>
                                 </div>
                             </div>-->
 
@@ -394,7 +392,7 @@
                                     </button>
                                 </h2>
                                 <div id="faq-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine">
-                                    <div class="accordion-body">While our tours are limited to 6 people per tour, we may be offering discounts for local residents as well as military. Feel free to <a href="/contact.php">contact us</a> to find out if we are running any discounts that may apply to you or your ggroup.</div>
+                                    <div class="accordion-body">While our tours are limited to 6 people per tour, we may be offering discounts for local residents as well as military. Feel free to <a href="/contact/">contact us</a> to find out if we are running any discounts that may apply to you or your ggroup.</div>
                                 </div>
                             </div>
 
@@ -422,13 +420,11 @@
     <!--// Content Wrap -->
 
 
-    <?php
-    $btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" >Book Now</a>';
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/big-CTA-pre-footer.php';
-    ?>
+    {% set btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" >Book Now</a>' %}
+    {% include "big-CTA-pre-footer.njk" %}
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

@@ -1,0 +1,80 @@
+<!-- VIDEO BANNER BACKGROUND - Taken from /assets/includes/video-banner-shark.php -->
+<div id="banner-video-bgd" class="video-container">
+    <div id="player"></div>
+</div>
+<!--// VIDEO BANNER BACKGROUND -->
+
+<script>
+    let youtubeVideoID;
+    let bannerVideoOverlay = document.getElementById("banner-video-overlay");
+    let doneLoading = false;
+    let player;
+
+    // Start the video loading process after the page has finished loading
+    // Hopefully this speeds up the page loading
+    document.addEventListener('DOMContentLoaded', function() {
+        youtubeVideoID = getYoutubeVideoID();
+        startYouTubeEmbedAPI();
+    });
+
+    // Get YouTube Video ID based on window width
+    function getYoutubeVideoID() {
+        if (window.innerWidth > 576) {
+            mobile = false;
+            youtubeVideoID = "asEnYgaGBV8";
+            return youtubeVideoID;
+        } else {
+            mobile = true;
+            youtubeVideoID = "cg5OSCuulWE";
+            return youtubeVideoID;
+        }
+    }
+
+    function startYouTubeEmbedAPI() {
+        console.log("Inside startYouTubeEmbedAPI()");
+
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    }
+
+    // Hawaii Adventure Diving 
+    function onYouTubeIframeAPIReady() {
+        console.log("Inside onYouTubeIframeAPIReady()");
+        player = new YT.Player('player', {
+            height: '390',
+            width: '640',
+            videoId: youtubeVideoID,
+            playerVars: {
+                'loop': 1,
+                'playlist': youtubeVideoID,
+                'playsinline': 1,
+                'autoplay': 1,
+                'controls': 0,
+                'mute': 1
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !doneLoading) {
+            doneLoading = true;
+            fadeOutVideoOverlay();
+        }
+    }
+
+    function fadeOutVideoOverlay() {
+        bannerVideoOverlay.classList.add("fade-out");
+    }
+</script>
+

@@ -3,45 +3,45 @@
 
 <head>
     <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
     <meta charset="utf-8">
 
 
     <title>Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="Connect with our world-class team of shark diving experts and multimedia professionals to charter your film project. We leverage our rich experience and industry know-how to help you capture the footage you envision.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/contact-custom-charters.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/contact-custom-charters/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
     <meta property="og:description" content="Connect with our world-class team of shark diving experts and multimedia professionals to charter your film project. We leverage our rich experience and industry know-how to help you capture the footage you envision.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/contact-custom-charters.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/contact-custom-charters/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving"> 
+    <meta property="twitter:title" content="Custom Charters for Film Crews, Professionals, Media - Hawaii Adventure Diving">
     <meta property="twitter:description" content="Connect with our world-class team of shark diving experts and multimedia professionals to charter your film project. We leverage our rich experience and industry know-how to help you capture the footage you envision.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/contact-custom-charters.php"> 
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/contact-custom-charters/">
     <meta property="twitter:image" content="">
 
 
-    
+
     <!-- head.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
 
 
 </head>
 
 <body class="contact-page has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
     <!-- Main Content-->
-    <div class="content-wrap main-content inner-page bg-lightrays">
-        
-    
+    <div class="content-wrap main-content inner-page bg-lightrays pb-80">
+
+
         <div class="container">
 
             <div class="row page-head-logo desktop-only">
@@ -49,16 +49,16 @@
             </div>
 
             <div class="row pb-40 text-center">
-                <div class="col" data-show="startbox"  data-show-delay="100">
+                <div class="col" data-show="startbox" data-show-delay="100">
                     <a href="/"><img src="/images/page-title-custom-charters.png" alt="Contact Custom Charters" class="page-title-img"></a>
                 </div>
-                <div class="col-lg-8 offset-lg-2" data-show="startbox"  data-show-delay="200">
+                <div class="col-lg-8 offset-lg-2" data-show="startbox" data-show-delay="200">
                     <p>Connect with our world-class team of shark diving experts and multimedia professionals to charter your film project. We leverage our rich experience and industry know-how to help you capture the footage you envision.</p>
                 </div>
             </div>
-            
 
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/contact-info.php' ?>
+
+            {% include "contact-info.njk" %}
 
         </div>
         <!--// container -->
@@ -75,7 +75,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <h2 class="white-text mb-40 text-center" data-show="startbox">Send a Message</h2>
                         <!-- Form-->
-                        <form id="contactForm" name="contactForm" action="/send.php" method="POST" data-show="startbox">
+                        <form id="contactForm" name="contactForm" action="/send/" method="POST" data-show="startbox">
                             <div class="row gy-40 white-text">
                                 <div class="col-12 col-md-4 requiredContact"><input class="form-control" type="text" id="requiredContact" name="requiredContact" placeholder="Required Contact *"></div>
                                 <div class="col-12 col-md-4"><input class="form-control" type="text" id="yourName" name="yourName" placeholder="Your Name *"></div>
@@ -92,42 +92,42 @@
                         </div>
 
                         <script type="text/javascript">
-                            function validateForm(){
+                            function validateForm() {
                                 //alert("Validating form...");
 
                                 document.getElementById('status').setAttribute("class", "hide");
-                                var requiredContact =  document.getElementById('requiredContact').value;
+                                var requiredContact = document.getElementById('requiredContact').value;
                                 if (requiredContact != "") {
                                     document.getElementById('status').setAttribute("class", "p-3 show");
                                     document.getElementById('status').innerHTML = "*error";
                                     return false;
                                 }
-                                var yourName =  document.getElementById('yourName').value;
+                                var yourName = document.getElementById('yourName').value;
                                 if (yourName == "") {
                                     document.getElementById('status').setAttribute("class", "p-3 show");
                                     document.getElementById('status').innerHTML = "*Your name cannot be empty";
                                     return false;
                                 }
-                                var yourEmail =  document.getElementById('yourEmail').value;
+                                var yourEmail = document.getElementById('yourEmail').value;
                                 if (yourEmail == "") {
                                     document.getElementById('status').setAttribute("class", "p-3 show");
                                     document.getElementById('status').innerHTML = "*Your email cannot be empty";
                                     return false;
                                 } else {
                                     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                                    if(!re.test(yourEmail)){
+                                    if (!re.test(yourEmail)) {
                                         document.getElementById('status').setAttribute("class", "p-3 show");
                                         document.getElementById('status').innerHTML = "Invalid email address";
                                         return false;
                                     }
                                 }
-                                var yourPhone =  document.getElementById('yourPhone').value;
+                                var yourPhone = document.getElementById('yourPhone').value;
                                 if (yourPhone == "") {
                                     document.getElementById('status').setAttribute("class", "p-3 show");
                                     document.getElementById('status').innerHTML = "*Your phone cannot be empty";
                                     return false;
                                 }
-                                var yourMessage =  document.getElementById('yourMessage').value;
+                                var yourMessage = document.getElementById('yourMessage').value;
                                 if (yourMessage == "") {
                                     document.getElementById('status').setAttribute("class", "p-3 show");
                                     document.getElementById('status').innerHTML = "*Your message cannot be empty";
@@ -142,8 +142,8 @@
 
 
                     </div>
-                </div>    
-            </div>  
+                </div>
+            </div>
 
         </section>
 
@@ -151,9 +151,9 @@
     <!-- // content-wrap -->
 
 
-    
+
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

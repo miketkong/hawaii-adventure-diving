@@ -1,168 +1,22 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+---
+layout: base
 
-<head>
-    <?php // GTM and other top level stuff
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php';
+pageTitle: "Dive Cage-Free with World-Class Shark Handlers"
 
-    $lastModifiedTime = filemtime(__FILE__);
-    $formattedTime = date("c", $lastModifiedTime); // Format it to the ISO 8601 date
-    $pageTitle = "Cage Free Shark Diving (Oahu, Hi) | Info and Booking";
-    $ogTitle = "Cage Free Shark Diving (Oahu, Hi) | Info and Booking";
-    $pageDesrcription = "Ready to Book Your Tour? View tour details, schedules, and make reservations for your ultimate Hawaii cage free shark diving experience today.";
-    $pageURL = "https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php";
-    $ogImage = "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu-1200x637.jpg";
-    ?>
+ogTitle: "Dive Cage-Free with World-Class Shark Handlers"
 
-    <meta charset="utf-8">
-    <meta name="robots" content="index,follow">
-    <title><? echo $pageTitle ?></title>
+pageDescription: "Experience maximum immersion and interaction. Cage-free shark dives lead by World-class, expert shark handlers. Safe and family friendly! Ages: 5+."
 
-    <meta name="description" content="<? echo $pageDesrcription ?>">
-    <link rel="canonical" href="<? echo $pageURL ?>">
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php echo $ogTitle ?>">
-    <meta property="og:description" content="<? echo $pageDescription ?>">
-    <meta property="og:url" content="<? echo $pageURL ?>">
-    <meta property="og:site_name" content="Hawaii Adventure Diving" />
-    <meta property="article:modified_time" content="<?php echo $formattedTime; ?>" />
-    <meta property="og:image" content="<?php echo $ogImage; ?>">
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="twitter:title" content="<?php echo $ogTitle ?>">
-    <meta property="twitter:description" content="<? echo $pageDescription ?>">
-    <meta property="twitter:url" content="<? echo $pageURL ?>">
-    <meta property="twitter:image" content="<?php echo $ogImage; ?>">
+pageURL: "https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"
 
-    <!-- Schema Structured Data -->
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "Shark Diving Tour",
-            "offers": [{
-                    "@type": "Offer",
-                    "description": "Cage-free Shark Diving Tour. High-quality snorkel gear provided for the duration of the tour. Professional underwater photography available upon request and for an aditional cost.",
-                    "price": "150",
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock",
-                    "validFrom": "2023-11-01T07:00:00-10:00"
-                },
-                {
-                    "@type": "Offer",
-                    "description": "KAMA'AINA & MILITARY Discounted Shark Tour. High-quality snorkel gear provided for the duration of the tour. Professional underwater photography available upon request and for an aditional cost.",
-                    "price": "125",
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock",
-                    "eligibleRegion": [{
-                            "@type": "Country",
-                            "name": "US"
-                        },
-                        {
-                            "@type": "AdministrativeArea",
-                            "name": "HI"
-                        }
-                    ],
-                    "validFor": {
-                        "@type": "QuantitativeValue",
-                        "value": "Local residents and active military personnel"
-                    },
-                    "validFrom": "2023-11-01T07:00:00-10:00"
-                },
-                {
-                    "@type": "Offer",
-                    "description": "Non-diver Ride Along Tour",
-                    "price": "100",
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock",
-                    "validFrom": "2023-11-01T07:00:00-10:00"
-                },
-                {
-                    "@type": "Offer",
-                    "description": "Shark Diving Photos Package",
-                    "price": "75",
-                    "priceCurrency": "USD",
-                    "availability": "https://schema.org/InStock",
-                    "validFrom": "2023-11-01T07:00:00-10:00"
-                }
-            ],
-            "description": "Experience the thrill of cage-free shark diving on our Shark Diving Tour. Encounter these magnificent creatures in their natural habitat. We also offer a KAMA'AINA & MILITARY discount, a non-diver Ride Along experience, and a photography package to capture your adventure. Transportation to and from hotels is not included.",
-            "url": "<?php echo $pageURL; ?>",
-            "image": "https://hawaiiadventurediving.com/wp-content/uploads/path-to-your-shark-tour-image.jpg",
-            "brand": "Hawaii Adventure Diving",
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "<?php echo $results['averageRating']; ?>",
-                "reviewCount": "<?php echo $results['totalReviews']; ?>"
-            },
-            "availabilityStarts": "2023-11-01T07:00:00-10:00",
-            "availabilityEnds": "2023-11-01T17:00:00-10:00",
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Shark Tour Packages",
-                "itemListElement": [{
-                        "@type": "OfferCatalog",
-                        "name": "Shark Diving Tour",
-                        "itemListElement": [{
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Shark Diving Tour"
-                            }
-                        }]
-                    },
-                    {
-                        "@type": "OfferCatalog",
-                        "name": "KAMA'AINA & MILITARY Discount",
-                        "itemListElement": [{
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "KAMA'AINA & MILITARY Shark Tour"
-                            }
-                        }]
-                    },
-                    {
-                        "@type": "OfferCatalog",
-                        "name": "Ride Along",
-                        "itemListElement": [{
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Ride Along Tour"
-                            }
-                        }]
-                    },
-                    {
-                        "@type": "OfferCatalog",
-                        "name": "Shark Diving Photos",
-                        "itemListElement": [{
-                            "@type": "Offer",
-                            "itemOffered": {
-                                "@type": "Service",
-                                "name": "Shark Diving Photography Package"
-                            }
-                        }]
-                    }
-                ]
-            }
-        }
-    </script>
-    <!--// Schema Structured Data -->
-
-
-    <!-- Head Includes (CSS Styles, Fonts, Generic Meta Data, etc.) -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
-
-</head>
+ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu-1200x637.jpg"
+---
 
 <body class="has-topbar shark-tour-page tour-page bg-white">
     <!-- nav.php include -->
-    <?php
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php';
-    $thisPage = "sharks";
-    ?>
+    {% include "nav.njk" %}
+
+    {% set thisPage = "sharks" %}
 
     <div class="content-wrap">
         <section id="page-banner" class="hero-video-banner hero-banner">
@@ -170,7 +24,7 @@
                 <div id="banner-video-overlay" class="video-overlay-image"></div>
                 <div class="video-overlay-color"></div>
 
-                <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/video-banner-shark.php' ?>
+                {% include "shark-video-banner.njk" %}
 
                 <div class="banner-contents">
                     <div class="row page-head-logo desktop">
@@ -193,7 +47,7 @@
             </div>
         </section>
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/as-seen-on.php' ?>
+        {% include "as-seen-on.njk" %}
 
 
         <section id="no-limits" class="pano-section white-text text-left">
@@ -216,7 +70,7 @@
             </div>
         </section>
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/team-section.php' ?>
+        {% include "team-section.njk" %}
 
         <section id="be-inspired" class="pano-section white-text text-left">
             <div class="container-fluid gx-0">
@@ -352,8 +206,7 @@
         </section>
         <!--// Tour Quick Guide -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/business-info.php' ?>
-
+        {% include "business-info.njk" %}
 
         <!-- TOUR DATES AND TIMES SECTION -->
         <section id="tour-days-and-times">
@@ -451,7 +304,7 @@
                             <div class="text">
                                 <h2>Shark Diving Photos</h2>
                                 <h3 class="price">$75 person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
-                                <a class="btn btn-accent-1 big-button" href="/contact.php">Call To Add</a>
+                                <a class="btn btn-accent-1 big-button" href="/contact/">Call To Add</a>
                             </div>
                         </div>
                     </div>
@@ -463,7 +316,7 @@
 
         <!-- SHARK TOUR GALLERY -->
         <div id="shark-tour-gallery"></div>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/shark-tour-gallery-section.php' ?>
+        {% include "shark-tour-gallery-section.njk" %}
 
 
         <section id="faq" class="bg-white pt-40 pb-30">
@@ -566,15 +419,10 @@
     </div>
     <!--// Content Wrap -->
 
-
-    <?php
-    $btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" >Book Now</a>';
-    include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/big-CTA-pre-footer.php';
-    ?>
+    {% set btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" >Book Now</a>' %}
+    {% include "big-CTA-pre-footer.njk" %}
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 
 </body>
-
-</html>

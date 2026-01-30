@@ -1,30 +1,30 @@
 <?php
-if($thisPage == "sharks") {
+if ($thisPage == "sharks") {
     $tourText = "Our team, comprised of Hawaii's and the world's top shark handlers, offers unrivaled expertise in shark behavior and safety. Their knowledge enables us to offer guests unprecedented freedom to swim and dive with sharks for truly immersive and interactive experiences. Dive with us and experience why our guests recommend us over any other tours.";
-}elseif($thisPage == "whales") {
+} elseif ($thisPage == "whales") {
     $tourText = "Our crew have the experience and qualifications to make your experience whale watching thrilling, educational, and safe.";
 }
 ?>
 
 <section id="team" class="pano-section bg-white text-left">
-            <div class="container pt-30">
-                <div class="row text-center-md">
-                    <div class="col-lg-10 offset-lg-1">
-                        <h1 class="h1-small-leader-text md-text-center" style="color: #000;">Hawaii's Best Shark <span class="no-break">Diving Tour</span></h1>
-                        <h2 class="blue-text">A Legendary Team</h2>
-                        <p><?php echo($tourText); ?></p>
-                    </div>
-                </div>
+    <div class="container pt-30">
+        <div class="row text-center-md">
+            <div class="col-lg-10 offset-lg-1">
+                <h1 class="h1-small-leader-text md-text-center" style="color: #000;">Hawaii's Best Shark <span class="no-break">Diving Tour</span></h1>
+                <h2 class="blue-text">A Legendary Team</h2>
+                <p><?php echo ($tourText); ?></p>
             </div>
+        </div>
+    </div>
 
-            <div class="container-fluid pb-40">
-                <div class="row media-cards">
-                    
-                <?php   
+    <div class="container-fluid pb-40">
+        <div class="row media-cards">
 
-                    //Randomly choose 4 bios to display
+            <?php
 
-                    $bio1 =     '<div class="col-sm-6 col-lg-3">
+            //Randomly choose 4 bios to display
+
+            $bio1 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-stacy.jpeg" alt="Photo of Hawaii Adventure Diving boat captain, Stacy Lieser snorkeling next to a large tiger shark.">
                                         <div class="text">
@@ -36,7 +36,7 @@ if($thisPage == "sharks") {
                                     </div>
                                 </div>';
 
-                    $bio2 =     '<div class="col-sm-6 col-lg-3">
+            $bio2 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-nick.jpeg" alt="Photo of Hawaii Adventure Diving safety diver Nick Lowenstine pressing his hand over the nose of a large tiger shark with another diver in the background taking an underwater photo.">
                                         <div class="text">
@@ -48,7 +48,7 @@ if($thisPage == "sharks") {
                                     </div>
                                 </div>';
 
-                    $bio3 =     '<div class="col-sm-6 col-lg-3">
+            $bio3 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-annika.jpeg" alt="Photo of Hawaii Adventure Diving safety diver Annika Zerne Young in the ocean petting the nose of a tiger shark while holding a GoPro.">
                                         <div class="text">
@@ -60,7 +60,7 @@ if($thisPage == "sharks") {
                                     </div>
                                 </div>';
 
-                    $bio4 =     '<div class="col-sm-6 col-lg-3">
+            $bio4 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-sammy.jpeg" alt="Photo of Hawaii Adventure Diving safety diver and photographer Sammy taking a picture of a shark with a professional underwater camera system.">
                                         <div class="text">
@@ -72,7 +72,7 @@ if($thisPage == "sharks") {
                                     </div>
                                 </div>';
 
-                    $bio5 =     '<div class="col-sm-6 col-lg-3">
+            $bio5 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-sava.webp" alt="Photo of Hawaii Adventure Diving captain and safety diver Sava under water swimming upright directly infront of a very large great white shark staring directly eye to eye, about two feet away from each other.">
                                         <div class="text">
@@ -84,7 +84,7 @@ if($thisPage == "sharks") {
                                     </div>
                                 </div>';
 
-                    $bio6 =     '<div class="col-sm-6 col-lg-3">
+            $bio6 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-danny.webp" alt="Photo of Hawaii Adventure Diving photographer and safety diver Danny Mako snorkeling underwater with a swirling swarm of menacing looking sharks.">
                                         <div class="text">
@@ -95,8 +95,8 @@ if($thisPage == "sharks") {
                                         </div>
                                     </div>
                                 </div>';
-                    
-                    $bio7 =     '<div class="col-sm-6 col-lg-3">
+
+            $bio7 =     '<div class="col-sm-6 col-lg-3">
                                     <div class="media-card">
                                         <img src="/images/bio-pic-sq-ro.webp" alt="Headshot of Hawaii Adventure Diving captain Ro O\'Rourke looking toward the camera on the Hawaii Adventure Diving Boat getting ready for a tour.">
                                         <div class="text">
@@ -108,23 +108,23 @@ if($thisPage == "sharks") {
                                     </div>
                                 </div>';
 
-                    $input = array("$bio1", "$bio2", "$bio3", "$bio4", "$bio5", "$bio6", "$bio7");
-                    $rand_keys = array_rand($input, 4);
-                    echo $input[$rand_keys[0]] . "\n";
-                    echo $input[$rand_keys[1]] . "\n";
-                    echo $input[$rand_keys[2]] . "\n";
-                    echo $input[$rand_keys[3]] . "\n";
-                    echo $input[$rand_keys[4]] . "\n";
-                    echo $input[$rand_keys[5]] . "\n";
-                    echo $input[$rand_keys[6]] . "\n";
-                    echo $input[$rand_keys[7]] . "\n";
-                ?>
+            $input = array("$bio1", "$bio2", "$bio3", "$bio4", "$bio5", "$bio6", "$bio7");
+            $rand_keys = array_rand($input, 4);
+            echo $input[$rand_keys[0]] . "\n";
+            echo $input[$rand_keys[1]] . "\n";
+            echo $input[$rand_keys[2]] . "\n";
+            echo $input[$rand_keys[3]] . "\n";
+            echo $input[$rand_keys[4]] . "\n";
+            echo $input[$rand_keys[5]] . "\n";
+            echo $input[$rand_keys[6]] . "\n";
+            echo $input[$rand_keys[7]] . "\n";
+            ?>
 
-                </div>
-                <div class="row">
-                    <div class="col text-center">
-                        <a class="btn btn-accent-1 big-button" href="/about-us.php">View all</a>
-                    </div>
-                </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <a class="btn btn-accent-1 big-button" href="/about-us/">View all</a>
             </div>
-        </section>
+        </div>
+    </div>
+</section>

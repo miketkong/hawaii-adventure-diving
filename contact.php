@@ -11,18 +11,18 @@
     <title>Contact Hawaii Adventure Diving</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="Questions? Need support? Contact us using any of the methods here and we'll get back to you as soon as possible.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/contact.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/contact/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Contact Hawaii Adventure Diving">
     <meta property="og:description" content="Questions? Need support? Contact us using any of the methods here and we'll get back to you as soon as possible.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/contact.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/contact/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
     <meta property="twitter:title" content="Contact Hawaii Adventure Diving">
     <meta property="twitter:description" content="Questions? Need support? Contact us using any of the methods here and we'll get back to you as soon as possible.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/contact.php">
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/contact/">
     <meta property="twitter:image" content="">
 
 
@@ -82,7 +82,7 @@
 
 <body class="contact-page has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
@@ -106,7 +106,7 @@
             </div>
 
 
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/contact-info.php' ?>
+            {% include "contact-info.njk" %}
 
         </div>
         <!--// container -->
@@ -123,7 +123,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <h2 class="white-text mb-40 text-center" data-show="startbox">Send a Message</h2>
                         <!-- Form-->
-                        <form id="contactForm" name="contactForm" action="/send.php" method="POST" data-show="startbox">
+                        <form id="contactForm" name="contactForm" action="/send/" method="POST" data-show="startbox">
                             <div class="row gy-40 white-text">
                                 <div class="col-12 col-md-4 requiredContact"><input class="form-control" type="text" id="requiredContact" name="requiredContact" placeholder="Required Contact *"></div>
                                 <div class="col-12 col-md-4"><input class="form-control" type="text" id="yourName" name="yourName" placeholder="Your Name *"></div>
@@ -213,7 +213,7 @@
 
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

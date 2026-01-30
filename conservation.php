@@ -3,56 +3,56 @@
 
 <head>
     <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
     <meta charset="utf-8">
 
 
     <title>Marine Stewardship: Resources and Allies for Ocean Conservation</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="Explore our curated resources and discover ways to contribute to the preservation of our world's magnificent oceans.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/conservation.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/conservation/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Meet The Crew | Hawaii Adventure Diving">
     <meta property="og:description" content="Explore our curated resources and discover ways to contribute to the preservation of our world's magnificent oceans.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/conservation.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/conservation/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Meet The Crew | Hawaii Adventure Diving"> 
+    <meta property="twitter:title" content="Meet The Crew | Hawaii Adventure Diving">
     <meta property="twitter:description" content="Explore our curated resources and discover ways to contribute to the preservation of our world's magnificent oceans.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/conservation.php"> 
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/conservation/">
     <meta property="twitter:image" content="">
-    
+
     <!-- head.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
 
 </head>
 
 <body class=" has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
     <!-- Main Content-->
     <div class="content-wrap main-content inner-page bg-lightrays">
         <div class="container">
-            
+
             <div class="row page-head-logo desktop-only">
                 <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
             </div>
 
             <div class="row pb-40">
-                <div class="col-12 text-center" data-show="startbox"  data-show-delay="100">
+                <div class="col-12 text-center" data-show="startbox" data-show-delay="100">
                     <a href="/"><img src="/images/page-title-conservation.png" alt="Marine Conservation" class="page-title-img"></a>
                 </div>
-                <div class="col" data-show="startbox"  data-show-delay="200">
+                <div class="col" data-show="startbox" data-show-delay="200">
                     <p>Welcome to our dedicated hub for marine conservation, a platform where we unite with individuals passionate about preserving the vast, beautiful blue. Dive into a wealth of resources, find organizations leading the fight against oceanic harm, and uncover how you can contribute to protecting our seas. Whether you're new to conservation or an experienced advocate, this is your gateway to meaningful marine stewardship. Let's journey together to make waves in ocean protection!</p>
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://www.whoi.edu/" target="_blank"><img src="/images/conservation-woods-hole-oceanographic-institution-feature.webp"></a>
                 </div>
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://seashepherd.org/" target="_blank"><img src="/images/conservation-seashepherd-2.webp"></a>
                 </div>
@@ -74,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://scripps.ucsd.edu/" target="_blank"><img src="/images/conservation-scripps.webp"></a>
                 </div>
@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://www.oceandefenders.org/" target="_blank"><img src="/images/conservation-ocean-defenders-alliance.webp"></a>
                 </div>
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://ocean.si.edu/" target="_blank"><img src="/images/conservation-smithsonian-ocean-portal.webp"></a>
                 </div>
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://coralreef.noaa.gov/" target="_blank"><img src="/images/conservation-NOAA-reef-conservation.webp"></a>
                 </div>
@@ -118,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://www.sharks.org/" target="_blank"><img src="/images/conservation-shark-research-institute.webp"></a>
                 </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://oceanconservancy.org/" target="_blank"><img src="/images/conservation-ocean-conservancy.webp"></a>
                 </div>
@@ -140,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://www.nfwf.org/programs/coral-reefs" target="_blank"><img src="/images/conservation-NFWF.webp"></a>
                 </div>
@@ -152,7 +152,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://sharkallies.org/" target="_blank"><img src="/images/conservation-shark-allies-2.webp"></a>
                 </div>
@@ -163,7 +163,7 @@
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <a href="https://wylandfoundation.org/" target="_blank"><img src="/images/conservation-wyland-foundation.webp"></a>
                 </div>
@@ -177,14 +177,14 @@
         </div>
         <!--// Container -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/prefooter-CTA.php' ?>
-    
+        {% include "prefooter-CTA.njk" %}
+
     </div>
 
 
-    
+
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

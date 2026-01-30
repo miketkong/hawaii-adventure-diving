@@ -3,60 +3,58 @@
 
 <head>
     <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
     <meta charset="utf-8">
 
 
     <title>Meet The Crew | Hawaii Adventure Diving</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="About the Hawaii Adventure Diving team. Our highly-skilled crew delivers offers unparalleled shark diving tours where safety, education, and an unforgettable journey are our hallmarks.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/about-us.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/about-us/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Meet The Crew | Hawaii Adventure Diving">
     <meta property="og:description" content="About the Hawaii Adventure Diving team. Our highly-skilled crew delivers offers unparalleled shark diving tours where safety, education, and an unforgettable journey are our hallmarks.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/about-us.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/about-us/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Meet The Crew | Hawaii Adventure Diving"> 
+    <meta property="twitter:title" content="Meet The Crew | Hawaii Adventure Diving">
     <meta property="twitter:description" content="About the Hawaii Adventure Diving team. Our highly-skilled crew delivers offers unparalleled shark diving tours where safety, education, and an unforgettable journey are our hallmarks.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/about-us.php"> 
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/about-us/">
     <meta property="twitter:image" content="">
-    
+
     <!-- head.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
 
 
 </head>
 
 <body class=" has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php' ?>
-
-
+    {% include "nav.njk" %}
 
     <!-- Main Content-->
     <div class="content-wrap main-content inner-page bg-lightrays">
         <div class="container">
-            
+
             <div class="row page-head-logo desktop-only">
                 <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
             </div>
 
             <div class="row pb-40 text-center">
-                <div class="col-12" data-show="startbox"  data-show-delay="100">
+                <div class="col-12" data-show="startbox" data-show-delay="100">
                     <a href="/"><img src="/images/page-title-meet-the-crew.png" alt="Meet The Crew" class="page-title-img"></a>
                 </div>
-                <div class="col-lg-8 offset-lg-2" data-show="startbox"  data-show-delay="200">
+                <div class="col-lg-8 offset-lg-2" data-show="startbox" data-show-delay="200">
                     <h1 class="h1-page-subtitle">The Hawaii Adventure Diving Shark Tour Team</h1>
                 </div>
-                <div class="col-lg-10 offset-lg-1" data-show="startbox"  data-show-delay="200">
+                <div class="col-lg-10 offset-lg-1" data-show="startbox" data-show-delay="200">
                     <p>Each of our professionally trained and experienced crew are masters at what they do, often possessing a lifetime of dedicated time in the ocean. They seamlessly integrate safety, education, respect, and exhilarating enjoyment into every tour, ensuring that each dive transcends the ordinary, becoming a transformative and unforgettable journey.</p>
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-5">
                     <div class="img-wrapper">
                         <a class="insta-link" target="_blank" href="https://www.instagram.com/stacylieser/?hl=en"><span>@Stacylieser</span></a>
@@ -68,7 +66,7 @@
                     <h3>Safety diver and Captain</h3>
                     <p>Stacy moved from Minnesota to the North Shore of Oahu in 2005. She earned her PADI divemaster certification and also received her bachelors degree in Communications at the University of Hawaii at Manoa. After years of working as a divemaster in 2017, Stacy got her Captains license with the USCG. </p>
                     <p>Marine Conservation is something that has always played an important role in her lifestyle. She enjoys being able to educate on shark conservation and the importance to our eco system, all while changing the perception of sharks. </p>
-                    <p>Stacy has worked with Hawaii Adventure Diving since 2015, the unique small atmosphere with guests and her fellow crew members has kept her motivated to continue to grow as a diver and captain. She is always looking forward to the next adventure. </p>                    
+                    <p>Stacy has worked with Hawaii Adventure Diving since 2015, the unique small atmosphere with guests and her fellow crew members has kept her motivated to continue to grow as a diver and captain. She is always looking forward to the next adventure. </p>
                 </div>
             </div>
 
@@ -84,10 +82,10 @@
                     <h3>Safety Diver</h3>
                     <p>For as long as he can remember Nick has had a deep passion for sharks and everything wild. He has been diving since the age of 14 where he completed his first shark dive in the Caribbean at the world famous Stuarts cove.</p>
                     <p>Since then Nick has been around the world diving with a multitude of shark species having now interacted with 28 different species. Nick also shares a passion for other large predators where he has experience interacting and photographing life such as giant Green Anaconda, Crocodiles and Big Cats.</p>
-                    <p>Nick currently holds credentials as a Dive instructor and Emergency first response instructor. </p>                    
+                    <p>Nick currently holds credentials as a Dive instructor and Emergency first response instructor. </p>
                 </div>
             </div>
-            
+
             <div class="row listable-content-card gx-0" data-show="startbox">
                 <div class="col-lg-5">
                     <div class="img-wrapper">
@@ -99,10 +97,10 @@
                     <h2>Annika Zerne Young</h2>
                     <h3>Safety Diver</h3>
                     <p>Annika has done her undergraduate studies in marine biology at the University of Hawai'i at Mānoa. She is a certified PADI Divemaster and has been diving and working with sharks on the North Shore of O'ahu since 2016. Annika has a deep respect for the ocean and sharks, and she emphasizes safety, of both divers and sharks, above all else. She is always excited to share a fun ocean adventure with divers, while also providing them with information on shark biology and behavior, as well as the ecological importance of sharks. </p>
-                    <p>One of Annika's greatest passions is marine conservation. She has lectured to several thousand elementary through high school students around the Western United States about shark conservation. Annika's other interests include traveling, art, photography, scuba and free diving, open ocean swimming, paddling, hiking, running, and skiing. She is an all around animal enthusiast, and her favorite animals include great white and tiger sharks, manta rays, and her rescue cats. She hopes to continue exploring the ocean and helping give back to it and to the marine animals she loves in anyway she can. </p>                    
+                    <p>One of Annika's greatest passions is marine conservation. She has lectured to several thousand elementary through high school students around the Western United States about shark conservation. Annika's other interests include traveling, art, photography, scuba and free diving, open ocean swimming, paddling, hiking, running, and skiing. She is an all around animal enthusiast, and her favorite animals include great white and tiger sharks, manta rays, and her rescue cats. She hopes to continue exploring the ocean and helping give back to it and to the marine animals she loves in anyway she can. </p>
                 </div>
             </div>
-            
+
             <div class="row listable-content-card gx-0" data-show="startbox">
                 <div class="col-lg-5">
                     <div class="img-wrapper">
@@ -115,7 +113,7 @@
                     <h3>Photographer & Safety Diver</h3>
                     <p>Sammy came to free diving and shark diving in the process of becoming a better cinematographer and photographer. Through that process, she became obsessed with sharks. She also obtained her PADI Divemaster and FII Freediver certifications. </p>
                     <p>She says, "It is equally amazing to share the water with sharks and just observe them as it is to film them. Watching the subtleties of shark behavior is the most interesting topic of shark research to me. I strive to be a good source of shark information." </p>
-                    <p>Prior to spending all of her time shark diving, she completed her Bachelor of Science in biomedical photography at the Rochester Institute of Technology in New York. She's worked in ophthalmic angiography, professional technical photography, as well as a diverse assortment of freelance photo and video production positions.</p>                    
+                    <p>Prior to spending all of her time shark diving, she completed her Bachelor of Science in biomedical photography at the Rochester Institute of Technology in New York. She's worked in ophthalmic angiography, professional technical photography, as well as a diverse assortment of freelance photo and video production positions.</p>
                 </div>
             </div>
 
@@ -164,17 +162,17 @@
                 </div>
             </div>
 
-            <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/prefooter-CTA.php' ?>
+            {% include "prefooter-CTA.njk" %}
 
         </div>
         <!--// Container -->
-    
+
     </div>
 
 
-    
+
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

@@ -3,65 +3,65 @@
 
 <head>
     <!-- GTM and other top level stuff -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head-top.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head-top.php' ?>
     <meta charset="utf-8">
 
 
     <title>Sharks Of The Hawaiian Waters | Hawaii Adventure Diving</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="Learn about what kind of sharks are in Hawaii. Shark identification, behavior, and informative facts about sharks found in Hawaiian waters and seen on Hawaii shark diving tours.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/about-sharks.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/about-sharks/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Sharks Of The Hawaiian Waters | Hawaii Adventure Diving">
     <meta property="og:description" content="Learn about what kind of sharks are in Hawaii. Shark identification, behavior, and informative facts about sharks found in Hawaiian waters and seen on Hawaii shark diving tours.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/about-sharks.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/about-sharks/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
-    <meta property="twitter:title" content="Sharks Of The Hawaiian Waters | Hawaii Adventure Diving"> 
+    <meta property="twitter:title" content="Sharks Of The Hawaiian Waters | Hawaii Adventure Diving">
     <meta property="twitter:description" content="Learn about what kind of sharks are in Hawaii. Shark identification, behavior, and informative facts about sharks found in Hawaiian waters and seen on Hawaii shark diving tours.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/about-sharks.php"> 
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/about-sharks/">
     <meta property="twitter:image" content="">
-    
+
     <!-- head.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/head.php' ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/head.php' ?>
 
 
 </head>
 
 <body class=" has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
     <!-- Main Content-->
     <div class="content-wrap main-content inner-page bg-lightrays">
         <div class="container">
-            
+
             <div class="row page-head-logo desktop-only">
                 <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
             </div>
 
             <div class="row pb-40 text-center">
-                <div class="col-12" data-show="startbox"  data-show-delay="100">
+                <div class="col-12" data-show="startbox" data-show-delay="100">
                     <a href="/"><img src="/images/page-title-about-sharks.png" alt="Meet The Crew" class="page-title-img"></a>
                 </div>
-                <div class="col-lg-8 offset-lg-2" data-show="startbox"  data-show-delay="200">
+                <div class="col-lg-8 offset-lg-2" data-show="startbox" data-show-delay="200">
                     <h2>Sharks Of The Hawaiian Waters</h2>
                     <h3>Shark Identification, Behavior & Informative Shark Facts</h3>
                 </div>
             </div>
 
-            <div class="row listable-content-card gx-0" data-show="startbox"  data-show-delay="300">
+            <div class="row listable-content-card gx-0" data-show="startbox" data-show-delay="300">
                 <div class="col-lg-7 order-lg-2">
                     <img src="/images/hawaii-adventure-diving-galapagos.jpg" alt="Photo of a group of galapagos sharks swimming in the waters off the coast of Oahu, Hawaii">
                 </div>
                 <div class="col-lg-5 pr-lg-30 order-lg-1">
                     <h2>Galapagos</h2>
                     <h3>Carcharhinus Galapagensis</h3>
-                    <p>A species of requiem shark, in the family Carcharhinidae, found worldwide. This species favors clear reef environments around oceanic islands, where it is often the most abundant shark species. A large species that often reaches 9-10 ft. Galapagos sharks are active predators often encountered in large groups. Reproduction is viviparous, with females bearing litters of 4-16 pups every 2-3 years. The most commonly seen shark, their behavior is bold, inquisitive and persistent.</p>                    
+                    <p>A species of requiem shark, in the family Carcharhinidae, found worldwide. This species favors clear reef environments around oceanic islands, where it is often the most abundant shark species. A large species that often reaches 9-10 ft. Galapagos sharks are active predators often encountered in large groups. Reproduction is viviparous, with females bearing litters of 4-16 pups every 2-3 years. The most commonly seen shark, their behavior is bold, inquisitive and persistent.</p>
                 </div>
             </div>
 
@@ -72,10 +72,10 @@
                 <div class="col-lg-5 pr-lg-30 order-lg-1">
                     <h2>Grey Reef Shark</h2>
                     <h3>Carcharhinus Amblyrhynchos</h3>
-                    <p>A species of requiem shark, in the family Carcharhinidae. One of the most common reef sharks in the Indo-Pacific most individuals are less than 6 ft. They are fast-swimming, agile predators. An aggressive demeanor enables them to dominate many other shark species on the reef, despite their size. They gather in groups of up to 20. They were the first shark species known to perform a threat display, a behavior warning that it is prepared to attack.</p>                    
+                    <p>A species of requiem shark, in the family Carcharhinidae. One of the most common reef sharks in the Indo-Pacific most individuals are less than 6 ft. They are fast-swimming, agile predators. An aggressive demeanor enables them to dominate many other shark species on the reef, despite their size. They gather in groups of up to 20. They were the first shark species known to perform a threat display, a behavior warning that it is prepared to attack.</p>
                 </div>
             </div>
-            
+
             <div class="row listable-content-card gx-0" data-show="startbox">
                 <div class="col-lg-7 order-lg-2">
                     <img src="/images/hawaii-adventure-diving-tiger-shark-alone.webp" alt="">
@@ -84,10 +84,10 @@
                     <h2>Tiger Shark</h2>
                     <h3>Galeocerdo Cuvier</h3>
                     <p>A species of requiem shark, the only member of the genus Galeocerdo. Attains length of up to over 16 ft. Found in tropical and temperate waters, especially in central Pacific islands. Name derives from the dark stripes down its body resembling a tiger's pattern. Solitary, mostly nocturnal hunter, the Tiger shark is an apex predator having a reputation for eating anything including other sharks and injured whales.</p>
-                    <p>Often found close to the coast in tropical and subtropical waters throughout the world, its behavior is primarily nomadic, but is guided by warmer currents, it stays closer to the equator throughout colder months. Recorded at depths from 10 ft to 3,000 ft. Females mate once every 3 years birthing 10-80 pups. Attacks by tiger sharks in Hawaiian waters have been shown to increase between September and November, when tiger shark females are believed to migrate to give birth.</p>                    
+                    <p>Often found close to the coast in tropical and subtropical waters throughout the world, its behavior is primarily nomadic, but is guided by warmer currents, it stays closer to the equator throughout colder months. Recorded at depths from 10 ft to 3,000 ft. Females mate once every 3 years birthing 10-80 pups. Attacks by tiger sharks in Hawaiian waters have been shown to increase between September and November, when tiger shark females are believed to migrate to give birth.</p>
                 </div>
             </div>
-            
+
             <div class="row listable-content-card gx-0" data-show="startbox">
                 <div class="col-lg-7 order-lg-2">
                     <img src="/images/blacktip-shark.webp" alt="">
@@ -95,7 +95,7 @@
                 <div class="col-lg-5 pr-lg-30 order-lg-1">
                     <h2>Black Tip Shark</h2>
                     <h3>Carcharhinus Melanopterus</h3>
-                    <p>A species of requiem shark, in the family Carcharhinidae, easily identified by the prominent black tips on dorsal and caudal fins. Among the most abundant sharks inhabiting tropical reefs of the Indian and Pacific Oceans They typically reach a length of 5 ft, and have extremely small home ranges, exhibit strong site fidelity keeping to same local area for several years. Timid and skittish, they are difficult to approach, and seldom poses a danger to humans.</p>                    
+                    <p>A species of requiem shark, in the family Carcharhinidae, easily identified by the prominent black tips on dorsal and caudal fins. Among the most abundant sharks inhabiting tropical reefs of the Indian and Pacific Oceans They typically reach a length of 5 ft, and have extremely small home ranges, exhibit strong site fidelity keeping to same local area for several years. Timid and skittish, they are difficult to approach, and seldom poses a danger to humans.</p>
                 </div>
             </div>
 
@@ -150,14 +150,14 @@
         </div>
         <!--// Container -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/prefooter-CTA.php' ?>
-    
+        {% include "prefooter-CTA.njk" %}
+
     </div>
 
 
-    
+
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

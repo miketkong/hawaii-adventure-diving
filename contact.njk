@@ -1,0 +1,104 @@
+---
+layout: base
+
+pageTitle: "Contact Hawaii Adventure Diving"
+
+ogTitle: "Contact Hawaii Adventure Diving"
+
+pageDescription: "Questions? Need support? Contact us using any of the methods here and we'll get back to you as soon as possible."
+
+pageURL: "https://hawaiiadventurediving.com/contact/"
+
+ogImage: ""
+---
+
+<body class="contact-page has-topbar">
+    <!-- nav include -->
+    {% include "nav.njk" %}
+
+
+
+    <!-- Main Content-->
+    <div class="content-wrap main-content inner-page bg-lightrays pb-60">
+
+
+        <div class="container">
+
+            <div class="row page-head-logo desktop-only">
+                <a href="/"><img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving"></a>
+            </div>
+
+            <div class="row pb-40 text-center">
+                <div class="col" data-show="startbox" data-show-delay="100">
+                    <a href="/"><img src="/images/page-title-contact.png" alt="Meet The Crew" class="page-title-img"></a>
+                </div>
+                <div class="col-lg-8 offset-lg-2" data-show="startbox" data-show-delay="200">
+                    <p>Questions? Need support? Contact us using any of the methods below and we'll get back to you as soon as possible.</p>
+                </div>
+            </div>
+
+            {% include "contact-info.njk" %}
+
+        </div>
+        <!--// container -->
+
+        {% include "prefooter-CTA.njk" %}
+
+    </div>
+    <!-- // content-wrap -->
+
+
+    <!-- footer.php include -->
+    {% include "footer.njk" %}
+
+
+    <!-- Schema Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "TouristAttraction",
+            "name": "Hawaii Adventure Diving",
+            "description": "Contact information and message form for Hawaii Adventure Diving regarding customer questions and support.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "66-105 Haleiwa Rd",
+                "addressLocality": "Haleiwa",
+                "addressRegion": "Hawaii",
+                "postalCode": "96712",
+                "addressCountry": "US"
+            },
+            "telephone": "+1-808-829-2203",
+            "url": "https://hawaiiadventurediving.com",
+            "image": "https://hawaiiadventurediving.com/logo.jpg",
+            "priceRange": "$100 - $150",
+            "paymentAccepted": "Cash, Credit Card",
+            "currenciesAccepted": "USD",
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "07:00",
+                "closes": "18:00"
+            }],
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 21.5930475,
+                "longitude": -158.1053566
+            },
+            "sameAs": [
+                "https://www.instagram.com/hawaiiadventurediving/"
+            ]
+        }
+    </script>
+    <!--// Schema Structured Data -->
+
+
+
+</body>

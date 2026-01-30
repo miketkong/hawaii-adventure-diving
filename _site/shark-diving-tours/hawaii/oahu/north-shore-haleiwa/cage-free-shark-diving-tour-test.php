@@ -10,7 +10,7 @@
     $pageTitle = "Cage Free Shark Diving (Oahu, Hi) | Info and Booking";
     $ogTitle = "Cage Free Shark Diving (Oahu, Hi) | Info and Booking";
     $pageDesrcription = "Ready to Book Your Tour? View tour details, schedules, and make reservations for your ultimate Hawaii cage free shark diving experience today.";
-    $pageURL = "https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php";
+    $pageURL = "https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/";
     $ogImage = "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu-1200x637.jpg";
     ?>
 
@@ -193,7 +193,7 @@
             </div>
         </section>
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/as-seen-on.php' ?>
+        {% include "as-seen-on.njk" %}
 
 
         <section id="no-limits" class="pano-section white-text text-left">
@@ -352,7 +352,7 @@
         </section>
         <!--// Tour Quick Guide -->
 
-        <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/business-info.php' ?>
+        {% include "business-info.njk" %}
 
 
         <!-- TOUR DATES AND TIMES SECTION -->
@@ -451,7 +451,7 @@
                             <div class="text">
                                 <h2>Shark Diving Photos</h2>
                                 <h3 class="price">$75 person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
-                                <a class="btn btn-accent-1 big-button" href="/contact.php">Call To Add</a>
+                                <a class="btn btn-accent-1 big-button" href="/contact/">Call To Add</a>
                             </div>
                         </div>
                     </div>
@@ -573,7 +573,7 @@
     ?>
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 
 </body>
 

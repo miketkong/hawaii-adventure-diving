@@ -10,18 +10,18 @@
     <title>Meet The Crew | Hawaii Adventure Diving</title>
     <meta name="robots" content="index,follow">
     <meta name="description" content="About the Hawaii Adventure Diving team. Our highly-skilled crew delivers offers unparalleled shark diving tours where safety, education, and an unforgettable journey are our hallmarks.">
-    <link rel="canonical" href="https://hawaiiadventurediving.com/about-us.php">
+    <link rel="canonical" href="https://hawaiiadventurediving.com/about-us/">
 
     <!-- Generic Open Graph Data -->
     <meta property="og:title" content="Meet The Crew | Hawaii Adventure Diving">
     <meta property="og:description" content="About the Hawaii Adventure Diving team. Our highly-skilled crew delivers offers unparalleled shark diving tours where safety, education, and an unforgettable journey are our hallmarks.">
-    <meta property="og:url" content="https://hawaiiadventurediving.com/about-us.php">
+    <meta property="og:url" content="https://hawaiiadventurediving.com/about-us/">
     <meta property="og:image" content="">
 
     <!-- Twitter Open Graph Data -->
     <meta property="twitter:title" content="Meet The Crew | Hawaii Adventure Diving">
     <meta property="twitter:description" content="About the Hawaii Adventure Diving team. Our highly-skilled crew delivers offers unparalleled shark diving tours where safety, education, and an unforgettable journey are our hallmarks.">
-    <meta property="twitter:url" content="https://hawaiiadventurediving.com/about-us.php">
+    <meta property="twitter:url" content="https://hawaiiadventurediving.com/about-us/">
     <meta property="twitter:image" content="">
 
     <!-- head.php include -->
@@ -32,7 +32,7 @@
 
 <body class=" has-topbar">
     <!-- nav.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/nav.php' ?>
+    {% include "nav.njk" %}
 
 
 
@@ -72,7 +72,7 @@
 
 
 
-            <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/prefooter-CTA.php' ?>
+            {% include "prefooter-CTA.njk" %}
 
         </div>
         <!--// Container -->
@@ -82,7 +82,7 @@
 
 
     <!-- footer.php include -->
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/assets/includes/footer.php' ?>
+    {% include "footer.njk" %}
 </body>
 
 </html>

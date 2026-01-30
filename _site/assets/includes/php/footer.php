@@ -23,28 +23,28 @@
                         <div class="col-6 col-md-4">
                             <h6 class="display-6  mb-20">Tours</h6>
                             <ul class="nav flex-column  nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.php">Oahu Shark Diving Tours</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour.php">Oahu Whale Watching Tours</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">Oahu Shark Diving Tours</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/">Oahu Whale Watching Tours</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/?flow=17337">Reservations</a></li>
-                                <!--<li class="nav-item"><a class="nav-link" href="/what-to-bring.php">What To Bring</a></li>-->
+                                <!--<li class="nav-item"><a class="nav-link" href="/what-to-bring/">What To Bring</a></li>-->
                             </ul>
                         </div>
                         <div class="col-6 col-md-4">
                             <h6 class="display-6  mb-20">About</h6>
                             <ul class="nav flex-column  nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="/about-us.php">About us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/about-sharks.php">About Sharks</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife.php">Hawaiian Sea Life</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/conservation.php">Conservation</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/about-us/">About us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/about-sharks/">About Sharks</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife/">Hawaiian Sea Life</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/conservation/">Conservation</a></li>
                             </ul>
                         </div>
                         <div class="col-12 col-md-4">
                             <h6 class="display-6  mb-20">Contact</h6>
                             <ul class="nav flex-column  nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="/contact.php">Contact us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/contact/">Contact us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="tel:{{ siteData.contact.phoneLink }}">{{ siteData.contact.phonePretty }}</a></li>
                                 <li class="nav-item"><a class="nav-link" href="mailto:{{ siteData.contact.contactEmail }}">{{ siteData.contact.contactEmail }}</a></li>
-                                <li class="nav-item"><a class="nav-link nav-link-accent-1" href="/contact-custom-charters.php">Custom Charters</a></li>
+                                <li class="nav-item"><a class="nav-link nav-link-accent-1" href="/contact-custom-charters/">Custom Charters</a></li>
                                 <li class="nav-item"><a class="nav-link" href="https://goo.gl/maps/iquNkMPaRdngjLKS8">66-105 Haleiwa Rd,<br>Haleiwa, HI 96712</a></li>
                             </ul>
                         </div>
