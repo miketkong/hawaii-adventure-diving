@@ -1,0 +1,49 @@
+<h2>Hawaii Adventure Diving – Eleventy Site Overview</h2>
+<p>This folder contains the static website that now runs on Cloudflare Pages. Eleventy builds every page in the <code>_site</code> folder from the supported templates, and the final <code>_site</code> output is what Cloudflare Pages publishes at <code>https://hawaiiadventurediving.com</code>.</p>
+<h3>For the business owner</h3>
+<ul>
+<li><strong>Hosting &amp; traffic:</strong> The site now lives entirely on the Cloudflare Pages free tier. It automatically rebuilds on every push to GitHub and serves the latest files with HTTPS, so you no longer need the old $100/year PHP host.</li>
+<li><strong>Domain &amp; redirects:</strong> Both <code>hawaiiadventurediving.com</code> and <code>www.hawaiiadventurediving.com</code> are connected to this Pages project. Legacy URLs are redirected through the <code>_redirects</code> file, and this is already live in the current build (Cloudflare also has a rule that forwards <code>www</code> → non-<code>www</code> for analytics consistency).</li>
+<li><strong>Additions/changes:</strong> To update content, edit the <code>.njk</code> files (or assets), run <code>npm run build</code> to preview locally, then push to GitHub. Cloudflare Pages will automatically rebuild and publish the new version.</li>
+<li><strong>Testing:</strong> After each deploy, open the preview/production URL on desktop and mobile to confirm layout, images, and redirects before turning off the former host.</li>
+</ul>
+<h3>For developers</h3>
+<ul>
+<li>
+<p><strong>Build tool:</strong> The site uses Eleventy (<code>@11ty/eleventy</code> v3.1.2) via the <code>npm run build</code> script defined in <code>package.json</code>.</p>
+</li>
+<li>
+<p><strong>Project structure:</strong></p>
+<ul>
+<li><code>index.njk</code>, <code>about-sharks.njk</code>, and similar source files are Eleventy templates.</li>
+<li><code>_includes/</code> contains reusable partials (header/footer).</li>
+<li><code>_data/</code> hosts shared data/configuration.</li>
+<li><code>assets/</code>, <code>images/</code>, <code>articles/</code>, <code>shark-diving-oahu/</code>, <code>shark-diving-tours/</code>, <code>snorkel-tour/</code>, and <code>whale-watching-tour/</code> are copied verbatim into <code>_site</code> via pass-throughs defined in <code>.eleventy.js</code>.</li>
+<li><code>_redirects</code> lists all required 301 redirects; it is also copied through into <code>_site</code> by Eleventy so Cloudflare Pages can honor it at the edge.</li>
+<li><code>robots.txt</code> and <code>sitemap.xml</code> live at the root and are served directly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Local setup:</strong></p>
+<pre><code class="language-bash">npm install
+npm run build
+</code></pre>
+</li>
+<li>
+<p><strong>Run Local Eleventy Server:</strong>
+npx eleventy --serve</p>
+<p>Eleventy will write the generated site into <code>_site</code>. Open <code>_site/index.html</code> in a browser (or <code>npx eleventy --serve</code> if you want a live preview) to verify before committing.</p>
+</li>
+<li>
+<p><strong>Redirects &amp; canonical URLs:</strong> The <code>_redirects</code> file contains the legacy path → new path mappings, plus the <code>www.hawaiiadventurediving.com</code> canonicalization rule. Keep this file in sync when you add or rename pages.</p>
+</li>
+<li>
+<p><strong>Cloudflare Pages:</strong> The repository is connected to a Pages project. Keep the build command as <code>npm run build</code>, the output directory <code>_site</code>, and leave the deploy commands empty. Custom domains and preview URLs are managed through the Pages dashboard.</p>
+</li>
+</ul>
+<h3>Notes &amp; future work</h3>
+<ul>
+<li>If you ever plan to serve very large media assets, consider uploading them to Cloudflare R2 and referencing the external URLs so the Git history/clone size stays manageable.</li>
+<li>For new redirects or sitemap updates, edit <code>_redirects</code> or the Eleventy configuration and push; Cloudflare Pages will auto-deploy on the next commit.</li>
+</ul>
+<p>Let me know if you want me to keep helping with analytics tracking, sitemap automation, R2 integration, or anything else as the site evolves.</p>

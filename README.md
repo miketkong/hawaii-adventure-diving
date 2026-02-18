@@ -22,6 +22,9 @@ This folder contains the static website that now runs on Cloudflare Pages. Eleve
   npm install
   npm run build
   ```
+- **Run Local Eleventy Server:**
+  npx eleventy --serve
+
   Eleventy will write the generated site into `_site`. Open `_site/index.html` in a browser (or `npx eleventy --serve` if you want a live preview) to verify before committing.
 - **Redirects & canonical URLs:** The `_redirects` file contains the legacy path → new path mappings, plus the `www.hawaiiadventurediving.com` canonicalization rule. Keep this file in sync when you add or rename pages.
 - **Cloudflare Pages:** The repository is connected to a Pages project. Keep the build command as `npm run build`, the output directory `_site`, and leave the deploy commands empty. Custom domains and preview URLs are managed through the Pages dashboard.
