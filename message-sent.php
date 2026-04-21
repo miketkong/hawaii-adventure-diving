@@ -45,7 +45,7 @@
             </div>
 
 
-            {% include "contact-info.njk" %}
+            {% include "sections/contact-info.njk" %}
 
         </div>
         <!--// container -->

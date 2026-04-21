@@ -1,0 +1,10 @@
+<div class="star-rating">
+  <span class="review-average"></span>
+  <img src="/images/5-stars.png" alt="">
+  (<span class="review-total"></span>)
+</div>
+<script>
+  var container = document.currentScript.previousElementSibling;
+  container.querySelector('.review-average').textContent = ({{ siteData.reviewSummary.averageRating }}).toFixed(1);
+  container.querySelector('.review-total').textContent = ({{ siteData.reviewSummary.totalReviews }}).toLocaleString();
+</script>

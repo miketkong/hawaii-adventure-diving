@@ -193,7 +193,7 @@
             </div>
         </section>
 
-        {% include "as-seen-on.njk" %}
+        {% include "sections/as-seen-on.njk" %}
 
 
         <section id="pano-banner-snorkel-1" class="pano-section white-text text-left">
@@ -351,7 +351,7 @@
         </section>
         <!--// Tour Quick Guide -->
 
-        {% include "business-info.njk" %}
+        {% include "sections/business-info.njk" %}
 
 
         <!-- TOUR DATES AND TIMES SECTION -->

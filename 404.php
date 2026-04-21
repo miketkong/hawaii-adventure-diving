@@ -45,7 +45,7 @@
         </div>
         <!--// Logo and 404 Text Blurb -->
 
-        {% include "as-seen-on.njk" %}
+        {% include "sections/as-seen-on.njk" %}
 
         <!-- PRODUCT CARDS & REVIEWS SECTION -->
         <section id="product-cards" class="dark-background">

@@ -185,7 +185,7 @@
         </section>
         <!--// Tour Quick Guide -->
 
-        {% include "business-info.njk" %}
+        {% include "sections/business-info.njk" %}
 
         <section id="tour-days-and-times">
             <div class="container pt-30">
@@ -421,7 +421,7 @@
 
 
     {% set btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3486/calendar/" >Book Now</a>' %}
-    {% include "big-CTA-pre-footer.njk" %}
+    {% include "sections/big-CTA-pre-footer.njk" %}
 
     <!-- footer.php include -->
     {% include "footer.njk" %}

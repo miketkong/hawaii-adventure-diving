@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const scrollingBlackFade = document.getElementById('scrollingBlackFade');
 
-
-
     const adjustOpacity = () => {
         let scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
         let scrolled = window.scrollY / scrollHeight;
@@ -18,4 +16,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
     //window.addEventListener('scroll', adjustOpacity);
+
+    const fixedButton = document.getElementById('fixed-button');
+    if (fixedButton) {
+        fixedButton.href = 'https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/';
+    }
 });

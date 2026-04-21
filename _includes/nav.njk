@@ -9,11 +9,9 @@
 
 
         <!-- Mobile Top Bar -->
-        <div class="container top-bar mobile-only">
-            <div class="row">
-                <div class="col-6"><p class="phone-number">{{ siteData.contact.phonePretty }}</p></div>
-                <div class="col-6 text-right"><a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Book Now</span></a></div>
-            </div>
+        <div id="mobile-top-bar" class="container top-bar mobile-only">
+            <div class="phone-number"><a href="tel:{{ siteData.contact.phone }}">{{ siteData.contact.phonePretty }}</a></div>
+            <a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Book Now</span></a>
         </div>
         <!--// Mobile Top Bar -->
 

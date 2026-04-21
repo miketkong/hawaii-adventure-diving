@@ -1,17 +1,17 @@
 const platformRatings = {
-  Google: { total: 1005, average: 5 },
-  TripAdvisor: { total: 513, average: 5 },
-  Yelp: { total: 164, average: 4.8 },
-  Facebook: { total: 145, average: 4.9 },
-  Groupon: { total: 1035, average: 4.9 },
+  Google: { total: 2140, average: 5 },
+  TripAdvisor: { total: 586, average: 4.9 },
+  Yelp: { total: 204, average: 4.8 },
+  Facebook: { total: 85, average: 5 },
+  Groupon: { total: 1127, average: 4.9 },
 };
 
 const calculateReviewSummary = (ratings) => {
   const entries = Object.values(ratings);
   const totalReviews = entries.reduce((sum, { total }) => sum + total, 0);
-  const sumOfRatings = entries.reduce((sum, { average }) => sum + average, 0);
+  const weightedSum = entries.reduce((sum, { total, average }) => sum + total * average, 0);
   const averageRating =
-    entries.length === 0 ? 0 : Number((sumOfRatings / entries.length).toFixed(2));
+    totalReviews === 0 ? 0 : Number((weightedSum / totalReviews).toFixed(2));
 
   return {
     totalReviews,

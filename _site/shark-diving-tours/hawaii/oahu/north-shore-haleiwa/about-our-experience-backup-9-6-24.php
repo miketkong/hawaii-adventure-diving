@@ -150,7 +150,7 @@
         <!--// Stay Connected -->
 
         <!-- Footer CTA Blue Background -->
-        {% include "prefooter-CTA.njk" %}
+        {% include "sections/prefooter-CTA.njk" %}
 
     </div>
     <!--// Main Content -->

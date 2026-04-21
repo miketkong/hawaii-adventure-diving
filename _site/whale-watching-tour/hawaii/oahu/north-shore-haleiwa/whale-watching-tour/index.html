@@ -32,8 +32,8 @@
     <meta name="contact-phone" content="+1 (808) 829-2203" />
     <meta name="contact-link" content="+18088292203" />
     <meta name="contact-email" content="nickloewenstine@gmail.com" />
-    <meta name="total-reviews" content="2862" />
-    <meta name="average-rating" content="4.92" />
+    <meta name="total-reviews" content="4142" />
+    <meta name="average-rating" content="4.95" />
     
     <meta name="description" content="Join our North Shore Oahu whale watching tour for a breathtaking encounter with these gentle ocean giants. An unforgettable experience awaits.">   
     <link rel="canonical" href="https://hawaiiadventurediving.com/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/"> 
@@ -66,13 +66,13 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.0.6.css">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.0.7.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400,700&family=Poppins:wght@400;600;700&family=Asap+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <!-- jQuery-->
     <script src="/assets/vendors/js/jquery.min.js"></script>
@@ -94,11 +94,9 @@
 
 
         <!-- Mobile Top Bar -->
-        <div class="container top-bar mobile-only">
-            <div class="row">
-                <div class="col-6"><p class="phone-number">+1 (808) 829-2203</p></div>
-                <div class="col-6 text-right"><a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Book Now</span></a></div>
-            </div>
+        <div id="mobile-top-bar" class="container top-bar mobile-only">
+            <div class="phone-number"><a href="tel:">+1 (808) 829-2203</a></div>
+            <a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Book Now</span></a>
         </div>
         <!--// Mobile Top Bar -->
 
@@ -367,7 +365,17 @@
     <div class="container">
         <div class="row text-center-md">
             <div class="col-md-3">
-                <p><img class="star-icons" src="/images/5-stars.png" alt=""> <a href="#">1,923 Reviews</a></p>
+                <div class="star-rating">
+  <span class="review-average"></span>
+  <img src="/images/5-stars.png" alt="">
+  (<span class="review-total"></span>)
+</div>
+<script>
+  var container = document.currentScript.previousElementSibling;
+  container.querySelector('.review-average').textContent = (4.95).toFixed(1);
+  container.querySelector('.review-total').textContent = (4142).toLocaleString();
+</script>
+
             </div>
             <div class="col-md-3">
                 <p>Haleiwa, Hawaii, United States</p>

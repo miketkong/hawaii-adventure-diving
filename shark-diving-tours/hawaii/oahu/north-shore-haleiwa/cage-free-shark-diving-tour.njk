@@ -36,18 +36,18 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
                         <img src="/images/page-title-shark-tour.png" alt="Cage Free Shark Diving">
                     </div>
 
-                    <div class="price-CTA-block text-white">
-                        <!--<p class="price-leader-text">Only</p>
-                        <p class="price mb-10">$150 per person</p>-->
-                        <a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/">Book Now</a>
-                        <p class="disclaimer">Pricing subject to change. Click to view updated rates and to schedule your next tour.</p>
+                    <div id="cta-block" class="col-lg-8 offset-lg-2">
+                        <h3>From $150 per person</h3>
+                        <a class="btn btn-md btn-accent-1"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Check Availability</span></a>
+                        {% include "blocks/star-ratings.njk" %}
                     </div>
                 </div>
 
             </div>
         </section>
 
-        {% include "as-seen-on.njk" %}
+        {% include "sections/as-seen-on.njk" %}
 
 
         <section id="no-limits" class="pano-section white-text text-left">
@@ -70,7 +70,7 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
             </div>
         </section>
 
-        {% include "team-section.njk" %}
+        {% include "sections/team-section.njk" %}
 
         <section id="be-inspired" class="pano-section white-text text-left">
             <div class="container-fluid gx-0">
@@ -206,7 +206,7 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
         </section>
         <!--// Tour Quick Guide -->
 
-        {% include "business-info.njk" %}
+        {% include "sections/business-info.njk" %}
 
         <!-- TOUR DATES AND TIMES SECTION -->
         <section id="tour-days-and-times">
@@ -316,7 +316,7 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
 
         <!-- SHARK TOUR GALLERY -->
         <div id="shark-tour-gallery"></div>
-        {% include "shark-tour-gallery-section.njk" %}
+        {% include "sections/shark-tour-gallery-section.njk" %}
 
 
         <section id="faq" class="bg-white pt-40 pb-30">
@@ -420,7 +420,7 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
     <!--// Content Wrap -->
 
     {% set btn = '<a class="btn btn-accent-1 big-button" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" >Book Now</a>' %}
-    {% include "big-CTA-pre-footer.njk" %}
+    {% include "sections/big-CTA-pre-footer.njk" %}
 
     <!-- footer.php include -->
     {% include "footer.njk" %}

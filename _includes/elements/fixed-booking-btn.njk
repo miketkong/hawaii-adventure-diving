@@ -3,7 +3,10 @@
         var btn = $('#fixed-button');
 
         $(window).scroll(function() {
-            if ($(window).scrollTop() > 300) {
+            var scrollTop = $(window).scrollTop();
+            var nearBottom = scrollTop + $(window).height() >= $(document).height() - 100;
+
+            if (scrollTop > 300 && !nearBottom) {
                 btn.addClass('show');
             } else {
                 btn.removeClass('show');
