@@ -1,49 +1,131 @@
-<h2>Hawaii Adventure Diving – Eleventy Site Overview</h2>
-<p>This folder contains the static website that now runs on Cloudflare Pages. Eleventy builds every page in the <code>_site</code> folder from the supported templates, and the final <code>_site</code> output is what Cloudflare Pages publishes at <code>https://hawaiiadventurediving.com</code>.</p>
-<h3>For the business owner</h3>
-<ul>
-<li><strong>Hosting &amp; traffic:</strong> The site now lives entirely on the Cloudflare Pages free tier. It automatically rebuilds on every push to GitHub and serves the latest files with HTTPS, so you no longer need the old $100/year PHP host.</li>
-<li><strong>Domain &amp; redirects:</strong> Both <code>hawaiiadventurediving.com</code> and <code>www.hawaiiadventurediving.com</code> are connected to this Pages project. Legacy URLs are redirected through the <code>_redirects</code> file, and this is already live in the current build (Cloudflare also has a rule that forwards <code>www</code> → non-<code>www</code> for analytics consistency).</li>
-<li><strong>Additions/changes:</strong> To update content, edit the <code>.njk</code> files (or assets), run <code>npm run build</code> to preview locally, then push to GitHub. Cloudflare Pages will automatically rebuild and publish the new version.</li>
-<li><strong>Testing:</strong> After each deploy, open the preview/production URL on desktop and mobile to confirm layout, images, and redirects before turning off the former host.</li>
-</ul>
-<h3>For developers</h3>
-<ul>
-<li>
-<p><strong>Build tool:</strong> The site uses Eleventy (<code>@11ty/eleventy</code> v3.1.2) via the <code>npm run build</code> script defined in <code>package.json</code>.</p>
-</li>
-<li>
-<p><strong>Project structure:</strong></p>
-<ul>
-<li><code>index.njk</code>, <code>about-sharks.njk</code>, and similar source files are Eleventy templates.</li>
-<li><code>_includes/</code> contains reusable partials (header/footer).</li>
-<li><code>_data/</code> hosts shared data/configuration.</li>
-<li><code>assets/</code>, <code>images/</code>, <code>articles/</code>, <code>shark-diving-oahu/</code>, <code>shark-diving-tours/</code>, <code>snorkel-tour/</code>, and <code>whale-watching-tour/</code> are copied verbatim into <code>_site</code> via pass-throughs defined in <code>.eleventy.js</code>.</li>
-<li><code>_redirects</code> lists all required 301 redirects; it is also copied through into <code>_site</code> by Eleventy so Cloudflare Pages can honor it at the edge.</li>
-<li><code>robots.txt</code> and <code>sitemap.xml</code> live at the root and are served directly.</li>
-</ul>
-</li>
-<li>
-<p><strong>Local setup:</strong></p>
-<pre><code class="language-bash">npm install
-npm run build
+<h1>Hawaii Adventure Diving — Site README</h1>
+<p><strong>Live site:</strong> <code>https://hawaiiadventurediving.com</code>
+<strong>Stack:</strong> Eleventy 3.1.2 (Nunjucks) → Cloudflare Pages
+<strong>Booking system:</strong> FareHarbor
+<strong>Analytics:</strong> Google Tag Manager (<code>GTM-W97L82P</code>)</p>
+<hr>
+<h2>Quick Start</h2>
+<p><strong>Day-to-day development</strong> — this is the only command you need:</p>
+<pre><code class="language-bash">npx eleventy --serve   # builds the site and starts a live-reload dev server
 </code></pre>
-</li>
-<li>
-<p><strong>Run Local Eleventy Server:</strong>
-npx eleventy --serve</p>
-<p>Eleventy will write the generated site into <code>_site</code>. Open <code>_site/index.html</code> in a browser (or <code>npx eleventy --serve</code> if you want a live preview) to verify before committing.</p>
-</li>
-<li>
-<p><strong>Redirects &amp; canonical URLs:</strong> The <code>_redirects</code> file contains the legacy path → new path mappings, plus the <code>www.hawaiiadventurediving.com</code> canonicalization rule. Keep this file in sync when you add or rename pages.</p>
-</li>
-<li>
-<p><strong>Cloudflare Pages:</strong> The repository is connected to a Pages project. Keep the build command as <code>npm run build</code>, the output directory <code>_site</code>, and leave the deploy commands empty. Custom domains and preview URLs are managed through the Pages dashboard.</p>
-</li>
-</ul>
-<h3>Notes &amp; future work</h3>
+<p><strong>First-time setup</strong> (new machine or after pulling dependency changes):</p>
+<p>Requires <a href="https://nodejs.org/">Node.js</a> to be installed first. Then:</p>
+<pre><code class="language-bash">npm install            # installs all dependencies including Eleventy — only needed once, or when package.json changes
+</code></pre>
+<p><strong>Build only</strong> (no server — useful for verifying output before committing):</p>
+<pre><code class="language-bash">npm run build          # writes the generated site to _site/
+</code></pre>
+<hr>
+<h2>Project Structure</h2>
+<pre><code>/
+├── index.njk                         # Homepage
+├── about-us.njk
+├── about-sharks.njk
+├── conservation.njk
+├── hawaiian-sea-wildlife.njk
+├── contact.njk
+├── contact-custom-charters.njk
+├── 404.njk
+├── articles/                         # Blog articles (pass-through)
+├── shark-diving-tours/               # Shark tour pages (pass-through)
+├── shark-diving-oahu/                # Supporting SEO pages (pass-through)
+├── whale-watching-tour/              # Whale watching tour pages (pass-through)
+├── snorkel-tour/                     # Snorkel tour pages (pass-through)
+├── images/                           # Site images (pass-through)
+├── assets/
+│   ├── css/
+│   │   ├── main.css                  # Theme base styles
+│   │   └── custom-styles-v*.css      # MK Design customizations
+│   ├── js/
+│   │   ├── helpers.js
+│   │   └── controllers/              # Feature-specific JS modules
+│   └── vendors/                      # Third-party CSS/JS (local copies)
+├── _includes/                        # Nunjucks partials
+│   ├── base.njk                      # HTML shell (head, body wrapper)
+│   ├── head-top.njk                  # GTM snippet + siteData meta tags
+│   ├── nav.njk
+│   ├── footer.njk                    # Footer + all vendor JS
+│   ├── shark-video-banner.njk        # Hero video banner (see below)
+│   ├── blocks/
+│   └── sections/                     # Reusable page sections
+├── _data/
+│   └── siteData.js                   # Global data (contact info, ratings, team bios)
+├── _site/                            # BUILD OUTPUT — do not edit directly
+├── _redirects                        # Cloudflare Pages redirect rules (pass-through)
+├── robots.txt                        # Pass-through
+├── sitemap.xml
+└── .eleventy.js                      # Eleventy config (pass-throughs + I/O dirs)
+</code></pre>
+<hr>
+<h2>Key Architectural Details</h2>
+<h3>Templating</h3>
+<p>Every <code>.njk</code> file at the root or in subdirectories is an Eleventy template. The front matter declares the layout, page title, description, canonical URL, and OG image used by <code>_includes/base.njk</code>.</p>
+<pre><code class="language-yaml">---
+layout: base
+pageTitle: &quot;Page Title&quot;
+pageDescription: &quot;...&quot;
+pageURL: &quot;https://hawaiiadventurediving.com/page-path/&quot;
+ogTitle: &quot;...&quot;
+ogImage: &quot;https://hawaiiadventurediving.com/images/og-image.jpg&quot;
+---
+</code></pre>
+<h3>Global Data (<code>_data/siteData.js</code>)</h3>
+<p>Exposes <code>siteData</code> to all templates. Contains:</p>
 <ul>
-<li>If you ever plan to serve very large media assets, consider uploading them to Cloudflare R2 and referencing the external URLs so the Git history/clone size stays manageable.</li>
-<li>For new redirects or sitemap updates, edit <code>_redirects</code> or the Eleventy configuration and push; Cloudflare Pages will auto-deploy on the next commit.</li>
+<li><code>siteData.contact</code> — phone number and email</li>
+<li><code>siteData.platformRatings</code> — review counts/averages for Google, TripAdvisor, Yelp, Facebook, Groupon</li>
+<li><code>siteData.reviewSummary</code> — computed weighted average across all platforms</li>
+<li><code>siteData.teamBios</code> — team member names, roles, images, Instagram handles</li>
 </ul>
-<p>Let me know if you want me to keep helping with analytics tracking, sitemap automation, R2 integration, or anything else as the site evolves.</p>
+<p>Update review counts here; they render in the homepage ratings block and elsewhere.</p>
+<h3>Vendor Libraries (local copies in <code>assets/vendors/</code>)</h3>
+<p>Bootstrap, Swiper, Jarallax + Jarallax Element, jQuery, Magnific Popup, Isotope, imagesLoaded, jQuery Countdown, jQuery Inview, OFI. All loaded from local files — no CDN dependency at runtime.</p>
+<p><strong>Google Fonts</strong> (Inter, Josefin Sans, Poppins, Asap Condensed) are loaded from Google's CDN via <code>base.njk</code>.</p>
+<h3>Pass-Through Directories</h3>
+<p>The following directories are copied verbatim into <code>_site</code> with no processing:
+<code>articles/</code>, <code>assets/</code>, <code>images/</code>, <code>shark-diving-tours/</code>, <code>shark-diving-oahu/</code>, <code>snorkel-tour/</code>, <code>whale-watching-tour/</code>, <code>robots.txt</code>, <code>_redirects</code></p>
+<hr>
+<h2>Hero Video Banner</h2>
+<p><strong>File:</strong> <code>_includes/shark-video-banner.njk</code>
+<strong>Used on:</strong> Homepage (<code>index.njk</code>)</p>
+<p>The banner currently embeds background video via the <strong>YouTube IFrame API</strong>, loaded dynamically after <code>DOMContentLoaded</code>. Two different videos are used depending on viewport width:</p>
+<table>
+<thead>
+<tr>
+<th>Breakpoint</th>
+<th>YouTube Video ID</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Desktop (&gt; 576px)</td>
+<td><code>asEnYgaGBV8</code></td>
+</tr>
+<tr>
+<td>Mobile (&lt;= 576px)</td>
+<td><code>cg5OSCuulWE</code></td>
+</tr>
+</tbody>
+</table>
+<p>Settings: muted, autoplay, looping, no controls, plays inline.</p>
+<p><strong>Overlay fade:</strong> <code>#banner-video-overlay</code> (a static image fallback) fades out via <code>.fade-out</code> class once the YouTube player fires <code>YT.PlayerState.PLAYING</code>.</p>
+<p><strong>Note:</strong> <code>assets/includes/php/video-banner-shark.php</code> is a legacy artifact from the old PHP host. It is not used. The live include is <code>_includes/shark-video-banner.njk</code>.</p>
+<hr>
+<h2>Redirects &amp; Canonical URLs</h2>
+<p><code>_redirects</code> at the project root is copied through to <code>_site</code> and honored by Cloudflare Pages at the edge. It contains legacy path → new path 301 mappings. The Cloudflare Pages dashboard also has a rule forwarding <code>www</code> → non-<code>www</code> for analytics consistency.</p>
+<p>Always keep <code>_redirects</code> and <code>sitemap.xml</code> in sync when adding or renaming pages.</p>
+<hr>
+<h2>Deployment</h2>
+<p>The repo is connected to a Cloudflare Pages project. Every push to <code>main</code> triggers an automatic build and deploy.</p>
+<ul>
+<li><strong>Build command:</strong> <code>npm run build</code></li>
+<li><strong>Output directory:</strong> <code>_site</code></li>
+<li><strong>Custom domains:</strong> <code>hawaiiadventurediving.com</code>, <code>www.hawaiiadventurediving.com</code></li>
+</ul>
+<p>No manual deploy steps needed. Verify desktop and mobile after each deploy.</p>
+<hr>
+<h2>Hosting Notes</h2>
+<ul>
+<li><strong>Large media assets</strong> (video files, high-res photography): use Cloudflare R2 or Cloudflare Stream and reference external URLs. Do not commit binary media to the repo.</li>
+<li><strong>Video streaming</strong> is handled separately — see <code>_includes/shark-video-banner.njk</code> for the current implementation.</li>
+</ul>
