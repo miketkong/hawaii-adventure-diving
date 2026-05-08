@@ -2,6 +2,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("articles");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("assets/video");
+  eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("images");
   eleventyConfig.addPassthroughCopy("shark-diving-oahu");
   eleventyConfig.addPassthroughCopy("shark-diving-tours");

@@ -16,7 +16,7 @@
 
 /* 01. Helpers */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: #16161b;
 }
 
@@ -28,7 +28,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     color: unset;
     margin-bottom: 0px;
@@ -109,7 +109,7 @@ p a:hover {
 }
 
 .section-heading-text {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: "Poppins", sans-serif !important;
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
@@ -313,7 +313,7 @@ figcaption {
 .navbar-mobile .nav-link,
 .navbar-mobile .navbar-footer {
     color: #fff !important;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -343,7 +343,7 @@ figcaption {
 }
 
 .btn {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
@@ -614,7 +614,7 @@ figcaption {
 }
 
 #as-seen-on h2 {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     font-size: 14px;
     text-align: center;
@@ -1156,7 +1156,7 @@ ul.tour-times li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 22px;
     line-height: 20px;
     color: #fff !important;
@@ -1251,7 +1251,7 @@ ul.tour-times li {
 }
 
 .hero-banner h1 .eyebrow {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 34px;
     font-weight: bold;
     line-height: 30px;
