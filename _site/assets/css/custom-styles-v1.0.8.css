@@ -1789,6 +1789,36 @@ ul.tour-times li {
 /* 577px And UP
 /* ========================================================== */
 @media screen and (min-width: 577px) {
+    .hero-banner {
+        max-height: 820px !important;
+    }
+    .hero-banner .banner-contents {
+        justify-content: start;
+    }
+    .homepage .hero-banner .banner-logo {
+        padding-top: 0px;
+        padding-bottom: 20px;
+    }
+    .hero-banner .banner-logo img {
+        max-width: 300px;
+    }
+    .hero-banner h1 {
+        font-size: 80px;
+        line-height: 66px;
+    }
+    .hero-banner h1 .eyebrow {
+        font-size: 44px;
+        line-height: 40px;
+    }
+    .hero-banner h2 {
+        font-size: 27px;
+        line-height: 36px;
+    }
+
+    .hero-banner #cta-block {
+        margin-top: 50px;
+    }
+
     .video-container iframe {
         width: 190vh;
         height: 72vw;
@@ -1970,11 +2000,6 @@ ul.tour-times li {
 
     .main-content-home {
         margin-top: -76px;
-    }
-
-    .homepage .hero-banner .banner-logo {
-        padding-top: 0px;
-        padding-bottom: 40px;
     }
 
     .homepage .hero-banner .video-overlay-image {
@@ -2379,7 +2404,6 @@ ul.tour-times li {
     .hero-banner {
         height: 100vh;
         min-height: 700px;
-        max-height: 1000px;
         margin-top: -120px;
     }
 
