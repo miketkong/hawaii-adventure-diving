@@ -93,7 +93,9 @@
         <!-- Mobile Top Bar -->
         <div id="mobile-top-bar" class="container top-bar mobile-only">
             <div class="phone-number"><a href="tel:">+1 (808) 829-2203</a></div>
-            <a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Book Now</span></a>
+            
+            <a class="btn btn-md btn-accent-1" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour Info</span></a>
+            
         </div>
         <!--// Mobile Top Bar -->
 
@@ -134,7 +136,9 @@
                 </li>
             </ul>
             <!-- Button-->
-            <a class="btn desktop-only d-sm-inline-flex btn btn-sm btn-accent-1 mb-0 ms-auto ms-lg-60 me-30 me-lg-0 order-2 order-lg-3" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" >Book Now</a>
+            
+            <a class="btn desktop-only d-sm-inline-flex btn btn-sm btn-accent-1 mb-0 ms-auto ms-lg-60 me-30 me-lg-0 order-2 order-lg-3" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour Details</span></a>
+            
         </div>
     </nav>
     <!--// DESKTOP NAV -->
@@ -259,14 +263,14 @@
 <script>
     var heroVideo = document.getElementById('hero-video');
     if (window.innerWidth > 576) {
-        heroVideo.poster = '/images/homepage-banner-desktop.webp';
+        heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
         heroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
     } else {
-        heroVideo.poster = '/images/homepage-banner-mobile.webp';
-        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r3.mp4';
+        heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r5.mp4';
     }
 </script>
-
+ 
 
 
                 <div class="banner-contents" data-show="startbox">
@@ -280,8 +284,7 @@
                     <div id="cta-block" class="col-lg-8 offset-lg-2">
                         <h3>From $150 per person</h3>
                         <a class="btn btn-md btn-accent-1"
-                            href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>View
-                                Shark Dive</span></a>
+                            href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour Details</span></a>
                         <div class="star-rating">
   <span class="review-average"></span>
   <img src="/images/5-stars.png" alt="">
@@ -293,6 +296,32 @@
   container.querySelector('.review-total').textContent = (4142).toLocaleString();
 </script>
 
+                        <div id="mini-testimonials-ticker"></div>
+<script>
+  var ticker = document.currentScript.previousElementSibling;
+  var testimonials = [
+    '"Truly a life changing experience."',
+    '"Thanks for being so amazing and welcoming."',
+    '"Very professional team, we felt very safe."',
+    '"Top-tier staff are highly knowledgeable."',
+    '"10/10 recommend!!!"',
+    '"Our photos turned out EPIC!"',
+    '"Amazing guides, unbelievable experience!"',
+    '"We swam with a 15 foot tiger shark."'
+  ];
+  var current = Math.floor(Math.random() * testimonials.length);
+  ticker.textContent = testimonials[current];
+  setInterval(function () {
+    ticker.style.opacity = '0';
+    setTimeout(function () {
+      var next;
+      do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
+      current = next;
+      ticker.textContent = testimonials[current];
+      ticker.style.opacity = '1';
+    }, 600);
+  }, 4000);
+</script>
                     </div>
                 </div>
             </div>
