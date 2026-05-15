@@ -1888,6 +1888,12 @@ ul.tour-times li {
     .hero-banner #cta-block {
         margin-top: 50px;
     }
+    #mini-testimonials-ticker {
+        font-size: 19px;
+        min-height: 50px;
+        margin-top: 22px;
+        line-height: 22px;
+    }
 
     .video-container iframe {
         width: 190vh;
