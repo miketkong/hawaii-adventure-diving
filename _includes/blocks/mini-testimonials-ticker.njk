@@ -20,7 +20,11 @@
       do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
       current = next;
       ticker.textContent = testimonials[current];
-      ticker.style.opacity = '1';
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          ticker.style.opacity = '1';
+        });
+      });
     }, 600);
   }, 4000);
 </script>

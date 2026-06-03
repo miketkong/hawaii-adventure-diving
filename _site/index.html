@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=1780449958929">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -94,7 +94,7 @@
         <div id="mobile-top-bar" class="container top-bar mobile-only">
             <div class="phone-number"><a href="tel:">+1 (808) 829-2203</a></div>
             
-            <a class="btn btn-md btn-accent-1" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour Info</span></a>
+            <a class="btn btn-accent-1" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour Info</span></a>
             
         </div>
         <!--// Mobile Top Bar -->
@@ -266,8 +266,8 @@
         heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
         heroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
     } else {
-        heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
-        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r5.mp4';
+        heroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
     }
 </script>
  
@@ -320,7 +320,11 @@
       do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
       current = next;
       ticker.textContent = testimonials[current];
-      ticker.style.opacity = '1';
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          ticker.style.opacity = '1';
+        });
+      });
     }, 600);
   }, 4000);
 </script>
@@ -413,8 +417,9 @@
 
                     </div>
 
+                    <!-- CUSTOMER REVIEWS -->
                     <div id="customer-reviews" class="row">
-                        <!-- CUSTOMER REVIEWS -->
+                        
                         <div class="col-lg-8 offset-lg-2 text-center mb-30">
                             <img class="pt-40 pb-10" style="max-width: 150px" src="/images/five-stars-wreath.png" alt=""
                                 data-show="startbox">
@@ -437,13 +442,8 @@
                                                     src="/images/icon-reviews-trip-advisor.png"></a>
                                             <img class="review-count" src="/images/5-stars.png" alt="5 star review">
                                             <h2>This is THE best dive in Oahu!</h2>
-                                            <p class="reviews-text">“This is by far THE best shark diving experience on
-                                                the island. Small locally owned operation, small groups for a more
-                                                intimate dive experience. I've went out with these guys a few times now
-                                                and The crew is one of the best, and extremely knowledgeable. Tons of
-                                                sharks, and not once did I ever feel unsafe in the water. If you're
-                                                looking to swim with sharks, do it and do it with Hawaiian adventure,
-                                                not a commercial over crowded operation. Shop local!”</p>
+                                            <p class="reviews-text">“Tons of
+                                                sharks, and not once did I ever feel unsafe in the water.”</p>
                                             <p class="reviews-signature">— Jeff</p>
                                         </div>
 
@@ -452,12 +452,7 @@
                                                     src="/images/icon-reviews-google.png"></a>
                                             <img class="review-count" src="/images/5-stars.png" alt="5 star review">
                                             <h2>Absolutely Epic!</h2>
-                                            <p class="reviews-text">“I've done free dives with one of the more famous
-                                                companies, but Nick and his crew are amazing and make it a once in a
-                                                lifetime incredible experience! Groups are limited to 6, so sharks will
-                                                be able to come closer with amazing photo opportunities. Safety divers
-                                                redirect the sharks for you to get a thrill of a lifetime. Hands down
-                                                best crew and best experience!”</p>
+                                            <p class="reviews-text">“Hands down best crew and best experience!”</p>
                                             <p class="reviews-signature">— germanfoodiehawaii</p>
                                         </div>
 
@@ -467,12 +462,7 @@
                                                     src="/images/icon-reviews-yelp.png"></a>
                                             <img class="review-count" src="/images/5-stars.png" alt="5 star review">
                                             <h2>We Saw 4 Tiger Sharks</h2>
-                                            <p class="reviews-text">“The crew were super nice and genuinely wanted us to
-                                                have a great time. I was nervous and they were patient and encouraging
-                                                of me! My 16 year old was also there and they took care of us all! We
-                                                ended up seeing 4 Tiger sharks and 2 other kinds. They were totally in
-                                                control the whole time and I totally recommend them! They are fantastic
-                                                and a must for anyone who loves nature and the ocean!”</p>
+                                            <p class="reviews-text">“The crew were totally in control the whole time!”</p>
                                             <p class="reviews-signature">— Alexis R.</p>
                                         </div>
 
@@ -482,9 +472,7 @@
                                                     src="/images/icon-reviews-trip-advisor.png"></a>
                                             <img class="review-count" src="/images/5-stars.png" alt="5 star review">
                                             <h2>Wow!</h2>
-                                            <p class="reviews-text">“AMAZING experience! Swimming with sharks was on my
-                                                bucket list and I could check it off! The crew was chill, funny, and
-                                                most importantly made me feel safe the entire time. Highly recommended!”
+                                            <p class="reviews-text">“Swimming with sharks was on my bucket list—highly recommended!”
                                             </p>
                                             <p class="reviews-signature">— Daisy R.</p>
                                         </div>
@@ -495,10 +483,7 @@
                                                     src="/images/icon-reviews-facebook.png"></a>
                                             <img class="review-count" src="/images/5-stars.png" alt="5 star review">
                                             <h2>We Had An Amazing Time</h2>
-                                            <p class="reviews-text">“The instructor was patient with us since it was our
-                                                first time doing this. We were able the see 3 sharks pretty close up. It
-                                                was such an exciting experience. We will definitely be doing this again
-                                                when we go back to Oahu."</p>
+                                            <p class="reviews-text">“Definitely doing this again when we come back to Oahu."</p>
                                             <p class="reviews-signature">— Dria Rene</p>
                                         </div>
 
@@ -523,7 +508,7 @@
                             </div>
 
                         </div>
-                        <!--// CUSTOMER REVIEWS -->
+                        
 
                         <!-- AROUND THE WEB -->
                         <div id="around-the-web" class="container text-center pb-20">
@@ -584,7 +569,7 @@
                         <!--// AROUND THE WEB -->
 
                     </div>
-                    <!--// Row -->
+                    <!--// CUSTOMER REVIEWS (ROW) -->
 
 
                 </div>
@@ -600,10 +585,10 @@
 <!-- Photo Grid Gallery -->
 <div class="container light-background">
     <div class="row">
-        <div class="col-lg-8 offset-lg-2 px-20 text-center">
+        <div class="col-lg-8 offset-lg-2 px-20 text-center-md">
             <!--<img class="mb-50 logo" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">-->
             <h1 class="h1-small mb-0" data-show="startbox"  data-show-delay="0">Cage Free <span class="no-break">Shark Diving</span></h1>
-            <h2 class="h2-big blue-text" data-show="startbox"  data-show-delay="100">Oahu Shark Diving Tour <span class="no-break">Photo Gallery</span></h2>
+            <h2 class="h2-big blue-text" data-show="startbox"  data-show-delay="100">Tour Photos</h2>
             <p data-show="startbox"  data-show-delay="200">Get a glimpse of what you can expect from a <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">Shark Diving Tour with Hawaii Adventure Diving</a> as well as the quality of the photos taken by <a href="/about-us/">our <span class="no-break">amazing team</span></a>.</p>
         </div>
     </div>
@@ -613,17 +598,18 @@
             <div class="col-12" style="display: inline-table;">
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg" loading="lazy" alt="Drammatically lit photo of a female freediver in her twenties swimming about ten feet underwater with two large sharks off the coast of the north shore of Oahu, Hawaii. She's wearing large diving fins, a snorkel and mask. Light rays from the sun can be seen illumanting from above creating a feeling of mystery and beauty."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/hawaii-shark-diving-free-diving-with-group-of-sharks.jpg" loading="lazy" alt="A man in his twenties is floating underwater with fins and snorkel gear looking at a group of about a dozen sharks in the water thirty feet away. He is in open ocean with the sharks without a cage. There is a safety rope next to his left shoulder. The water is a deep blue as is common in the open oceans of the coast of Hawaii."></a>
-                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-swim-with-sharks-hawaii-shark-tour.jpg" loading="lazy" alt="Artist and professional choreographer, Vanesa Seco, a vibrant woman in her twenties with a fit physique and wearing a thong bikini is swimming with a large group of sharks. She is wearing freediving fins and snorkel gear on the Hawaii Adventure Diving shark tour located on Oahu, Hawaii."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/woman-cage-free-shark-diving-hawaii.jpg" loading="lazy" alt="A woman in a blue swimsuit and fins dives underwater surrounded by sharks off the coast of Hawaii"></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg" loading="lazy" alt="An underwater photo of a man and woman on a shark diving tour operated by Hawaii Adventure Diving, located in Haleiwa, Hawaii are seen floating in the blue waters of Hawaii next to a shark tour boat safety line with a group of seven large sharks swimming below them. The divers are not in a cage and appear to be entranced at the experience they are having swimming with the sharks."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-snorkeling-with-sharks-on-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater photo of a young woman freediver swimming with a group of six sharks. She is wearing freediving fins and snorkel gear. Sun rays can be seen bathing streaming through the water's surface to create a beautiful scene reminiscent of a dream. She's on a shark diving tour with Hawaiian shark tour operator Hawaii Adventure Diving."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/free-diver-with-shark-hawaii-shark-diving-tour.jpg" loading="lazy" alt="An underwater photo of a young male freediver in his twenties treading water in Hawaii with a large shark swimming by. He's in the water with the shark without a cage. The water is clear blue and the sun is shinning."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/free-divers-swimming-with-huge-tiger-shark-hawaii-crazy.jpg" loading="lazy" alt="An underwater photo of a group of hawaii shark tour snorkelers in the open ocean looking at a very large tiger shark. The are swimming in the water without a shark cage. A safety diver from the shark tour can be seen in the water between the shark and the tour guests."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/couple-holding-hands-underwater-while-swimming-with-sharks-hawaii-oahu.jpg" loading="lazy" alt="An underwater photo of a young freediving couple on a Hawaii shark diving tour holding hands and swimming toward two large sharks in the distance. They are both wearing fins and snorkel gear and are several feet below the surface of the water so that the water surface is not visible in the photo creating the appearance that they may be very deep underwater."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/shark-dive-tour-boat-with-sharks-visible-below.jpg" loading="lazy" alt="A semi underwater photo taken from the ocean of the Hawaii Adventure Diving shark diving our boat. The boat captain can be seen at the helm while a group of sharks swim in the waters just below. The composition of the photo is exceptional capturing the scenes both above and below the water's surface simulteneously."></a>
-                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/shark-tour-guide-nick-lowenstine-redirecting-shark-hawaii.jpg" loading="lazy" alt="An underwater photo of professional shark handler and safety diver for Hawaii Adventure Diving, Nick Lowenstine in the open ocean wearing a camoflage full body wetsuit and advanced freediving gear with his hand on the nose of a large oncoming tiger shark in a shark redirecting maneuver. They both appear calm and controlled."></a>
-                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/shark-tour-guide-redirects-tiger-shark-hawaii.jpg" loading="lazy" alt="Another underwater photo of professional shark handler and Hawaii Adventure Diving shark diving tour guide and safety diver, Nick Lownstine redirectin a very large tiger shark. The angle is from the side of the action and illustrates just how large the shark is. The shark appears to be docile, but the scene looks like something only an expert and very daring person would ever attempt."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/man-swimming-with-sharks-north-shore-oahu-hawaii.jpg" loading="lazy" alt="A male diver wearing fins floats near the surface of the ocean as sharks swim past in clear blue water off the North Shore of Oahu, Hawaii."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/woman-snorkeling-with-sharks-oahu-hawaii.jpg" loading="lazy" alt="A woman in a pink wetsuit and snorkel gear swims underwater with sharks in clear blue water off Oahu, Hawaii."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/swimmer-with-shark-no-cage-open-ocean-hawaii.jpg" loading="lazy" alt="An underwater photo of a young male freediver in swim trunks on a shark diving tour in Hawaii hovers at the surface of the ocean water with a large shark just beneth and another in the distance. The water is a clear deep blue with sun rays shining through it to create a beautiful and entrancing scene."></a>
-                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/underwater-gopro-snorkeler-swimming-with-sharks-no-cage-hawaii.jpg" loading="lazy" alt="An underwater photo of a freediver on a shark diving tour by Hawaii Adventure Diving located on the north shore of Oahu, Hawaii, taking a photo of a group of sharks with their underwater camera. They are wearing a black long sleeve rash guard and snorkel gear."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/snorkeler-on-safety-rope-surrounded-by-sharks-hawaii.jpg" loading="lazy" alt="A snorkeler holds a safety rope and dives beneath the surface surrounded by multiple sharks in the open ocean off Hawaii."></a>
+
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/woman-swiming-with-sharks-on-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater photo of a young woman swimming in the open ocean in Hawaii with sharks and no cage. She's wearing a bikini and snorkel gear and can be seen swiming to the left of the frame along a safety rope with a large grey shark just below her and three more large sharks in the distance only a few yeards away."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/woman-swmming-with-sharks-no-cage-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater shot of a young woman freediver on a oahu shark diving tour by Hawaii Adventure Diving is swimming along the surface of the open ocean without a cage while a group of five large grey sharks swim just below her. She's wearing a dark bikini with freediving fins, a snorkel, and mask. A yellow shark diving tour safety rope can be seen in the water just behind her. The water is a deep bright blue and very clear."></a>
                 <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/young-woman-posing-underwater-with-sharks-no-cage-hawaii.jpg" loading="lazy" alt="A beautiful underwater photo of a young woman on a Hawaii shark diving tour in a white bathing suite and snorkel gear is posing at the camera with her arms spread wide. She's floating at the surface of the open ocean and a group of eight large darg grey sharks can be seen swimming just bleow and behin her. She's swimming with the sharks without a cage."></a>

@@ -133,7 +133,8 @@ h4 {
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 p a {
@@ -155,6 +156,10 @@ p a:hover {
     margin-bottom: 30px;
 }
 
+.dark-bg {
+    color: #fff;
+}
+
 .dark-background p a {
     color: #f0ce12;
     text-decoration: underline;
@@ -172,6 +177,10 @@ p a:hover {
     font-weight: 600;
     color: unset;
     margin-bottom: 0px;
+}
+
+#hero-text {
+    text-shadow: -2px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .article-lead {
@@ -200,6 +209,10 @@ p a:hover {
     max-width: 800px;
     margin: auto;
     text-align: center;
+}
+
+.small-text {
+    font-size: 16px;
 }
 
 ::selection {
@@ -288,10 +301,18 @@ p a:hover {
     color: #000;
 }
 
+.bg-lt-gray {
+    background-color: #f7f7f7;
+}
+
+
 .yellow-link a,
 .yellow-link {
     color: #f0ce12 !important;
     text-decoration: underline !important;
+}
+.pano-section p {
+    line-height: 26px;
 }
 
 .pano-section .disclaimer {
@@ -386,7 +407,8 @@ figcaption {
 }
 
 .navbar-scroll .navbar-top {
-    background-color: #0000001c;
+    /*background-color: #0000001c;*/
+    background-color: #033460;
 }
 
 /*.navbar-scroll .navbar-top .container {
@@ -411,6 +433,12 @@ figcaption {
     padding: 7px 16px 3px 14px;
     margin-bottom: 14px;
     min-width: 130px;
+}
+
+.btn-md {
+    font-size: 24px;
+    padding: 20px 27px 19px 27px;
+    line-height: 1px;
 }
 
 .btn:hover,
@@ -840,6 +868,7 @@ ul.tour-times {
 
 ul.tour-times li {
     list-style: none;
+    margin-bottom: 8px;
 }
 
 .tour-times a,
@@ -855,13 +884,14 @@ ul.tour-times li {
 
 /* Product Landing Page General Styles */
 .page-title-img-wrapper h1 {
+    font-family: "Poppins", sans-serif !important;
     font-size: 13px !important;
     text-transform: uppercase !important;
     color: #fff;
-    font-weight: 100;
-    letter-spacing: 8px;
+    font-weight: 100 !important;
+    letter-spacing: 8px !important;
     margin-bottom: 30px !important;
-    padding-top: 20px;
+    padding-top: 20px !important;
 }
 
 .h1-small-leader-text {
@@ -873,6 +903,11 @@ ul.tour-times li {
     letter-spacing: 4px;
     margin-bottom: 10px !important;
     padding-bottom: 20px;
+}
+
+.tour-page #why-us-v2 {
+    background-size: cover;
+    padding-top: 30%; 
 }
 
 /* Shark Tour Page */
@@ -920,6 +955,7 @@ ul.tour-times li {
 .pano-section h2 {
     font-size: 48px;
     line-height: 49px;
+    margin-bottom: 10px;
 }
 
 .pano-section p {
@@ -970,7 +1006,7 @@ ul.tour-times li {
 }
 
 #snorkel-gear {
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 #snorkel-gear .text-box {
@@ -1228,6 +1264,7 @@ ul.tour-times li {
 
 /* Navigation */
 .navbar-brand-wrapper {
+    position: relative;
     min-height: 116px;
 }
 
@@ -1313,7 +1350,7 @@ ul.tour-times li {
 .hero-banner .banner-logo {
     text-align: center;
     padding-bottom: 0px;
-    padding-top: 120px;
+    padding-top: 0px;
 }
 
 .hero-banner .banner-logo img {
@@ -1418,7 +1455,8 @@ ul.tour-times li {
     width: 100%;
     height: 100vh;
     min-height: 1550px;
-    background-color: #02457ea1;
+    /*background-color: #02457ea1;*/
+    background-color: #02457e61;
 }
 
 .fade-in {
@@ -1460,24 +1498,19 @@ ul.tour-times li {
 }
 
 .accordion-header .accordion-button {
-    font-size: 22px;
+    font-size: 20px;
     padding: 20px;
-    font-weight: 700;
-    line-height: 23px;
+    line-height: 30px;
 }
 
 .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 10'%3e%3cpath fill='' d='m8 30-.707.707.707.707.707-.707L8 8ZM.293 1.707l7 7 1.414-1.414-7-7L.293 1.707Zm8.414 7 7-7L14.293.293l-7 7 1.414 1.414Z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(150,150,150)' viewBox='0 0 16 10'%3e%3cpath fill='' d='m8 30-.707.707.707.707.707-.707L8 8ZM.293 1.707l7 7 1.414-1.414-7-7L.293 1.707Zm8.414 7 7-7L14.293.293l-7 7 1.414 1.414Z'/%3e%3c/svg%3e");
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 16 10'%3e%3cpath fill='' d='m8 30-.707.707.707.707.707-.707L8 8ZM.293 1.707l7 7 1.414-1.414-7-7L.293 1.707Zm8.414 7 7-7L14.293.293l-7 7 1.414 1.414Z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='rgb(150,150,150)' viewBox='0 0 16 10'%3e%3cpath fill='' d='m8 30-.707.707.707.707.707-.707L8 8ZM.293 1.707l7 7 1.414-1.414-7-7L.293 1.707Zm8.414 7 7-7L14.293.293l-7 7 1.414 1.414Z'/%3e%3c/svg%3e");
 }
 
-.accordion-body {
-    font-size: 18px;
-    padding: 0px 20px 20px 20px;
-}
 
 .accordion-body img {
     max-width: 100%;
@@ -1592,7 +1625,7 @@ ul.tour-times li {
     color: #fff;
     border-radius: 20px;
     overflow: hidden;
-    min-width: 370px;
+    /*min-width: 370px;*/
 }
 
 .price-section .product-card img {
@@ -1620,6 +1653,11 @@ ul.tour-times li {
     line-height: 20px;
 }
 
+#get-the-shot h2 {
+    margin-bottom: 10px;
+}
+
+
 .whale-watching-tour-page .price-section .product-card .price {
     font-size: 40px;
 }
@@ -1634,8 +1672,14 @@ ul.tour-times li {
 }
 
 .price-section .product-card p {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 24px;
     margin-bottom: 0px;
+}
+
+.price-section p {
+    font-size: 20px;
+    line-height: 24px;
 }
 
 /* Article Page Styles - All Screen Widths */
@@ -1683,7 +1727,11 @@ ul.tour-times li {
     background-size: cover;
 }
 
-
+.accordion {
+    border-top: 1px solid rgba(177, 177, 180, 0.3);
+    border-bottom: 1px solid rgba(177, 177, 180, 0.3);
+    margin-top: 20px;
+}
 .accordion-item {
     border-radius: 0px !important;
 }
@@ -1697,12 +1745,17 @@ ul.tour-times li {
 }
 
 .accordion-header .accordion-button {
-    padding-left: 0px;
-    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
 }
 
 .accordion-body {
-    padding: 0px 0px 20px 0px;
+    padding: 20px;
+    background-color: #016ba3;
+    color: #fff;
+}
+.accordion-body p {
+    font-size: 20px;
 }
 
 .accordion-header .accordion-button[aria-expanded=true] {
@@ -1814,6 +1867,11 @@ ul.tour-times li {
     background-color: #fff;
 }
 
+.shark-tour-page .big-CTA-pre-footer {
+    padding-top: 320px;
+    background-color: #032e50;
+}
+
 /* Footer */
 .footer-logo {
     max-width: 150px;
@@ -1844,6 +1902,9 @@ ul.tour-times li {
     .mobile-hide {
         display: none;
     }
+    .navbar-brand {
+        top: 0px;
+    }
 
     .article-page ol,
     .article-page ul {
@@ -1864,6 +1925,10 @@ ul.tour-times li {
         font-size: 13px;
         margin-bottom: 30px;
         padding: 0px 10px;
+    }
+
+    #shark-diving-photography-packages .description {
+        margin-top: 8px;
     }
 
     /* As Seen On */
@@ -1893,6 +1958,63 @@ ul.tour-times li {
         height: auto;
         aspect-ratio: 1080 / 1776;
     }
+    #mini-testimonials-ticker {
+        margin-top: 13px;
+    }
+
+    /* Tour Pages */
+    .tour-page #why-us-v2 {
+        padding-top: 30%; 
+    }
+    .tour-page #why-us-v2 #jarallax-container-0 div {
+        background-size: 170% !important;
+        background-position-y: 0% !important;
+    }
+    .tour-page #customer-reviews {
+        display: flex;
+        flex-direction: column;
+    }
+    #reviews-header {
+        order: 1;
+    }
+    #around-the-web {
+        order: 2;
+    }
+    #around-the-web-heading-text {
+        display: none;
+    }
+    #testimonials-swiper {
+        order: 3;
+    }
+    /* Show all slides vertically stacked on mobile */
+    #customer-reviews .swiper-container {
+        overflow: visible;
+    }
+    #customer-reviews .swiper-wrapper {
+        display: block;
+        transform: none !important;
+    }
+    #customer-reviews .swiper-slide {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    #customer-reviews .swiper-button-prev,
+    #customer-reviews .swiper-button-next,
+    #customer-reviews .d-flex {
+        display: none !important;
+    }
+    /* Hide the last 3 slides to only show a total of 4 slides on mobile */
+    #customer-reviews .swiper-slide:nth-child(n+5) {
+        display: none;
+    }
+
+    .tour-page #photo-grid-gallery {
+        padding-top: 20px !important;
+    }
+
+    .shark-tour-page .big-CTA-pre-footer {
+        background-color: #0d233f;
+    }
 }
 
 /* ========================================================== */
@@ -1903,7 +2025,7 @@ ul.tour-times li {
         max-height: 820px !important;
     }
     .hero-banner .banner-contents {
-        justify-content: start;
+        justify-content: space-between;
     }
     .homepage .hero-banner .banner-logo {
         padding-top: 0px;
@@ -1938,6 +2060,12 @@ ul.tour-times li {
     .video-container iframe {
         width: 190vh;
         height: 72vw;
+    }
+
+    .shark-tour-page #photo-grid-gallery {
+        background-color: #ececec !important;
+        padding-top: 390px !important;
+        margin-top: -380px;
     }
 }
 
@@ -2259,7 +2387,7 @@ ul.tour-times li {
     #get-the-shot .pano-bgd {
         background-image: url("/images/section-bgd-get-the-shot.jpeg");
     }
-
+    
     #get-the-shot .text-box {
         padding-left: 160px;
     }
