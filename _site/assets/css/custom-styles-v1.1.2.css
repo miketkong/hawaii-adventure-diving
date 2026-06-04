@@ -1621,6 +1621,7 @@ ul.tour-times li {
 }
 
 .price-section .product-card {
+    text-align: center;
     background-color: #000;
     color: #fff;
     border-radius: 20px;
@@ -1789,6 +1790,10 @@ ul.tour-times li {
 .tour-quick-guide p {
     font-size: 14px;
     margin-bottom: 0px;
+}
+
+#tour-features-grid {
+    margin-top: 20px;
 }
 
 .hero-banner .star-rating,
@@ -1962,11 +1967,55 @@ ul.tour-times li {
         margin-top: 13px;
     }
 
+    
+    .service-box-sm {
+        padding: 20px 10px 25px;
+    }
+    #tour-features .h1-small {
+        margin-bottom: 10px;
+    }
+    #tour-features h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    #tour-features .circle-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 4px;
+    }
+    #tour-features .service-box-title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 1px;
+    }
+    #tour-features .service-box-text {
+        display: none;
+    }
+
     /* Tour Pages */
+    #tour-days-and-times h2 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    #price-section h2 {
+        font-size: 36px;
+        line-height: 34px;
+        margin-bottom: 5px;
+    }
+    #price-section .h1-small {
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+    .tour-page .h1-small {
+        display: none;
+    }
+
     .tour-page #why-us-v2 {
         padding-top: 30%; 
     }
-    .tour-page #why-us-v2 #jarallax-container-0 div {
+    #why-us-v2 #jarallax-container-0 div {
         background-size: 170% !important;
         background-position-y: 0% !important;
     }
@@ -1979,12 +2028,20 @@ ul.tour-times li {
     }
     #around-the-web {
         order: 2;
+        padding-bottom: 0px !important;
     }
     #around-the-web-heading-text {
         display: none;
     }
     #testimonials-swiper {
         order: 3;
+    }
+
+    #customer-reviews .swiper-slide a {
+        display: none;
+    }
+    #customer-reviews .swiper-slide .reviews-signature {
+        text-align: center;
     }
     /* Show all slides vertically stacked on mobile */
     #customer-reviews .swiper-container {
@@ -2007,9 +2064,32 @@ ul.tour-times li {
     #customer-reviews .swiper-slide:nth-child(n+5) {
         display: none;
     }
+    
+    #photo-grid-gallery .h2-big {
+        font-size: 32px;
+        line-height: 36px;
+    }
 
     .tour-page #photo-grid-gallery {
         padding-top: 20px !important;
+    }
+    .photo-grid-gallery img {
+        width: 50%;
+    }
+
+    .homepage #photo-grid-gallery {
+        padding-bottom: 0px;
+    }
+    .homepage .CTA-section {
+        margin-top: -30px;
+    }
+    .CTA-section .big-button span::after {
+        width: 21px;
+        height: 21px;  
+
+    }
+    .homepage #footer {
+        padding-top: 670px !important;
     }
 
     .shark-tour-page .big-CTA-pre-footer {
@@ -2066,6 +2146,19 @@ ul.tour-times li {
         background-color: #ececec !important;
         padding-top: 390px !important;
         margin-top: -380px;
+    }
+    .service-box-sm {
+        height: 266px;
+    }
+
+    .homepage #footer {
+        padding-top: 710px !important;
+    }
+
+    .CTA-section .big-button span::after {
+        width: 21px;
+        height: 21px;  
+
     }
 }
 
@@ -2663,7 +2756,7 @@ ul.tour-times li {
     }
 
     .product-cards .product-card {
-        max-width: 200px;
+        max-width: 360px;
         margin: 10px;
         text-align: center;
     }
