@@ -9,17 +9,25 @@
   VLTJS.navbar = {
     init: function init() {
       var scrollClass = 'navbar-scroll',
-          showClass = 'navbar-show',
-          hideClass = 'navbar-hide',
-          endClass = 'navbar-end',
-          stickyOffset = $('.navbar-topbar').outerHeight() || $('.navbar-top').outerHeight() || 100;
+        showClass = 'navbar-show',
+        hideClass = 'navbar-hide',
+        endClass = 'navbar-end',
+        stickyOffset = $('.navbar-topbar').outerHeight() || $('.navbar-top').outerHeight() || 100;
       $('<svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" fill="none"><path fill="currentColor" d="M1.47 9.47.94 10 2 11.06l.53-.53-1.06-1.06ZM6 6l.53.53.53-.53-.53-.53L6 6ZM2.53 1.47 2 .94.94 2l.53.53 1.06-1.06Zm0 9.06 4-4-1.06-1.06-4 4 1.06 1.06Zm4-5.06-4-4-1.06 1.06 4 4 1.06-1.06Z"/></svg>').appendTo('.navbar-top .nav-item.navbar-dropdown > .nav-link');
+      var showTimer = null;
       VLTJS.throttleScroll(function (type, scroll) {
         // show / hide
         if ('down' === type && 500 < scroll) {
+          clearTimeout(showTimer);
+          showTimer = null;
           VLTJS.body.removeClass(showClass).addClass(hideClass);
         } else if ('up' === type || 'end' === type || 'start' === type) {
-          VLTJS.body.removeClass(hideClass).addClass(showClass);
+          if (!showTimer) {
+            showTimer = setTimeout(function () {
+              VLTJS.body.removeClass(hideClass).addClass(showClass);
+              showTimer = null;
+            }, 1000);
+          }
         }
 
         if ('end' === type) {
@@ -33,14 +41,14 @@
           VLTJS.body.addClass(scrollClass);
         }
 
-        if ('start' === type) {
+        if (scroll < 400) {
           VLTJS.body.removeClass(scrollClass);
         }
       }); // show and hide the menu with focus
 
       function toggleShow() {
         var $thisDropdown = $(this).parents('.navbar-dropdown'),
-            $thisDropdownMenu = $thisDropdown.children('.dropdown-menu');
+          $thisDropdownMenu = $thisDropdown.children('.dropdown-menu');
 
         if (!$thisDropdown.hasClass('focus')) {
           $thisDropdown.addClass('focus');
@@ -57,11 +65,11 @@
       VLTJS.debounceResize(function () {
         $('.navbar-dropdown > .dropdown-menu').each(function () {
           var $thisDropdown = $(this),
-              rect = $thisDropdown[0].getBoundingClientRect(),
-              rectLeft = rect.left,
-              rectRight = rect.right,
-              rectWidth = rect.width,
-              wndW = VLTJS.window.width();
+            rect = $thisDropdown[0].getBoundingClientRect(),
+            rectLeft = rect.left,
+            rectRight = rect.right,
+            rectWidth = rect.width,
+            wndW = VLTJS.window.width();
 
           if (0 > wndW - rectRight) {
             $thisDropdown.addClass('dropdown-menu-drop-left');
