@@ -710,7 +710,7 @@ figcaption {
 }
 
 /* Why Us Section */
-#why-us-v2 {
+#ratings-and-reviews {
     background-image: url("/images/why-section-banner-v2r1.webp");
     background-position-x: center;
     background-size: contain;
@@ -905,7 +905,7 @@ ul.tour-times li {
     padding-bottom: 20px;
 }
 
-.tour-page #why-us-v2 {
+.tour-page #ratings-and-reviews {
     background-size: cover;
     padding-top: 30%; 
 }
@@ -2009,10 +2009,10 @@ ul.tour-times li {
         margin-bottom: 20px;
     }
 
-    .tour-page #why-us-v2 {
+    .tour-page #ratings-and-reviews {
         padding-top: 30%; 
     }
-    #why-us-v2 #jarallax-container-0 div {
+    #ratings-and-reviews #jarallax-container-0 div {
         background-size: 170% !important;
         background-position-y: 0% !important;
     }
