@@ -9,6 +9,21 @@
 
 ---
 
+## Status
+
+- [x] Spec written and approved
+- [x] `section-engagement.js` written — `assets/js/cro/section-engagement.js`
+- [x] `<section id="">` attributes added to all Shark Tour LP sections
+- [x] Console logging verified — events firing as expected
+- [ ] Script loaded on the live site
+- [x] GTM configured — dataLayer variables, triggers, and GA4 tags created
+- [x] GA4 custom dimensions and metrics registered
+- [x] GTM Preview verified — tags firing with correct values
+- [x] GTM container published
+- [ ] GA4 data confirmed flowing in Reports → Engagement → Events
+
+---
+
 ## Objective
 
 The Shark Tour landing page is long, with many sections. The primary goal of this tracking is to determine which sections users are actually seeing and which they are scrolling past — so that sections can be confidently cut, condensed, or repositioned based on real behavior rather than assumption.
@@ -228,9 +243,7 @@ Use GTM Preview mode to verify tags fire with correct values before publishing. 
 
 ## Open Questions
 
-- [ ] **Section IDs:** Confirm final list of `<section id="">` values to be added to the Shark Tour LP before implementation.
-- [ ] **Conversion event:** Confirm which GA4 event represents a conversion on the Shark Tour LP (e.g., form submission, booking redirect click) so section engagement can be correlated to it in GA4 Explorations.
-- [ ] **60s milestone on short sections:** If a section is very short (e.g., a 2-line CTA), reaching 60s would be unusual. Consider whether a max milestone should be capped based on estimated read time, or whether the raw data is sufficient to identify anomalies.
+- [x] **Conversion event:** `purchase` — fires on completed bookings via FareHarbor. Use this event to segment converters vs. non-converters in GA4 Explorations.
 
 ---
 
