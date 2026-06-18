@@ -1,12 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("cssVersion", function(filePath) {
     try {
-      const stats = fs.statSync(path.join(__dirname, filePath));
-      return Math.floor(stats.mtimeMs);
+      const content = fs.readFileSync(path.join(__dirname, filePath));
+      return crypto.createHash('md5').update(content).digest('hex').slice(0, 8);
     } catch(e) {
       return Date.now();
     }
