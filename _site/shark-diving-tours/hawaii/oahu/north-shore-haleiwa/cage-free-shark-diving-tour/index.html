@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=f236db43">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=0e0e6c81">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -236,7 +236,7 @@
 
         
         <!-- Main Hero Video Banner -->
-        <section class="hero-video-banner hero-banner dark-bg">
+        <section id="hero-banner" class="hero-video-banner hero-banner dark-bg">
             <div class="container-fluid gx-0">
                 <div class="video-overlay-color"></div>
 
@@ -344,171 +344,176 @@
         </section>
         <!--// As Seen on Section -->
 
-        <!-- WHY US SECTION -->
-        <section id="why-us-v2" class="dark-bg jarallax"  data-jarallax data-speed="0.8" data-img-position="50% 0%">
-            <div class="content-wrap">
-                <div class="container">
-                    <!-- CUSTOMER REVIEWS -->
-                    <div id="customer-reviews" class="row">
+        <!-- RATINGS & REVIEWS SECTION -->
+<section id="ratings-and-reviews" class="dark-bg jarallax"  data-jarallax data-speed="0.8" data-img-position="50% 0%">
+    <div class="content-wrap">
+        <div class="container">
 
-                        <div id="reviews-header" class="col-lg-8 offset-lg-2 text-center mb-30">
-                            <img class="pt-40 pb-10" style="max-width: 150px" src="/images/five-stars-wreath.png" alt=""
-                                data-show="startbox">
-                            <h1 data-show="startbox">Our Guests Consistently Rate Us 5-Stars</h1>
-                            <p class="mb-0" data-show="startbox">See what our guests are saying about their experience with Hawaii
-                                Adventure Diving.</p>
-                        </div>
+            <!-- CUSTOMER REVIEWS -->
+            <div id="customer-reviews" class="row">
 
-                        <!--// Swiper Col -->
-                        <div id="testimonials-swiper" class="col">
-                            <div class="swiper mt-0 pb-20" data-swiper-slides="1"
-                                data-swiper-breakpoints="828:2, 1024:3" data-swiper-loop="true" data-swiper-gap="30"
-                                data-swiper-grabcursor="true" data-show="startbox" data-show-delay="100"
-                                data-swiper-autoplay="4000" data-show="startbox">
-                                <div class="swiper-container" data-show="startbox">
-                                    <div class="swiper-wrapper">
+                <div id="reviews-header" class="col-lg-8 offset-lg-2 text-center mb-30">
+                    <img class="pt-40 pb-10" style="max-width: 150px" src="/images/five-stars-wreath.png" alt=""
+                        data-show="startbox">
+                    <h1 data-show="startbox">Our Guests Consistently Rate Us 5-Stars</h1>
+                    <p class="mb-0" data-show="startbox">See what our guests are saying about their experience with Hawaii
+                        Adventure Diving.</p>
+                </div>
 
-                                        <div class="swiper-slide review-card">
-                                            <a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
-                                                target="_blank"><img class="brand-logo"
-                                                    src="/images/icon-reviews-trip-advisor.png"></a>
-                                            <img class="review-count" src="/images/5-stars.png" alt="5 star review">
-                                            <h2>This is THE best dive in Oahu!</h2>
-                                            <p class="reviews-text">“Tons of
-                                                sharks, and not once did I ever feel unsafe in the water.”</p>
-                                            <p class="reviews-signature">— Jeff S.</p>
-                                        </div>
+                <!--// Testimonials Carousel -->
+                <section id="testimonials-carousel">
+                    <div class="col">
+                        <div class="swiper mt-0 pb-20" data-swiper-slides="1"
+                            data-swiper-breakpoints="828:2, 1024:3" data-swiper-loop="true" data-swiper-gap="30"
+                            data-swiper-grabcursor="true" data-show="startbox" data-show-delay="100"
+                            data-swiper-autoplay="4000" data-show="startbox">
+                            <div class="swiper-container" data-show="startbox">
+                                <div class="swiper-wrapper">
 
-                                        <div class="swiper-slide review-card">
-                                            <a href="https://bit.ly/3OSCaCX" target="_blank"><img class="brand-logo"
-                                                    src="/images/icon-reviews-google.png"></a>
-                                            <img class="review-count" src="/images/5-stars.png" alt="5 star review">
-                                            <h2>Absolutely Epic!</h2>
-                                            <p class="reviews-text">“Hands down best crew and best experience!”</p>
-                                            <p class="reviews-signature">— germanfoodiehawaii</p>
-                                        </div>
-
-                                        <div class="swiper-slide review-card">
-                                            <a href="https://www.yelp.com/biz/hawaii-adventure-diving-haleiwa-2"
-                                                target="_blank"><img class="brand-logo"
-                                                    src="/images/icon-reviews-yelp.png"></a>
-                                            <img class="review-count" src="/images/5-stars.png" alt="5 star review">
-                                            <h2>We Saw 4 Tiger Sharks</h2>
-                                            <p class="reviews-text">“The crew were totally in control the whole time!”
-                                            </p>
-                                            <p class="reviews-signature">— Alexis R.</p>
-                                        </div>
-
-                                        <div class="swiper-slide review-card">
-                                            <a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
-                                                target="_blank"><img class="brand-logo"
-                                                    src="/images/icon-reviews-trip-advisor.png"></a>
-                                            <img class="review-count" src="/images/5-stars.png" alt="5 star review">
-                                            <h2>Wow!</h2>
-                                            <p class="reviews-text">“Swimming with sharks was on my bucket list—highly
-                                                recommended!”
-                                            </p>
-                                            <p class="reviews-signature">— Daisy R.</p>
-                                        </div>
-
-                                        <div class="swiper-slide review-card">
-                                            <a href="https://www.facebook.com/HawaiiAdventureDiving/reviews/?ref=page_internal"
-                                                target="_blank"><img class="brand-logo"
-                                                    src="/images/icon-reviews-facebook.png"></a>
-                                            <img class="review-count" src="/images/5-stars.png" alt="5 star review">
-                                            <h2>We Had An Amazing Time</h2>
-                                            <p class="reviews-text">“Definitely doing this again when we come back to
-                                                Oahu."</p>
-                                            <p class="reviews-signature">— Dria R.</p>
-                                        </div>
-
+                                    <div class="swiper-slide review-card">
+                                        <a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
+                                            target="_blank"><img class="brand-logo"
+                                                src="/images/icon-reviews-trip-advisor.png"></a>
+                                        <img class="review-count" src="/images/5-stars.png" alt="5 star review">
+                                        <h2>This is THE best dive in Oahu!</h2>
+                                        <p class="reviews-text">“Tons of
+                                            sharks, and not once did I ever feel unsafe in the water.”</p>
+                                        <p class="reviews-signature">— Jeff S.</p>
                                     </div>
-                                </div>
-                                <div class="d-flex mt-20 justify-content-center" data-show="startbox">
-                                    <div class="swiper-button-prev swiper-button-position-2 swiper-button-dark shadow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
-                                            <path fill="currentColor" fill-rule="evenodd"
-                                                d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
-                                                clip-rule="evenodd" />
-                                        </svg>
+
+                                    <div class="swiper-slide review-card">
+                                        <a href="https://bit.ly/3OSCaCX" target="_blank"><img class="brand-logo"
+                                                src="/images/icon-reviews-google.png"></a>
+                                        <img class="review-count" src="/images/5-stars.png" alt="5 star review">
+                                        <h2>Absolutely Epic!</h2>
+                                        <p class="reviews-text">“Hands down best crew and best experience!”</p>
+                                        <p class="reviews-signature">— germanfoodiehawaii</p>
                                     </div>
-                                    <div class="swiper-button-next swiper-button-position-2 swiper-button-dark shadow">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
-                                            <path fill="currentColor" fill-rule="evenodd"
-                                                d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
-                                                clip-rule="evenodd" />
-                                        </svg>
+
+                                    <div class="swiper-slide review-card">
+                                        <a href="https://www.yelp.com/biz/hawaii-adventure-diving-haleiwa-2"
+                                            target="_blank"><img class="brand-logo"
+                                                src="/images/icon-reviews-yelp.png"></a>
+                                        <img class="review-count" src="/images/5-stars.png" alt="5 star review">
+                                        <h2>We Saw 4 Tiger Sharks</h2>
+                                        <p class="reviews-text">“The crew were totally in control the whole time!”
+                                        </p>
+                                        <p class="reviews-signature">— Alexis R.</p>
                                     </div>
+
+                                    <div class="swiper-slide review-card">
+                                        <a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
+                                            target="_blank"><img class="brand-logo"
+                                                src="/images/icon-reviews-trip-advisor.png"></a>
+                                        <img class="review-count" src="/images/5-stars.png" alt="5 star review">
+                                        <h2>Wow!</h2>
+                                        <p class="reviews-text">“Swimming with sharks was on my bucket list—highly
+                                            recommended!”
+                                        </p>
+                                        <p class="reviews-signature">— Daisy R.</p>
+                                    </div>
+
+                                    <div class="swiper-slide review-card">
+                                        <a href="https://www.facebook.com/HawaiiAdventureDiving/reviews/?ref=page_internal"
+                                            target="_blank"><img class="brand-logo"
+                                                src="/images/icon-reviews-facebook.png"></a>
+                                        <img class="review-count" src="/images/5-stars.png" alt="5 star review">
+                                        <h2>We Had An Amazing Time</h2>
+                                        <p class="reviews-text">“Definitely doing this again when we come back to
+                                            Oahu."</p>
+                                        <p class="reviews-signature">— Dria R.</p>
+                                    </div>
+
                                 </div>
                             </div>
-
-                        </div>
-                        <!--// Swiper Col -->
-
-
-                        <!-- AROUND THE WEB -->
-                        <div id="around-the-web" class="container text-center pb-20">
-                            <div id="around-the-web-heading-text" class="row">
-                                <div class="col-lg-8 offset-lg-2">
-                                    <h2>Top-rated Across the Web</h2>
-                                    <p>Since 2015, guests have trusted our crew for safe, professional, and
-                                        unforgettable shark
-                                        diving experiences.</p>
+                            <div class="d-flex mt-20 justify-content-center" data-show="startbox">
+                                <div class="swiper-button-prev swiper-button-position-2 swiper-button-dark shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <div class="swiper-button-next swiper-button-position-2 swiper-button-dark shadow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                                        <path fill="currentColor" fill-rule="evenodd"
+                                            d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
                                 </div>
                             </div>
-                            <div class="row ratings-group">
-                                <div class="review-block col-6 col-sm-3 col-md-2 offset-md-1">
-                                    <h4>Google</h4>
-                                    <h1>5<span>/5</span></h1>
-                                    <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
-                                    <p><a href="https://www.google.com/search?q=hawaii+adventure+diving&oq=hawaii+adventure+diving&gs_lcrp=EgZjaHJvbWUqBggAEEUYQTIGCAAQRRhBMgYIARBFGDsyBggCEEUYOzIGCAMQRRg9MgYIBBBFGD0yBggFEEUYPDIGCAYQRRhBMgYIBxBFGEHSAQgzMDkwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&sei=q3QVauKGEayf0PEPkfCJkAc#lrd=0x7c0058d23f97b437:0xa894e68e162e211b,1,,,,"
-                                            target="_blank">2140 reviews</a></p>
-                                </div>
-                                <div class="review-block col-6 col-sm-3 col-md-2">
-                                    <h4>Trip Advisor</h4>
-                                    <h1>4.9<span>/5</span></h1>
-                                    <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
-                                    <p><a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
-                                            target="_blank">586 reviews</a>
-                                    </p>
-                                </div>
-                                <div class="review-block col-6 col-sm-3 col-md-2">
-                                    <h4>Groupon</h4>
-                                    <h1>4.9<span>/5</span></h1>
-                                    <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
-                                    <p><a href="https://www.groupon.com/deals/hawaii-adventure-diving-3"
-                                            target="_blank">1127 reviews</a></p>
-                                </div>
-                                <div class="review-block col-6 col-sm-3 col-md-2">
-                                    <h4>Yelp</h4>
-                                    <h1>4.8<span>/5</span></h1>
-                                    <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
-                                    <p><a href="https://www.yelp.com/biz/hawaii-adventure-diving-haleiwa-2"
-                                            target="_blank">204 reviews</a></p>
-                                </div>
-                                <div class="review-block col-6 offset-3 col-sm-12 offset-sm-0 col-md-2"
-                                   >
-                                    <h4>Facebook</h4>
-                                    <h1>5<span>/5</span></h1>
-                                    <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
-                                    <p><a href="https://www.facebook.com/HawaiiAdventureDiving/reviews/?ref=page_internal"
-                                            target="_blank">85 reviews</a>
-                                    </p>
-                                </div>
-
-                            </div>
                         </div>
-                        <!--// AROUND THE WEB -->
 
                     </div>
-                    <!--// CUSTOMER REVIEWS (ROW) -->
-                </div>
+                </section>
+                <!--// Testimonials Carousel -->
+
+
+                <!-- AROUND THE WEB -->
+                <section id="ratings-around-the-web">
+                    <div id="around-the-web" class="container text-center pb-20">
+                        <div id="around-the-web-heading-text" class="row">
+                            <div class="col-lg-8 offset-lg-2">
+                                <h2>Top-rated Across the Web</h2>
+                                <p>Since 2015, guests have trusted our crew for safe, professional, and
+                                    unforgettable shark
+                                    diving experiences.</p>
+                            </div>
+                        </div>
+                        <div class="row ratings-group">
+                            <div class="review-block col-6 col-sm-3 col-md-2 offset-md-1">
+                                <h4>Google</h4>
+                                <h1>5<span>/5</span></h1>
+                                <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
+                                <p><a href="https://www.google.com/search?q=hawaii+adventure+diving&oq=hawaii+adventure+diving&gs_lcrp=EgZjaHJvbWUqBggAEEUYQTIGCAAQRRhBMgYIARBFGDsyBggCEEUYOzIGCAMQRRg9MgYIBBBFGD0yBggFEEUYPDIGCAYQRRhBMgYIBxBFGEHSAQgzMDkwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&sei=q3QVauKGEayf0PEPkfCJkAc#lrd=0x7c0058d23f97b437:0xa894e68e162e211b,1,,,,"
+                                        target="_blank">2140 reviews</a></p>
+                            </div>
+                            <div class="review-block col-6 col-sm-3 col-md-2">
+                                <h4>Trip Advisor</h4>
+                                <h1>4.9<span>/5</span></h1>
+                                <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
+                                <p><a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
+                                        target="_blank">586 reviews</a>
+                                </p>
+                            </div>
+                            <div class="review-block col-6 col-sm-3 col-md-2">
+                                <h4>Groupon</h4>
+                                <h1>4.9<span>/5</span></h1>
+                                <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
+                                <p><a href="https://www.groupon.com/deals/hawaii-adventure-diving-3"
+                                        target="_blank">1127 reviews</a></p>
+                            </div>
+                            <div class="review-block col-6 col-sm-3 col-md-2">
+                                <h4>Yelp</h4>
+                                <h1>4.8<span>/5</span></h1>
+                                <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
+                                <p><a href="https://www.yelp.com/biz/hawaii-adventure-diving-haleiwa-2"
+                                        target="_blank">204 reviews</a></p>
+                            </div>
+                            <div class="review-block col-6 offset-3 col-sm-12 offset-sm-0 col-md-2"
+                                >
+                                <h4>Facebook</h4>
+                                <h1>5<span>/5</span></h1>
+                                <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
+                                <p><a href="https://www.facebook.com/HawaiiAdventureDiving/reviews/?ref=page_internal"
+                                        target="_blank">85 reviews</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                <section>
+                <!--// AROUND THE WEB -->
+
             </div>
-        </section>
-        <!--// WHY US SECTION -->
+            <!--// CUSTOMER REVIEWS (ROW) -->
+        </div>
+    </div>
+</section>
+<!--// RATINGS & REVIEWS SECTION -->
 
         <!-- Tour Quick Guide -->
-        <section class="tour-quick-guide bg-white" class="desktop">
+        <section id="tour-quick-guide" class="tour-quick-guide bg-white" class="desktop">
             <div class="container">
                 <div class="row">
                     <div class="col-4 col-md-2">
@@ -549,7 +554,7 @@
         <!--// Tour Quick Guide -->
 
         <!-- TOUR SCHEDULE SECTION-->
-        <section id="tour-days-and-times">
+        <section id="tour-schedule">
             <div class="container py-30">
                 <div class="row">
                     <div class="col-12 text-center-md">
@@ -585,91 +590,91 @@
         </section>
         <!--// TOUR SCHEDULE SECTION -->
 
-        <!-- RATES & DETAILS SECTION -->
-        <section id="price-section" class="price-section bg-lt-gray py-30">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 text-center-md">
-                        <h1 class="h1-small mb-0">Hawaii Adventure Diving</h1>
-                        <h2 class="h2-big blue-text">Tour Packages</h2>
-                        <p>Join us for an immersive, one-of-a-kind experience with our team of world-class shark handlers. Free cancellation up to 48 hours before <span
-                                class="no-break">your tour.</span></p>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-sm-6 col-xl-4">
-                        <div class="product-card">
-                            <img src="/images/product-card-img-shark-tour.jpg" alt="">
-                            <div class="text">
-                                <h2>Shark Diving Tour</h2>
-                                <h3 class="price">$150 person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
-                                <a class="btn btn-accent-1 big-button"
-                                    href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
-                                    target="_self">Reserve Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-xl-4">
-                        <div class="product-card">
-                            <img src="/images/product-card-img-kama-aina.jpeg" alt="">
-                            <div class="text">
-                                <h2>Kama'aina & Military</h2>
-                                <h3 class="price">$125 person with ID<br><span class="sub-text">(Plus taxes &
-                                        fees)</span></h3>
-                                <a class="btn btn-accent-1 big-button"
-                                    href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
-                                    target="_self">Reserve Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 offset-sm-3 col-xl-4 offset-xl-0">
-                        <div class="product-card">
-                            <img src="/images/product-card-img-ride-along.jpeg" alt="">
-                            <div class="text">
-                                <h2>Ride Along<br><span>(Non Diver)</span></h2>
-                                <h3 class="price">$100 person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
-                                <a class="btn btn-accent-1 big-button"
-                                    href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
-                                    target="_self">Reserve Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+        <!-- TOUR PACKAGES SECTION -->
+<section id="tour-packages" class="tour-packages bg-lt-gray py-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 text-center-md">
+                <h1 class="h1-small mb-0">Hawaii Adventure Diving</h1>
+                <h2 class="h2-big blue-text">Tour Packages</h2>
+                <p>Join us for an immersive, one-of-a-kind experience with our team of world-class shark handlers. Free cancellation up to 48 hours before <span
+                        class="no-break">your tour.</span></p>
             </div>
-        </section>
-        <!--// RATES & DETAILS SECTION -->
-
-        <!-- SHARK DIVING PHOTO PACKAGES SECTION -->
-        <section id="shark-diving-photography-packages" class="price-section">
-            <div class="container">
-                <div class="row pt-60">
-                    <div class="col-lg-10 offset-lg-1 text-center-md">
-                        <h1 class="h1-small mb-0">Premium Add-Ons</h1>
-                        <h2 class="h2-big blue-text">Professional Photography</h2>
-                        <p class="description">Get the most out of your experience with professional underwater photography.</p>
-                    </div>
-                </div>
-                <div class="row text-center" style="justify-content: center;">
-                    <div class="col-sm-6 col-xl-4">
-                        <div class="product-card">
-                            <img src="/images/product-card-img-shark-tour-photo-packages-4.jpg"
-                                alt="An underwater photo of a group of Hawaii shark diving tour guests holding on to a safety rope while swimming in the open ocean without a cage above a large shark. They're wearing swim fins and snorkel gear and watching the shark as it swims by. One of the divers is pointing a hand held camera at the shark. Another shark and the shark tour boat can be seen in the distance.">
-                            <div class="text">
-                                <h2 class="mb-10">Shark Diving Photos</h2>
-                                <p>Call to add professional photos to your shark dive: <span class="no-break">(808) 829-2203</span></p>
-                                <h3 class="price">$75/person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
-                                <a class="btn btn-accent-1 big-button" href="/contact/">Call To Add</a>
-                            </div>
-                        </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-xl-4">
+                <div class="product-card">
+                    <img src="/images/product-card-img-shark-tour.jpg" alt="">
+                    <div class="text">
+                        <h2>Shark Diving Tour</h2>
+                        <h3 class="price">$150 person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
+                        <a class="btn btn-accent-1 big-button"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
+                            target="_self">Reserve Now</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--// SHARK DIVING PHOTO PACKAGES SECTION -->
+            <div class="col-sm-6 col-xl-4">
+                <div class="product-card">
+                    <img src="/images/product-card-img-kama-aina.jpeg" alt="">
+                    <div class="text">
+                        <h2>Kama'aina & Military</h2>
+                        <h3 class="price">$125 person with ID<br><span class="sub-text">(Plus taxes &
+                                fees)</span></h3>
+                        <a class="btn btn-accent-1 big-button"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
+                            target="_self">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 offset-sm-3 col-xl-4 offset-xl-0">
+                <div class="product-card">
+                    <img src="/images/product-card-img-ride-along.jpeg" alt="">
+                    <div class="text">
+                        <h2>Ride Along<br><span>(Non Diver)</span></h2>
+                        <h3 class="price">$100 person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
+                        <a class="btn btn-accent-1 big-button"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
+                            target="_self">Reserve Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--// TOUR PACKAGES SECTION -->
+
+<!-- PHOTO PACKAGES SECTION -->
+<section id="shark-diving-photography-packages" class="tour-packages">
+    <div class="container">
+        <div class="row pt-60">
+            <div class="col-lg-10 offset-lg-1 text-center-md">
+                <h1 class="h1-small mb-0">Premium Add-Ons</h1>
+                <h2 class="h2-big blue-text">Professional Photography</h2>
+                <p class="description">Get the most out of your experience with professional underwater photography.</p>
+            </div>
+        </div>
+        <div class="row text-center" style="justify-content: center;">
+            <div class="col-sm-6 col-xl-4">
+                <div class="product-card">
+                    <img src="/images/product-card-img-shark-tour-photo-packages-4.jpg"
+                        alt="An underwater photo of a group of Hawaii shark diving tour guests holding on to a safety rope while swimming in the open ocean without a cage above a large shark. They're wearing swim fins and snorkel gear and watching the shark as it swims by. One of the divers is pointing a hand held camera at the shark. Another shark and the shark tour boat can be seen in the distance.">
+                    <div class="text">
+                        <h2 class="mb-10">Shark Diving Photos</h2>
+                        <p>Call to add professional photos to your shark dive: <span class="no-break">(808) 829-2203</span></p>
+                        <h3 class="price">$75/person<br><span class="sub-text">(Plus taxes & fees)</span></h3>
+                        <a class="btn btn-accent-1 big-button" href="/contact/">Call To Add</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--// PHOTO PACKAGES SECTION -->
 
         <!-- SHARK TOUR GALLERY -->
-        <div id="shark-tour-gallery"></div>
+        <div id="shark-tour-photo-gallery"></div>
         <!-- OAHU SHARK DIVING TOUR GALLERY -->
 <section id="photo-grid-gallery" class="bg-white pt-60">
 
@@ -1075,7 +1080,7 @@
 </script>
 
 
-        <section id="private-tours" class="pano-section text-left white-text">
+        <section id="an-exclusive-experience" class="pano-section text-left white-text">
             <div class="container-fluid gx-0">
                 <div class="pano-bgd"></div>
                 <div class="section-content">
@@ -1150,7 +1155,8 @@
     <!--// Content Wrap -->
 
     
-    <div class="content-wrap big-CTA-pre-footer">
+    <section id="big-footer-cta">
+<div class="content-wrap big-CTA-pre-footer">
     <!-- Call to action-->
     <div class="position-relative">
         <div class="half-section-block container position-absolute top-50 start-0 end-0" data-prev-id=".footerPrev" data-next-id=".footerNext">
@@ -1178,65 +1184,69 @@
     </div>
     <!--// Call to action -->
 </div>
+</section>
 
     <!-- footer.php include -->
         <!-- Footer-->
     <footer id="footer" class="bg-dark  pt-70 pb-30 footerNext">
-        <div class="container">
-            <div class="row gy-50">
-                <div class="col-12 col-lg-3 footer-branding">
-                    <a class="d-block mb-10" href="/">
-                        <img class="footer-logo" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
-                    </a>
-                    <p class="font-size-15 mb-35" style="font-style: italic"><!--Find your adventure.-->Oahu's best cage free shark tour.</p>
-                    <ul class="nav  align-items-center mb-20 nav-gap-md nav-no-opacity">
-                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/HawaiiAdventureDiving/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" fill="none">
-                                    <path fill="currentColor" d="M6.318 2.8h1.391V.202A16.842 16.842 0 0 0 5.683.088c-2.006 0-3.38 1.353-3.38 3.837v2.287H.089v2.902h2.214v7.303h2.713V9.114H7.14l.338-2.902H5.016v-2c0-.839.21-1.413 1.302-1.413Z" />
-                                </svg></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/hawaiiadventurediving/?hl=en" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
-                                    <path fill="currentColor" d="M8.788 4.097C6.47 4.097 4.6 5.95 4.6 8.25c0 2.298 1.87 4.153 4.188 4.153 2.318 0 4.188-1.855 4.188-4.153 0-2.3-1.87-4.153-4.188-4.153Zm0 6.853c-1.498 0-2.723-1.211-2.723-2.7 0-1.49 1.221-2.7 2.723-2.7 1.502 0 2.723 1.21 2.723 2.7 0 1.489-1.225 2.7-2.723 2.7Zm5.336-7.023a.97.97 0 0 1-.977.968.97.97 0 0 1-.976-.968c0-.535.437-.969.976-.969.54 0 .977.434.977.969Zm2.774.983c-.062-1.298-.36-2.447-1.32-3.394C14.624.569 13.465.272 12.156.207c-1.349-.076-5.39-.076-6.74 0C4.113.27 2.954.565 1.995 1.512 1.035 2.46.74 3.61.674 4.906c-.076 1.338-.076 5.346 0 6.683.063 1.298.361 2.447 1.32 3.394.959.947 2.114 1.244 3.423 1.309 1.348.076 5.39.076 6.739 0 1.308-.062 2.468-.358 3.422-1.309.956-.947 1.254-2.096 1.32-3.394.076-1.337.076-5.342 0-6.68Zm-1.742 8.114a2.745 2.745 0 0 1-1.553 1.54c-1.075.423-3.627.325-4.815.325-1.188 0-3.743.095-4.815-.325a2.746 2.746 0 0 1-1.552-1.54c-.427-1.066-.329-3.596-.329-4.774 0-1.179-.094-3.712.329-4.775a2.745 2.745 0 0 1 1.552-1.54C5.048 1.512 7.6 1.61 8.788 1.61c1.188 0 3.743-.094 4.815.325a2.745 2.745 0 0 1 1.553 1.54c.426 1.066.328 3.596.328 4.775 0 1.178.098 3.712-.328 4.774Z" />
-                                </svg></a></li>
-                    </ul>
 
-                </div>
-                <!--<div class="col-1 d-none d-lg-block"></div>-->
-                <div class="col-12 col-lg-9 mt-20 footer-menu">
-                    <div class="row gy-50">
-                        <div class="col-6 col-md-4">
-                            <h6 class="display-6  mb-20">Tours</h6>
-                            <ul class="nav flex-column  nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">Oahu Shark Diving Tours</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/">Oahu Whale Watching Tours</a></li>
-                                <li class="nav-item"><a class="nav-link" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/?flow=17337">Reservations</a></li>
-                                <!--<li class="nav-item"><a class="nav-link" href="/what-to-bring/">What To Bring</a></li>-->
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <h6 class="display-6  mb-20">About</h6>
-                            <ul class="nav flex-column  nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="/about-sharks/">About Sharks</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife/">Hawaiian Sea Life</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/conservation/">Conservation</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h6 class="display-6  mb-20">Contact</h6>
-                            <ul class="nav flex-column  nav-opacity nav-gap-sm">
-                                <li class="nav-item"><a class="nav-link" href="/contact/">Contact us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="tel:+18088292203">+1 (808) 829-2203</a></li>
-                                <li class="nav-item"><a class="nav-link" href="mailto:nickloewenstine@gmail.com">nickloewenstine@gmail.com</a></li>
-                                <li class="nav-item"><a class="nav-link nav-link-accent-1" href="/contact-custom-charters/">Custom Charters</a></li>
-                                <li class="nav-item"><a class="nav-link" href="https://goo.gl/maps/iquNkMPaRdngjLKS8">66-105 Haleiwa Rd,<br>Haleiwa, HI 96712</a></li>
-                            </ul>
+        <section id="footer-proper">
+            <div class="container">
+                <div class="row gy-50">
+                    <div class="col-12 col-lg-3 footer-branding">
+                        <a class="d-block mb-10" href="/">
+                            <img class="footer-logo" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+                        </a>
+                        <p class="font-size-15 mb-35" style="font-style: italic"><!--Find your adventure.-->Oahu's best cage free shark tour.</p>
+                        <ul class="nav  align-items-center mb-20 nav-gap-md nav-no-opacity">
+                            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/HawaiiAdventureDiving/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="17" fill="none">
+                                        <path fill="currentColor" d="M6.318 2.8h1.391V.202A16.842 16.842 0 0 0 5.683.088c-2.006 0-3.38 1.353-3.38 3.837v2.287H.089v2.902h2.214v7.303h2.713V9.114H7.14l.338-2.902H5.016v-2c0-.839.21-1.413 1.302-1.413Z" />
+                                    </svg></a></li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/hawaiiadventurediving/?hl=en" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+                                        <path fill="currentColor" d="M8.788 4.097C6.47 4.097 4.6 5.95 4.6 8.25c0 2.298 1.87 4.153 4.188 4.153 2.318 0 4.188-1.855 4.188-4.153 0-2.3-1.87-4.153-4.188-4.153Zm0 6.853c-1.498 0-2.723-1.211-2.723-2.7 0-1.49 1.221-2.7 2.723-2.7 1.502 0 2.723 1.21 2.723 2.7 0 1.489-1.225 2.7-2.723 2.7Zm5.336-7.023a.97.97 0 0 1-.977.968.97.97 0 0 1-.976-.968c0-.535.437-.969.976-.969.54 0 .977.434.977.969Zm2.774.983c-.062-1.298-.36-2.447-1.32-3.394C14.624.569 13.465.272 12.156.207c-1.349-.076-5.39-.076-6.74 0C4.113.27 2.954.565 1.995 1.512 1.035 2.46.74 3.61.674 4.906c-.076 1.338-.076 5.346 0 6.683.063 1.298.361 2.447 1.32 3.394.959.947 2.114 1.244 3.423 1.309 1.348.076 5.39.076 6.739 0 1.308-.062 2.468-.358 3.422-1.309.956-.947 1.254-2.096 1.32-3.394.076-1.337.076-5.342 0-6.68Zm-1.742 8.114a2.745 2.745 0 0 1-1.553 1.54c-1.075.423-3.627.325-4.815.325-1.188 0-3.743.095-4.815-.325a2.746 2.746 0 0 1-1.552-1.54c-.427-1.066-.329-3.596-.329-4.774 0-1.179-.094-3.712.329-4.775a2.745 2.745 0 0 1 1.552-1.54C5.048 1.512 7.6 1.61 8.788 1.61c1.188 0 3.743-.094 4.815.325a2.745 2.745 0 0 1 1.553 1.54c.426 1.066.328 3.596.328 4.775 0 1.178.098 3.712-.328 4.774Z" />
+                                    </svg></a></li>
+                        </ul>
+
+                    </div>
+                    <!--<div class="col-1 d-none d-lg-block"></div>-->
+                    <div class="col-12 col-lg-9 mt-20 footer-menu">
+                        <div class="row gy-50">
+                            <div class="col-6 col-md-4">
+                                <h6 class="display-6  mb-20">Tours</h6>
+                                <ul class="nav flex-column  nav-opacity nav-gap-sm">
+                                    <li class="nav-item"><a class="nav-link" href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">Oahu Shark Diving Tours</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/whale-watching-tour/hawaii/oahu/north-shore-haleiwa/whale-watching-tour/">Oahu Whale Watching Tours</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/?flow=17337">Reservations</a></li>
+                                    <!--<li class="nav-item"><a class="nav-link" href="/what-to-bring/">What To Bring</a></li>-->
+                                </ul>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <h6 class="display-6  mb-20">About</h6>
+                                <ul class="nav flex-column  nav-opacity nav-gap-sm">
+                                    <li class="nav-item"><a class="nav-link" href="/about-sharks/">About Sharks</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/hawaiian-sea-wildlife/">Hawaiian Sea Life</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/conservation/">Conservation</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <h6 class="display-6  mb-20">Contact</h6>
+                                <ul class="nav flex-column  nav-opacity nav-gap-sm">
+                                    <li class="nav-item"><a class="nav-link" href="/contact/">Contact us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="tel:+18088292203">+1 (808) 829-2203</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="mailto:nickloewenstine@gmail.com">nickloewenstine@gmail.com</a></li>
+                                    <li class="nav-item"><a class="nav-link nav-link-accent-1" href="/contact-custom-charters/">Custom Charters</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="https://goo.gl/maps/iquNkMPaRdngjLKS8">66-105 Haleiwa Rd,<br>Haleiwa, HI 96712</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <p class="font-size-13 text-muted m-0">© 2026 Hawaii Adventure Diving</p>
-                    <p class="font-size-13 text-muted m-0"><a class="link-plain" href="https://mkdesignmarketing.com/" target="_blank">Website Design</a> by <a class="link-plain" href="https://mkdesignmarketing.com/" target="_blank">MK Design Marketing</a></p>
+                    <div class="col-12">
+                        <p class="font-size-13 text-muted m-0">© 2026 Hawaii Adventure Diving</p>
+                        <p class="font-size-13 text-muted m-0"><a class="link-plain" href="https://mkdesignmarketing.com/" target="_blank">Website Design</a> by <a class="link-plain" href="https://mkdesignmarketing.com/" target="_blank">MK Design Marketing</a></p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </footer><!-- Vendors-->
 
     <!-- FareHarbor Lightframe API - do not remove - see: https://fareharbor.com/help/website/resources/lightframe-api/ -->
@@ -1266,6 +1276,7 @@
 
     <!-- MKD Custom JS -->
     <script src="/assets/js/mkd-custom.js"></script>
+    <script src="/assets/js/cro/section-engagement.js"></script>
 
 </body>
 <!--// body -->  

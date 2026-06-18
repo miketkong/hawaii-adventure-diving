@@ -487,8 +487,6 @@ figcaption {
     background-repeat: no-repeat;
 }
 
-.btn-secondary span::after {}
-
 .cta-buttons-pair {
     margin-top: 24px !important;
 }
@@ -710,7 +708,7 @@ figcaption {
 }
 
 /* Why Us Section */
-#why-us-v2 {
+#ratings-and-reviews {
     background-image: url("/images/why-section-banner-v2r1.webp");
     background-position-x: center;
     background-size: contain;
@@ -905,7 +903,7 @@ ul.tour-times li {
     padding-bottom: 20px;
 }
 
-.tour-page #why-us-v2 {
+.tour-page #ratings-and-reviews {
     background-size: cover;
     padding-top: 30%; 
 }
@@ -988,16 +986,16 @@ ul.tour-times li {
     margin-top: -40px;
 }
 
-#private-tours .container-fluid {
+#an-exclusive-experience .container-fluid {
     background-color: #4277ad;
 }
 
-#private-tours .hero-img {
+#an-exclusive-experience .hero-img {
     position: relative;
     z-index: 0;
 }
 
-#private-tours .text-box {
+#an-exclusive-experience .text-box {
     position: relative;
     z-index: 1;
     margin-top: 90px;
@@ -1112,11 +1110,11 @@ ul.tour-times li {
     margin-bottom: 0px;
 }
 
-.price-section .product-card {
+.tour-packages .product-card {
     margin-bottom: 20px;
 }
 
-#price-section .text-box .disclaimer {
+#tour-packages .text-box .disclaimer {
     font-size: 13px;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -1571,7 +1569,7 @@ ul.tour-times li {
     color: #ffffffa3;
 }
 
-#price-section .text-box {
+#tour-packages .text-box {
     max-width: 700px;
     margin: auto;
 }
@@ -1620,7 +1618,7 @@ ul.tour-times li {
     border-radius: 0px;
 }
 
-.price-section .product-card {
+.tour-packages .product-card {
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -1629,25 +1627,25 @@ ul.tour-times li {
     /*min-width: 370px;*/
 }
 
-.price-section .product-card img {
+.tour-packages .product-card img {
     width: 100%;
 }
 
-.price-section .product-card .text {
+.tour-packages .product-card .text {
     padding: 20px;
 }
 
-.price-section .product-card h2 {
+.tour-packages .product-card h2 {
     font-size: 25px;
     text-transform: uppercase;
     color: #fff;
 }
 
-.price-section .product-card h2 span {
+.tour-packages .product-card h2 span {
     font-size: 15px;
 }
 
-.price-section .product-card .price {
+.tour-packages .product-card .price {
     font-size: 25px;
     color: #F0CE10;
     margin-top: 20px;
@@ -1659,26 +1657,26 @@ ul.tour-times li {
 }
 
 
-.whale-watching-tour-page .price-section .product-card .price {
+.whale-watching-tour-page .tour-packages .product-card .price {
     font-size: 40px;
 }
 
-.price-section .product-card .price .sub-text {
+.tour-packages .product-card .price .sub-text {
     font-size: 12px;
 }
 
-.price-section .product-card h2,
-.price-section .product-card h3 {
+.tour-packages .product-card h2,
+.tour-packages .product-card h3 {
     margin-bottom: 20px;
 }
 
-.price-section .product-card p {
+.tour-packages .product-card p {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 0px;
 }
 
-.price-section p {
+.tour-packages p {
     font-size: 20px;
     line-height: 24px;
 }
@@ -1993,26 +1991,26 @@ ul.tour-times li {
     }
 
     /* Tour Pages */
-    #tour-days-and-times h2 {
+    #tour-schedule h2 {
         font-size: 32px;
         line-height: 34px;
     }
-    #price-section h2 {
+    #tour-packages h2 {
         font-size: 36px;
         line-height: 34px;
         margin-bottom: 5px;
     }
-    #price-section .h1-small {
+    #tour-packages .h1-small {
         font-size: 13px;
         line-height: 20px;
         letter-spacing: 5px;
         margin-bottom: 20px;
     }
 
-    .tour-page #why-us-v2 {
+    .tour-page #ratings-and-reviews {
         padding-top: 30%; 
     }
-    #why-us-v2 #jarallax-container-0 div {
+    #ratings-and-reviews #jarallax-container-0 div {
         background-size: 170% !important;
         background-position-y: 0% !important;
     }
@@ -2030,7 +2028,7 @@ ul.tour-times li {
     #around-the-web-heading-text {
         display: none;
     }
-    #testimonials-swiper {
+    #testimonials-carousel {
         order: 3;
     }
 
@@ -2284,8 +2282,6 @@ ul.tour-times li {
     }
 
     /* Lists */
-    .list-lg-inline {}
-
     .list-lg-inline li {
         display: inline-block;
         padding-right: 60px;
@@ -2490,15 +2486,15 @@ ul.tour-times li {
         background-image: url("/images/section-bgd-no-limits.jpeg");
     }
 
-    #private-tours .pano-bgd {
-        background-image: url("/images/section-bgd-private-tours.jpeg");
+    #an-exclusive-experience .pano-bgd {
+        background-image: url("/images/section-bgd-an-exclusive-experience.jpeg");
     }
 
-    #private-tours .section-content {
+    #an-exclusive-experience .section-content {
         padding-top: 100px;
     }
 
-    #private-tours .text-box {
+    #an-exclusive-experience .text-box {
         width: 40%;
     }
 
@@ -2585,7 +2581,7 @@ ul.tour-times li {
         margin-bottom: 0px;
     }
 
-    #price-section .text-box .disclaimer {
+    #tour-packages .text-box .disclaimer {
         margin-top: 0px;
     }
 
@@ -2716,8 +2712,6 @@ ul.tour-times li {
     .navbar .navbar-nav {
         color: #ffffff;
     }
-
-    .nav-link.active {}
 
     .navbar-home {
         display: none;
