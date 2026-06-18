@@ -988,16 +988,16 @@ ul.tour-times li {
     margin-top: -40px;
 }
 
-#private-tours .container-fluid {
+#an-exclusive-experience .container-fluid {
     background-color: #4277ad;
 }
 
-#private-tours .hero-img {
+#an-exclusive-experience .hero-img {
     position: relative;
     z-index: 0;
 }
 
-#private-tours .text-box {
+#an-exclusive-experience .text-box {
     position: relative;
     z-index: 1;
     margin-top: 90px;
@@ -2490,15 +2490,15 @@ ul.tour-times li {
         background-image: url("/images/section-bgd-no-limits.jpeg");
     }
 
-    #private-tours .pano-bgd {
-        background-image: url("/images/section-bgd-private-tours.jpeg");
+    #an-exclusive-experience .pano-bgd {
+        background-image: url("/images/section-bgd-an-exclusive-experience.jpeg");
     }
 
-    #private-tours .section-content {
+    #an-exclusive-experience .section-content {
         padding-top: 100px;
     }
 
-    #private-tours .text-box {
+    #an-exclusive-experience .text-box {
         width: 40%;
     }
 
