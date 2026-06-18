@@ -15,7 +15,7 @@
 - [x] `section-engagement.js` written — `assets/js/cro/section-engagement.js`
 - [x] `<section id="">` attributes added to all Shark Tour LP sections
 - [x] Console logging verified — events firing as expected
-- [ ] Script loaded on the live site
+- [x] Script loaded on the live site
 - [x] GTM configured — dataLayer variables, triggers, and GA4 tags created
 - [x] GA4 custom dimensions and metrics registered
 - [x] GTM Preview verified — tags firing with correct values
