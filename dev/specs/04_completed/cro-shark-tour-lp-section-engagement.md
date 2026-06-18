@@ -20,7 +20,7 @@
 - [x] GA4 custom dimensions and metrics registered
 - [x] GTM Preview verified — tags firing with correct values
 - [x] GTM container published
-- [ ] GA4 data confirmed flowing in Reports → Engagement → Events
+- [x] GA4 data confirmed flowing in Reports → Engagement → Events
 
 ---
 
