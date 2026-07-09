@@ -219,7 +219,9 @@ p a:hover {
     color: #000000;
     background-color: #f0ce12;
 }
-
+.testimonial-text {
+    font-style: italic;
+}
 .text-accent-1 {
     color: #016BA3 !important;
 }
@@ -782,6 +784,66 @@ figcaption {
     color: #FFF !important;
     text-decoration: underline;
     font-weight: bold;
+}
+
+/* Ratings and Reviews Section r2 */
+.ratings-r2 {
+    padding: 20px;
+}
+.ratings-grid {
+
+}
+.ratings-grid-item {
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ratings-grid-item .brand-logo {
+    max-width: 110px;
+}
+.ratings-grid-item .rating {
+    color: black;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 16px;
+}
+.ratings-grid-item .rating span {
+    font-weight: bold;
+    font-size: 18px;
+}
+.ratings-grid-item .rating .stars-icon {
+    width: 110px;
+    margin-bottom: 8px;
+}
+
+.ratings-grid-item.google img {
+    width: 96px;
+}
+.ratings-grid-item.groupon img {
+    margin-bottom: 2px;
+}
+.ratings-grid-item.trip-advisor img {
+    width: 110px;
+}
+.ratings-grid-item.yelp img {
+    width: 91px;
+    margin-bottom: 2px;
+}
+.ratings-grid-item.facebook img {
+    margin-bottom: 4px;
+}
+.ratings-r2 .ratings-subtext {
+    margin: 20px 0px;
+}
+.ratings-r2 .ratings-subtext p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0px;
 }
 
 
@@ -2055,6 +2117,10 @@ ul.tour-times li {
     #customer-reviews .d-flex {
         display: none !important;
     }
+
+    #reviews-header-r2 {
+        padding-top: 100px;
+    }
     /* Hide the last 3 slides to only show a total of 4 slides on mobile */
     #customer-reviews .swiper-slide:nth-child(n+5) {
         display: none;
@@ -2583,6 +2649,10 @@ ul.tour-times li {
 
     #tour-packages .text-box .disclaimer {
         margin-top: 0px;
+    }
+
+    .ratings-r2 .ratings-grid .col-md-2 {
+        width: 20%;
     }
 
     /* Whale Watching Tour Page */

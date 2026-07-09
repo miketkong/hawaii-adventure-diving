@@ -1,0 +1,68 @@
+<!-- RATINGS & REVIEWS SECTION -->
+<section id="ratings-and-reviews" class="dark-bg jarallax"  data-jarallax data-speed="0.8" data-img-position="50% 0%">
+    <div class="content-wrap">
+        <div class="container">
+
+            <!-- CUSTOMER REVIEWS -->
+            <div id="customer-reviews" class="row">
+
+                
+
+                <div id="reviews-header-r2" class="col-lg-8 offset-lg-2 text-center">
+                    <img class="pt-40 pb-10" style="max-width: 150px" src="/images/five-stars-wreath.png" alt=""
+                        data-show="startbox">
+                    <h1 data-show="startbox">Thousands of  <span class="no-break">5-Star Reviews.</span></h1>
+                    <p class="mb-0 testimonial-text" data-show="startbox">“You'll be amazed at how quickly and naturally you become absorbed.”</p>
+                </div>
+
+                <!-- Ratings & Reviews Section r2 -->
+                <div class="ratings-r2">
+                    <div class="ratings-grid row g-10">
+                        <div class="col-6 col-md-2">
+                            <div class="ratings-grid-item google">
+                                <img class="brand-logo" src="/images/ratings-r2-logo-google.jpg" alt="Google logo">
+                                <p class="rating"><span>{{ siteData.platformRatings.Google.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Google.total | commaNumber }})</p>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <div class="ratings-grid-item groupon">
+                                <img class="brand-logo" src="/images/ratings-r2-logo-groupon.jpg" alt="Groupon logo">
+                                <p class="rating"><span>{{ siteData.platformRatings.Groupon.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Groupon.total | commaNumber }})</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2">
+                            <div class="ratings-grid-item trip-advisor">
+                                <img class="brand-logo" src="/images/ratings-r2-logo-tripadvisor-horizontal.png" alt="Trip Advisor logo">
+                                <p class="rating"><span>{{ siteData.platformRatings.TripAdvisor.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.TripAdvisor.total | commaNumber }})</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2">
+                            <div class="ratings-grid-item yelp">
+                                <img class="brand-logo" src="/images/ratings-r2-logo-yelp.jpg" alt="Yelp logo">
+                                <p class="rating"><span>{{ siteData.platformRatings.Yelp.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Yelp.total | commaNumber }})</p>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-2 offset-3 offset-md-0">
+                            <div class="ratings-grid-item facebook">
+                                <img class="brand-logo" src="/images/ratings-r2-logo-facebook.jpg" alt="Facebook logo">
+                                <p class="rating"><span>{{ siteData.platformRatings.Facebook.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Facebook.total | commaNumber }})</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Put the ratings subtext here -->
+                    <div class="ratings-subtext text-center">
+                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last updated {{ siteData.ratingsLastUpdated }}.</p>
+                    </div>
+                </div>
+                <!--// Ratings & Reviews Section r2 -->
+
+
+            </div>
+            <!--// CUSTOMER REVIEWS (ROW) -->
+        </div>
+    </div>
+</section>
+<!--// RATINGS & REVIEWS SECTION -->

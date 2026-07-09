@@ -13,6 +13,9 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  eleventyConfig.addFilter("commaNumber", value => Number(value).toLocaleString());
+  eleventyConfig.addFilter("oneDecimal", value => Number(value).toFixed(1));
+
   eleventyConfig.addPassthroughCopy("articles");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("assets/video");

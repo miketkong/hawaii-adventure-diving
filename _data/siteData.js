@@ -93,6 +93,7 @@ const teamBios = [
 ];
 
 module.exports = {
+  ratingsLastUpdated: "July 2026",
   contact: {
     phonePretty: "+1 (808) 829-2203",
     phoneLink: "+18088292203",
