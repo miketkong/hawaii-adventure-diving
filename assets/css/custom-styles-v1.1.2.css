@@ -2206,6 +2206,10 @@ ul.tour-times li {
         height: 72vw;
     }
 
+    #ratings-section-testimonials-ticker {
+        min-height: 44px;
+    }
+
     .shark-tour-page #photo-grid-gallery {
         background-color: #ececec !important;
         padding-top: 390px !important;
