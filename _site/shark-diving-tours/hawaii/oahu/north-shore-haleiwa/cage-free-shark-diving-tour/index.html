@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=802debf2">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=21f44583">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -352,13 +352,31 @@
             <!-- CUSTOMER REVIEWS -->
             <div id="customer-reviews" class="row">
 
-                
+                <script type="text/javascript">
+                    var ratingsSectionTestimonials = [
+                        `"I live in Honolulu so I'm not easily impressed, but this exceeded <span class="no-break">my expectations."</span>`,
+                        `"The crew made us feel completely safe the entire time — <span class="no-break">absolutely incredible."</span>`,
+                        `"Amazing experience. I felt safe in the hands of the crew <span class="no-break">the whole time."</span>`,
+                        `"Guides were wonderful, super knowledgeable and experienced <span class="no-break">with sharks."</span>`,
+                        `"The small groups allow as much freedom with the sharks <span class="no-break">as safely as possible."</span>`,
+                        `"Highly recommend Hawaii Adventure Diving over all <span class="no-break">the other shark tours."</span>`,
+                        `"Hawaii Adventure Diving exceeded my expectations, <span class="no-break">which were already high!"</span>`,
+                        `"I had an amazing experience. 5 stars and I want <span class="no-break">to do it again!"</span>`,
+                        `"I felt safe, learned so much, and will <span class="no-break">definitely be back!"</span>`,
+                        `"If you're looking for next level adventure, <span class="no-break">this is it!"</span>`,
+                    ];
+                    document.addEventListener('DOMContentLoaded', function() {
+                        rotateText('#ratings-section-testimonials-ticker', ratingsSectionTestimonials);
+                    });
+                </script>
 
                 <div id="reviews-header-r2" class="col-lg-8 offset-lg-2 text-center">
                     <img class="pt-40 pb-10" style="max-width: 150px" src="/images/five-stars-wreath.png" alt=""
                         data-show="startbox">
                     <h1 data-show="startbox">Thousands of  <span class="no-break">5-Star Reviews.</span></h1>
-                    <p class="mb-0 testimonial-text" data-show="startbox">“You'll be amazed at how quickly and naturally you become absorbed.”</p>
+
+                    <div id="ratings-section-testimonials-ticker"></div>
+                            
                 </div>
 
                 <!-- Ratings & Reviews Section r2 -->

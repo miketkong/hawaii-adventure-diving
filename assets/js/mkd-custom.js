@@ -22,3 +22,73 @@ document.addEventListener('DOMContentLoaded', (event) => {
         fixedButton.href = 'https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/';
     }
 });
+
+function rotateText(selector, textArray) {
+    console.log("log: In rotateText function");
+
+    let tickerText = document.querySelector(selector);
+
+    // Set initial opacity to 0
+    tickerText.animate([
+        { opacity: 0 }
+    ], {
+        duration: 0,
+        fill: 'forwards'
+    });
+
+    tickerText.style.transition = 'opacity 1s ease';
+
+    var current = Math.floor(Math.random() * textArray.length);
+    var next;
+
+    tickerText.innerHTML = textArray[current];
+
+
+    function initialFadeIn() {
+        setTimeout(function () {
+            tickerText.animate([
+                { opacity: 1 }
+            ], {
+                duration: 1000,
+                fill: 'forwards'
+            });
+            hold();
+        }, 1000);
+    }
+
+    function hold() {
+        console.log("log: holding");
+        setTimeout(fadeOut, 3000);
+    }
+
+    function fadeOut() {
+        tickerText.animate([
+            { opacity: 0 }
+        ], {
+            duration: 1000,
+            fill: 'forwards'
+        });
+        setTimeout(cycle, 1000);
+    };
+
+    function cycle() {
+        do { next = Math.floor(Math.random() * textArray.length); } while (next === current);
+        current = next;
+        tickerText.innerHTML = textArray[current];
+        setTimeout(fadeIn, 100);
+    };
+
+
+    function fadeIn() {
+        tickerText.animate([
+            { opacity: 1 }
+        ], {
+            duration: 1000,
+            fill: 'forwards'
+        });
+
+        setTimeout(hold, 2000);
+    };
+
+    initialFadeIn();
+};
