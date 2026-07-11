@@ -119,6 +119,11 @@ h4 {
     margin-bottom: 50px;
 }
 
+.section-cta h2 {
+    font-size: 26px !important;
+    margin-bottom: 5px;
+}
+
 .h2-big {
     font-size: 50px;
     line-height: 55px;
@@ -847,6 +852,40 @@ figcaption {
     font-size: 16px;
     line-height: 22px;
     margin: 0px;
+}
+
+/* Tour Schedule Section r2 */
+#tour-schedule table {
+    width: 100%;
+    font-size: 14px;
+    max-width: 600px;
+    margin: auto;
+}
+#tour-schedule table thead {
+    color: #016ba3;
+    border-bottom: 1px solid #ccc;
+}
+#tour-schedule table thead th {
+    padding-bottom: 3px;
+}
+#tour-schedule table tbody tr:first-child td {
+    padding-top: 17px;
+}
+#tour-schedule table tbody tr td {padding-top: 14px;padding-bottom: 14px;}
+#tour-schedule table tbody tr td:nth-child(4) {
+vertical-align: middle;
+text-align: right;
+}
+#tour-schedule table tbody .btn {
+    display: inline;
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 9px 14px 6px 19px;
+}
+#tour-schedule table tbody .btn span::after {
+    height: 14px;
+    position: relative;
+    top: 1px;
 }
 
 
@@ -2054,6 +2093,7 @@ ul.tour-times li {
         font-size: 32px;
         line-height: 34px;
     }
+    
     #tour-packages h2 {
         font-size: 36px;
         line-height: 34px;
@@ -2215,6 +2255,19 @@ ul.tour-times li {
         padding-top: 390px !important;
         margin-top: -380px;
     }
+
+
+    #tour-schedule table {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #tour-schedule table tr td:first-child, #tour-schedule table tr th:first-child {
+        text-align: left;        
+    }
+
+    
     .service-box-sm {
         height: 266px;
     }
