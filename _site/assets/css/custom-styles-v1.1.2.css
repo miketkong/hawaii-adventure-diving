@@ -871,10 +871,22 @@ figcaption {
 #tour-schedule table tbody tr:first-child td {
     padding-top: 17px;
 }
-#tour-schedule table tbody tr td {padding-top: 14px;padding-bottom: 14px;}
+#tour-schedule table th:first-child, #tour-schedule td:first-child {
+    padding-left: 6px;
+}
+#tour-schedule td:last-child {
+    padding-right: 6px;
+}
+#tour-schedule table tbody tr td {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
 #tour-schedule table tbody tr td:nth-child(4) {
-vertical-align: middle;
-text-align: right;
+    vertical-align: middle;
+    text-align: right;
+}
+#tour-schedule table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
 }
 #tour-schedule table tbody .btn {
     display: inline;
