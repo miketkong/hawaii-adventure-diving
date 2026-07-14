@@ -1928,6 +1928,7 @@ ul.tour-times li {
 }
 .accordion-body p {
     font-size: 20px;
+    line-height: 30px;
 }
 
 .accordion-header .accordion-button[aria-expanded=true] {
@@ -2434,7 +2435,6 @@ ul.tour-times li {
     }
     #shark-diving-photography-packages .product-card img {
         width: 390px;
-        height: fit-content;
     }
     #shark-diving-photography-packages .product-card .text {
         padding-top: 30px;
