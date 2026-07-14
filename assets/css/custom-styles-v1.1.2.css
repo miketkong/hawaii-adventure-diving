@@ -1751,6 +1751,15 @@ ul.tour-times li {
     /*min-width: 370px;*/
 }
 
+.tour-packages .call-out {
+    background-color: #f0ce12;
+    color: #000;
+    font-size: 24px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px 0px;
+}
+
 .tour-packages .product-card img {
     width: 100%;
 }
@@ -1774,6 +1783,21 @@ ul.tour-times li {
     color: #F0CE10;
     margin-top: 20px;
     line-height: 20px;
+}
+
+/* Tour Packages Section V2 */
+.tour-packages-v2 .product-card h2 {
+    font-size: 38px !important;
+    line-height: 40px !important;
+    text-transform: capitalize;
+    margin-bottom: -10px !important;
+}
+.tour-packages-v2 .product-card .price {
+    font-size: 32px;
+    line-height: 30px;
+}
+.tour-packages-v2 .product-card .price .sub-text {
+    font-size: 20px !important;
 }
 
 #get-the-shot h2 {
