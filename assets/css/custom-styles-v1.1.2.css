@@ -1785,21 +1785,46 @@ ul.tour-times li {
     line-height: 20px;
 }
 
-/* Tour Packages Section V2 */
-.tour-packages-v2 .product-card h2 {
+/* Tour Sections V2 */
+.tour-lp-section-v2 .h1-small {
+    display: none;
+    color: #626262;
+    font-size: 12px !important;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 40px !important;
+    margin-top: -15px !important;
+}
+.tour-lp-section-v2 .description {
+    font-size: 16px;
+    line-height: 22px;
+}
+.tour-lp-section-v2 .most-popular {
+    outline: solid 7px #f0ce12;
+    outline-offset: -3px;
+}
+.tour-lp-section-v2 .product-card h2 {
     font-size: 38px !important;
     line-height: 40px !important;
     text-transform: capitalize;
     margin-bottom: -10px !important;
 }
-.tour-packages-v2 .product-card .price {
+.tour-lp-section-v2 .product-card .price {
     font-size: 32px;
     line-height: 30px;
 }
-.tour-packages-v2 .product-card .price .sub-text {
+.tour-lp-section-v2 .product-card .price .sub-text {
     font-size: 20px !important;
 }
-
+.tour-lp-section-v2 .product-card .description {
+    font-size: 16px;
+    line-height: 22px;
+}
+.tour-lp-section-v2 .btn-phone {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    padding: 13px 30px 11px 28px !important;
+}
 #get-the-shot h2 {
     margin-bottom: 10px;
 }
