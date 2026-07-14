@@ -132,6 +132,9 @@ h4 {
 h3 {
     font-size: 16px;
 }
+h3.above-cta {
+    font-size: 19px;
+}
 
 h4 {
     font-size: 14px;
@@ -328,6 +331,10 @@ p a:hover {
 
 .btn-max-width {
     max-width: 300px;
+}
+
+.section-cta .btn {
+    margin-top: 10px;
 }
 
 
@@ -874,8 +881,9 @@ figcaption {
 #tour-schedule table th:first-child, #tour-schedule td:first-child {
     padding-left: 6px;
 }
-#tour-schedule td:last-child {
+#tour-schedule td:last-child, #tour-schedule th:last-child {
     padding-right: 6px;
+    text-align: center;
 }
 #tour-schedule table tbody tr td {
     padding-top: 14px;
