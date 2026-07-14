@@ -2423,6 +2423,22 @@ ul.tour-times li {
     .mobile {
         display: none !important;
     }
+    .md-flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+    #shark-diving-photography-packages .product-card {
+        max-height: 400px;
+        max-width: 800px;
+        margin: auto;
+    }
+    #shark-diving-photography-packages .product-card img {
+        width: 390px;
+        height: fit-content;
+    }
+    #shark-diving-photography-packages .product-card .text {
+        padding-top: 30px;
+    }
 
     p {
         font-size: 20px;
@@ -2543,6 +2559,11 @@ ul.tour-times li {
     }
     .md-order-3 {
         order: 3;
+    }
+    #shark-diving-photography-packages .md-flex-row {
+        border-radius: 14px;
+        outline: solid 12px #f0ce12;
+        outline-offset: -3px;    
     }
 
     /* Footer */
