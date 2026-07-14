@@ -2320,7 +2320,6 @@ ul.tour-times li {
     }
 
     .shark-tour-page #photo-grid-gallery {
-        background-color: #ececec !important;
         padding-top: 390px !important;
         margin-top: -380px;
     }
@@ -2509,6 +2508,11 @@ ul.tour-times li {
 
     .bg-shark-topper-lt {
         background-size: auto;
+    }
+
+    .tour-lp-section-v2 .description {
+        font-size: 17px;
+        line-height: 23px;
     }
 
     .secondary-product-card {
