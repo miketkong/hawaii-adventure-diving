@@ -119,11 +119,6 @@ h4 {
     margin-bottom: 50px;
 }
 
-.section-cta h2 {
-    font-size: 26px !important;
-    margin-bottom: 5px;
-}
-
 .h2-big {
     font-size: 50px;
     line-height: 55px;
@@ -333,6 +328,13 @@ p a:hover {
     max-width: 300px;
 }
 
+.section-cta h2 {
+    font-size: 26px !important;
+    margin-bottom: 5px;
+}
+.section-cta p {
+    margin: 0px;
+}
 .section-cta .btn {
     margin-top: 10px;
 }
@@ -999,7 +1001,7 @@ ul.tour-times li {
     text-decoration: none;
 }
 
-#faq a {
+#faq .accordion-item a {
     color: #016ba3;
     text-decoration: underline;
 }
@@ -1828,7 +1830,31 @@ ul.tour-times li {
 #get-the-shot h2 {
     margin-bottom: 10px;
 }
-
+.tour-page #team h2 {
+    font-size: 36px;
+    line-height: 34px;
+}
+.tour-page .big-CTA-pre-footer-v2 h2 {
+    font-size: 50px;
+    line-height: 53px;
+    padding: 0px !important;
+    margin-bottom: 30px;
+}
+.tour-page .big-CTA-pre-footer-v2 p {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 31px !important;
+}
+.tour-page .big-CTA-pre-footer-v2 .hand-underline-yellow::after {
+    width: 118%;
+    height: 16px;
+    left: 8%;
+    bottom: -3px;
+}
+.tour-page .big-CTA-pre-footer-v2 {
+    padding-top: 320px;
+    margin-bottom: -30px;
+}
 
 .whale-watching-tour-page .tour-packages .product-card .price {
     font-size: 40px;
@@ -2566,6 +2592,18 @@ ul.tour-times li {
         outline-offset: -3px;    
     }
 
+    .tour-page .big-CTA-pre-footer-v2 {
+        padding-top: 150px;
+        margin-bottom: -30px;
+    }
+    .get-the-shot-v2 .text-box {
+        position: relative !important;
+        left: -300px !important;
+        padding-left: 0px;
+        padding-top: 331px;
+        max-width: 530px;
+    }
+
     /* Footer */
     #quick-links img {
         max-width: 42px;
@@ -2725,7 +2763,10 @@ ul.tour-times li {
     }
     
     #get-the-shot .text-box {
-        padding-left: 160px;
+        padding-left: 0px;
+        padding-top: 331px;
+        position: relative;
+        left: -210px;
     }
 
     #no-limits .section-content {
@@ -2746,6 +2787,7 @@ ul.tour-times li {
 
     #an-exclusive-experience .text-box {
         width: 40%;
+        text-shadow: 1px 1px #0000006e;
     }
 
     #snorkel-gear .section-content {
