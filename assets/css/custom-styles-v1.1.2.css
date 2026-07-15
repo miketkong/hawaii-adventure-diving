@@ -985,6 +985,10 @@ figcaption {
 .list li.active::before {
     background-color: #016ba3 !important;
 }
+.homepage-bottom-CTA {
+    padding-top: 30px;
+    background-color: #17161a;
+}
 
 /* Tour Pages */
 ul.tour-times {
@@ -2287,9 +2291,6 @@ ul.tour-times li {
     .homepage #photo-grid-gallery {
         padding-bottom: 0px;
     }
-    .homepage .CTA-section {
-        margin-top: -30px;
-    }
     .CTA-section .big-button span::after {
         width: 21px;
         height: 21px;  
@@ -2509,6 +2510,11 @@ ul.tour-times li {
     .text-center-md,
     .md-text-center {
         text-align: center;
+    }
+
+    /* Homepage Desktop Styles */
+    .homepage-bottom-CTA {
+        padding-top: 60px;
     }
 
     /*
