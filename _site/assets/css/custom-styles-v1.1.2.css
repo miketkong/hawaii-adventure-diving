@@ -329,7 +329,7 @@ p a:hover {
 }
 
 .section-cta h2 {
-    font-size: 26px !important;
+    font-size: 36px !important;
     margin-bottom: 5px;
 }
 .section-cta p {
@@ -876,6 +876,9 @@ figcaption {
 }
 #tour-schedule table thead th {
     padding-bottom: 3px;
+}
+#tour-schedule table tbody {
+    font-weight: 600;
 }
 #tour-schedule table tbody tr:first-child td {
     padding-top: 17px;
@@ -2276,6 +2279,10 @@ ul.tour-times li {
     .photo-grid-gallery img {
         width: 50%;
     }
+    .get-the-shot-v2 .text-box {
+        position: relative;
+        margin-top: -80px;
+    }
 
     .homepage #photo-grid-gallery {
         padding-bottom: 0px;
@@ -2355,7 +2362,6 @@ ul.tour-times li {
     #tour-schedule table {
         max-width: 600px;
         margin: auto;
-        margin-top: 20px;
         margin-bottom: 10px;
     }
     #tour-schedule table tr td:first-child, #tour-schedule table tr th:first-child {
@@ -2556,6 +2562,13 @@ ul.tour-times li {
         font-size: 17px;
         line-height: 23px;
     }
+    #tour-schedule table {
+        font-size: 18px;
+        max-width: 800px;
+    }
+    #tour-schedule table tbody tr td:nth-child(2) {
+        width: 500px;
+    }
 
     .secondary-product-card {
         margin-top: 43px;
@@ -2595,6 +2608,9 @@ ul.tour-times li {
     .tour-page .big-CTA-pre-footer-v2 {
         padding-top: 150px;
         margin-bottom: -30px;
+    }
+    .get-the-shot-v2 .container-fluid {
+        min-height: 860px;
     }
     .get-the-shot-v2 .text-box {
         position: relative !important;
@@ -3091,6 +3107,30 @@ ul.tour-times li {
     .cta-buttons-pair .btn-secondary {
         margin-right: 10px;
     }
+
+    .md-pt-0 {padding-top: 0px !important;}
+    .md-pt-10 {padding-top: 10px !important;}
+    .md-pt-20 {padding-top: 20px !important;}
+    .md-pt-30 {padding-top: 30px !important;}
+    .md-pt-40 {padding-top: 40px !important;}
+    .md-pt-50 {padding-top: 50px !important;}
+    .md-pt-60 {padding-top: 60px !important;}
+    .md-pt-70 {padding-top: 70px !important;}
+    .md-pt-80 {padding-top: 80px !important;}
+    .md-pt-90 {padding-top: 90px !important;}
+    .md-pt-100 {padding-top: 100px !important;}
+
+    .md-pb-0 {padding-bottom: 0px !important;}
+    .md-pb-10 {padding-bottom: 10px !important;}
+    .md-pb-20 {padding-bottom: 20px !important;}
+    .md-pb-30 {padding-bottom: 30px !important;}
+    .md-pb-40 {padding-bottom: 40px !important;}
+    .md-pb-50 {padding-bottom: 50px !important;}
+    .md-pb-60 {padding-bottom: 60px !important;}
+    .md-pb-70 {padding-bottom: 70px !important;}
+    .md-pb-80 {padding-bottom: 80px !important;}
+    .md-pb-90 {padding-bottom: 90px !important;}
+    .md-pb-100 {padding-bottom: 100px !important;}
 
 
 
