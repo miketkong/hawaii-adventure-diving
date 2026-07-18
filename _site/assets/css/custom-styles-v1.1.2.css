@@ -1783,10 +1783,6 @@ ul.tour-times li {
     color: #fff;
 }
 
-.tour-packages .product-card h2 span {
-    font-size: 15px;
-}
-
 .tour-packages .product-card .price {
     font-size: 25px;
     color: #F0CE10;
@@ -1808,6 +1804,9 @@ ul.tour-times li {
     font-size: 16px;
     line-height: 22px;
 }
+.tour-lp-section-v2 .product-card {
+    box-shadow: 0px 20px 40px #000000ab;
+}
 .tour-lp-section-v2 .most-popular {
     outline: solid 7px #f0ce12;
     outline-offset: -3px;
@@ -1817,6 +1816,10 @@ ul.tour-times li {
     line-height: 40px !important;
     text-transform: capitalize;
     margin-bottom: -10px !important;
+}
+.tour-lp-section-v2 .kama-aina-card h2 {
+    font-size: 33px !important;
+    line-height: 36px !important;
 }
 .tour-lp-section-v2 .product-card .price {
     font-size: 32px;
@@ -1834,9 +1837,28 @@ ul.tour-times li {
     font-size: 30px;
     padding: 13px 30px 11px 28px !important;
 }
-#get-the-shot h2 {
+.tour-lp-section-v2 #get-the-shot h2 {
     margin-bottom: 10px;
 }
+#shark-diving-photography-packages.tour-lp-section-v2 {
+    background-color: #02335c;
+}
+#shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-image: url("/images/section-bgd-get-the-shot.jpeg");
+}
+#shark-diving-photography-packages.tour-lp-section-v2 .container-fluid {
+    padding: 0px;
+}
+#shark-diving-photography-packages.tour-lp-section-v2 .container {
+    position: relative;
+}
+#shark-diving-photography-packages.tour-lp-section-v2 h2 {
+    color: #fff;
+}
+
 .tour-page #team h2 {
     font-size: 36px;
     line-height: 34px;
@@ -2276,10 +2298,6 @@ ul.tour-times li {
         font-size: 32px;
         line-height: 36px;
     }
-
-    .tour-page #photo-grid-gallery {
-        padding-top: 20px !important;
-    }
     .photo-grid-gallery img {
         width: 50%;
     }
@@ -2355,8 +2373,6 @@ ul.tour-times li {
     }
 
     .shark-tour-page #photo-grid-gallery {
-        padding-top: 390px !important;
-        margin-top: -380px;
     }
 
 
@@ -2614,6 +2630,11 @@ ul.tour-times li {
     .tour-page .big-CTA-pre-footer-v2 {
         padding-top: 150px;
         margin-bottom: -30px;
+    }
+
+    /* Photo Packages v2 Styles - Desktop */
+    #shark-diving-photography-packages.tour-lp-section-v2 .container {
+        padding-top: 440px;
     }
     .get-the-shot-v2 .container-fluid {
         min-height: 860px;
