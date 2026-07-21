@@ -1908,7 +1908,9 @@ ul.tour-times li {
 #faq.tour-lp-section-v2 .accordion {
     margin-bottom: 30px;
 }
-
+.tour-page #team .h1-small-leader-text {
+    display: none;
+}
 .tour-page #team h2 {
     font-size: 36px;
     line-height: 34px;
