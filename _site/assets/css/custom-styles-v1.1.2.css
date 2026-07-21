@@ -135,6 +135,12 @@ h4 {
     font-size: 14px;
 }
 
+.heading-lead {
+    font-size: 22px !important;
+    line-height: 30px !important;
+    font-weight: bold !important;
+}
+
 p {
     font-size: 20px;
     line-height: 24px;
@@ -330,6 +336,8 @@ p a:hover {
 
 .section-cta h2 {
     font-size: 36px !important;
+    max-width: 440px;
+    margin: auto;
     margin-bottom: 5px;
 }
 .section-cta p {
@@ -757,20 +765,23 @@ figcaption {
 }
 
 .review-card h2 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 2px;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #424242 !important;
+    margin-bottom: -4px !important;
 }
 
 .review-card .reviews-text {
     margin-bottom: 10px;
 }
 
-.reviews-signature {
+.review-card .reviews-signature {
     font-size: 16px;
     margin-bottom: 0px;
-    text-align: right;
-    margin-right: 23px;
+    text-align: right;    
+    margin-top: -10px !important;
+    margin-bottom: 0px !important;
+    margin-right: 23px !important;
 }
 
 .five-stars {
@@ -1800,9 +1811,39 @@ ul.tour-times li {
     margin-bottom: 40px !important;
     margin-top: -15px !important;
 }
+.tour-lp-section-v2 .heading-text h2 {
+    font-size: 48px !important;
+    line-height: 48px !important;
+}
+.tour-lp-section-v2 .heading-text h3.bigger {
+    font-size: 32px;
+    line-height: 38px;
+}
+.tour-lp-section-v2 h3 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.tour-lp-section-v2 .kicker {
+    font-size: 18px;
+    line-height: 26px;
+}
 .tour-lp-section-v2 .description {
     font-size: 16px;
     line-height: 22px;
+}
+.tour-packages .tour-lp-section-v2 p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.tour-lp-section-v2 ul li {
+    font-size: 17px;
+    margin-bottom: 19px;
+} 
+#tour-packages.tour-lp-section-v2 #main-products {
+    position: relative;
+    z-index: 1;
 }
 .tour-lp-section-v2 .product-card {
     box-shadow: 0px 20px 40px #000000ab;
@@ -1840,23 +1881,32 @@ ul.tour-times li {
 .tour-lp-section-v2 #get-the-shot h2 {
     margin-bottom: 10px;
 }
+#shark-diving-photography-packages {
+    position: relative;
+    z-index: 0;
+    margin-top: -100px;
+}
 #shark-diving-photography-packages.tour-lp-section-v2 {
-    background-color: #02335c;
+    background-color: #001a33;
 }
 #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
-    position: absolute;
-    width: 100%;
-    height: 700px;
-    background-image: url("/images/section-bgd-get-the-shot.jpeg");
+    display: none;
 }
 #shark-diving-photography-packages.tour-lp-section-v2 .container-fluid {
     padding: 0px;
 }
 #shark-diving-photography-packages.tour-lp-section-v2 .container {
     position: relative;
+    padding-top: 130px;
 }
 #shark-diving-photography-packages.tour-lp-section-v2 h2 {
     color: #fff;
+}
+#shark-diving-photography-packages.tour-lp-section-v2 #littl-photo-grid img {
+    width: 100%;
+}
+#faq.tour-lp-section-v2 .accordion {
+    margin-bottom: 30px;
 }
 
 .tour-page #team h2 {
@@ -1864,7 +1914,7 @@ ul.tour-times li {
     line-height: 34px;
 }
 .tour-page .big-CTA-pre-footer-v2 h2 {
-    font-size: 50px;
+    font-size: 46px;
     line-height: 53px;
     padding: 0px !important;
     margin-bottom: 30px;
@@ -1883,6 +1933,7 @@ ul.tour-times li {
 .tour-page .big-CTA-pre-footer-v2 {
     padding-top: 320px;
     margin-bottom: -30px;
+    background-color: #17161a !important;
 }
 
 .whale-watching-tour-page .tour-packages .product-card .price {
@@ -2221,7 +2272,7 @@ ul.tour-times li {
     
     #tour-packages h2 {
         font-size: 36px;
-        line-height: 34px;
+        line-height: 39px;
         margin-bottom: 5px;
     }
     #tour-packages .h1-small {
@@ -2256,27 +2307,27 @@ ul.tour-times li {
         order: 3;
     }
 
-    #customer-reviews .swiper-slide a {
+    #testimonials-carousel .swiper-slide a {
         display: none;
     }
-    #customer-reviews .swiper-slide .reviews-signature {
+    #testimonials-carousel .swiper-slide .reviews-signature {
         text-align: center;
     }
     /* Show all slides vertically stacked on mobile */
-    #customer-reviews .swiper-container {
+    #testimonials-carousel .swiper-container {
         overflow: visible;
     }
-    #customer-reviews .swiper-wrapper {
+    #testimonials-carousel .swiper-wrapper {
         display: block;
         transform: none !important;
     }
-    #customer-reviews .swiper-slide {
+    #testimonials-carousel .swiper-slide {
         width: 100% !important;
         margin-bottom: 20px;
     }
-    #customer-reviews .swiper-button-prev,
-    #customer-reviews .swiper-button-next,
-    #customer-reviews .d-flex {
+    #testimonials-carousel .swiper-button-prev,
+    #testimonials-carousel .swiper-button-next,
+    #testimonials-carousel .d-flex {
         display: none !important;
     }
 
@@ -2384,15 +2435,17 @@ ul.tour-times li {
     #tour-schedule table tr td:first-child, #tour-schedule table tr th:first-child {
         text-align: left;        
     }
+    
+    .homepage #footer {
+        padding-top: 680px !important;
+    }
 
     
     .service-box-sm {
         height: 266px;
     }
 
-    .homepage #footer {
-        padding-top: 710px !important;
-    }
+    
 
     .CTA-section .big-button span::after {
         width: 21px;
@@ -2532,6 +2585,15 @@ ul.tour-times li {
     .homepage-bottom-CTA {
         padding-top: 60px;
     }
+    .homepage #photo-grid-gallery {
+        padding-bottom: 100px;
+    }
+    #homepage-bottom-CTA .shape-parent {
+        margin-top: -80px;
+    }
+    .homepage #footer {
+        padding-top: 600px !important;
+    }
 
     /*
     .text-box {
@@ -2628,13 +2690,25 @@ ul.tour-times li {
     }
 
     .tour-page .big-CTA-pre-footer-v2 {
-        padding-top: 150px;
+        padding-top: 180px;
+        margin-top: 120px;
         margin-bottom: -30px;
     }
 
     /* Photo Packages v2 Styles - Desktop */
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
-        padding-top: 440px;
+        padding-top: 140px;
+    }
+    #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
+        position: absolute;
+        display: block;
+        opacity: .4;
+        width: 100%;
+        height: stretch;
+        z-index: 0;
+        background-image: url("/images/bg-get-the-shot-v2.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
     }
     .get-the-shot-v2 .container-fluid {
         min-height: 860px;
@@ -2645,6 +2719,11 @@ ul.tour-times li {
         padding-left: 0px;
         padding-top: 331px;
         max-width: 530px;
+    }
+
+    /* Exclusive Tour Section Styles - Desktop */
+    #an-exclusive-experience.tour-lp-section-v2 .section-content .text-box {
+        margin-top: 0px;
     }
 
     /* Footer */
@@ -2768,8 +2847,8 @@ ul.tour-times li {
         align-content: center;
     }
 
-    .pano-section h2 {
-        font-size: 48px;
+    .pano-section .heading-text h2 {
+        font-size: 48px !important;
     }
 
     .pano-section p {
@@ -2802,7 +2881,7 @@ ul.tour-times li {
     }
 
     #get-the-shot .pano-bgd {
-        background-image: url("/images/section-bgd-get-the-shot.jpeg");
+        background-image: url("/images/bg-get-the-shot-v2.webp");
     }
     
     #get-the-shot .text-box {
