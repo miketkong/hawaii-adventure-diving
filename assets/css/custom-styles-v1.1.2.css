@@ -1887,7 +1887,6 @@ ul.tour-times li {
     margin-top: -100px;
 }
 #shark-diving-photography-packages.tour-lp-section-v2 {
-    background-color: #001a33;
 }
 #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
     display: none;
@@ -2181,6 +2180,13 @@ ul.tour-times li {
     .mobile-hide {
         display: none;
     }
+
+    .text-sm-blue {
+        color: #016BA3 !important;
+    }
+
+
+    
     .navbar-brand {
         top: 0px;
     }
@@ -2374,6 +2380,142 @@ ul.tour-times li {
     .shark-tour-page .big-CTA-pre-footer {
         background-color: #0d233f;
     }
+
+    .mt-sm-0 {
+        margin-top: 0px !important;
+    }
+    .mt-sm-10 {
+        margin-top: 10px !important;
+    }
+    .mt-sm-20 {
+        margin-top: 20px !important;
+    }
+    .mt-sm-30 {
+        margin-top: 30px !important;
+    }
+    .mt-sm-40 {
+        margin-top: 40px !important;
+    }
+    .mt-sm-50 {
+        margin-top: 50px !important;
+    }
+    .mt-sm-60 {
+        margin-top: 60px !important;
+    }
+    .mt-sm-70 {
+        margin-top: 70px !important;
+    }
+    .mt-sm-80 {
+        margin-top: 80px !important;
+    }
+    .mt-sm-90 {
+        margin-top: 90px !important;
+    }
+    .mt-sm-100 {
+        margin-top: 100px !important;
+    }
+
+    .mb-sm-0 {
+        margin-bottom: 0px !important;
+    }
+    .mb-sm-10 {
+        margin-bottom: 10px !important;
+    }
+    .mb-sm-20 {
+        margin-bottom: 20px !important;
+    }
+    .mb-sm-30 {
+        margin-bottom: 30px !important;
+    }
+    .mb-sm-40 {
+        margin-bottom: 40px !important;
+    }
+    .mb-sm-50 {
+        margin-bottom: 50px !important;
+    }
+    .mb-sm-60 {
+        margin-bottom: 60px !important;
+    }
+    .mb-sm-70 {
+        margin-bottom: 70px !important;
+    }
+    .mb-sm-80 {
+        margin-bottom: 80px !important;
+    }
+    .mb-sm-90 {
+        margin-bottom: 90px !important;
+    }
+    .mb-sm-100 {
+        margin-bottom: 100px !important;
+    }
+
+    .pt-sm-0 {
+        padding-top: 0px !important;
+    }
+    .pt-sm-10 {
+        padding-top: 10px !important;
+    }
+    .pt-sm-20 {
+        padding-top: 20px !important;
+    }
+    .pt-sm-30 {
+        padding-top: 30px !important;
+    }
+    .pt-sm-40 {
+        padding-top: 40px !important;
+    }
+    .pt-sm-50 {
+        padding-top: 50px !important;
+    }
+    .pt-sm-60 {
+        padding-top: 60px !important;
+    }
+    .pt-sm-70 {
+        padding-top: 70px !important;
+    }
+    .pt-sm-80 {
+        padding-top: 80px !important;
+    }
+    .pt-sm-90 {
+        padding-top: 90px !important;
+    }
+    .pt-sm-100 {
+        padding-top: 100px !important;
+    }
+
+    .pb-sm-0 {
+        padding-bottom: 0px !important;
+    }
+    .pb-sm-10 {
+        padding-bottom: 10px !important;
+    }
+    .pb-sm-20 {
+        padding-bottom: 20px !important;
+    }
+    .pb-sm-30 {
+        padding-bottom: 30px !important;
+    }
+    .pb-sm-40 {
+        padding-bottom: 40px !important;
+    }
+    .pb-sm-50 {
+        padding-bottom: 50px !important;
+    }
+    .pb-sm-60 {
+        padding-bottom: 60px !important;
+    }
+    .pb-sm-70 {
+        padding-bottom: 70px !important;
+    }
+    .pb-sm-80 {
+        padding-bottom: 80px !important;
+    }
+    .pb-sm-90 {
+        padding-bottom: 90px !important;
+    }
+    .pb-sm-100 {
+        padding-bottom: 100px !important;
+    }
 }
 
 /* ========================================================== */
@@ -2556,6 +2698,10 @@ ul.tour-times li {
         font-size: 18px;
     }
 
+    .text-md-white {
+        color: #fff;
+    }
+
     .section-heading-text {
         font-size: 44px;
         line-height: 58px;
@@ -2698,6 +2844,9 @@ ul.tour-times li {
     }
 
     /* Photo Packages v2 Styles - Desktop */
+    #shark-diving-photography-packages.tour-lp-section-v2 {
+        background-color: #001a33;
+    }
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
         padding-top: 140px;
     }
@@ -3216,29 +3365,29 @@ ul.tour-times li {
         margin-right: 10px;
     }
 
-    .md-pt-0 {padding-top: 0px !important;}
-    .md-pt-10 {padding-top: 10px !important;}
-    .md-pt-20 {padding-top: 20px !important;}
-    .md-pt-30 {padding-top: 30px !important;}
-    .md-pt-40 {padding-top: 40px !important;}
-    .md-pt-50 {padding-top: 50px !important;}
-    .md-pt-60 {padding-top: 60px !important;}
-    .md-pt-70 {padding-top: 70px !important;}
-    .md-pt-80 {padding-top: 80px !important;}
-    .md-pt-90 {padding-top: 90px !important;}
-    .md-pt-100 {padding-top: 100px !important;}
+    .pt-md-0 {padding-top: 0px !important;}
+    .pt-md-10 {padding-top: 10px !important;}
+    .pt-md-20 {padding-top: 20px !important;}
+    .pt-md-30 {padding-top: 30px !important;}
+    .pt-md-40 {padding-top: 40px !important;}
+    .pt-md-50 {padding-top: 50px !important;}
+    .pt-md-60 {padding-top: 60px !important;}
+    .pt-md-70 {padding-top: 70px !important;}
+    .pt-md-80 {padding-top: 80px !important;}
+    .pt-md-90 {padding-top: 90px !important;}
+    .pt-md-100 {padding-top: 100px !important;}
 
-    .md-pb-0 {padding-bottom: 0px !important;}
-    .md-pb-10 {padding-bottom: 10px !important;}
-    .md-pb-20 {padding-bottom: 20px !important;}
-    .md-pb-30 {padding-bottom: 30px !important;}
-    .md-pb-40 {padding-bottom: 40px !important;}
-    .md-pb-50 {padding-bottom: 50px !important;}
-    .md-pb-60 {padding-bottom: 60px !important;}
-    .md-pb-70 {padding-bottom: 70px !important;}
-    .md-pb-80 {padding-bottom: 80px !important;}
-    .md-pb-90 {padding-bottom: 90px !important;}
-    .md-pb-100 {padding-bottom: 100px !important;}
+    .pb-md-0 {padding-bottom: 0px !important;}
+    .pb-md-10 {padding-bottom: 10px !important;}
+    .pb-md-20 {padding-bottom: 20px !important;}
+    .pb-md-30 {padding-bottom: 30px !important;}
+    .pb-md-40 {padding-bottom: 40px !important;}
+    .pb-md-50 {padding-bottom: 50px !important;}
+    .pb-md-60 {padding-bottom: 60px !important;}
+    .pb-md-70 {padding-bottom: 70px !important;}
+    .pb-md-80 {padding-bottom: 80px !important;}
+    .pb-md-90 {padding-bottom: 90px !important;}
+    .pb-md-100 {padding-bottom: 100px !important;}
 
 
 
