@@ -109,6 +109,19 @@ The following directories are copied verbatim into `_site` with no processing:
 
 ---
 
+## Responsive Design
+
+**Minimum supported mobile width: 360px.** This is the design baseline for all mobile layouts. Test down to 320px to ensure nothing breaks catastrophically, but 360px is the target floor.
+
+| Width | Context |
+|---|---|
+| 320px | Absolute minimum (older/small devices) |
+| 360px | **Design baseline** — most common small Android width |
+| 375px | iPhone SE (2nd/3rd gen) |
+| 390px | iPhone 14/15 Pro |
+
+---
+
 ## Hero Video Banner
 
 **File:** `_includes/shark-video-banner.njk`

@@ -1,0 +1,70 @@
+---
+layout: base
+
+isSharkTourPage: true
+
+pageTitle: "Dive Cage-Free with World-Class Shark Handlers"
+
+ogTitle: "Dive Cage-Free with World-Class Shark Handlers"
+
+pageDescription: "Experience maximum immersion and interaction. Cage-free shark dives lead by World-class, expert shark
+handlers. Safe and family friendly! Ages: 5+."
+
+pageURL: "https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"
+
+ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu-1200x637.jpg"
+---
+
+<body class="has-topbar shark-tour-page tour-page bg-white">
+
+    {% include "nav.njk" %}
+
+    {% set thisPage = "sharks" %}
+
+    <div class="content-wrap">
+
+        {% include "banners/shark-tour-hero-v2.njk" %}
+
+        {% include "sections/as-seen-on.njk" %}
+
+        {% include "sections/ratings-and-reviews-section-r2.njk" %}
+
+        {% include "sections/tour-quick-guide.njk" %}
+
+        {% include "sections/tour-schedule-r2.njk" %}
+
+        {% include "sections/rates-and-details-shark-tour-r2.njk" %}
+
+        {% include "sections/team-section.njk" %}
+
+        <section id="an-exclusive-experience" class="pano-section tour-lp-section-v2 text-left white-text">
+            <div class="container-fluid gx-0">
+                <div class="pano-bgd"></div>
+                <div class="section-content">
+                    <div class="text-box">
+                        <h1 class="h1-small-leader-text">Hawaii Adventure Diving</h1>
+                        <h2>Small Groups. <span class="no-break">Big Experiences.</span></h2>
+                        <p>With only six guests per tour, you'll spend less time waiting and more time enjoying an unforgettable encounter with<span class="no-break"> Hawaii's sharks.</span></p>
+                    </div>
+                    <picture>
+                        <source media="(max-width: 1023px)" srcset="/images/private-tours-img-mobile.jpeg" />
+                        <source media="(min-width: 1024px)" srcset="/images/blank.gif" />
+                        <img class="hero-img mobile" src="/images/blank.gif">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        {% include "sections/shark-faq-v2.njk" %}
+
+    </div>
+    <!--// Content Wrap -->
+
+    {% set btn = '<a class="btn btn-accent-1 big-button"
+        href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/">Book Now</a>' %}
+    {% include "sections/big-CTA-pre-footer-v2.njk" %}
+
+    <!-- footer.php include -->
+    {% include "footer.njk" %}
+
+</body>

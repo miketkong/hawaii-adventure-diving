@@ -2174,7 +2174,7 @@ ul.tour-times li {
 }
 
 /* ========================================================== */
-/* PHONE STYLES 
+/* MOBILE STYLES 
 /* ========================================================== */
 @media screen and (max-width: 576px) {
     .mobile-hide {
@@ -2186,7 +2186,7 @@ ul.tour-times li {
     }
 
 
-    
+    /* Navigation */
     .navbar-brand {
         top: 0px;
     }
@@ -2239,12 +2239,29 @@ ul.tour-times li {
         text-decoration: none;
     }
 
+    /* Hero Banner - V1 */
+
     .hero-banner {
         height: auto;
         aspect-ratio: 1080 / 1776;
     }
+
+    /* Hero Banner - V2 */
+    .hero-video-banner-v2 .banner-contents {
+        justify-content: flex-start;
+    }
+    .hero-video-banner-v2 .banner-contents #hero-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;
+    } 
+
+
+
     #mini-testimonials-ticker {
         margin-top: 13px;
+        height: 50px;
     }
 
     
