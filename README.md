@@ -101,7 +101,7 @@ Update review counts here; they render in the homepage ratings block and elsewhe
 ### Vendor Libraries (local copies in `assets/vendors/`)
 Bootstrap, Swiper, Jarallax + Jarallax Element, jQuery, Magnific Popup, Isotope, imagesLoaded, jQuery Countdown, jQuery Inview, OFI. All loaded from local files — no CDN dependency at runtime.
 
-**Google Fonts** (Inter, Josefin Sans, Poppins, Asap Condensed) are loaded from Google's CDN via `base.njk`.
+**Fonts** Fonts are stored on the site in assets/fonts and loaded via CSS at the top of the custom CSS file in assets/css/.
 
 ### Pass-Through Directories
 The following directories are copied verbatim into `_site` with no processing:

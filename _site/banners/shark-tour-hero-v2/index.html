@@ -25,12 +25,13 @@
 
 
         <div class="banner-contents" data-show="startbox">
+            <div class="banner-logo desktop-only">
+                <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+            </div>
             <div id="hero-text" class="col-lg-8 offset-lg-2">
-                <div class="banner-logo desktop-only">
-                    <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
-                </div>
-                <h1><span class="eyebrow no-break">Cage Free</span><br>Shark Diving</h1>
-                <h2>Dive Into a Next-Level Experience<br><span class="no-break"> with Hawaii's Elite  Shark Handlers</span></h2>
+                <h1 class="big-text-top-1">Cage Free</h1>
+                <h1 class="big-text-long-words">Shark Diving</h1>
+                <h2 class="small-text">Dive into a next-level experience<br><span class="no-break"> with Hawaii's elite shark handlers</span></h2>
             </div>
             <div id="cta-block" class="col-lg-8 offset-lg-2">
                 <h3>From $150 per person</h3>
@@ -48,36 +49,6 @@
   container.querySelector('.review-total').textContent = (4142).toLocaleString();
 </script>
 
-                <div id="mini-testimonials-ticker"></div>
-<script>
-  var ticker = document.currentScript.previousElementSibling;
-  var testimonials = [
-    '"Truly a life changing experience."',
-    '"Thanks for being so amazing and welcoming."',
-    '"Very professional team, we felt very safe."',
-    '"Top-tier staff are highly knowledgeable."',
-    '"10/10 recommend!!!"',
-    '"Our photos turned out EPIC!"',
-    '"Amazing guides, unbelievable experience!"',
-    '"We swam with a 15 foot tiger shark."'
-  ];
-  var current = Math.floor(Math.random() * testimonials.length);
-  ticker.textContent = testimonials[current];
-  setInterval(function () {
-    ticker.style.opacity = '0';
-    setTimeout(function () {
-      var next;
-      do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
-      current = next;
-      ticker.textContent = testimonials[current];
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          ticker.style.opacity = '1';
-        });
-      });
-    }, 600);
-  }, 4000);
-</script>
             </div>
         </div>
     </div>

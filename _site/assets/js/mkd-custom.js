@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+
     const scrollingBlackFade = document.getElementById('scrollingBlackFade');
 
     const adjustOpacity = () => {
@@ -92,3 +93,30 @@ function rotateText(selector, textArray) {
 
     initialFadeIn();
 };
+
+/* Text Effects */
+
+function typewriterEffect(element, delayPerChar = 60) {
+    const text = element.textContent;
+    element.style.opacity = '1';
+    element.innerHTML = text
+        .split('')
+        .map((char, i) => {
+            const content = char === ' ' ? '&nbsp;' : char;
+            return `<span class="char" style="animation-delay:${i * delayPerChar}ms">${content}</span>`;
+        })
+        .join('');
+}
+
+/*
+document.addEventListener('DOMContentLoaded', function () {
+    const heroVideo = document.getElementById('hero-video');
+    console.log("log: heroVideo element:", heroVideo);
+    if (heroVideo) {
+        console.log("log: Adding event listener for 'playing' event on heroVideo");
+        heroVideo.addEventListener('playing', function () {
+            console.log("Video is playing!");
+            //document.querySelectorAll('.typewriter').forEach(el => typewriterEffect(el));
+        }, { once: true });
+    }
+}); */

@@ -56,6 +56,14 @@
 }
 
 @font-face {
+    font-family: 'Karantina';
+    src: url('/assets/fonts/Karantina-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Asap Condensed';
     src: url('/assets/fonts/asap-condensed-v18-latin-regular.woff2') format('woff2');
     font-weight: 400;
@@ -188,7 +196,7 @@ p a:hover {
     margin-bottom: 0px;
 }
 
-#hero-text {
+.hero-text {
     text-shadow: -2px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -1023,6 +1031,16 @@ ul.tour-times li {
     color: #016ba3;
     text-decoration: underline;
 }
+
+/* Hero Banner V2 */
+.hero-video-banner-v2 h1.big-text, .hero-video-banner-v2 h1.big-text-long-words {
+    font-family: "Karantina", system-ui;
+}
+.hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+    font-family: "Josefin Sans", system-ui;
+    font-weight: 700;
+}
+
 
 /* Product Landing Page General Styles */
 .page-title-img-wrapper h1 {
@@ -2173,6 +2191,82 @@ ul.tour-times li {
     opacity: 1 !important;
 }
 
+/* Text Effects */
+
+/* Fade up: element fades in while sliding up from 50px below */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 0.4s ease-out forwards;
+}
+
+/* Fade up: element fades in while sliding up from 50px below */
+@keyframes fadeDown {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+.fade-down {
+    opacity: 1;
+    animation: fadeDown 0.4s ease-out forwards;
+}
+
+/* Fade in: element fades in */
+@keyframes heroTextFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-text-fade-in {
+    opacity: 0;
+    animation: heroTextFadeIn 1.5s ease-out forwards;
+}
+
+/* Typewriter: characters fade in and scale down from 150% */
+@keyframes charIn {
+    from {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.typewriter {
+    opacity: 0; /* hidden until JS splits and triggers */
+}
+
+.typewriter .char {
+    display: inline-block; /* required for transform to work */
+    opacity: 0;
+    animation: charIn 0.4s ease forwards;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 /* ========================================================== */
 /* MOBILE STYLES 
 /* ========================================================== */
@@ -2246,16 +2340,52 @@ ul.tour-times li {
         aspect-ratio: 1080 / 1776;
     }
 
-    /* Hero Banner - V2 */
+    /* ------------------------------------------------------------------------*/
+    /* Hero Banner V2 */
+    /* ------------------------------------------------------------------------*/
     .hero-video-banner-v2 .banner-contents {
         justify-content: flex-start;
+        padding-bottom: 10px;
     }
-    .hero-video-banner-v2 .banner-contents #hero-text {
+    .hero-video-banner-v2 .banner-contents .hero-text-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         flex-grow: 1;
-    } 
+    }
+    .hero-video-banner-v2 .hero-text {
+        position: absolute;
+    }
+
+    /* Hero Banner V2 Fonts & Sizes */
+    .hero-video-banner-v2 h1.big-text {
+        
+    }
+    .hero-video-banner-v2 h1.big-text-long-words {
+        font-size: 90px;
+        line-height: 90px;
+        margin-top: -26px;
+        margin-bottom: -8px;
+        opacity: 0;
+    }
+    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+        font-size: 30px;
+        opacity: 0;
+    }
+    .hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-bottom-2 {
+        opacity: 0;
+        
+    }
+    .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-3 {
+        opacity: 0;
+        
+    }
+    .hero-video-banner-v2 .small-text {
+        font-size: 20px;
+        line-height: 22px;
+        opacity: 0;
+    }
 
 
 
