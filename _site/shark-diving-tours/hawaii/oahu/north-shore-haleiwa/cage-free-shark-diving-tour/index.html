@@ -32,7 +32,7 @@
     <meta name="contact-phone" content="+1 (808) 829-2203" />
     <meta name="contact-link" content="+18088292203" />
     <meta name="contact-email" content="nickloewenstine@gmail.com" />
-    <meta name="total-reviews" content="4142" />
+    <meta name="total-reviews" content="4484" />
     <meta name="average-rating" content="4.95" />
     
     <meta name="description" content="Experience maximum immersion and interaction. Cage-free shark dives lead by World-class, expert shark handlers. Safe and family friendly! Ages: 5+.">   
@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=915a36c6">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=18a1c468">
 
     <!-- Google Fonts -->
     <!--
@@ -241,13 +241,15 @@
     <div class="content-wrap">
 
         
-        <!-- Main Hero Video Banner -->
-        <section id="hero-banner" class="hero-video-banner hero-banner dark-bg">
-            <div class="container-fluid gx-0">
-                <div class="video-overlay-color"></div>
+        
+                
+<!-- Shark Tour Hero Video Banner -->
+<section id="hero-banner" class="hero-video-banner hero-video-banner-v2 hero-banner dark-bg">
+    <div class="container-fluid gx-0">
+        <div class="video-overlay-color"></div>
 
 
-                <!-- VIDEO BANNER BACKGROUND -->
+        <!-- VIDEO BANNER BACKGROUND -->
 <div id="shark-banner-video-bgd" class="video-container">
     <video id="shark-hero-video" autoplay muted loop playsinline></video>
 </div>
@@ -353,21 +355,58 @@
  
 
 
-                <div class="banner-contents" data-show="startbox">
-                    <div id="hero-text" class="col-lg-8 offset-lg-2">
-                        <div class="banner-logo desktop-only">
-                            <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
-                        </div>
-                        <h1><span class="eyebrow no-break">Cage Free</span><br>Shark Diving</h1>
-                        <h2>Small groups. Closer shark encounters. <span class="no-break">World-class guides.</span>
-                        </h2>
-                    </div>
-                    <div id="cta-block" class="col-lg-8 offset-lg-2">
-                        <h3>From $150 per person</h3>
-                        <a class="btn btn-md btn-accent-1"
-                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
-                                Shark Diving</span></a>
-                        <div class="star-rating">
+        <div class="banner-contents">
+            <div class="banner-logo desktop-only">
+                <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+            </div>
+
+            <div class="hero-text-container col-lg-8 offset-lg-2">
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Cage Free</h1>
+                    <h1 class="big-text-long-words">Shark Diving</h1>
+                    <h2 class="small-text">Dive into a next-level experience<br><span class="no-break"> with Hawaii's elite shark handlers</span></h2>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Swim</h1>
+                    <h1 class="big-text-long-words">Face-To-Face</h1>
+                    <h1 class="big-text-bottom-1">With Wild Sharks</h1>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Guided By</h1>
+                    <h1 class="big-text-long-words">World-Class</h1>
+                    <h1 class="big-text-bottom-1">Shark Handlers</h1>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Ultimate</h1>
+                    <h1 class="big-text">Immersion</h1>
+                    <h2 class="small-text">This is Not Your Average Shark Tour!</h2>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Ultimate</h1>
+                    <h1 class="big-text">Experience</h1>
+                    <h2 class="small-text">Led by Elite Shark Behavior Experts</h2>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Consistently</h1>
+                    <h1 class="big-text">Top-Rated</h1>
+                    <h2 class="small-text">Rated 5-Stars by Over 4,000 Guests</h2>
+                </div>
+
+            </div>
+
+            <div id="cta-block" class="col-lg-8 offset-lg-2">
+                <h3>From $150 per person</h3>
+                
+                    <a class="btn btn-md btn-accent-1"
+                        href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
+                            Shark Diving</span></a>
+                
+                <div class="star-rating">
   <span class="review-average"></span>
   <img src="/images/5-stars.png" alt="">
   (<span class="review-total"></span>)
@@ -375,43 +414,14 @@
 <script>
   var container = document.currentScript.previousElementSibling;
   container.querySelector('.review-average').textContent = (4.95).toFixed(1);
-  container.querySelector('.review-total').textContent = (4142).toLocaleString();
+  container.querySelector('.review-total').textContent = (4484).toLocaleString();
 </script>
 
-                        <div id="mini-testimonials-ticker"></div>
-<script>
-  var ticker = document.currentScript.previousElementSibling;
-  var testimonials = [
-    '"Truly a life changing experience."',
-    '"Thanks for being so amazing and welcoming."',
-    '"Very professional team, we felt very safe."',
-    '"Top-tier staff are highly knowledgeable."',
-    '"10/10 recommend!!!"',
-    '"Our photos turned out EPIC!"',
-    '"Amazing guides, unbelievable experience!"',
-    '"We swam with a 15 foot tiger shark."'
-  ];
-  var current = Math.floor(Math.random() * testimonials.length);
-  ticker.textContent = testimonials[current];
-  setInterval(function () {
-    ticker.style.opacity = '0';
-    setTimeout(function () {
-      var next;
-      do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
-      current = next;
-      ticker.textContent = testimonials[current];
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          ticker.style.opacity = '1';
-        });
-      });
-    }, 600);
-  }, 4000);
-</script>
-                    </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
 
         <!-- As Seen on Section -->
 <section id="as-seen-on" class="bg-white">
@@ -478,27 +488,27 @@
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item google">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-google.jpg" alt="Google logo">
-                                <p class="rating"><span>5.0</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(2,140)</p>
+                                <p class="rating"><span>5.0</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(2,415)</p>
                             </div>
                         </div>
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item groupon">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-groupon.jpg" alt="Groupon logo">
-                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(1,127)</p>
+                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(1,137)</p>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item trip-advisor">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-tripadvisor-horizontal.png" alt="Trip Advisor logo">
-                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(586)</p>
+                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(632)</p>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item yelp">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-yelp.jpg" alt="Yelp logo">
-                                <p class="rating"><span>4.8</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(204)</p>
+                                <p class="rating"><span>4.8</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(215)</p>
                             </div>
                         </div>
 
@@ -511,7 +521,7 @@
                     </div>
                     <!-- Put the ratings subtext here -->
                     <div class="ratings-subtext text-center">
-                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last updated July 2026.</p>
+                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last updated August 2026.</p>
                     </div>
                 </div>
                 <!--// Ratings & Reviews Section r2 -->

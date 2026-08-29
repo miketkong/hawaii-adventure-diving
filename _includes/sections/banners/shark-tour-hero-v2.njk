@@ -54,9 +54,15 @@
 
             <div id="cta-block" class="col-lg-8 offset-lg-2">
                 <h3>From $150 per person</h3>
-                <a class="btn btn-md btn-accent-1"
-                    href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
-                        Shark Diving</span></a>
+                {% if heroVariant == "home" %}
+                    <a class="btn btn-md btn-accent-1"
+                                href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour
+                                    Details</span></a>
+                {% elif heroVariant == "shark-tour" %}
+                    <a class="btn btn-md btn-accent-1"
+                        href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
+                            Shark Diving</span></a>
+                {% endif %}
                 {% include "blocks/star-ratings.njk" %}
             </div>
         </div>

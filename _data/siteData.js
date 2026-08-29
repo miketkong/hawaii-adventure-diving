@@ -1,9 +1,9 @@
 const platformRatings = {
-  Google: { total: 2140, average: 5 },
-  TripAdvisor: { total: 586, average: 4.9 },
-  Yelp: { total: 204, average: 4.8 },
+  Google: { total: 2415, average: 5 },
+  TripAdvisor: { total: 632, average: 4.9 },
+  Yelp: { total: 215, average: 4.8 },
   Facebook: { total: 85, average: 5 },
-  Groupon: { total: 1127, average: 4.9 },
+  Groupon: { total: 1137, average: 4.9 },
 };
 
 const calculateReviewSummary = (ratings) => {
@@ -93,7 +93,7 @@ const teamBios = [
 ];
 
 module.exports = {
-  ratingsLastUpdated: "July 2026",
+  ratingsLastUpdated: "August 2026",
   contact: {
     phonePretty: "+1 (808) 829-2203",
     phoneLink: "+18088292203",
