@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=50361eda">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=7cfb20e4">
 
     <!-- Google Fonts -->
     <!--
@@ -310,10 +310,18 @@
             bigTextMiddle.classList.add('typewriter');
             typewriterEffect(bigTextMiddle);
         }, 800);
+
+        if (smallText) {
+            setTimeout(function () {
+                smallText.classList.add('hero-text-fade-in');
+            }, 1000);
+        }
         
-        setTimeout(function () {
-            smallText.classList.add('hero-text-fade-in');
-        }, 1500);
+        if (bigTextBottom) {
+            setTimeout(function () {
+                bigTextBottom.classList.add('fade-up');
+            }, 1000);
+        }
 
         setTimeout(function () {
             thisGroup.classList.add('fade-down');
@@ -323,9 +331,14 @@
             bigTextTop.classList.remove('fade-up');
             bigTextMiddle.classList.remove ('typewriter');
             bigTextMiddle.style.opacity = '0';
-            smallText.classList.remove('hero-text-fade-in');
+            if (smallText) {
+                smallText.classList.remove('hero-text-fade-in');
+            }
+            if (bigTextBottom) {
+                bigTextBottom.classList.remove('fade-up');
+            }
             getNextHeroTextGroup(groupNumber, totalHeroTextGroups);
-        }, 5000);
+        }, 5500);
 
     }
 

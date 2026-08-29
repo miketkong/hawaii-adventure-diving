@@ -2224,7 +2224,7 @@ ul.tour-times li {
 
 .fade-down {
     opacity: 1;
-    animation: fadeDown 0.4s ease-out forwards;
+    animation: fadeDown 1.5s ease-out forwards;
 }
 
 /* Fade in: element fades in */
@@ -2239,7 +2239,7 @@ ul.tour-times li {
 
 .hero-text-fade-in {
     opacity: 0;
-    animation: heroTextFadeIn 1.5s ease-out forwards;
+    animation: heroTextFadeIn 0.5s ease-out forwards;
 }
 
 /* Typewriter: characters fade in and scale down from 150% */
@@ -2380,6 +2380,9 @@ ul.tour-times li {
     .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-3 {
         opacity: 0;
         
+    }
+    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+        margin-top: -14px
     }
     .hero-video-banner-v2 .small-text {
         font-size: 20px;
