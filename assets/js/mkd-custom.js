@@ -107,16 +107,3 @@ function typewriterEffect(element, delayPerChar = 60) {
         })
         .join('');
 }
-
-/*
-document.addEventListener('DOMContentLoaded', function () {
-    const heroVideo = document.getElementById('hero-video');
-    console.log("log: heroVideo element:", heroVideo);
-    if (heroVideo) {
-        console.log("log: Adding event listener for 'playing' event on heroVideo");
-        heroVideo.addEventListener('playing', function () {
-            console.log("Video is playing!");
-            //document.querySelectorAll('.typewriter').forEach(el => typewriterEffect(el));
-        }, { once: true });
-    }
-}); */

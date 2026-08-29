@@ -1033,12 +1033,65 @@ ul.tour-times li {
 }
 
 /* Hero Banner V2 */
+/* -------------------------------- */
+.hero-video-banner-v2 .banner-contents {
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.hero-video-banner-v2 .banner-contents .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.hero-video-banner-v2 .hero-text {
+    position: absolute;
+}
+
 .hero-video-banner-v2 h1.big-text, .hero-video-banner-v2 h1.big-text-long-words {
     font-family: "Karantina", system-ui;
 }
 .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
     font-family: "Josefin Sans", system-ui;
     font-weight: 700;
+}
+
+/* Hero Banner V2 - Text Styles */
+.hero-video-banner-v2 h1.big-text {
+    font-size: 118px;
+    line-height: 118px;
+    margin-top: -26px;
+    margin-bottom: -8px;
+    opacity: 0;
+}
+.hero-video-banner-v2 h1.big-text-long-words {
+    font-size: 104px;
+    line-height: 104px;
+    margin-top: -26px;
+    margin-bottom: -8px;
+    opacity: 0;
+}
+
+.hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+    font-size: 30px;
+    opacity: 0;
+}
+.hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-bottom-2 {
+    opacity: 0;
+    
+}
+.hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-3 {
+    opacity: 0;
+    
+}
+.hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+    margin-top: -14px
+}
+.hero-video-banner-v2 .small-text {
+    font-size: 24px;
+    line-height: 26px;
+    opacity: 0;
 }
 
 
@@ -2343,58 +2396,7 @@ ul.tour-times li {
     /* ------------------------------------------------------------------------*/
     /* Hero Banner V2 */
     /* ------------------------------------------------------------------------*/
-    .hero-video-banner-v2 .banner-contents {
-        justify-content: flex-start;
-        padding-bottom: 10px;
-    }
-    .hero-video-banner-v2 .banner-contents .hero-text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        flex-grow: 1;
-    }
-    .hero-video-banner-v2 .hero-text {
-        position: absolute;
-    }
-
-    /* Hero Banner V2 Fonts & Sizes */
-    .hero-video-banner-v2 h1.big-text {
-        font-size: 118px;
-        line-height: 118px;
-        margin-top: -26px;
-        margin-bottom: -8px;
-        opacity: 0;
-    }
-    .hero-video-banner-v2 h1.big-text-long-words {
-        font-size: 104px;
-        line-height: 104px;
-        margin-top: -26px;
-        margin-bottom: -8px;
-        opacity: 0;
-    }
-
-
-    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
-        font-size: 30px;
-        opacity: 0;
-    }
-    .hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-bottom-2 {
-        opacity: 0;
-        
-    }
-    .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-3 {
-        opacity: 0;
-        
-    }
-    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
-        margin-top: -14px
-    }
-    .hero-video-banner-v2 .small-text {
-        font-size: 24px;
-        line-height: 26px;
-        opacity: 0;
-    }
+    
 
 
 
@@ -2730,7 +2732,7 @@ ul.tour-times li {
     }
 
     .hero-banner #cta-block {
-        margin-top: 50px;
+        margin-top: 20px;
     }
     #mini-testimonials-ticker {
         font-size: 19px;
@@ -2803,6 +2805,45 @@ ul.tour-times li {
 
     .text-center-sm {
         text-align: center;
+    }
+
+
+    .navbar-brand {
+        top: 8px;
+    }
+}
+
+/* ========================================================== */
+/* TABLET STYLES 
+/* ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Hero Banner V2 - Text Styles */
+    .hero-video-banner-v2 .banner-contents {
+        padding-bottom: 20px;
+    }
+    .hero-video-banner-v2 h1.big-text {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+    .hero-video-banner-v2 h1.big-text-long-words {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+
+    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+        font-size: 36px;
+    }
+    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+        margin-top: -20px
+    }
+    .hero-video-banner-v2 .small-text {
+        font-size: 28px;
+        line-height: 32px;
     }
 }
 
@@ -2908,6 +2949,34 @@ ul.tour-times li {
     .text-center-md,
     .md-text-center {
         text-align: center;
+    }
+
+    /* Hero Banner V2 - Text Styles */
+    .hero-video-banner-v2 .banner-contents {
+        padding-bottom: 30px;
+    }
+    .hero-video-banner-v2 h1.big-text {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+    .hero-video-banner-v2 h1.big-text-long-words {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+
+    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+        font-size: 36px;
+    }
+    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+        margin-top: -20px
+    }
+    .hero-video-banner-v2 .small-text {
+        font-size: 28px;
+        line-height: 32px;
     }
 
     /* Homepage Desktop Styles */
@@ -3486,7 +3555,7 @@ ul.tour-times li {
     }
 
     .hero-banner .banner-contents {
-        padding-top: 150px;
+        padding-top: 130px;
     }
 
     /* Product Cards */
