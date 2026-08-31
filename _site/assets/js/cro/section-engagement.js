@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const state = {};
   sections.forEach(section => {
     state[section.id] = {
-      cumulativeMs:    0,         // total banked dwell time from completed visits
-      visitCount:      0,         // number of qualifying views this session
+      cumulativeMs: 0,         // total banked dwell time from completed visits
+      visitCount: 0,         // number of qualifying views this session
       firedMilestones: new Set(), // which milestones have already fired
       qualifyingStart: null,      // timestamp when section entered view (current attempt)
       qualifyingTimer: null,      // setTimeout handle for the 3s qualification
-      visitStart:      null,      // timestamp when current qualified visit began (= qualifyingStart)
-      milestoneTimer:  null       // setTimeout handle for the next pending milestone
+      visitStart: null,      // timestamp when current qualified visit began (= qualifyingStart)
+      milestoneTimer: null       // setTimeout handle for the next pending milestone
     };
   });
 
@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
       // Already past this milestone from banked time — fire immediately then schedule the next
       s.firedMilestones.add(next);
       push('section_engaged', {
-        section_id:           sectionId,
-        dwell_milestone:      next,
-        section_visit_count:  s.visitCount
+        section_id: sectionId,
+        dwell_milestone: next,
+        section_visit_count: s.visitCount
       });
       scheduleNextMilestone(sectionId);
       return;
@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
       s.milestoneTimer = null;
       s.firedMilestones.add(next);
       push('section_engaged', {
-        section_id:           sectionId,
-        dwell_milestone:      next,
-        section_visit_count:  s.visitCount
+        section_id: sectionId,
+        dwell_milestone: next,
+        section_visit_count: s.visitCount
       });
       scheduleNextMilestone(sectionId);
     }, remainingMs);
@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', () => {
           s.visitStart = s.qualifyingStart; // qualifying time counts toward dwell
 
           push('section_viewed', {
-            section_id:          sectionId,
+            section_id: sectionId,
+            dwell_milestone: 3,
             section_visit_count: s.visitCount
           });
 
