@@ -165,40 +165,13 @@ Professional photos available to capture every moment.
 ---
 
 ## Results
+After completing the implementation, document:
 
-### Files Created
-- `assets/css/how-close-section.css` — New temporary stylesheet for this section. To be merged into `custom-styles-v1.1.2.css` before production.
-
-### Files Modified
-- `.eleventy.js` — Added `dev/` as a passthrough copy so placeholder images in `dev/specs/` are served by the dev server.
-- `_includes/base.njk` — Added a `{% if pageExtraCSS %}` conditional block to support page-specific CSS loading via front matter.
-- `shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour.njk` — Added `pageExtraCSS` front matter variable and inserted the section HTML at the designated comment.
-
-### Existing Styles / Components / Utilities Reused
-- `dark-bg` — existing class for white text on dark backgrounds
-- `container-fluid gx-0` / `container` / Bootstrap grid (`col-12`, `col-lg-3`, `col-6`, `col-lg-8`, `offset-lg-2`, `g-3`) — consistent with all other sections on the page
-- `data-show="startbox"` / `data-show-delay` — existing theme scroll-animation system used on all other sections
-- `#f0ce12` yellow — existing brand accent color used for the eyebrow text and card label badges
-
-### New CSS Created and Why
-All new styles are in `assets/css/how-close-section.css`. New CSS was required because:
-- The section layout (horizontal cards on mobile, vertical cards on desktop using `flex-direction: column-reverse`) has no equivalent pattern elsewhere on the site.
-- The `.how-close-underline-wrap` / `.word-underline` pattern for the handwritten underline positioning is new (existing `.hand-underline-yellow` uses `::after` pseudo-element which doesn't work here since the underline needs to apply per-word inside a larger heading).
-- The section background gradient + image combo, eyebrow style, card label badge, and card distance typography are all new visual elements.
-
-### New JavaScript Created
-None. The section uses no JavaScript.
-
-### Responsive Decisions Not Explicitly Shown in Mockup
-- **Tablet (577px–1023px):** Not designed in the mockup. Cards remain in the mobile horizontal (flex-row) layout at tablet widths since 4 columns would be too narrow. At 1024px they switch to the 4-column desktop layout.
-- **Copy alignment on mobile:** Supporting copy is left-aligned on mobile for readability at small widths, centered on desktop — consistent with the rest of the site.
-
-### Deviations from Approved Mockup
-- **Eyebrow icon:** The mockup shows a small yellow icon (appears to be a shark fin or similar) to the left of the eyebrow text. No placeholder was provided for this element, so it was omitted. A real icon can be added once an asset exists.
-- **Card label position on desktop:** The mockup shows the label badge at the very top of the card, potentially overlaid on the image. In the implementation the label sits below the image (as the first element of the text block). This is because the mobile layout requires the label to be on the left side with the text — using `flex-direction: column-reverse` on desktop naturally puts the image above the text block. The label's position can be adjusted if needed once real photos are in place.
-- **Section background:** The mockup shows an underwater photo spanning the full section. The implementation uses the hero placeholder as a CSS background image with a dark gradient overlay — same visual intent, but easier to update and consistent with site patterns.
-
-### Issues / Recommended Follow-Up
-- All image paths reference `dev/specs/03_in_progress/.../placeholder-images/`. These must be swapped to final image paths in `images/` before production, and the `dev/` passthrough in `.eleventy.js` can then be removed.
-- The `pageExtraCSS` front matter and link in `base.njk` should remain as a permanent utility — useful for other page-specific dev stylesheets in the future.
-- When merging `how-close-section.css` into `custom-styles-v1.1.2.css`, move the styles into the appropriate existing sections (mobile/desktop media query blocks) rather than appending them as a block.
+- Files created
+- Files modified
+- Existing styles/components/utilities reused
+- New CSS created and why it was necessary
+- New JavaScript created and why it was necessary
+- Responsive decisions that were not explicitly shown in the mockup
+- Any deviations from the approved mockup and why
+- Any issues, uncertainties, or recommended follow-up work

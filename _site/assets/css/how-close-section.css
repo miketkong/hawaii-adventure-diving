@@ -1,0 +1,246 @@
+/* ============================================================
+   HOW CLOSE SECTION — Temporary stylesheet for dev/staging.
+   Final styles to be merged into custom-styles-v1.1.2.css.
+   ============================================================ */
+
+/* Section */
+#how-close {
+    background-color: #021d35;
+    background-image:
+        linear-gradient(to bottom, rgba(2, 29, 53, 0.72) 0%, rgba(2, 29, 53, 0.96) 65%),
+        url('/dev/specs/03_in_progress/cro-code-how-close-section/assets/placeholder-images/placeholder-hero-image.png');
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+/* Eyebrow */
+.how-close-eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #f0ce12;
+    margin-bottom: 15px;
+}
+
+/* Main Heading */
+.how-close-main-heading {
+    font-size: 68px;
+    line-height: 62px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Underline word wrapper — place a .word-underline img inside this span */
+.how-close-underline-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.how-close-underline-wrap .word-underline {
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    width: 100%;
+    pointer-events: none;
+}
+
+/* Intro copy */
+.how-close-intro {
+    font-size: 19px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 45px;
+}
+
+/* ============================================================
+   DISTANCE CARDS
+   Mobile default: flex row (text left, image right)
+   Desktop: flex column-reverse (image top, text bottom)
+   ============================================================ */
+.how-close-cards {
+    margin-bottom: 50px;
+}
+
+.how-close-card {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: flex-start;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.how-close-card-content {
+    flex: 1;
+}
+
+.how-close-card-img-wrap {
+    width: 45%;
+    flex-shrink: 0;
+}
+
+.how-close-card-img-wrap img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.how-close-card-label {
+    display: inline-block;
+    background-color: #f0ce12;
+    color: #000;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
+
+.how-close-card-distance {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.how-close-card-desc {
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   SECONDARY HEADING + SUPPORTING COPY
+   ============================================================ */
+.how-close-secondary-heading {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.how-close-copy {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* ============================================================
+   FEATURE ITEMS
+   ============================================================ */
+.how-close-features {
+    margin-top: 50px;
+}
+
+.how-close-feature {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.how-close-feature-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.how-close-feature h4 {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.how-close-feature p {
+    font-size: 15px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   DESKTOP STYLES (1024px+)
+   ============================================================ */
+@media (min-width: 1024px) {
+    #how-close {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .how-close-main-heading {
+        font-size: 90px;
+        line-height: 84px;
+    }
+
+    /* Cards: flip to column-reverse so image is on top, text below */
+    .how-close-card {
+        flex-direction: column-reverse;
+        border-bottom: none;
+        padding-bottom: 0;
+        gap: 10px;
+    }
+
+    .how-close-card-img-wrap {
+        width: 100%;
+    }
+
+    .how-close-secondary-heading {
+        font-size: 58px;
+        line-height: 64px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+
+    .how-close-feature-icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* ============================================================
+   SMALL MOBILE (576px and below)
+   ============================================================ */
+@media (max-width: 576px) {
+    #how-close {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .how-close-main-heading {
+        font-size: 50px;
+        line-height: 46px;
+    }
+
+    .how-close-secondary-heading {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .how-close-copy {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .how-close-intro {
+        font-size: 17px;
+    }
+}

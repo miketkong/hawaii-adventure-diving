@@ -44,6 +44,10 @@
     <!-- MK Design Customizations -->
     <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v={% cssVersion 'assets/css/custom-styles-v1.1.2.css' %}">
 
+    {% if pageExtraCSS %}
+    <link rel="stylesheet" href="{{ pageExtraCSS }}">
+    {% endif %}
+
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
 
