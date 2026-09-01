@@ -2504,6 +2504,10 @@ ul.tour-times li {
         font-size: 17px;
         line-height: 20px;
     }
+    #an-exclusive-experience h2 {
+        font-size: 37px;
+        line-height: 1em;
+    }
 
     
     /* Hide the last 3 slides to only show a total of 4 slides on mobile */
@@ -3098,18 +3102,19 @@ ul.tour-times li {
         background-color: #001a33;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
-        padding-top: 140px;
+        padding-top: 550px;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
         position: absolute;
         display: block;
-        opacity: .4;
+        opacity: 1;
         width: 100%;
         height: stretch;
         z-index: 0;
         background-image: url("/images/bg-get-the-shot-v2.webp");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position-y: -70px;
     }
     .get-the-shot-v2 .container-fluid {
         min-height: 860px;
