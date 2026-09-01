@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+
     const scrollingBlackFade = document.getElementById('scrollingBlackFade');
 
     const adjustOpacity = () => {
@@ -92,3 +93,17 @@ function rotateText(selector, textArray) {
 
     initialFadeIn();
 };
+
+/* Text Effects */
+
+function typewriterEffect(element, delayPerChar = 60) {
+    const text = element.textContent;
+    element.style.opacity = '1';
+    element.innerHTML = text
+        .split('')
+        .map((char, i) => {
+            const content = char === ' ' ? '&nbsp;' : char;
+            return `<span class="char" style="animation-delay:${i * delayPerChar}ms">${content}</span>`;
+        })
+        .join('');
+}

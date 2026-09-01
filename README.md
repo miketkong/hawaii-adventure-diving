@@ -101,11 +101,24 @@ Update review counts here; they render in the homepage ratings block and elsewhe
 ### Vendor Libraries (local copies in `assets/vendors/`)
 Bootstrap, Swiper, Jarallax + Jarallax Element, jQuery, Magnific Popup, Isotope, imagesLoaded, jQuery Countdown, jQuery Inview, OFI. All loaded from local files — no CDN dependency at runtime.
 
-**Google Fonts** (Inter, Josefin Sans, Poppins, Asap Condensed) are loaded from Google's CDN via `base.njk`.
+**Fonts** Fonts are stored on the site in assets/fonts and loaded via CSS at the top of the custom CSS file in assets/css/.
 
 ### Pass-Through Directories
 The following directories are copied verbatim into `_site` with no processing:
 `articles/`, `assets/`, `images/`, `shark-diving-tours/`, `shark-diving-oahu/`, `snorkel-tour/`, `whale-watching-tour/`, `robots.txt`, `_redirects`
+
+---
+
+## Responsive Design
+
+**Minimum supported mobile width: 360px.** This is the design baseline for all mobile layouts. Test down to 320px to ensure nothing breaks catastrophically, but 360px is the target floor.
+
+| Width | Context |
+|---|---|
+| 320px | Absolute minimum (older/small devices) |
+| 360px | **Design baseline** — most common small Android width |
+| 375px | iPhone SE (2nd/3rd gen) |
+| 390px | iPhone 14/15 Pro |
 
 ---
 

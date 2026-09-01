@@ -1,0 +1,104 @@
+<!-- VIDEO BANNER BACKGROUND -->
+<div id="shark-banner-video-bgd" class="video-container">
+    <video id="shark-hero-video" autoplay muted loop playsinline></video>
+</div>
+<!--// VIDEO BANNER BACKGROUND -->
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+
+        var sharkHeroVideo = document.getElementById('shark-hero-video');
+
+        if (sharkHeroVideo) {
+            var totalHeroTextGroups = document.querySelectorAll('.hero-text').length;
+            let groupNumber = 1;
+
+            sharkHeroVideo.addEventListener('playing', function () {
+                setTimeout(function () {
+                    animateInHeroTextGroup(groupNumber, totalHeroTextGroups);
+                }, 500);
+            }, { once: true });  
+
+            loadSharkVideo(sharkHeroVideo);
+        }
+
+    });
+
+    function animateInHeroTextGroup(groupNumber, totalHeroTextGroups) {
+
+        currentGroupNumber = groupNumber;
+        currentGroupIndex = currentGroupNumber - 1;
+
+        console.log(`trace: groupNumber = ${groupNumber}, totalHeroTextGroups = ${totalHeroTextGroups}, currentGroupIndex = ${currentGroupIndex}`);
+
+        thisGroup = document.querySelectorAll('.hero-text')[currentGroupIndex];
+        thisGroup.classList.remove('fade-down');
+
+        bigTextTop = thisGroup.querySelector('h1:nth-of-type(1)');
+        bigTextMiddle = thisGroup.querySelector('h1:nth-of-type(2)');
+        bigTextBottom = thisGroup.querySelector('h1:nth-of-type(3)');
+        smallText = thisGroup.querySelector('.small-text');
+
+        setTimeout(function () {
+            bigTextTop.classList.add('fade-up');
+        }, 500);
+        
+        setTimeout(function () {
+            bigTextMiddle.classList.add('typewriter');
+            typewriterEffect(bigTextMiddle);
+        }, 800);
+
+        if (smallText) {
+            setTimeout(function () {
+                smallText.classList.add('hero-text-fade-in');
+            }, 1000);
+        }
+        
+        if (bigTextBottom) {
+            setTimeout(function () {
+                bigTextBottom.classList.add('fade-up');
+            }, 1000);
+        }
+
+        setTimeout(function () {
+            thisGroup.classList.add('fade-down');
+        }, 4000);
+
+        setTimeout(function () {
+            bigTextTop.classList.remove('fade-up');
+            bigTextMiddle.classList.remove ('typewriter');
+            bigTextMiddle.style.opacity = '0';
+            if (smallText) {
+                smallText.classList.remove('hero-text-fade-in');
+            }
+            if (bigTextBottom) {
+                bigTextBottom.classList.remove('fade-up');
+            }
+            getNextHeroTextGroup(groupNumber, totalHeroTextGroups);
+        }, 5500);
+
+    }
+
+    function getNextHeroTextGroup(groupNumber, totalHeroTextGroups) {
+
+        if (groupNumber < totalHeroTextGroups) {
+            groupNumber++;
+        } else {
+            groupNumber = 1;
+        }
+        animateInHeroTextGroup(groupNumber, totalHeroTextGroups);
+    }
+
+    function loadSharkVideo(sharkHeroVideo) {
+
+        if (window.innerWidth > 576) {
+            sharkHeroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
+            sharkHeroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
+        } else {
+            sharkHeroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
+            sharkHeroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
+        }
+    }
+</script>
+ 

@@ -1,0 +1,70 @@
+        
+<!-- Shark Tour Hero Video Banner -->
+<section id="hero-banner" class="hero-video-banner hero-video-banner-v2 hero-banner dark-bg">
+    <div class="container-fluid gx-0">
+        <div class="video-overlay-color"></div>
+
+
+        {% include "sections/banners/shark-video-banner.njk" %}
+
+
+        <div class="banner-contents">
+            <div class="banner-logo desktop-only">
+                <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+            </div>
+
+            <div class="hero-text-container col-lg-8 offset-lg-2">
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Cage Free</h1>
+                    <h1 class="big-text-long-words">Shark Diving</h1>
+                    <h2 class="small-text">Dive into a next-level experience<br><span class="no-break"> with Hawaii's elite shark handlers</span></h2>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Swim</h1>
+                    <h1 class="big-text-long-words">Face-To-Face</h1>
+                    <h1 class="big-text-bottom-1">With Wild Sharks</h1>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Guided By</h1>
+                    <h1 class="big-text-long-words">World-Class</h1>
+                    <h1 class="big-text-bottom-1">Shark Handlers</h1>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Ultimate</h1>
+                    <h1 class="big-text">Immersion</h1>
+                    <h2 class="small-text">This is Not Your Average Shark Tour!</h2>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Ultimate</h1>
+                    <h1 class="big-text">Experience</h1>
+                    <h2 class="small-text">Led by Elite Shark Behavior Experts</h2>
+                </div>
+
+                <div class="hero-text">
+                    <h1 class="big-text-top-1">Consistently</h1>
+                    <h1 class="big-text">Top-Rated</h1>
+                    <h2 class="small-text">Rated 5-Stars by Over 4,000 Guests</h2>
+                </div>
+
+            </div>
+
+            <div id="cta-block" class="col-lg-8 offset-lg-2">
+                <h3>From $150 per person</h3>
+                {% if heroVariant == "home" %}
+                    <a class="btn btn-md btn-accent-1"
+                                href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour
+                                    Details</span></a>
+                {% elif heroVariant == "shark-tour" %}
+                    <a class="btn btn-md btn-accent-1"
+                        href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
+                            Shark Diving</span></a>
+                {% endif %}
+                {% include "blocks/star-ratings.njk" %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,55 @@
+        
+<!-- Shark Tour Hero Video Banner -->
+<section id="hero-banner" class="hero-video-banner hero-video-banner-v2 hero-banner dark-bg">
+    <div class="container-fluid gx-0">
+        <div class="video-overlay-color"></div>
+
+
+        <!-- VIDEO BANNER BACKGROUND -->
+<div id="banner-video-bgd" class="video-container">
+    <video id="hero-video" autoplay muted loop playsinline></video>
+</div>
+<!--// VIDEO BANNER BACKGROUND -->
+
+<script>
+    var heroVideo = document.getElementById('hero-video');
+    if (window.innerWidth > 576) {
+        heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
+    } else {
+        heroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
+    }
+</script>
+ 
+
+
+        <div class="banner-contents" data-show="startbox">
+            <div class="banner-logo desktop-only">
+                <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+            </div>
+            <div id="hero-text" class="col-lg-8 offset-lg-2">
+                <h1 class="big-text-top-1">Cage Free</h1>
+                <h1 class="big-text-long-words">Shark Diving</h1>
+                <h2 class="small-text">Dive into a next-level experience<br><span class="no-break"> with Hawaii's elite shark handlers</span></h2>
+            </div>
+            <div id="cta-block" class="col-lg-8 offset-lg-2">
+                <h3>From $150 per person</h3>
+                <a class="btn btn-md btn-accent-1"
+                    href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
+                        Shark Diving</span></a>
+                <div class="star-rating">
+  <span class="review-average"></span>
+  <img src="/images/5-stars.png" alt="">
+  (<span class="review-total"></span>)
+</div>
+<script>
+  var container = document.currentScript.previousElementSibling;
+  container.querySelector('.review-average').textContent = (4.95).toFixed(1);
+  container.querySelector('.review-total').textContent = (4142).toLocaleString();
+</script>
+
+            </div>
+        </div>
+    </div>
+</section>
