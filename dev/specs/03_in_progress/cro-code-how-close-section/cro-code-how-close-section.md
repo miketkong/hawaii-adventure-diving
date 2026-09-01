@@ -183,7 +183,7 @@ Professional photos available to capture every moment.
 ### New CSS Created and Why
 All new styles are in `assets/css/how-close-section.css`. New CSS was required because:
 - The section layout (horizontal cards on mobile, vertical cards on desktop using `flex-direction: column-reverse`) has no equivalent pattern elsewhere on the site.
-- The `.how-close-underline-wrap` / `.word-underline` pattern for the handwritten underline positioning is new (existing `.hand-underline-yellow` uses `::after` pseudo-element which doesn't work here since the underline needs to apply per-word inside a larger heading).
+- The `.hand-underline-v2` / `.word-underline` pattern for the handwritten underline positioning is new (existing `.hand-underline-yellow` uses `::after` pseudo-element which doesn't work here since the underline needs to apply per-word inside a larger heading).
 - The section background gradient + image combo, eyebrow style, card label badge, and card distance typography are all new visual elements.
 
 ### New JavaScript Created

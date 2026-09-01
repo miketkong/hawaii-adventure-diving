@@ -3,17 +3,29 @@
    Final styles to be merged into custom-styles-v1.1.2.css.
    ============================================================ */
 
+.section-border-top-gold {
+    border-top: 2px solid #f0ce12;
+}
+.section-border-top-and-bottom-gold {
+    border-top: 2px solid #f0ce12;
+    border-bottom: 2px solid #f0ce12;
+}
+
 /* Section */
 #how-close {
-    background-color: #021d35;
-    background-image:
-        linear-gradient(to bottom, rgba(2, 29, 53, 0.72) 0%, rgba(2, 29, 53, 0.96) 65%),
-        url('/dev/specs/03_in_progress/cro-code-how-close-section/assets/placeholder-images/placeholder-hero-image.png');
-    background-size: cover;
+    background-color: #020912;
+    background-image: url(/images/how-close-section-bgd-desktop-r2.jpg);
+    background-size: 2290px;
     background-position: center top;
     color: #fff;
     padding-top: 60px;
     padding-bottom: 70px;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-position-x: 55%;
+}
+.yellow-text {
+    color: #f0ce12;
 }
 
 /* Eyebrow */
@@ -37,12 +49,12 @@
 }
 
 /* Underline word wrapper — place a .word-underline img inside this span */
-.how-close-underline-wrap {
+.hand-underline-v2 {
     position: relative;
     display: inline-block;
 }
 
-.how-close-underline-wrap .word-underline {
+.hand-underline-v2 .word-underline {
     position: absolute;
     left: 0;
     bottom: -12px;
@@ -74,6 +86,10 @@
     align-items: flex-start;
     padding-bottom: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: #ffffff14;
+    border: 1px solid #ffffff21;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .how-close-card-content {
@@ -87,7 +103,6 @@
 
 .how-close-card-img-wrap img {
     width: 100%;
-    border-radius: 8px;
     display: block;
 }
 
@@ -100,12 +115,13 @@
     letter-spacing: 1.5px;
     padding: 3px 8px;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
     line-height: 1.4;
+    border-radius: 5px;
 }
 
 .how-close-card-distance {
-    font-size: 28px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1;
     color: #fff;
@@ -129,7 +145,7 @@
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 20px;
 }
 
@@ -144,10 +160,6 @@
 /* ============================================================
    FEATURE ITEMS
    ============================================================ */
-.how-close-features {
-    margin-top: 50px;
-}
-
 .how-close-feature {
     text-align: center;
     margin-bottom: 20px;
@@ -162,12 +174,12 @@
 }
 
 .how-close-feature h4 {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 .how-close-feature p {
@@ -182,21 +194,61 @@
    ============================================================ */
 @media (min-width: 1024px) {
     #how-close {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
 
     .how-close-main-heading {
-        font-size: 90px;
-        line-height: 84px;
+        font-size: 50px;
+        line-height: 1.1em;
+    }
+    .hand-underline-v2 .word-underline {
+        bottom: -23px;
+    }
+    .how-close-intro {
+        margin-bottom: 20px;
+    }
+
+    .how-close-cards .col-lg-3 {
+        padding-left: 4px;
+        padding-right: 4px;
     }
 
     /* Cards: flip to column-reverse so image is on top, text below */
     .how-close-card {
-        flex-direction: column-reverse;
+        position: relative;
         border-bottom: none;
         padding-bottom: 0;
         gap: 10px;
+    }
+
+    .how-close-card-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .how-close-card-content .badges {
+        position: relative;
+    }
+
+    .how-close-card-distance {
+        position: absolute;
+        display: inline-block;
+        left: 0px;
+        top: 26px;
+        padding: 3px 8px;
+        color: #fff;
+        background-color: #021d35;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 1.4;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border-radius: 5px;
     }
 
     .how-close-card-img-wrap {
@@ -204,15 +256,37 @@
     }
 
     .how-close-secondary-heading {
-        font-size: 58px;
-        line-height: 64px;
-        margin-top: 60px;
+        font-size: 44px;
+        line-height: 1.1em;
+        margin-top: 0px;
         margin-bottom: 30px;
     }
+    .how-close-secondary-heading .hand-underline-v2 .word-underline {
+        bottom: -28px;
+    }
+
+    .how-close-features {
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .how-close-feature {
+        border-right: solid 1px #ffffff33;
+        padding: 0px 20px;
+    }
+    .how-close-feature:nth-child(4) {
+        border-right: none;
+    }
+
+    .how-close-feature .wrap {
+        padding: 0px 20px;
+    }
+    
 
     .how-close-feature-icon {
-        width: 70px;
-        height: 70px;
+        width: 80px;
+        height: 40px;
+        margin-bottom: 10px;
     }
 }
 
@@ -220,19 +294,54 @@
    SMALL MOBILE (576px and below)
    ============================================================ */
 @media (max-width: 576px) {
+    .disclaimer {
+        font-size: 10px !important;
+        line-height: 1.2em !important;
+    }
+
+    .section-border-top-gold {
+        border-top: 6px solid #f0ce12;
+    }
+
     #how-close {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 70px;
+        padding-bottom: 20px;
+        background-image: url(/images/how-close-section-bgd-mobile.png);
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: #00152a;
     }
 
     .how-close-main-heading {
-        font-size: 50px;
-        line-height: 46px;
+        font-size: 36px;
+        line-height: 37px;
+    }
+    .hand-underline-v2 .word-underline{
+        bottom: -17px;
     }
 
     .how-close-secondary-heading {
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .how-close-intro {
+        font-size: 16px;
+        margin-bottom: 16px;
+        line-height: 22px;
+    }
+    
+    .how-close-card-label {
+        font-size: 13px;
+        line-height: 12px;
+        padding-top: 7px;
+        padding-bottom: 5px;
+        margin-bottom: 6px;
+    }
+    .how-close-card-distance {
+        font-size: 15px;
+        margin-bottom: 5px;
     }
 
     .how-close-copy {
@@ -240,7 +349,72 @@
         text-align: left;
     }
 
-    .how-close-intro {
-        font-size: 17px;
+    .how-close-cards {
+        margin-bottom: 20px;
+    }
+
+    .how-close-card {
+        position: relative;
+        height: 110px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    .how-close-card-content {
+        order: 2;
+        padding-top: 11px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    .how-close-card-desc {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 600; 
+    }
+
+    .how-close-card-img-wrap {
+        order: 1;
+        width: 120px;
+    }
+    .how-close-features {
+        margin-top: 0px;
+    }
+
+    .how-close-feature {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .how-close-feature h4 {
+        font-size: 15px;
+        line-height: 1.2em;
+        margin-bottom: 2px;
+    }
+
+    .how-close-feature p {
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+
+    .how-close-feature-icon {
+        width: 88px;
+        height: 44px;
+    }
+
+    .how-close-feature:nth-child(1), .how-close-feature:nth-child(2) {
+        border-bottom: solid 1px #ffffff33;
+    }
+
+    .how-close-feature > div {
+        position: relative;
+        min-height: 160px;
+        margin: 10px 0px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .how-close-feature:nth-child(odd) .wrap {
+        border-right: solid 1px #ffffff33;
     }
 }
