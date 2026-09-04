@@ -168,6 +168,10 @@ p a:hover {
     margin-bottom: 10px;
 }
 
+.btn {
+    text-decoration: none;
+}
+
 .body-text .btn {
     margin-top: -20px;
     margin-bottom: 30px;
@@ -1030,6 +1034,9 @@ ul.tour-times li {
 #faq .accordion-item a {
     color: #016ba3;
     text-decoration: underline;
+}
+#faq .accordion-item .btn {
+    text-decoration: none;
 }
 
 /* Hero Banner V2 */

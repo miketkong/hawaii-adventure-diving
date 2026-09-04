@@ -34,104 +34,105 @@ The FAQ should function as a sales-support section, not just an information dump
 
 ## Is cage-free shark diving safe?
 
-Yes. Cage-free shark diving is a real open-ocean experience, so safety is always our first priority. Our experienced safety divers are in the water with you, guiding the group, reading shark behavior, and helping guests feel comfortable from start to finish.
+<p>Yes. Cage-free shark diving is a real open-ocean experience, so safety is always our first priority. Our experienced safety divers are in the water with you, guiding the group, reading shark behavior, and helping guests feel comfortable from start to finish.</p>
+
 ---
 
 ## What if I'm nervous?
 
-That is completely normal. Many guests feel nervous before getting in the water, especially if it is their first time seeing sharks up close.
+<p>That is completely normal. Many guests feel nervous before getting in the water, especially if it is their first time seeing sharks up close.</p>
 
-Our crew will walk you through what to expect, give you a clear safety briefing, and stay with you in the water throughout the experience. You do not have to be fearless — you just have to show up. We will help you from there.
+<p>Our crew will walk you through what to expect, give you a clear safety briefing, and stay with you in the water throughout the experience. You do not have to be fearless — you just have to show up. We will help you from there.</p>
 
 ---
 
 ## Do I need to be a good swimmer?
 
-You should be comfortable in the water, but you do not need to be an expert swimmer. Guests wear snorkel gear and remain under the guidance of our crew during the experience.
+<p>You should be comfortable in the water, but you do not need to be an expert swimmer. Guests wear snorkel gear and remain under the guidance of our crew during the experience.</p>
 
-If you are a stronger swimmer, you may be able to move more comfortably in the water and get better photo opportunities. If you are less confident, our crew can help you settle in and enjoy the experience at a pace that feels right for you.
+<p>If you are a stronger swimmer, you may be able to move more comfortably in the water and get better photo opportunities. If you are less confident, our crew can help you settle in and enjoy the experience at a pace that feels right for you.</p>
 
 ---
 
 ## Is this a scuba diving tour?
 
-No. This is not a scuba diving tour. It is a cage-free shark snorkeling experience in the open ocean.
+<p>No. This is not a scuba diving tour. It is a cage-free shark snorkeling experience in the open ocean.</p>
 
-You do not need scuba certification or diving experience. We provide the basic snorkel gear and guide you through what to expect before you enter the water.
+<p>You do not need scuba certification or diving experience. We provide the basic snorkel gear and guide you through what to expect before you enter the water.</p>
 
 ---
 
 ## How close will I get to the sharks?
 
-Every encounter is different because these are wild sharks moving naturally in their environment. Some passes may feel incredibly close, while others may give you a wider view of the sharks moving through the water.
+<p>Every encounter is different because these are wild sharks moving naturally in their environment. Some passes may feel incredibly close, while others may give you a wider view of the sharks moving through the water.</p>
 
-That is part of what makes the experience so powerful. You are not watching from behind glass or a cage — you are in the open ocean with our safety divers guiding the experience.
+<p>That is part of what makes the experience so powerful. You are not watching from behind glass or a cage — you are in the open ocean with our safety divers guiding the experience.</p>
 
 ---
 
 ## Do I have to get really close?
 
-No. You do not have to get closer than you are comfortable with. Every guest has a different comfort level, and our crew is there to help you feel safe, informed, and supported in the water.
+<p>No. You do not have to get closer than you are comfortable with. Every guest has a different comfort level, and our crew is there to help you feel safe, informed, and supported in the water.</p>
 
-If you want to stay closer to the safety diver or take a little more time getting comfortable, that is okay. Small groups help us keep the experience more personal and responsive.
+<p>If you want to stay closer to the safety diver or take a little more time getting comfortable, that is okay. Small groups help us keep the experience more personal and responsive.</p>
 
 ---
 
 ## What kinds of sharks might we see?
 
-Most tours feature Galapagos sharks — powerful, beautiful open-ocean sharks that are often around 6–8 feet long. Depending on conditions and the day’s wildlife, you may also see sandbar sharks, silky sharks, hammerheads, or the occasional tiger shark.
+<p>Many tours feature Galapagos sharks — powerful, beautiful open-ocean sharks that are often around 6–8 feet long. Depending on conditions and the day's wildlife, you may also see sandbar sharks, silky sharks, hammerheads, or on rare occassions, the tiger shark.</p>
 
-No specific species can be guaranteed, and that is part of the adventure. These are wild sharks in the open ocean, so every encounter is different.
+<p>No specific species can be guaranteed, and that is part of the adventure. These are wild sharks in the open ocean, so every encounter is different.</p>
 
 ---
 
 ## What happens during the tour?
 
-Your tour begins with check-in, a boat ride to the dive site, and a safety briefing from our crew. Once conditions are right, you will gear up and enter the water with our safety divers.
+<p>Your tour begins with check-in, a boat ride to the dive site, and a safety briefing from our crew. Once conditions are right, you will gear up and enter the water with our safety divers.</p>
 
-From there, you will spend time observing sharks in the open ocean, guided by the crew the entire time. After the dive, you will return to the boat, warm up, and head back with a story most people never get to tell.
+<p>From there, you will spend time observing sharks in the open ocean, guided by the crew the entire time. After the dive, you will return to the boat, change out of your snorkel gear, and head back with a story few get to tell.</p>
 
 ---
 
 ## How many people will be on the tour?
 
-Each tour is limited to 6 guests, which helps keep the experience personal, uncrowded, and easier for our crew to guide safely.
+<p>Each tour is limited to 6 guests, which helps keep the experience personal, uncrowded, and easier for our crew to guide safely.</p>
 
-In addition to guests, you will be with our crew, which typically includes a boat captain and at least one safety diver. Depending on the tour and photo bookings, there may also be one or more underwater photographers on board.
+<p>In addition to guests, you will be with our crew, which typically includes a boat captain and at least one safety diver. Depending on the tour and photo bookings, there may also be one or more underwater photographers on board.</p>
 
-The exact crew setup can vary by day, but the guest count stays small so you get more personal attention, more space in the water, and a better overall shark diving experience.
+<p>The exact crew setup can vary by day, but the guest count stays small so you get more personal attention, more space in the water, and a better overall shark diving experience.</p>
 
 ---
 
 ## What if I'm worried about seasickness?
 
-Ocean conditions can vary, and some guests are more sensitive to motion than others. If you are prone to seasickness, we recommend taking motion sickness medication before the tour according to the directions on the label or advice from your doctor.
+<p>Ocean conditions can vary, and some guests are more sensitive to motion than others. If you are prone to seasickness, we recommend taking motion sickness medication before the tour according to the directions on the label or advice from your doctor.</p>
 
-Our crew is used to helping first-time guests feel comfortable, and being prepared ahead of time can make the whole experience much more enjoyable. If you are unsure, it is better to plan for it than wish you had.
+<p>Our crew is used to helping first-time guests feel comfortable, and being prepared ahead of time can make the whole experience much more enjoyable. If you are unsure, it is better to plan for it than wish you had.</p>
 
 ---
 
 ## What should I bring?
 
-Bring a swimsuit, towel, reef-safe sunscreen, and anything you need to feel comfortable after being in the ocean. We also recommend bringing water and any personal items you may want for the boat ride.
+<p>Bring a swimsuit, towel, reef-safe sunscreen, and anything you need to feel comfortable after being in the ocean. We also recommend bringing water and any personal items you may want for the boat ride.</p>
 
-Try to pack light and arrive ready for the water. If you are prone to motion sickness, plan ahead before the tour.
+<p>Try to pack light and arrive ready for the water. If you are prone to motion sickness, plan ahead before the tour.</p>
 
 ---
 
 ## Is the photo package worth it?
 
-For many guests, yes. It is hard to fully capture the feeling of swimming with sharks while you are also trying to stay present and enjoy the experience.
+<p>For many guests, yes. It is hard to fully capture the feeling of swimming with sharks while you are also trying to stay present and enjoy the experience.</p>
 
-Adding a professional photographer lets you focus on the moment while someone else captures the photos. It is also one of the best ways to bring the experience home and share it with friends, family, or anyone who still cannot believe you actually did it.
+<p>Adding a professional photographer lets you focus on the moment while someone else captures the photos. It is also one of the best ways to bring the experience home and share it with friends, family, or anyone who still cannot believe you actually did it.</p>
 
 ---
 
 ## Can I add photos after I book?
 
-Yes. If you decide you want professional photos after booking your tour, call us and we can help you add a photographer if one is available.
+<p>Yes. If you decide you want professional photos after booking your tour, call us and we can help you add a photographer if one is available.</p>
 
-Photographer availability may be limited, so we recommend adding photos as early as possible if you know you want them.
+<p>Photographer availability may be limited, so we recommend adding photos as early as possible if you know you want them.</p>
 
 Suggested CTA text:
 
@@ -147,17 +148,25 @@ Confirm the phone number before publishing.
 
 ## What makes Hawaii Adventure Diving different?
 
-Hawaii Adventure Diving is built around small groups, experienced safety divers, and real open-ocean shark encounters. No cage. No aquarium. No crowded boat packed with guests.
+<h3>Immersion & Interactivity</h3>
+<p>Our goal is to give guests one of the most immersive and interactive shark diving experiences available — not just a distant look from the boat or a quick swim in the water.</p>
 
-Our crew focuses on safety, respect for the sharks, and giving each guest a more personal experience in the water. The goal is not just to show you sharks — it is to help you experience them in a way you will never forget.
+<h3>Experience</h3>
+<p>Our safety divers and photographers are elite shark divers and true adventurers who have spent thousands of hours working in the water with sharks. </p>
+
+<p>That experience shows up in the water and in our reviews. Not only do we keep our guests safe, but we help them find a level comfort these magnificant creatures that they never imagined could be possible—even for gueests who thought they had a phobia of sharks! It's truly something that needs to be experienced to be believed.</p>
+
+<p>Customer Service</p>
+<p>If you read our reviews, you'll see over and over that guests call out our crew by name and talk about how their experience was made better by the thoughtfulness and care that our crew gave them.</p>
+<p>This is because we hold our guests in the highest regard and consider it our honor, privilage, and our pleasure to give them the best shark diving exprience available. And in an environment where more and more things are being commoditized, that's getting harder and harder to find.</p>
 
 ---
 
 ## What if I need to cancel?
 
-We understand that plans can change. Please review the cancellation policy when booking your tour so you know the current terms before reserving your spot.
+<p>We understand that plans can change. We offer free cancellation up to 48 hours before your tour date. Cancellations made within 48 hours of the tour, or no-shows, will be charged the full tour amount.</p>
 
-If you have questions or need help with an existing reservation, contact us as soon as possible and our team will help you with the next steps.
+<p>If you have questions or need help with an existing reservation, contact us as soon as possible and our team will help you with the next steps.</p>
 
 ---
 
@@ -169,5 +178,5 @@ Before publishing this FAQ update, confirm the following:
 - Whether the phone number for adding photos is correct.
 - Whether the shark species list is accurate for HAD's tours.
 - Whether the description of guest comfort level and staying near the safety diver is operationally accurate.
-- Whether “safety divers” is the preferred term across the site.
+- Whether "safety divers" is the preferred term across the site.
 - Whether any FAQ answers should include links to the booking section, photo page, safety page, or shark species page.
