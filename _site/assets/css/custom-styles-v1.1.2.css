@@ -168,6 +168,10 @@ p a:hover {
     margin-bottom: 10px;
 }
 
+.btn {
+    text-decoration: none;
+}
+
 .body-text .btn {
     margin-top: -20px;
     margin-bottom: 30px;
@@ -1031,6 +1035,9 @@ ul.tour-times li {
     color: #016ba3;
     text-decoration: underline;
 }
+#faq .accordion-item .btn {
+    text-decoration: none;
+}
 
 /* Hero Banner V2 */
 /* -------------------------------- */
@@ -1709,6 +1716,9 @@ ul.tour-times li {
     padding-bottom: 10px;
     margin-top: 40px;
 }
+.section-heading-underlined .accordion {
+    margin-top: 0px;
+}
 
 .accordion-header .accordion-button {
     font-size: 20px;
@@ -2080,8 +2090,8 @@ ul.tour-times li {
 .accordion {
     border-top: 1px solid rgba(177, 177, 180, 0.3);
     border-bottom: 1px solid rgba(177, 177, 180, 0.3);
-    margin-top: 20px;
 }
+
 .accordion-item {
     border-radius: 0px !important;
 }
