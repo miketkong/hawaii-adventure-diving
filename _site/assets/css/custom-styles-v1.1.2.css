@@ -359,12 +359,6 @@ p a:hover {
     margin-top: 10px;
 }
 
-
-figcaption {
-    font-size: 12px;
-    padding: 10px;
-}
-
 .photo-caption {
     font-size: 16px;
     padding: 0px 20px;
@@ -2523,6 +2517,15 @@ ul.tour-times li {
     /* Hide the last 3 slides to only show a total of 4 slides on mobile */
     #customer-reviews .swiper-slide:nth-child(n+5) {
         display: none;
+    }
+
+    .gallery-item {
+        width: 50%;
+        padding: 2px;
+    }
+
+    .gallery-item img {
+    width: 100%;
     }
     
     #photo-grid-gallery .h2-big {
