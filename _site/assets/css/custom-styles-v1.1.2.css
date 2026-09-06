@@ -2519,6 +2519,11 @@ ul.tour-times li {
         display: none;
     }
 
+    .gallery-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .gallery-item {
         width: 50%;
         padding: 2px;

@@ -95,9 +95,10 @@
             <div class="row">
 
                 <script type="text/javascript">
+                    // Gallery Items script for lightbox gallery
+
                     const galleryItems = [
-                        'fun-hawaii-shark-diving.jpg',
-                        'shark-diving-hawaii-2.jpg',
+                        
                         'male-shark-diver-hawaii.jpg',
                         'shark-divers-chasing.jpg',
                         'pink-shark-diver.jpg',
@@ -106,6 +107,8 @@
                         'female-diver-with-shark-striped-2.jpg',
                         'female-diver-with-shark-striped.jpg',
                         'snorkeler-on-rope-with-shark.jpg',
+                        'fun-hawaii-shark-diving.jpg',
+                        'shark-diving-hawaii-2.jpg',
                         'beautiful-shark-diver-hawaii.jpg',
                         'couple-shark-diving-hawaii.jpg',
                         'diver-posing-with-shark.jpg',
@@ -122,29 +125,31 @@
                         'swimming-with-shark-in-hawaii.jpg',
                         'swimming-with-sharks-hawaii.jpg',
                         'two-divers-and-shark-hawaii.jpg',
-                    ]
+                    ];
+
+                    function buildGallery() {
+                        const galleryWrapper = document.querySelector('.gallery-wrapper');
+                        galleryItems.forEach(item => {
+                            const galleryItem = document.createElement('a');
+                            galleryItem.classList.add('gallery-item');
+                            galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}`;
+
+                            const img = document.createElement('img');
+                            img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}`;
+                            img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
+
+                            galleryItem.appendChild(img);
+                            galleryWrapper.appendChild(galleryItem);
+                        });
+                    }
+                    document.addEventListener('DOMContentLoaded', buildGallery);
+                </script>
                 
                 <div class="col-12">
                     <div class="gallery-wrapper">
-                        <a class="gallery-item"  href="/images/lightbox-galleries/shark-tour-lp-photos-section/beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg">
-                            <img src="/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg">
-                        </a>
-
-                        <a class="gallery-item"  href="/images/lightbox-galleries/shark-tour-lp-photos-section/couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg">
-                            <img src="/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg">
-                        </a>
-
-                        <a class="gallery-item"  href="/images/lightbox-galleries/shark-tour-lp-photos-section/beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg">
-                            <img src="/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg">
-                        </a>
-
-                        <a class="gallery-item"  href="/images/lightbox-galleries/shark-tour-lp-photos-section/couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg">
-                            <img src="/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg">
-                        </a>
 
                     </div>
                     <!-- gallery-wrapper -->
-                    </idv>
 
                     
 
