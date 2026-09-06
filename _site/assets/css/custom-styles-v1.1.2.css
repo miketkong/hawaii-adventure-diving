@@ -3162,6 +3162,24 @@ ul.tour-times li {
         max-width: 530px;
     }
 
+    /* Lightbox Styles */
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .gallery-item {
+        display: inline-block;
+        width: 25%;
+        padding: 2px;
+    }
+    .gallery-item img {
+        width: 100%;
+    }
+
     /* Exclusive Tour Section Styles - Desktop */
     #an-exclusive-experience.tour-lp-section-v2 .section-content .text-box {
         margin-top: 0px;
