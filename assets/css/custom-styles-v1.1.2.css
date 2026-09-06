@@ -2248,6 +2248,23 @@ ul.tour-times li {
     opacity: 1 !important;
 }
 
+/* Magnific Popup */
+
+.mfp-close {
+    width: 36px !important;
+    height: 36px !important;
+    background-image: url('/images/UI/lightbox-close-branded.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    opacity: 1 !important;
+    top: 56px !important;
+    right: 12px !important;
+    font-size: 0 !important;
+}
+
 /* Text Effects */
 
 /* Fade up: element fades in while sliding up from 50px below */

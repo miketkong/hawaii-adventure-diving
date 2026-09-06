@@ -64,9 +64,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     type: 'image',
     mainClass: 'mfp-fade',
     removalDelay: 160,
-    preloader: false,
+    preloader: true,
     gallery: {
-      enabled: true
+      enabled: true,
+      preload: [1, 1]
     }
   });
   $('.popup-inline').magnificPopup(_defineProperty({
