@@ -1140,6 +1140,12 @@ ul.tour-times li {
     z-index: -1;
 }
 
+#how-close-section-photos {
+    background-color: #0d1933;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
 /* Panoramic Hero Section Styles - General */
 .pano-section {
     position: relative;
@@ -2552,10 +2558,26 @@ button.mfp-arrow {
     #customer-reviews .swiper-slide:nth-child(n+5) {
         display: none;
     }
+    
+    /* Section Styles */
+    #how-close-section-photos {
+        background-color: #0d1933;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #how-close-section-photos .gallery-wrapper {
+        padding-bottom: 0px;
+    }
+
+
+
+    /* Lightbox Gallery Mobile Styles */
 
     .gallery-wrapper {
         display: flex;
         flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .gallery-item {

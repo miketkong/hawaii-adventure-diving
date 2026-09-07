@@ -128,8 +128,84 @@
                             </div>
                         </div>
                     </div>
-
+                    <!--// Feature Items -->
                 </div>
             </div>
         </section>
         <!--// HOW CLOSE SECTION -->
+
+        <section id="how-close-section-photos" class="dark-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-center mb-0">Tour Photos</h2>
+                        <p class="how-close-intro text-center">The following are just a small example of the many thousands of photos taken from actual guest tours.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container g-0">
+                <div class="row g-0">
+                    
+                    <!-- Lightbox Gallery -->
+                    <div class="col-12 gallery-col">
+                        <div class="gallery-wrapper">
+                        </div>
+                        <!--// gallery-wrapper-->
+                    </div>
+
+                </div>
+                <!--// row -->
+                
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            // Gallery Items script for lightbox gallery
+            const galleryItems = [
+                
+                'male-shark-diver-hawaii.jpg',
+                'shark-divers-chasing.jpg',
+                'pink-shark-diver.jpg',
+                'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg',
+                'couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg',
+                'female-diver-with-shark-striped-2.jpg',
+                'female-diver-with-shark-striped.jpg',
+                'snorkeler-on-rope-with-shark.jpg',
+                'fun-hawaii-shark-diving.jpg',
+                'shark-diving-hawaii-2.jpg',
+                'beautiful-shark-diver-hawaii.jpg',
+                'couple-shark-diving-hawaii.jpg',
+                'diver-posing-with-shark.jpg',
+                'divers-and-shark-hawaii.jpg',
+                'divers-swimming-with-a-shark.jpg',
+                'diving-down-with-shark-hawaii.jpg',
+                'hawaii-shark-diving-tour-photo.jpg',
+                'morning-sun-shark-dive.jpg',
+                'shark-dive-morning-sun.jpg',
+                'shark-diving-hawaii-camera.jpg',
+                'snorkeler-and-3-sharks.jpg',
+                'swimming-after-shark-hawaii.jpg',
+                'swimming-with-a-shark.jpg',
+                'swimming-with-shark-in-hawaii.jpg',
+                'swimming-with-sharks-hawaii.jpg',
+                'two-divers-and-shark-hawaii.jpg',
+            ];
+
+            function buildGallery() {
+                const galleryWrapper = document.querySelector('.gallery-wrapper');
+                galleryItems.forEach(item => {
+                    const galleryItem = document.createElement('a');
+                    galleryItem.classList.add('gallery-item');
+                    galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}`;
+
+                    const img = document.createElement('img');
+                    img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}`;
+                    img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
+
+                    galleryItem.appendChild(img);
+                    galleryWrapper.appendChild(galleryItem);
+                });
+            }
+            document.addEventListener('DOMContentLoaded', buildGallery);
+        </script>
