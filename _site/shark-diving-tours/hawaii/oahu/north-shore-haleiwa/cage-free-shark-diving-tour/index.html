@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=2ec98a83">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=c7f867fd">
     <link rel="stylesheet" href="/assets/css/how-close-section.css">
 
     <!-- Google Fonts -->
@@ -701,30 +701,30 @@
             // Gallery Items script for lightbox gallery
             const galleryItems = [
                 
-                'shark-divers-chasing.jpg',
-                'pink-shark-diver.jpg',
-                'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg',
-                'couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg',
-                'female-diver-with-shark-striped-2.jpg',
-                'female-diver-with-shark-striped.jpg',
-                'snorkeler-on-rope-with-shark.jpg',
-                'fun-hawaii-shark-diving.jpg',
-                'shark-diving-hawaii-2.jpg',
-                'beautiful-shark-diver-hawaii.jpg',
-                'couple-shark-diving-hawaii.jpg',
-                'diver-posing-with-shark.jpg',
-                'divers-and-shark-hawaii.jpg',
-                'divers-swimming-with-a-shark.jpg',
-                'diving-down-with-shark-hawaii.jpg',
-                'hawaii-shark-diving-tour-photo.jpg',
-                'morning-sun-shark-dive.jpg',
-                'shark-dive-morning-sun.jpg',
-                'shark-diving-hawaii-camera.jpg',
-                'snorkeler-and-3-sharks.jpg',
-                'swimming-after-shark-hawaii.jpg',
-                'swimming-with-a-shark.jpg',
-                'swimming-with-shark-in-hawaii.jpg',
-                'two-divers-and-shark-hawaii.jpg',
+                'shark-divers-chasing',
+                'pink-shark-diver',
+                'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour',
+                'couple-swimming-with-sharks-without-cage-hawaii-oahu',
+                'female-diver-with-shark-striped-2',
+                'female-diver-with-shark-striped',
+                'snorkeler-on-rope-with-shark',
+                'fun-hawaii-shark-diving',
+                'shark-diving-hawaii-2',
+                'beautiful-shark-diver-hawaii',
+                'couple-shark-diving-hawaii',
+                'diver-posing-with-shark',
+                'divers-and-shark-hawaii',
+                'divers-swimming-with-a-shark',
+                'diving-down-with-shark-hawaii',
+                'hawaii-shark-diving-tour-photo',
+                'morning-sun-shark-dive',
+                'shark-dive-morning-sun',
+                'shark-diving-hawaii-camera',
+                'snorkeler-and-3-sharks',
+                'swimming-after-shark-hawaii',
+                'swimming-with-a-shark',
+                'swimming-with-shark-in-hawaii',
+                'two-divers-and-shark-hawaii',
             ];
 
             function buildGallery() {
@@ -732,10 +732,10 @@
                 galleryItems.forEach(item => {
                     const galleryItem = document.createElement('a');
                     galleryItem.classList.add('gallery-item');
-                    galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}`;
+                    galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}.jpg`;
 
                     const img = document.createElement('img');
-                    img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}`;
+                    img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}.jpg`;
                     img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
 
                     galleryItem.appendChild(img);
@@ -955,7 +955,7 @@
             <div class="row text-center pt-30 pb-10" style="justify-content: center;">
                 <div class="col-sm-6 col-md-12">
                     <div class="product-card most-popular mb-40">
-                        <p class="call-out">Most Popular</p>
+                        <!--<p class="call-out">Most Popular</p>-->
                         <div class="md-flex-row">
                             <img src="/images/product-cards/product-card-img-shark-tour-photos.jpg"
                                 alt="An underwater photo of a group of Hawaii shark diving tour guests holding on to a safety rope while swimming in the open ocean without a cage above a large shark. They're wearing swim fins and snorkel gear and watching the shark as it swims by. One of the divers is pointing a hand held camera at the shark. Another shark and the shark tour boat can be seen in the distance.">

@@ -3202,6 +3202,10 @@ button.mfp-arrow {
         max-width: 530px;
     }
 
+    #how-close-section-photos {
+        background-color: #04274e;
+    }
+
     /* Lightbox Styles */
     .gallery-wrapper {
         display: flex;

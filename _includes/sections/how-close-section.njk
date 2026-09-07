@@ -164,30 +164,30 @@
             // Gallery Items script for lightbox gallery
             const galleryItems = [
                 
-                'shark-divers-chasing.jpg',
-                'pink-shark-diver.jpg',
-                'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg',
-                'couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg',
-                'female-diver-with-shark-striped-2.jpg',
-                'female-diver-with-shark-striped.jpg',
-                'snorkeler-on-rope-with-shark.jpg',
-                'fun-hawaii-shark-diving.jpg',
-                'shark-diving-hawaii-2.jpg',
-                'beautiful-shark-diver-hawaii.jpg',
-                'couple-shark-diving-hawaii.jpg',
-                'diver-posing-with-shark.jpg',
-                'divers-and-shark-hawaii.jpg',
-                'divers-swimming-with-a-shark.jpg',
-                'diving-down-with-shark-hawaii.jpg',
-                'hawaii-shark-diving-tour-photo.jpg',
-                'morning-sun-shark-dive.jpg',
-                'shark-dive-morning-sun.jpg',
-                'shark-diving-hawaii-camera.jpg',
-                'snorkeler-and-3-sharks.jpg',
-                'swimming-after-shark-hawaii.jpg',
-                'swimming-with-a-shark.jpg',
-                'swimming-with-shark-in-hawaii.jpg',
-                'two-divers-and-shark-hawaii.jpg',
+                'shark-divers-chasing',
+                'pink-shark-diver',
+                'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour',
+                'couple-swimming-with-sharks-without-cage-hawaii-oahu',
+                'female-diver-with-shark-striped-2',
+                'female-diver-with-shark-striped',
+                'snorkeler-on-rope-with-shark',
+                'fun-hawaii-shark-diving',
+                'shark-diving-hawaii-2',
+                'beautiful-shark-diver-hawaii',
+                'couple-shark-diving-hawaii',
+                'diver-posing-with-shark',
+                'divers-and-shark-hawaii',
+                'divers-swimming-with-a-shark',
+                'diving-down-with-shark-hawaii',
+                'hawaii-shark-diving-tour-photo',
+                'morning-sun-shark-dive',
+                'shark-dive-morning-sun',
+                'shark-diving-hawaii-camera',
+                'snorkeler-and-3-sharks',
+                'swimming-after-shark-hawaii',
+                'swimming-with-a-shark',
+                'swimming-with-shark-in-hawaii',
+                'two-divers-and-shark-hawaii',
             ];
 
             function buildGallery() {
@@ -195,10 +195,10 @@
                 galleryItems.forEach(item => {
                     const galleryItem = document.createElement('a');
                     galleryItem.classList.add('gallery-item');
-                    galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}`;
+                    galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}.jpg`;
 
                     const img = document.createElement('img');
-                    img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}`;
+                    img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}.jpg`;
                     img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
 
                     galleryItem.appendChild(img);
