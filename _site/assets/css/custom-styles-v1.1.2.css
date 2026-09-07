@@ -14,6 +14,10 @@
  * 03. Components
  */
 
+ :root {
+    --button-radius: 24px;
+  }
+
 /* Fonts */
 @font-face {
     font-family: 'Josefin Sans';
@@ -2248,11 +2252,11 @@ ul.tour-times li {
     opacity: 1 !important;
 }
 
-/* Magnific Popup */
+/* Lightbox - Magnific Popup */
 
 .mfp-close {
-    width: 36px !important;
-    height: 36px !important;
+    width: 46px !important;
+    height: 46px !important;
     background-image: url('/images/UI/lightbox-close-branded.png') !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -2261,9 +2265,22 @@ ul.tour-times li {
     color: transparent !important;
     opacity: 1 !important;
     top: 56px !important;
-    right: 12px !important;
+    left: 12px !important;
     font-size: 0 !important;
 }
+button.mfp-arrow {
+    background: #ffffff1a;
+}
+.mfp-arrow-left {
+    border-top-right-radius: var(--button-radius);
+    border-bottom-right-radius: var(--button-radius);
+}
+.mfp-arrow-right {
+    border-top-left-radius: var(--button-radius);
+    border-bottom-left-radius: var(--button-radius);
+}
+
+
 
 /* Text Effects */
 
