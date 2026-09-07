@@ -1340,6 +1340,10 @@ ul.tour-times li {
     margin-bottom: 20px;
 }
 
+.tour-packages a:has(.product-card) {
+    text-decoration: none;
+}
+
 #tour-packages .text-box .disclaimer {
     font-size: 13px;
     margin-top: 0px;
