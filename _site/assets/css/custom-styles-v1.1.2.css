@@ -3174,6 +3174,7 @@ button.mfp-arrow {
     /* Photo Packages v2 Styles - Desktop */
     #shark-diving-photography-packages.tour-lp-section-v2 {
         background-color: #001a33;
+        padding-bottom: 70px;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
         padding-top: 550px;
@@ -3186,7 +3187,7 @@ button.mfp-arrow {
         height: stretch;
         z-index: 0;
         background-image: url("/images/bg-get-the-shot-v2.webp");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position-y: -70px;
     }
