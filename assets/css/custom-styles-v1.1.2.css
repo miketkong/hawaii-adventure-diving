@@ -3198,12 +3198,12 @@ button.mfp-arrow {
         padding-bottom: 70px;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
-        padding-top: 550px;
+        padding-top: 140px;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
         position: absolute;
         display: block;
-        opacity: 1;
+        opacity: .2;
         width: 100%;
         height: stretch;
         z-index: 0;
