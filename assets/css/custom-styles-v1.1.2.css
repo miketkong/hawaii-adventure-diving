@@ -14,10 +14,6 @@
  * 03. Components
  */
 
- :root {
-    --button-radius: 24px;
-  }
-
 /* Fonts */
 @font-face {
     font-family: 'Josefin Sans';
@@ -55,14 +51,6 @@
     font-family: 'Poppins';
     src: url('/assets/fonts/poppins-v24-latin-700.woff2') format('woff2');
     font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Karantina';
-    src: url('/assets/fonts/Karantina-Regular.woff2') format('woff2');
-    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -172,10 +160,6 @@ p a:hover {
     margin-bottom: 10px;
 }
 
-.btn {
-    text-decoration: none;
-}
-
 .body-text .btn {
     margin-top: -20px;
     margin-bottom: 30px;
@@ -204,7 +188,7 @@ p a:hover {
     margin-bottom: 0px;
 }
 
-.hero-text {
+#hero-text {
     text-shadow: -2px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -361,6 +345,12 @@ p a:hover {
 }
 .section-cta .btn {
     margin-top: 10px;
+}
+
+
+figcaption {
+    font-size: 12px;
+    padding: 10px;
 }
 
 .photo-caption {
@@ -879,8 +869,8 @@ p a:hover {
     margin: 20px 0px;
 }
 .ratings-r2 .ratings-subtext p {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 22px;
     margin: 0px;
 }
 
@@ -1033,72 +1023,6 @@ ul.tour-times li {
     color: #016ba3;
     text-decoration: underline;
 }
-#faq .accordion-item .btn {
-    text-decoration: none;
-}
-
-/* Hero Banner V2 */
-/* -------------------------------- */
-.hero-video-banner-v2 .banner-contents {
-    justify-content: flex-start;
-    padding-bottom: 10px;
-}
-.hero-video-banner-v2 .banner-contents .hero-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-}
-.hero-video-banner-v2 .hero-text {
-    position: absolute;
-}
-
-.hero-video-banner-v2 h1.big-text, .hero-video-banner-v2 h1.big-text-long-words {
-    font-family: "Karantina", system-ui;
-}
-.hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
-    font-family: "Josefin Sans", system-ui;
-    font-weight: 700;
-}
-
-/* Hero Banner V2 - Text Styles */
-.hero-video-banner-v2 h1.big-text {
-    font-size: 118px;
-    line-height: 118px;
-    margin-top: -26px;
-    margin-bottom: -8px;
-    opacity: 0;
-}
-.hero-video-banner-v2 h1.big-text-long-words {
-    font-size: 104px;
-    line-height: 104px;
-    margin-top: -26px;
-    margin-bottom: -8px;
-    opacity: 0;
-}
-
-.hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
-    font-size: 30px;
-    opacity: 0;
-}
-.hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-bottom-2 {
-    opacity: 0;
-    
-}
-.hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-3 {
-    opacity: 0;
-    
-}
-.hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
-    margin-top: -14px
-}
-.hero-video-banner-v2 .small-text {
-    font-size: 24px;
-    line-height: 26px;
-    opacity: 0;
-}
-
 
 /* Product Landing Page General Styles */
 .page-title-img-wrapper h1 {
@@ -1138,12 +1062,6 @@ ul.tour-times li {
     background-size: contain;
     background-position-y: -80px;
     z-index: -1;
-}
-
-#how-close-section-photos {
-    background-color: #0d1933;
-    padding-top: 0px;
-    padding-bottom: 30px;
 }
 
 /* Panoramic Hero Section Styles - General */
@@ -1338,10 +1256,6 @@ ul.tour-times li {
 
 .tour-packages .product-card {
     margin-bottom: 20px;
-}
-
-.tour-packages a:has(.product-card) {
-    text-decoration: none;
 }
 
 #tour-packages .text-box .disclaimer {
@@ -1724,9 +1638,6 @@ ul.tour-times li {
     padding-bottom: 10px;
     margin-top: 40px;
 }
-.section-heading-underlined .accordion {
-    margin-top: 0px;
-}
 
 .accordion-header .accordion-button {
     font-size: 20px;
@@ -2098,8 +2009,8 @@ ul.tour-times li {
 .accordion {
     border-top: 1px solid rgba(177, 177, 180, 0.3);
     border-bottom: 1px solid rgba(177, 177, 180, 0.3);
+    margin-top: 20px;
 }
-
 .accordion-item {
     border-radius: 0px !important;
 }
@@ -2262,114 +2173,8 @@ ul.tour-times li {
     opacity: 1 !important;
 }
 
-/* Lightbox - Magnific Popup */
-
-.mfp-close {
-    width: 46px !important;
-    height: 46px !important;
-    background-image: url('/images/UI/lightbox-close-branded.png') !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-color: transparent !important;
-    color: transparent !important;
-    opacity: 1 !important;
-    top: 56px !important;
-    left: 12px !important;
-    font-size: 0 !important;
-}
-button.mfp-arrow {
-    background: #ffffff1a;
-}
-.mfp-arrow-left {
-    border-top-right-radius: var(--button-radius);
-    border-bottom-right-radius: var(--button-radius);
-}
-.mfp-arrow-right {
-    border-top-left-radius: var(--button-radius);
-    border-bottom-left-radius: var(--button-radius);
-}
-
-
-
-/* Text Effects */
-
-/* Fade up: element fades in while sliding up from 50px below */
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.fade-up {
-    opacity: 0;
-    animation: fadeUp 1.5s cubic-bezier(.19, 1, .22, 1) forwards;
-}
-
-/* Fade up: element fades in while sliding up from 50px below */
-@keyframes fadeDown {
-    from {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-    to {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-}
-
-.fade-down {
-    opacity: 1;
-    animation: fadeDown 1.5s cubic-bezier(.16, 1, .3, 1) forwards;
-}
-
-/* Fade in: element fades in */
-@keyframes heroTextFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.hero-text-fade-in {
-    opacity: 0;
-    animation: heroTextFadeIn 0.5s ease-out forwards;
-}
-
-/* Typewriter: characters fade in and scale down from 150% */
-@keyframes charIn {
-    from {
-        opacity: 0;
-        transform: scale(1.5);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-.typewriter {
-    opacity: 0; /* hidden until JS splits and triggers */
-}
-
-.typewriter .char {
-    display: inline-block; /* required for transform to work */
-    opacity: 0;
-    animation: charIn 0.4s ease forwards;
-    will-change: transform, opacity;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-
 /* ========================================================== */
-/* MOBILE STYLES 
+/* PHONE STYLES 
 /* ========================================================== */
 @media screen and (max-width: 576px) {
     .mobile-hide {
@@ -2381,7 +2186,7 @@ button.mfp-arrow {
     }
 
 
-    /* Navigation */
+    
     .navbar-brand {
         top: 0px;
     }
@@ -2434,23 +2239,12 @@ button.mfp-arrow {
         text-decoration: none;
     }
 
-    /* Hero Banner - V1 */
-
     .hero-banner {
         height: auto;
         aspect-ratio: 1080 / 1776;
     }
-
-    /* ------------------------------------------------------------------------*/
-    /* Hero Banner V2 */
-    /* ------------------------------------------------------------------------*/
-    
-
-
-
     #mini-testimonials-ticker {
         margin-top: 13px;
-        height: 50px;
     }
 
     
@@ -2552,49 +2346,11 @@ button.mfp-arrow {
         font-size: 17px;
         line-height: 20px;
     }
-    #an-exclusive-experience h2 {
-        font-size: 37px;
-        line-height: 1em;
-    }
 
     
     /* Hide the last 3 slides to only show a total of 4 slides on mobile */
     #customer-reviews .swiper-slide:nth-child(n+5) {
         display: none;
-    }
-    
-    /* Section Styles */
-    #how-close-section-photos {
-        background-color: #0d1933;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    #how-close-section-photos .gallery-wrapper {
-        padding-bottom: 0px;
-    }
-
-    #shark-diving-photography-packages.tour-lp-section-v2 {
-        background-color: #033460;
-    }
-
-
-
-    /* Lightbox Gallery Mobile Styles */
-
-    .gallery-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .gallery-item {
-        width: 50%;
-        padding: 2px;
-    }
-
-    .gallery-item img {
-    width: 100%;
     }
     
     #photo-grid-gallery .h2-big {
@@ -2609,13 +2365,9 @@ button.mfp-arrow {
         margin-top: -80px;
     }
 
-    .homepage #photo-grid-gallery, .homepage #photo-grid-gallery .gallery-wrapper {
+    .homepage #photo-grid-gallery {
         padding-bottom: 0px;
     }
-    .homepage #photo-grid-gallery .gallery-wrapper {
-        padding-top: 20px
-    }
-    
     .CTA-section .big-button span::after {
         width: 21px;
         height: 21px;  
@@ -2627,14 +2379,6 @@ button.mfp-arrow {
 
     .shark-tour-page .big-CTA-pre-footer {
         background-color: #0d233f;
-    }
-
-    #homepage-bottom-CTA .container {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #homepage-bottom-CTA .container .rounded-4 {
-        border-radius: 0px !important;
     }
 
     .mt-sm-0 {
@@ -2774,31 +2518,6 @@ button.mfp-arrow {
     }
 }
 
-@media screen and (max-width: 360px) {
-
-    /* Hero Banner V2 Fonts & Sizes */
-    .hero-video-banner-v2 h1.big-text {
-        
-    }
-    .hero-video-banner-v2 h1.big-text-long-words {
-        font-size: 90px;
-        line-height: 90px;
-        margin-top: -26px;
-        margin-bottom: -8px;
-        opacity: 0;
-    }
-    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
-        font-size: 30px;
-    }
-
-    .hero-video-banner-v2 .small-text {
-        font-size: 20px;
-        line-height: 22px;
-    }
-
-}
-
-
 /* ========================================================== */
 /* 577px And UP
 /* ========================================================== */
@@ -2830,7 +2549,7 @@ button.mfp-arrow {
     }
 
     .hero-banner #cta-block {
-        margin-top: 20px;
+        margin-top: 50px;
     }
     #mini-testimonials-ticker {
         font-size: 19px;
@@ -2903,45 +2622,6 @@ button.mfp-arrow {
 
     .text-center-sm {
         text-align: center;
-    }
-
-
-    .navbar-brand {
-        top: 8px;
-    }
-}
-
-/* ========================================================== */
-/* TABLET STYLES 
-/* ========================================================== */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    /* Hero Banner V2 - Text Styles */
-    .hero-video-banner-v2 .banner-contents {
-        padding-bottom: 20px;
-    }
-    .hero-video-banner-v2 h1.big-text {
-        font-size: 160px;
-        line-height: 160px;
-        margin-top: -36px;
-        margin-bottom: -14px;
-    }
-    .hero-video-banner-v2 h1.big-text-long-words {
-        font-size: 160px;
-        line-height: 160px;
-        margin-top: -36px;
-        margin-bottom: -14px;
-    }
-
-    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
-        font-size: 36px;
-    }
-    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
-        margin-top: -20px
-    }
-    .hero-video-banner-v2 .small-text {
-        font-size: 28px;
-        line-height: 32px;
     }
 }
 
@@ -3049,48 +2729,15 @@ button.mfp-arrow {
         text-align: center;
     }
 
-    /* Hero Banner V2 - Text Styles */
-    .hero-video-banner-v2 .banner-contents {
-        padding-bottom: 30px;
-    }
-    .hero-video-banner-v2 h1.big-text {
-        font-size: 160px;
-        line-height: 160px;
-        margin-top: -36px;
-        margin-bottom: -14px;
-    }
-    .hero-video-banner-v2 h1.big-text-long-words {
-        font-size: 160px;
-        line-height: 160px;
-        margin-top: -36px;
-        margin-bottom: -14px;
-    }
-
-    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
-        font-size: 36px;
-    }
-    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
-        margin-top: -20px
-    }
-    .hero-video-banner-v2 .small-text {
-        font-size: 28px;
-        line-height: 32px;
-    }
-
     /* Homepage Desktop Styles */
     .homepage-bottom-CTA {
         padding-top: 60px;
     }
     .homepage #photo-grid-gallery {
-        padding-bottom: 50px;
+        padding-bottom: 100px;
     }
-    #homepage-bottom-CTA .container {
-        max-width: 1228px;
-    }
-    #homepage-bottom-CTA .shape-parent .rounded-4 {
+    #homepage-bottom-CTA .shape-parent {
         margin-top: -80px;
-        border-top-right-radius: 0px !important;
-        border-top-left-radius: 0px !important;
     }
     .homepage #footer {
         padding-top: 600px !important;
@@ -3199,7 +2846,6 @@ button.mfp-arrow {
     /* Photo Packages v2 Styles - Desktop */
     #shark-diving-photography-packages.tour-lp-section-v2 {
         background-color: #001a33;
-        padding-bottom: 70px;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
         padding-top: 140px;
@@ -3207,14 +2853,13 @@ button.mfp-arrow {
     #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
         position: absolute;
         display: block;
-        opacity: .2;
+        opacity: .4;
         width: 100%;
         height: stretch;
         z-index: 0;
         background-image: url("/images/bg-get-the-shot-v2.webp");
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position-y: -70px;
     }
     .get-the-shot-v2 .container-fluid {
         min-height: 860px;
@@ -3225,28 +2870,6 @@ button.mfp-arrow {
         padding-left: 0px;
         padding-top: 331px;
         max-width: 530px;
-    }
-
-    #how-close-section-photos {
-        background-color: #04274e;
-    }
-
-    /* Lightbox Styles */
-    .gallery-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .gallery-item {
-        display: inline-block;
-        width: 25%;
-        padding: 2px;
-    }
-    .gallery-item img {
-        width: 100%;
     }
 
     /* Exclusive Tour Section Styles - Desktop */
@@ -3682,7 +3305,7 @@ button.mfp-arrow {
     }
 
     .hero-banner .banner-contents {
-        padding-top: 130px;
+        padding-top: 150px;
     }
 
     /* Product Cards */

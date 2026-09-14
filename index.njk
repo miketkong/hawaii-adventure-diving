@@ -5,7 +5,8 @@ pageTitle: "Cage Free Shark Diving and Whale Watching Tours - Oahu"
 
 ogTitle: "Hawaii Adventure Diving - Cage Free Shark Diving and Whale Watching Tours - Oahu, Hawaii"
 
-pageDescription: "Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available."
+pageDescription: "Welcome to Hawaii Adventure Diving, your premier destination for unforgettable diving experiences in
+Hawaii."
 
 pageURL: "https://hawaiiadventurediving.com/"
 
@@ -20,8 +21,36 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
     <!-- Main Content-->
     <div class="content-wrap bg-dark-blue main-content-home">
 
-        {% set heroVariant = "home" %}
-        {% include "sections/banners/shark-tour-hero-v2.njk" %}
+        <!-- Main Hero Video Banner -->
+        <section class="hero-video-banner hero-banner">
+            <div class="container-fluid gx-0">
+                <div class="video-overlay-color"></div>
+
+
+                {% include "shark-video-banner.njk" %}
+
+
+                <div class="banner-contents" data-show="startbox">
+                    <div id="hero-text" class="col-lg-8 offset-lg-2">
+                        <div class="banner-logo desktop-only">
+                            <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+                        </div>
+                        <h1><span class="eyebrow no-break">Cage Free</span><br>Shark Diving</h1>
+                        <h2>Small groups. Closer shark encounters. <span class="no-break">World-class guides.</span>
+                        </h2>
+                    </div>
+                    <div id="cta-block" class="col-lg-8 offset-lg-2">
+                        <h3>From $150 per person</h3>
+                        <a class="btn btn-md btn-accent-1"
+                            href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour
+                                Details</span></a>
+                        {% include "blocks/star-ratings.njk" %}
+                        {% include "blocks/mini-testimonials-ticker.njk" %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--// Main Hero Video Banner -->
 
         {% include "sections/as-seen-on.njk" %}
 
@@ -29,7 +58,7 @@ ogImage: "https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny
 
         {% include "sections/tour-features-section.njk" %}
 
-        {% include "sections/homepage-tour-photos-section.njk" %}
+        {% include "sections/tour-photos-section.njk" %}
 
         <!-- Call to action-->
         <section id="homepage-bottom-CTA" class="CTA-section">

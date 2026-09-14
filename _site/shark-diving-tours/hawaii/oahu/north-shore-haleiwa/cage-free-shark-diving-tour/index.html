@@ -32,17 +32,17 @@
     <meta name="contact-phone" content="+1 (808) 829-2203" />
     <meta name="contact-link" content="+18088292203" />
     <meta name="contact-email" content="nickloewenstine@gmail.com" />
-    <meta name="total-reviews" content="4484" />
+    <meta name="total-reviews" content="4142" />
     <meta name="average-rating" content="4.95" />
     
-    <meta name="description" content="Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available.">   
+    <meta name="description" content="Experience maximum immersion and interaction. Cage-free shark dives lead by World-class, expert shark handlers. Safe and family friendly! Ages: 5+.">   
     <link rel="canonical" href="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"> 
 
-    <!-- Open Graph - Social Sharing Definitions and Variables -->
+    <!-- Open Grap Stuff -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Dive Cage-Free with World-Class Shark Handlers">
-    <meta property="og:description" content="Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available.">
+    <meta property="og:description" content="Experience maximum immersion and interaction. Cage-free shark dives lead by World-class, expert shark handlers. Safe and family friendly! Ages: 5+.">
 
     <meta property="og:url" content="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">
     <meta property="og:site_name" content="Hawaii Adventure Diving" />
@@ -53,10 +53,10 @@
     <meta property="og:image:height" content="630" />
 
     <meta property="twitter:title" content="Dive Cage-Free with World-Class Shark Handlers">
-    <meta property="twitter:description" content="Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available.">
+    <meta property="twitter:description" content="Experience maximum immersion and interaction. Cage-free shark dives lead by World-class, expert shark handlers. Safe and family friendly! Ages: 5+.">
     <meta property="twitter:url" content="https://hawaiiadventurediving.com/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/">
     <meta property="twitter:image" content="https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu-1200x637.jpg">
-    <!--// Open Graph -->
+    <!--// Open Grap Stuff -->
 
     
 
@@ -66,17 +66,10 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=0bf693c1">
-    <link rel="stylesheet" href="/assets/css/how-close-section.css">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=a0f1f706">
 
     <!-- Google Fonts -->
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap">-->
 
     <!-- jQuery-->
     <script src="/assets/vendors/js/jquery.min.js"></script>
@@ -242,172 +235,46 @@
     <div class="content-wrap">
 
         
-        
-                
-<!-- Shark Tour Hero Video Banner -->
-<section id="hero-banner" class="hero-video-banner hero-video-banner-v2 hero-banner dark-bg">
-    <div class="container-fluid gx-0">
-        <div class="video-overlay-color"></div>
+        <!-- Main Hero Video Banner -->
+        <section id="hero-banner" class="hero-video-banner hero-banner dark-bg">
+            <div class="container-fluid gx-0">
+                <div class="video-overlay-color"></div>
 
 
-        <!-- VIDEO BANNER BACKGROUND -->
-<div id="shark-banner-video-bgd" class="video-container">
-    <video id="shark-hero-video" autoplay muted loop playsinline></video>
+                <!-- VIDEO BANNER BACKGROUND -->
+<div id="banner-video-bgd" class="video-container">
+    <video id="hero-video" autoplay muted loop playsinline></video>
 </div>
 <!--// VIDEO BANNER BACKGROUND -->
 
 <script>
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-
-        var sharkHeroVideo = document.getElementById('shark-hero-video');
-
-        if (sharkHeroVideo) {
-            var totalHeroTextGroups = document.querySelectorAll('.hero-text').length;
-            let groupNumber = 1;
-
-            sharkHeroVideo.addEventListener('playing', function () {
-                setTimeout(function () {
-                    animateInHeroTextGroup(groupNumber, totalHeroTextGroups);
-                }, 500);
-            }, { once: true });  
-
-            loadSharkVideo(sharkHeroVideo);
-        }
-
-    });
-
-    function animateInHeroTextGroup(groupNumber, totalHeroTextGroups) {
-
-        currentGroupNumber = groupNumber;
-        currentGroupIndex = currentGroupNumber - 1;
-
-        console.log(`trace: groupNumber = ${groupNumber}, totalHeroTextGroups = ${totalHeroTextGroups}, currentGroupIndex = ${currentGroupIndex}`);
-
-        thisGroup = document.querySelectorAll('.hero-text')[currentGroupIndex];
-        thisGroup.classList.remove('fade-down');
-
-        bigTextTop = thisGroup.querySelector('h1:nth-of-type(1)');
-        bigTextMiddle = thisGroup.querySelector('h1:nth-of-type(2)');
-        bigTextBottom = thisGroup.querySelector('h1:nth-of-type(3)');
-        smallText = thisGroup.querySelector('.small-text');
-
-        setTimeout(function () {
-            bigTextTop.classList.add('fade-up');
-        }, 500);
-        
-        setTimeout(function () {
-            bigTextMiddle.classList.add('typewriter');
-            typewriterEffect(bigTextMiddle);
-        }, 800);
-
-        if (smallText) {
-            setTimeout(function () {
-                smallText.classList.add('hero-text-fade-in');
-            }, 1000);
-        }
-        
-        if (bigTextBottom) {
-            setTimeout(function () {
-                bigTextBottom.classList.add('fade-up');
-            }, 1000);
-        }
-
-        setTimeout(function () {
-            thisGroup.classList.add('fade-down');
-        }, 4000);
-
-        setTimeout(function () {
-            bigTextTop.classList.remove('fade-up');
-            bigTextMiddle.classList.remove ('typewriter');
-            bigTextMiddle.style.opacity = '0';
-            if (smallText) {
-                smallText.classList.remove('hero-text-fade-in');
-            }
-            if (bigTextBottom) {
-                bigTextBottom.classList.remove('fade-up');
-            }
-            getNextHeroTextGroup(groupNumber, totalHeroTextGroups);
-        }, 5500);
-
-    }
-
-    function getNextHeroTextGroup(groupNumber, totalHeroTextGroups) {
-
-        if (groupNumber < totalHeroTextGroups) {
-            groupNumber++;
-        } else {
-            groupNumber = 1;
-        }
-        animateInHeroTextGroup(groupNumber, totalHeroTextGroups);
-    }
-
-    function loadSharkVideo(sharkHeroVideo) {
-
-        if (window.innerWidth > 576) {
-            sharkHeroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
-            sharkHeroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
-        } else {
-            sharkHeroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
-            sharkHeroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
-        }
+    var heroVideo = document.getElementById('hero-video');
+    if (window.innerWidth > 576) {
+        heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
+    } else {
+        heroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
     }
 </script>
  
 
 
-        <div class="banner-contents">
-            <div class="banner-logo desktop-only">
-                <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
-            </div>
-
-            <div class="hero-text-container col-lg-8 offset-lg-2">
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Cage Free</h1>
-                    <h1 class="big-text-long-words">Shark Diving</h1>
-                    <h2 class="small-text">Dive into a next-level experience<br><span class="no-break"> with Hawaii's elite shark handlers</span></h2>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Swim</h1>
-                    <h1 class="big-text-long-words">Face-To-Face</h1>
-                    <h1 class="big-text-bottom-1">With Wild Sharks</h1>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Guided By</h1>
-                    <h1 class="big-text-long-words">World-Class</h1>
-                    <h1 class="big-text-bottom-1">Shark Handlers</h1>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Ultimate</h1>
-                    <h1 class="big-text">Immersion</h1>
-                    <h2 class="small-text">This is Not Your Average Shark Tour!</h2>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Ultimate</h1>
-                    <h1 class="big-text">Experience</h1>
-                    <h2 class="small-text">Led by Elite Shark Behavior Experts</h2>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Consistently</h1>
-                    <h1 class="big-text">Top-Rated</h1>
-                    <h2 class="small-text">Rated 5-Stars by Over 4,000 Guests</h2>
-                </div>
-
-            </div>
-
-            <div id="cta-block" class="col-lg-8 offset-lg-2">
-                <h3>From $150 per person</h3>
-                
-                    <a class="btn btn-md btn-accent-1"
-                        href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
-                            Shark Diving</span></a>
-                
-                <div class="star-rating">
+                <div class="banner-contents" data-show="startbox">
+                    <div id="hero-text" class="col-lg-8 offset-lg-2">
+                        <div class="banner-logo desktop-only">
+                            <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+                        </div>
+                        <h1><span class="eyebrow no-break">Cage Free</span><br>Shark Diving</h1>
+                        <h2>Small groups. Closer shark encounters. <span class="no-break">World-class guides.</span>
+                        </h2>
+                    </div>
+                    <div id="cta-block" class="col-lg-8 offset-lg-2">
+                        <h3>From $150 per person</h3>
+                        <a class="btn btn-md btn-accent-1"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Go
+                                Shark Diving</span></a>
+                        <div class="star-rating">
   <span class="review-average"></span>
   <img src="/images/5-stars.png" alt="">
   (<span class="review-total"></span>)
@@ -415,14 +282,43 @@
 <script>
   var container = document.currentScript.previousElementSibling;
   container.querySelector('.review-average').textContent = (4.95).toFixed(1);
-  container.querySelector('.review-total').textContent = (4484).toLocaleString();
+  container.querySelector('.review-total').textContent = (4142).toLocaleString();
 </script>
 
+                        <div id="mini-testimonials-ticker"></div>
+<script>
+  var ticker = document.currentScript.previousElementSibling;
+  var testimonials = [
+    '"Truly a life changing experience."',
+    '"Thanks for being so amazing and welcoming."',
+    '"Very professional team, we felt very safe."',
+    '"Top-tier staff are highly knowledgeable."',
+    '"10/10 recommend!!!"',
+    '"Our photos turned out EPIC!"',
+    '"Amazing guides, unbelievable experience!"',
+    '"We swam with a 15 foot tiger shark."'
+  ];
+  var current = Math.floor(Math.random() * testimonials.length);
+  ticker.textContent = testimonials[current];
+  setInterval(function () {
+    ticker.style.opacity = '0';
+    setTimeout(function () {
+      var next;
+      do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
+      current = next;
+      ticker.textContent = testimonials[current];
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          ticker.style.opacity = '1';
+        });
+      });
+    }, 600);
+  }, 4000);
+</script>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-
+        </section>
 
         <!-- As Seen on Section -->
 <section id="as-seen-on" class="bg-white">
@@ -479,7 +375,7 @@
                         data-show="startbox">
                     <h1 data-show="startbox">Thousands of  <span class="no-break">5-Star Reviews.</span></h1>
 
-                    <!--<div id="ratings-section-testimonials-ticker"></div>-->
+                    <div id="ratings-section-testimonials-ticker"></div>
                             
                 </div>
 
@@ -489,27 +385,27 @@
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item google">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-google.jpg" alt="Google logo">
-                                <p class="rating"><span>5.0</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(2,415)</p>
+                                <p class="rating"><span>5.0</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(2,140)</p>
                             </div>
                         </div>
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item groupon">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-groupon.jpg" alt="Groupon logo">
-                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(1,137)</p>
+                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(1,127)</p>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item trip-advisor">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-tripadvisor-horizontal.png" alt="Trip Advisor logo">
-                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(632)</p>
+                                <p class="rating"><span>4.9</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(586)</p>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-2">
                             <div class="ratings-grid-item yelp">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-yelp.jpg" alt="Yelp logo">
-                                <p class="rating"><span>4.8</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(215)</p>
+                                <p class="rating"><span>4.8</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">(204)</p>
                             </div>
                         </div>
 
@@ -522,7 +418,7 @@
                     </div>
                     <!-- Put the ratings subtext here -->
                     <div class="ratings-subtext text-center">
-                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last updated August 2026.</p>
+                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last updated July 2026.</p>
                     </div>
                 </div>
                 <!--// Ratings & Reviews Section r2 -->
@@ -534,216 +430,6 @@
     </div>
 </section>
 <!--// RATINGS & REVIEWS SECTION -->
-
-        <!-- HOW CLOSE SECTION -->
-        <section id="how-close" class="dark-bg section-border-top-gold">
-            <div class="container-fluid">
-                <div class="container">
-
-                    <!-- Heading Block -->
-                    <div class="row">
-                        <div class="col-12 col-lg-5" data-show="startbox">
-                            <div class="heading-text">
-                                <p class="how-close-eyebrow">THE EXPERIENCE</p>
-                                <h2 class="how-close-main-heading">HOW CLOSE<br>
-                                    <span class="hand-underline-v2">WILL<img class="word-underline" src="/images/hand-underline-v2.png" alt=""></span> YOU GET?
-                                </h2>
-                            </div>
-                            
-                            <p class="how-close-intro">Every dive is different, but many guests get within a few feet—sometimes closer.</p>
-                        </div>
-                    </div>
-
-                    <!-- Distance Cards -->
-                    <div class="row how-close-cards">
-                        <div class="col-12 col-lg-3">
-                            <div class="how-close-card">
-                                <div class="how-close-card-content">
-                                    <div class="badges">
-                                        <span class="how-close-card-label">VERY CLOSE</span>
-                                        <p class="how-close-card-distance">3–6 FT</p>
-                                    </div>
-                                    
-                                    <p class="how-close-card-desc">Feel the thrill of a shark passing inches away.</p>
-                                </div>
-                                <div class="how-close-card-img-wrap">
-                                    <img src="/images/how-close-feat-img-very-close-v2.png" alt="Very close shark encounter — 3 to 6 feet">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-3">
-                            <div class="how-close-card">
-                                <div class="how-close-card-content">
-                                    <div class="badges">
-                                        <span class="how-close-card-label">CLOSE</span>
-                                        <p class="how-close-card-distance">6–12 FT</p>
-                                    </div>
-                                    <p class="how-close-card-desc">Get side-by-side and epic shots.</p>
-                                </div>
-                                <div class="how-close-card-img-wrap">
-                                    <img src="/images/how-close-feat-img-close-v2.png" alt="Close shark encounter — 6 to 12 feet">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-3">
-                            <div class="how-close-card">
-                                <div class="how-close-card-content">
-                                    <div class="badges">
-                                        <span class="how-close-card-label">COMFORTABLE</span>
-                                        <p class="how-close-card-distance">12–20 FT</p>
-                                    </div>
-                                    <p class="how-close-card-desc">Plenty close to connect—in their world.</p>
-                                </div>
-                                <div class="how-close-card-img-wrap">
-                                    <img src="/images/how-close-feat-img-nearby-v2.png" alt="Comfortable shark encounter — 12 to 20 feet">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-3">
-                            <div class="how-close-card">
-                                <div class="how-close-card-content">
-                                    <div class="badges">
-                                        <span class="how-close-card-label">NATURAL VIEW</span>
-                                        <p class="how-close-card-distance">20+ FT</p>
-                                    </div>
-                                    <p class="how-close-card-desc">See their behavior, movement, and power.</p>
-                                </div>
-                                <div class="how-close-card-img-wrap">
-                                    <img src="/images/how-close-feat-img-distant-v2.png" alt="Natural view shark encounter — 20 or more feet">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Secondary Heading -->
-                    <!--<div class="row">
-                        <div class="col-12">
-                            <h2 class="how-close-secondary-heading">HOW CLOSE DO<br>
-                                <span class="hand-underline-v2 yellow-text">YOU<img class="word-underline" src="/images/hand-underline-v2.png" alt=""></span> WANT TO GET?
-                            </h2>
-                            <h2 class="how-close-secondary-heading" data-show="startbox">SAFETY ABOVE ALL.
-                            </h2>
-                        </div>
-                    </div>-->
-
-                    <!-- Supporting Copy -->
-                    <div class="row">
-                        <div class="col-12 col-lg-8 offset-lg-2" data-show="startbox">
-                            <p class="how-close-intro text-center-md">We're here to give you one of the most immersive shark encounters available — without ever compromising safety. Whether you're ready to get closer or want to ease into the experience, our crew will guide you every step of the way.</p>
-                        </div>
-                    </div>
-
-                    <!-- Feature Items -->
-                    <div class="row how-close-features">
-                        <div class="col-6 col-lg-3 how-close-feature">
-                            <div class="wrap">
-                                <img class="how-close-feature-icon" src="/images/icon-water.png" alt="Open water icon">
-                                <h4>OPEN-WATER FREEDOM</h4>
-                                <p>No cages. Move freely in the ocean with sharks.</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 how-close-feature">
-                            <div class="wrap">
-                                <img class="how-close-feature-icon" src="/images/icon-safety-2.png" alt="Safety icon">
-                                <h4>SAFETY-FIRST GUIDANCE</h4>
-                                <p>Expert crew and proven protocols keep you safe.</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 how-close-feature">
-                            <div class="wrap">
-                                <img class="how-close-feature-icon" src="/images/icon-small-groups.png" alt="Small groups icon">
-                                <h4>6 Guests Max</h4>
-                                <p>Your dive experience is tailored to you.</p>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-3 how-close-feature">
-                            <div class="wrap">
-                                <img class="how-close-feature-icon" src="/images/icon-camera.png" alt="Photos icon">
-                                <h4>PRO PHOTOS<sup>*</sup></h4>
-                                <p>Capture every moment in amazing detail.</p>
-                                <p class="disclaimer" style="position: absolute; bottom:0"><sup>*</sup>Optional add-on</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--// Feature Items -->
-                </div>
-            </div>
-        </section>
-        <!--// HOW CLOSE SECTION -->
-
-        <section id="how-close-section-photos" class="dark-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="text-center mb-0">Tour Photos</h2>
-                        <p class="how-close-intro text-center">The following are just a small example of the many thousands of photos taken from actual guest tours.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container g-0">
-                <div class="row g-0">
-                    
-                    <!-- Lightbox Gallery -->
-                    <div class="col-12 gallery-col">
-                        <div class="gallery-wrapper">
-                        </div>
-                        <!--// gallery-wrapper-->
-                    </div>
-
-                </div>
-                <!--// row -->
-                
-            </div>
-        </section>
-
-        <script type="text/javascript">
-            // Gallery Items script for lightbox gallery
-            const galleryItems = [
-                
-                'shark-divers-chasing',
-                'pink-shark-diver',
-                'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour',
-                'couple-swimming-with-sharks-without-cage-hawaii-oahu',
-                'female-diver-with-shark-striped-2',
-                'female-diver-with-shark-striped',
-                'snorkeler-on-rope-with-shark',
-                'fun-hawaii-shark-diving',
-                'shark-diving-hawaii-2',
-                'beautiful-shark-diver-hawaii',
-                'couple-shark-diving-hawaii',
-                'diver-posing-with-shark',
-                'divers-and-shark-hawaii',
-                'divers-swimming-with-a-shark',
-                'diving-down-with-shark-hawaii',
-                'hawaii-shark-diving-tour-photo',
-                'morning-sun-shark-dive',
-                'shark-dive-morning-sun',
-                'shark-diving-hawaii-camera',
-                'snorkeler-and-3-sharks',
-                'swimming-after-shark-hawaii',
-                'swimming-with-a-shark',
-                'swimming-with-shark-in-hawaii',
-                'two-divers-and-shark-hawaii',
-            ];
-
-            function buildGallery() {
-                const galleryWrapper = document.querySelector('.gallery-wrapper');
-                galleryItems.forEach(item => {
-                    const galleryItem = document.createElement('a');
-                    galleryItem.classList.add('gallery-item');
-                    galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}.jpg`;
-
-                    const img = document.createElement('img');
-                    img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}.jpg`;
-                    img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
-
-                    galleryItem.appendChild(img);
-                    galleryWrapper.appendChild(galleryItem);
-                });
-            }
-            document.addEventListener('DOMContentLoaded', buildGallery);
-        </script>
 
         <!-- Tour Quick Guide -->
         <section id="tour-quick-guide" class="tour-quick-guide bg-white" class="desktop">
@@ -793,9 +479,9 @@
                     <div class="col-12 text-center-md">
                         <div class="heading-text">
                             <h1 class="h1-small">Cage Free <span class="no-break">Shark Diving</span></h1>
-                            <h2 class="blue-text mb-10 text-center">Tour Schedule</h2>
+                            <h2 class="blue-text mb-10 text-center">Daily Tour Schedule</h2>
                         </div>
-                        <p class="description">Choose from one of our 5 daily shark dives. All tours run 7 days a week, <span class="no-break">365 days</span> <span class="no-break">a year.</span></p>
+                        <p class="description">Choose from one of our 5 daily shark dives. All of our daily tours run 7 days a week, 365 <span class="no-break">days a year.</span></p>
                     </div>
                     <div class="col-12 text-center-md">
 
@@ -863,48 +549,48 @@
 
         <div class="row text-center">
             <div class="col-sm-6 col-xl-4 md-order-2">
-                <a href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" target="_self">
-                    <div class="product-card most-popular">
-                        <p class="call-out">Most Popular</p>
-                        <img src="/images/product-card-img-shark-tour.jpg" alt="">
-                        <div class="text">
-                            <h2>Cage-Free <span class="no-break">Shark Dive</span></h2>
-                            <h3 class="price">$150 per guest</h3>
-                            <div class="btn btn-accent-1 big-button">Book Now</div>
-                        </div>
+                <div class="product-card most-popular">
+                    <p class="call-out">Most Popular</p>
+                    <img src="/images/product-card-img-shark-tour.jpg" alt="">
+                    <div class="text">
+                        <h2>Cage-Free <span class="no-break">Shark Dive</span></h2>
+                        <h3 class="price">$150 per guest</h3>
+                        <a class="btn btn-accent-1 big-button"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
+                            target="_self">Book Now</a>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-sm-6 col-xl-4 md-order-1">
-                <a href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" target="_self">
-                    <div class="product-card secondary-product-card kama-aina-card">
-                        <img src="/images/product-cards/product-card-img-kama-aina.jpg" alt="">
-                        <div class="text">
-                            <h2>Hawai'i Residents & Military Discount</h2>
-                            <h3 class="price">$125 per guest<br><span class="sub-text">(ID Required)</span></h3>
-                            <div class="btn btn-accent-1 big-button">Book Now</div>
-                        </div>
+                <div class="product-card secondary-product-card kama-aina-card">
+                    <img src="/images/product-card-img-kama-aina.jpeg" alt="">
+                    <div class="text">
+                        <h2>Hawaiʻi Residents & Military Discount</h2>
+                        <h3 class="price">$125 per guest<br><span class="sub-text">(ID Required)</span></h3>
+                        <a class="btn btn-accent-1 big-button"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
+                            target="_self">Book Now</a>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="col-sm-6 offset-sm-3 col-xl-4 offset-xl-0 md-order-3">
-                <a href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/" target="_self">
-                    <div class="product-card secondary-product-card">
-                        <img src="/images/product-card-img-ride-along.jpeg" alt="">
-                        <div class="text">
-                            <h2>Non-Diver<br>Ride Along</h2>
-                            <h3 class="price">$100 per guest</h3>
-                            <div class="btn btn-accent-1 big-button">Book Now</div>
-                        </div>
+                <div class="product-card secondary-product-card">
+                    <img src="/images/product-card-img-ride-along.jpeg" alt="">
+                    <div class="text">
+                        <h2>Non-Diver<br>Ride Along</h2>
+                        <h3 class="price">$100 per guest</h3>
+                        <a class="btn btn-accent-1 big-button"
+                            href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"
+                            target="_self">Book Now</a>
                     </div>
-                </a>
+                </div>
             </div>
         </div>
         <!--// row - main products -->
     </div>
     <!--// container -->
 
-    <div id="shark-diving-photography-packages" class="container-fluid tour-packages tour-lp-section-v2 text-white px-0">
+    <div id="shark-diving-photography-packages" class="container-fluid tour-packages tour-lp-section-v2 text-md-white px-0">
         <div class="pano-bgd"></div>
         
         <div class="container">
@@ -913,16 +599,36 @@
                 <div class="col-lg-10 offset-lg-1 text-center">
                     <div class="heading-text">
                         <h1 class="h1-small">Premium Add-Ons</h1>
-                        <h2 class="h2-big mt-sm-10 mb-md-20">Tour Photos</h2>
-                        <p class="mb-0">Enhance Your Experience by Adding a Professional Photographer to  <span class="no-break">Your Dive.</span></p>
+                        <h2 class="h2-big mt-sm-10 mb-md-20 text-sm-blue">Shark Tour Photos</h2>
+                        <p class="heading-lead mb-0">Add photos to your tour for the ultimate shark  <span class="no-break">diving experience.</span></p>
                     </div>
                 </div>
             </div>
 
-            
+            <!-- ROW: Tour Photos Product Card -->
+            <div class="row text-center pt-30 pb-10" style="justify-content: center;">
+                <div class="col-sm-6 col-md-12">
+                    <div class="product-card most-popular mb-40">
+                        <p class="call-out">Limited Availability</p>
+                        <div class="md-flex-row">
+                            <img src="/images/product-card-img-shark-tour-photo-packages-4.jpg"
+                                alt="An underwater photo of a group of Hawaii shark diving tour guests holding on to a safety rope while swimming in the open ocean without a cage above a large shark. They're wearing swim fins and snorkel gear and watching the shark as it swims by. One of the divers is pointing a hand held camera at the shark. Another shark and the shark tour boat can be seen in the distance.">
+                            <div class="text">
+                                <h2 class="mb-10">Add Shark <span class="no-break">Tour Photos</span></h2>
+                                
+                                <h3 class="price">$75 per guest</h3>
+                                <p class="mb-20"><strong>Call to add photos to <span class="no-break">your tour.</span></strong></p>
+                                <a class="btn btn-accent-1 big-button btn-phone" href="tel:+18088292203">(808) 829-2203</a>
+                            </div>
+                        </div>
+                    </div><!--// product-card -->
+
+                </div><!--// col -->
+            </div>
+            <!--// ROW: Tour Photos Product Card -->
 
 
-            <!--<div class="row" id="tour-photos-details">
+            <div class="row" id="tour-photos-details">
                 <div class="col-lg-10 offset-lg-1 text-left">
                     <div>
                         <h3>Why Guests Love Adding Photos to <span class="no-break">Their Tours</span></h3>
@@ -932,49 +638,61 @@
                             <li>Unlock the ultimate experience diving one-on-one with a shark diving expert.</li>
                             <li>Relive the experience and share it with friends and family for years to come.</li>
                         </ul>
-                        <h3>Enhanced Experience</h3>
-                        <p>When you add photos to your dive, you're also getting a one-on-one experience with a shark expert. They'll be right by your side to guide you through the most immersive, up close and personal experience possible—all while maintaining maximum safety and, of course, setting you up for the ultimate shots! </p>-->
+                        <h3>The Ultimate Experience</h3>
+                        <p>Our photographers aren't just photographers, they're also expert shark divers and certified water safety professionals.</p>
+                        <p>When you add photos to your dive, you're also getting a one-on-one experience with a shark expert. They'll be right by your side to guide you through the most immersive, up close and personal experience possible—all while maintaining maximum safety and, of course, setting you up for the ultimate shots! </p>
                         <!--<h3>Featured Shark Tour Photos</h3>
                         <p>The following are just a small example of the many thousands of photos taken from actual guest tours.</p>-->
-                    <!--</div>
-                </div>
-            </div>-->
-
-
-            <!-- Shark Tour Gallery 1 - Original Location -->
-
-            <!--<div class="row">
-                <div class="col-lg-6 offset-lg-3 text-center">
-                    <div class="heading-text">
-                        <p class="mb-0">All of our photographers are experienced shark divers who will be by your side to get the best shots possible.</p>
                     </div>
                 </div>
-            </div>-->
-
-            <!-- ROW: Tour Photos Product Card -->
-            <div class="row text-center pt-30 pb-10" style="justify-content: center;">
-                <div class="col-sm-6 col-md-12">
-                    
-                    <a href="tel:+18088292203">    
-                        <div class="product-card most-popular mb-40">
-                            <!--<p class="call-out">Most Popular</p>-->
-                            <div class="md-flex-row">
-                                <img src="/images/product-cards/product-card-img-shark-tour-photos.jpg"
-                                    alt="An underwater photo of a group of Hawaii shark diving tour guests holding on to a safety rope while swimming in the open ocean without a cage above a large shark. They're wearing swim fins and snorkel gear and watching the shark as it swims by. One of the divers is pointing a hand held camera at the shark. Another shark and the shark tour boat can be seen in the distance.">
-                                <div class="text">
-                                    <h2 class="mb-10">Add Shark <span class="no-break">Tour Photos</span></h2>
-                                    
-                                    <h3 class="price">$75 per guest</h3>
-                                    <p class="mb-20"><strong>Call to add photos to <span class="no-break">your tour.</span></strong></p>
-                                    <div class="btn btn-accent-1 big-button btn-phone">(808) 829-2203</div>
-                                </div>
-                            </div>
-                        </div><!--// product-card -->
-                    </a>
-
-                </div><!--// col -->
             </div>
-            <!--// ROW: Tour Photos Product Card -->
+
+
+            <div class="row photo-grid-gallery gx-0 py-20 text-left">
+                
+                <div class="col-12" style="display: inline-table;">
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/woman-swmming-with-sharks-no-cage-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater shot of a young woman freediver on a oahu shark diving tour by Hawaii Adventure Diving is swimming along the surface of the open ocean without a cage while a group of five large grey sharks swim just below her. She's wearing a dark bikini with freediving fins, a snorkel, and mask. A yellow shark diving tour safety rope can be seen in the water just behind her. The water is a deep bright blue and very clear."></a>
+
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/couple-holding-hands-underwater-while-swimming-with-sharks-hawaii-oahu.jpg" loading="lazy" alt="An underwater photo of a young freediving couple on a Hawaii shark diving tour holding hands and swimming toward two large sharks in the distance. They are both wearing fins and snorkel gear and are several feet below the surface of the water so that the water surface is not visible in the photo creating the appearance that they may be very deep underwater."></a>
+
+
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-snorkeling-with-sharks-on-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater photo of a young woman freediver swimming with a group of six sharks. She is wearing freediving fins and snorkel gear. Sun rays can be seen bathing streaming through the water's surface to create a beautiful scene reminiscent of a dream. She's on a shark diving tour with Hawaiian shark tour operator Hawaii Adventure Diving."></a>
+
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/free-diver-with-shark-hawaii-shark-diving-tour.jpg" loading="lazy" alt="An underwater photo of a young male freediver in his twenties treading water in Hawaii with a large shark swimming by. He's in the water with the shark without a cage. The water is clear blue and the sun is shinning."></a>
+
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/woman-cage-free-shark-diving-hawaii.jpg" loading="lazy" alt="A woman in a blue swimsuit and fins dives underwater surrounded by sharks off the coast of Hawaii"></a>
+
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/shark-dive-tour-boat-with-sharks-visible-below.jpg" loading="lazy" alt="A semi underwater photo taken from the ocean of the Hawaii Adventure Diving shark diving our boat. The boat captain can be seen at the helm while a group of sharks swim in the waters just below. The composition of the photo is exceptional capturing the scenes both above and below the water's surface simulteneously."></a>
+                        
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/man-swimming-with-sharks-north-shore-oahu-hawaii.jpg" loading="lazy" alt="A male diver wearing fins floats near the surface of the ocean as sharks swim past in clear blue water off the North Shore of Oahu, Hawaii."></a>
+
+                    <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/swimmer-with-shark-no-cage-open-ocean-hawaii.jpg" loading="lazy" alt="An underwater photo of a young male freediver in swim trunks on a shark diving tour in Hawaii hovers at the surface of the ocean water with a large shark just beneth and another in the distance. The water is a clear deep blue with sun rays shining through it to create a beautiful and entrancing scene."></a>
+                </div>
+            </div>
+            <!--// row -->
+
+            <div class="row" id="tour-photos-details">
+                <div class="col-lg-10 offset-lg-1 text-left">
+                    <div>
+                        <h3>Reserve Early</h3>
+                        <p>Our photographers are often fully booked, and we have a limited number available on each tour.</p>
+                        <p>If you'd like to get photos for your dive, we recommend adding them when you reserve your shark dive by calling the number below.</p>
+
+                        <h3>A Few Last Tips</h3>
+                        <ul>
+                            <li>Call and ask when the best conditions will be for photos before you book your tour.</li>
+                            <li>Remember to be present during your dive. Your tour will allow for plenty of time to be with these incredible creatures, but it can go by surprisingly fast.</li>
+                            <li>Take a moment to look around, experience the sharks and the ocean, enjoy the moment, and appreciate where you are. Our photographers will capture your best moments so you can focus on living them!</li>
+                            <!--<li>Have fun! And get ready for an under water adventure with some of the greatest shark experts on the planet! </li>-->
+                        </ul>
+
+                        <div class="section-cta text-center pt-20 pb-md-40">
+                            <h2 class="mb-20 text-sm-blue">Call to Add Photos to Your <span class="no-break">Shark Dive</span></h2>
+                            <a class="btn btn-accent-1 big-button btn-phone" href="tel:+18088292203">(808) 829-2203</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div><!--// container -->
 
@@ -1158,164 +876,92 @@
                     <div class="col-12 px-0">
                         <div class="accordion accordion-flush dark-text" id="faq">
 
-                            <!-- accordion item - Is it safe? -->
+                            <!-- accordion item - What to bring -->
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-is-it-dangerous">
+                                <h2 class="accordion-header" id="flush-heading-what-to-bring">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-is-it-dangerous" aria-expanded="false"
-                                        aria-controls="flush-collapse-is-it-dangerous">
-                                        Is cage-free shark diving safe?
+                                        data-bs-target="#faq-collapse-what-to-bring" aria-expanded="false"
+                                        aria-controls="flush-collapse-what-to-bring">
+                                        What should I bring?
                                     </button>
                                 </h2>
-                                <div id="faq-collapse-is-it-dangerous" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-is-it-dangerous">
+                                <div id="faq-collapse-what-to-bring" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-what-to-bring">
                                     <div class="accordion-body">
-                                        <p>Cage-free shark diving is a real open-ocean experience, so safety is always top priority. Our expert shark safety divers are in the water with you, guiding the group, reading shark behavior at all times, and helping guests feel comfortable from start to finish.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!--// accordion item - Is it safe? -->
-
-                            <!-- accordion item - What if I'm nervous? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-nervous">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-nervous" aria-expanded="false"
-                                        aria-controls="flush-collapse-nervous">
-                                        What if I'm nervous?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-nervous" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-nervous">
-                                    <div class="accordion-body">
-                                        <p>That is completely normal. Many guests feel nervous before getting in the water, especially if it is their first time seeing sharks up close.</p>
-
-                                        <p>Our crew will walk you through what to expect, give you a clear safety briefing, and stay with you in the water throughout the experience. You do not have to be fearless — you just have to show up. We will help you from there.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!--// accordion item - What if I'm nervous? -->
-
-                            <!-- accordion item - Do I need to be a good swimmer? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-swimming-ability">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-swimming-ability" aria-expanded="false"
-                                        aria-controls="flush-collapse-swimming-ability">
-                                        Do I need to be a good swimmer?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-swimming-ability" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-swimming-ability">
-                                    <div class="accordion-body">
-                                        <p>You should be comfortable in the water, but you do not need to be an expert swimmer. Guests wear snorkel gear and remain under the guidance of our crew during the experience.</p>
-
-                                        <p>If you are a stronger swimmer, you may be able to move more comfortably in the water and get better photo opportunities. If you are less confident, our crew can help you settle in and enjoy the experience at a pace that feels right for you.</p>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <!--// accordion item - Do I need to be a good swimmer? -->
-
-                            <!-- accordion item - Is this a scuba diving tour? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-is-this-scuba">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-is-this-scuba" aria-expanded="false"
-                                        aria-controls="flush-collapse-is-this-scuba">
-                                        Is this a scuba diving tour?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-is-this-scuba" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-is-this-scuba">
-                                    <div class="accordion-body">
-                                        <p>No. This is not a scuba diving tour. It is a cage-free shark snorkeling experience in the open ocean.</p>
-
-                                        <p>You do not need scuba certification or diving experience. We provide the basic snorkel gear and guide you through what to expect before you enter the water.</p>
+                                        <p>We recommend bringing a valid photo ID, sunscreen (reef-safe if possible), a towel, and a change of clothes if you'd prefer to be dry on that ride back to the dock.</p>
+                                        <p>It can be sunny and windy, so you may want to bring a light jacket, sunglasses, and a hat. If you'd like to capture the experience yourself, you're welcome to bring a waterproof camera like a GoPro.</p>
+                                        <p>Snorkel gear is provided, so no need to bring your own. Leave the valuables at home and bring your sense of adventure.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!--// accordion item - Is this a scuba diving tour? -->
+                            <!--// accordion item - What to bring -->
 
-                            <!-- accordion item - How close will I get to the sharks? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-how-close">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-how-close" aria-expanded="false"
-                                        aria-controls="flush-collapse-how-close">
-                                        How close will I get to the sharks?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-how-close" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-how-close">
-                                    <div class="accordion-body">
-                                        <p>No. This is not a scuba diving tour. It is a cage-free shark snorkeling experience in the open ocean.</p>
-
-                                        <p>You do not need scuba certification or diving experience. We provide the basic snorkel gear and guide you through what to expect before you enter the water.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// accordion item - How close will I get to the sharks? -->
-
-                            <!-- accordion item - Do I have to get really close? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-do-I-have-to">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-do-I-have-to" aria-expanded="false"
-                                        aria-controls="flush-collapse-do-I-have-to">
-                                        Do I have to get really close?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-do-I-have-to" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-do-I-have-to">
-                                    <div class="accordion-body">
-                                       <p>No. You do not have to get closer than you are comfortable with. Every guest has a different comfort level, and our crew is there to help you feel safe, informed, and supported in the water.</p>
-
-                                        <p>If you want to stay closer to the safety diver or take a little more time getting comfortable, that is okay. Small groups help us keep the experience more personal and responsive.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// accordion item - Do I have to get really close? -->
-
-                            <!-- accordion item - What kinds of sharks might we see? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-what-kinds">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-what-kinds" aria-expanded="false"
-                                        aria-controls="flush-collapse-what-kinds">
-                                        What kinds of sharks might we see?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-what-kinds" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-what-kinds">
-                                    <div class="accordion-body">
-                                       <p>Many tours feature Galapagos sharks — powerful, beautiful open-ocean sharks that are often around 6–8 feet long. Depending on conditions and the day's wildlife, you may also see sandbar sharks, silky sharks, hammerheads, or on rare occassions, the tiger shark.</p>
-
-                                       <p>No specific species can be guaranteed, and that is part of the adventure. These are wild sharks in the open ocean, so every encounter is different.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// accordion item - What kinds of sharks might we see? -->
-
-                            <!-- accordion item - What happens during the tour? -->
+                            <!-- accordion item - What it's like -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-heading-what-its-like">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-collapse-what-its-like" aria-expanded="false"
                                         aria-controls="flush-collapse-what-its-like">
-                                        What happens during the tour?
+                                        What happens on a typical tour?
                                     </button>
                                 </h2>
                                 <div id="faq-collapse-what-its-like" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading-what-its-like">
                                     <div class="accordion-body">
-                                        <p>A typical shark tour consists of a boat ride out to the dive site, which is about 3 miles off the coast of the North Shore of Oahu, followed by swimming with sharks, and then the trip back to the dock. The entire tour takes about 2 hours from start to finish.</p>
+                                        <p>Starting at the dock when you board the dive boat and during the 3-mile trip
+                                            out to dive site, you will be briefed on what to expect from your dive
+                                            beginning with a safety briefing from your Captain.</p>
+                                        <p>Your Divemaster will give you a demonstration of the equipment and will
+                                            further explain with visual aides, photos and graphics about the nature and
+                                            identification of the sea life and answer any questions that you may have.
+                                        </p>
+                                        <p>Once at the dive site, the Divemaster will enter the water first, then call
+                                            the divers in after an evaluation of the site. This is where the real fun
+                                            begins!</p>
                                     </div>
                                 </div>
                             </div>
-                            <!--// accordion item - What happens during the tour? -->
+                            <!--// accordion item - What it's like -->
+
+                            <!-- accordion item - Sea sickness -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingsea-sickness">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapsesea-sickness" aria-expanded="false"
+                                        aria-controls="flush-collapsesea-sickness">
+                                        Will I get seasick?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapsesea-sickness" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingsea-sickness">
+                                    <div class="accordion-body">
+                                        <p>If you think you might get seasick, we strongly recommend taking an over-the-counter remedy like Dramamine or Bonine.</p>
+                                        <p>The most effective way to prevent seasickness is to take an over-the-counter motion sickness medication like Dramamine or Bonine the night before your tour, then take a second dose about an hour before you board. This allows the medication to enter your system and build a defense against seasickness.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// accordion item - Sea sickness -->
+
+                            <!-- accordion item - Is it dangerous? -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading-is-it-dangerous">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse-is-it-dangerous" aria-expanded="false"
+                                        aria-controls="flush-collapse-is-it-dangerous">
+                                        Is swimming with sharks without a cage dangerous?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-is-it-dangerous" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-is-it-dangerous">
+                                    <div class="accordion-body">
+                                        <p>Our shark handlers are world-class professionals with years of experience working with these animals in their natural environment. They know shark behavior inside and out, and their job is to make sure every guest is safe and comfortable in the water at all times.</p>
+                                        <p>That said, this is the open ocean and these are wild animals — we always treat them with respect and prioritize safety above all else.</p>
+                                        <p>Our safety record speaks for itself, and our guests consistently rate us 5 stars over thousands of dives and across Google, TripAdvisor, Yelp, and Facebook.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!--// accordion item - Is it dangerous? -->
 
                             <!-- accordion item - How many people? -->
                             <div class="accordion-item">
@@ -1329,155 +975,115 @@
                                 <div id="faq-collapse-how-many-people" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading-how-many-people">
                                     <div class="accordion-body">
-                                        <p>Each tour is limited to 6 guests, which helps keep the experience personal, uncrowded, and easier for our crew to guide safely.</p>
-
-                                        <p>In addition to guests, you will be with our crew, which typically includes a boat captain and at least one safety diver. Depending on the tour and photo bookings, there may also be one or more underwater photographers on board.</p>
-
-                                        <p>The exact crew setup can vary by day, but the guest count stays small so you get more personal attention, more space in the water, and a better overall shark diving experience.</p>
+                                        <p>Our tours our small, with a maximum of 6 guests per tour. This allows for a more intimate, personalized, and safer experience. Your guides will be with you at all times during the tour, including in the water with you.</p>
+                                        <p>They will be there to ensure your safety and comfort, and to help you have the best experience possible. With a small group, you'll have more opportunities to interact with your guides and get the most out of your tour.</p>
+                                        <p>Our professional photographers are not on every tour, so if you want professional photos, please let us know when booking by calling our office at (808) 829-2203.</p>
                                     </div>
                                 </div>
                             </div>
                             <!--// accordion item - How many people? -->
 
-                            <!-- accordion item - Sea sickness -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingsea-sickness">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapsesea-sickness" aria-expanded="false"
-                                        aria-controls="flush-collapsesea-sickness">
-                                        What if I'm worried about seasickness?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapsesea-sickness" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingsea-sickness">
-                                    <div class="accordion-body">
-                                        <p>Ocean conditions can vary, and some guests are more sensitive to motion than others. If you are prone to seasickness, we recommend taking motion sickness medication before the tour according to the directions on the label or advice from your doctor.</p>
-
-                                        <p>Our crew is used to helping first-time guests feel comfortable, and being prepared ahead of time can make the whole experience much more enjoyable. If you are unsure, it is better to plan for it than wish you had.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// accordion item - Sea sickness -->
-
-                            <!-- accordion item - What to bring -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-what-to-bring">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-what-to-bring" aria-expanded="false"
-                                        aria-controls="flush-collapse-what-to-bring">
-                                        What should I bring?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-what-to-bring" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-what-to-bring">
-                                    <div class="accordion-body">
-                                        <p>We recommend bringing:</p>
-                                        <ul>
-                                            <li>light jacket, sunglasses, and a hat</li>
-                                            <li>sunscreen (reef-safe if possible)</li>
-                                            <li>towel</li>
-                                            <li>a change of clothes if you'd prefer to be dry on that ride back to the dock</li>
-                                        </ul>
-                                        <p>Try to pack light and arrive ready for the water. If you think you might get motion sickness, plan ahead before the tour.</p>
-                                        <p>Snorkel gear is provided, however you're welcome to bring your own if you prefer.</p>
-                                        <p>Feel to bring a waterproof camera like a GoPro to capture your own photos and video as well.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// accordion item - What to bring -->
-
-                            <!-- accordion item - Is the photo package worth it? -->
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-photos-worth-it">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-photos-worth-it" aria-expanded="false"
-                                        aria-controls="flush-collapse-photos-worth-it">
-                                        Is the photo package worth it?
-                                    </button>
-                                </h2>
-                                <div id="faq-collapse-photos-worth-it" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-photos-worth-it">
-                                    <div class="accordion-body">
-                                        <p>For many guests, yes. Swimming with sharks without a cage is one of those things that very few get to experience or would even dare to do, so capturing that with photos, especially professionally taken photos, really can be one of those once in a lifetime things that you'll want to rememberhave proof of and remember.</p>
-                                        <p>Not only that, but you never know what you might see out there, so you may capture a genuine once in a lifetime moment.</p>
-                                        <p>Finally, and this is something that many guests tend to overlook, is that your photographer is also an experienced shark diver, so having them with you on your dive gives you a more one-on-one experience that you can use to tailor the experience to your preferences, learn even more about sharks and shark diving, getting the best views, in addition to getting amazing photos.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// accordion item - Is the photo package worth it? -->
-
-                            <!-- accordion item - Can I add photos after I book? -->
+                            <!-- accordion item - Pro Photos -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-heading-professional-photos">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-collapse-professional-photos" aria-expanded="false"
                                         aria-controls="flush-collapse-professional-photos">
-                                        Can I add photos after I book?
+                                        Do you offer professional photos?
                                     </button>
                                 </h2>
                                 <div id="faq-collapse-professional-photos" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading-professional-photos">
                                     <div class="accordion-body">
-                                        <p>Yes. If you decide you want professional photos after booking your tour, call us and we can help you add a photographer.</p>
-
-                                        <p>You can not add a photographer on the boat, so call prior to booking to ensure availability.</p>
-                                        <p><a class="btn btn-accent-1 big-button btn-phone" href="tel:+18088292203">(808) 829-2203</a></p>
+                                        <p>Yes. Our photographers are some of the best in the bessiness and are available upon request.</p>
+                                        <p>If you want professional photos, please let us know when booking by calling our office at (808) 829-2203.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!--// accordion item - Can I add photos after I book? -->
+                            <!--// accordion item - Pro Photos -->
 
-                            <!-- accordion item - How can I get the best photos for my shark dive? -->
+                            <!-- accordion item - How Best Pro Photos -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="flush-heading-best-photos">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#faq-collapse-best-photos" aria-expanded="false"
                                         aria-controls="flush-collapse-best-photos">
-                                        How can I get the best photos for my shark dive?
+                                        How can I get the best photos?
                                     </button>
                                 </h2>
                                 <div id="faq-collapse-best-photos" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading-best-photos">
                                     <div class="accordion-body">
-                                        <p>Great photos are highly dependent on conditions like water clarity and available light.</p>
-                                        <p>Call and ask before booking and we'll be happy to help you get the best conditions for your shark dive.</p>
+                                        <p>Great photos depend on a combination of factors, including water clarity, weather, lighting conditions, and shark activity on the day of your tour. Because our crew is on the water every day, they have the best sense of current conditions. If getting incredible photos is a top priority, give us a call before booking and we'll be happy to help you choose a tour time that offers the best opportunity based on the latest conditions.</p>
                                     </div>
                                 </div>
                             </div>
-                            <!--// accordion item - How can I get the best photos for my shark dive? -->
+                            <!--// accordion item - How Best Pro Photos -->
 
-
-                            <!-- accordion item - What makes Hawaii Adventure Diving different? -->
+                            <!-- accordion item - Is this a scuba diving tour? -->
                             <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-heading-how-different">
+                                <h2 class="accordion-header" id="flush-heading-is-this-scuba">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faq-collapse-how-different" aria-expanded="false"
-                                        aria-controls="flush-collapse-how-different">
-                                        What makes Hawaii Adventure Diving different?
+                                        data-bs-target="#faq-collapse-is-this-scuba" aria-expanded="false"
+                                        aria-controls="flush-collapse-is-this-scuba">
+                                        Is this a scuba diving tour?
                                     </button>
                                 </h2>
-                                <div id="faq-collapse-how-different" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-heading-how-different">
+                                <div id="faq-collapse-is-this-scuba" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-is-this-scuba">
                                     <div class="accordion-body">
-                                        <h3>Immersion & Interactivity</h3>
-                                        <p>Our goal is to give guests one of the most immersive and interactive shark diving experiences available — not just a distant look from the boat or a quick swim in the water.</p>
+                                        <p>No. This is not a scuba diving tour and you don't need any kind of special certification. All you need is snorkel equipment. All your snorkel gear will be provided at no additional cost. You are also welcome to bring your own.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// accordion item - Is this a scuba diving tour? -->
 
-                                        <h3>Experience</h3>
-                                        <p>Our safety divers and photographers are elite shark divers and true adventurers who have spent thousands of hours working in the water with sharks. </p>
-
-                                        <p>Our safety divers and photographers are highly experienced shark divers and true ocean adventurers who have spent thousands of hours in the water with sharks.</p>
-
-                                        <p>That experience matters. It shows up in how we read shark behavior, guide guests in the water, help nervous first-timers feel comfortable, and create the kind of encounter many people never imagined they could have.</p>
-
-                                        <h3>Customer Service</h3>
-                                        <p>If you read our reviews, you'll see guests call out our crew by name again and again. That's because the care, patience, and attention our team gives each guest is a huge part of the experience.</p>
-
-                                        <p>We take that seriously. It's an honor to share the water with these animals and to help our guests experience sharks in a way that feels safe, personal, unforgettable, and deeply respectful.</p>
+                            <!-- accordion item - Do I need to be a good swimmer? -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading-swimming-ability">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse-swimming-ability" aria-expanded="false"
+                                        aria-controls="flush-collapse-swimming-ability">
+                                        Do I need to be a good swimmer?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-swimming-ability" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-swimming-ability">
+                                    <div class="accordion-body">
+                                        <p>No, you don't need to be a good swimmer. You will be mostly snorkeling at the surface of the water. Your only requirement is to be able to float and move through the water with minimal effort. Your guides will assist you throughout the experience to ensure that you are safe, comfortable, and have the best experience possible.</p>
                                     </div>
                                     
                                 </div>
                             </div>
-                            <!--// accordion item - What makes Hawaii Adventure Diving different? -->
+                            <!--// accordion item - Do I need to be a good swimmer? -->
+
+                            <!-- accordion item - Is it an educational tour? -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading-educational-tour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse-educational-tour" aria-expanded="false"
+                                        aria-controls="flush-collapse-educational-tour">
+                                        Is this an educational tour?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-educational-tour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-educational-tour">
+                                    <div class="accordion-body">
+                                        <p>Education is an extremely important part of our dive, that's why you will be
+                                            accompanied by a professionally trained safety diver and shark behaviorist.
+                                            These highly trained and seasoned professionals are experts in marine life
+                                            identification and behavior, they will teach you how to safely and
+                                            comfortably interact with the pelagic sea life, and will also explain
+                                            conservation efforts in effect and legislation passed to help protect
+                                            endangered species.</p>
+                                        <p>You will come away with so much more than just bragging rights to say “I dove
+                                            with the sharks or whales”! You will gain knowledge and some great photos
+                                            and videos too!</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!--// accordion item - Is it an educational tour? -->
 
                             <!-- accordion item - Cancellations -->
                             <div class="accordion-item">
@@ -1491,15 +1097,29 @@
                                 <div id="faq-collapse-cancellations" class="accordion-collapse collapse"
                                     aria-labelledby="flush-heading-cancellations">
                                     <div class="accordion-body">
-                                        <p>We understand that plans can change.</p>
-                                        
                                         <p>We offer free cancellation up to 48 hours before your tour date. Cancellations made within 48 hours of the tour, or no-shows, will be charged the full tour amount.</p>
-
-                                        <p>If you have questions or need help with an existing reservation, contact us as soon as possible and our team will help you with the next steps.</p>
                                     </div>
                                 </div>
                             </div>
                             <!--// accordion item - Cancellations -->
+
+                            <!-- accordion item - Tipping -->
+                            <!--<div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading-tipping">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq-collapse-tipping" aria-expanded="false"
+                                        aria-controls="flush-collapse-tipping">
+                                        Do I need to tip?
+                                    </button>
+                                </h2>
+                                <div id="faq-collapse-tipping" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading-tipping">
+                                    <div class="accordion-body">
+                                        <p>Tipping is completely optional and always appreciated, but never expected. If you have an amazing experience and would like to recognize your captain or safety divers, you're welcome to do so, but there is absolutely no obligation.</p>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <!--// accordion item - Tipping -->
 
                         </div><!--// accordions -->
                     </div><!--// col -->
@@ -1507,11 +1127,18 @@
                     <!-- FAQ Section CTA -->
                         <div class="col-12 text-center mb-30 section-cta">
                         <h2 class="blue-text">Ready to Go?</h2>
-                        <p>Now all that's left is to pick <span class="no-break">your date.</span></p>
+                        <p>Now all that's left is to pick your date.</p>
                         <a class="btn btn-md btn-accent-1"
                             href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/"><span>Check Tour Dates</span></a>
                     </div>
                     <!--// FAQ Section CTA -->
+
+
+
+
+
+
+
 
                 </div><!--// row -->
             </div>
@@ -1523,6 +1150,40 @@
     <!--// Content Wrap -->
 
     
+    <section id="big-footer-cta">
+<div class="content-wrap big-CTA-pre-footer big-CTA-pre-footer-v2">
+    <!-- Call to action-->
+    <div class="position-relative">
+        <div class="half-section-block container position-absolute top-50 start-0 end-0" data-prev-id=".footerPrev" data-next-id=".footerNext">
+            <div class="shape-parent">
+                <div class="py-80 px-30 position-relative rounded-4 overflow-hidden z-index-1">
+                    <div class="background">
+                        <div class="background-image jarallax" data-jarallax data-speed="0.8"><img class="jarallax-img" loading="lazy" src="/assets/img/root/call-to-action-1920x1080.jpg" alt=""></div>
+                        <div class="background-color" style="--background-color: #064175; opacity: .9;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 text-center">
+                            <img class="mb-50 logo w-sm-100" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+                            <!--<h2 class="pb-40 text-white">Now it's <span class="no-break"><span class="hand-underline-yellow">Your</span> Turn.</span></h2>-->
+                            <!--<h2 class="pb-40 text-white">The Sharks <span class="no-break">Are <span class="hand-underline-yellow">Waiting</span>.</span></h2>-->
+                            <h2 class="pb-40 text-white mobile">The Ultimate <span class="no-break">Shark Diving</span> Experience.</h2>
+                            <h2 class="pb-40 text-white desktop">The Ultimate Shark <span class="no-break">Diving Experience.</span></h2>
+                            <!--<p class="mb-50 text-white px-lg-70" data-show-delay="100">Reserve your spot today and experience cage-free shark diving with <span class="no-break">Hawaii Adventure Diving.</span></p>-->
+                            <p class="mb-50 text-white px-lg-70" data-show-delay="100">Book your <span class="no-break">adventure today.</span></p>
+                            <div>
+                                <!-- Button-->
+                                <a class="btn btn-accent-1 big-button"
+        href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar/">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// Call to action -->
+</div>
+</section>
 
     <!-- footer.php include -->
         <!-- Footer-->

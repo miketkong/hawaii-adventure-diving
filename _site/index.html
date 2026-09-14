@@ -32,17 +32,17 @@
     <meta name="contact-phone" content="+1 (808) 829-2203" />
     <meta name="contact-link" content="+18088292203" />
     <meta name="contact-email" content="nickloewenstine@gmail.com" />
-    <meta name="total-reviews" content="4484" />
+    <meta name="total-reviews" content="4142" />
     <meta name="average-rating" content="4.95" />
     
-    <meta name="description" content="Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available.">   
+    <meta name="description" content="Welcome to Hawaii Adventure Diving, your premier destination for unforgettable diving experiences in Hawaii.">   
     <link rel="canonical" href="https://hawaiiadventurediving.com/"> 
 
-    <!-- Open Graph - Social Sharing Definitions and Variables -->
+    <!-- Open Grap Stuff -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Hawaii Adventure Diving - Cage Free Shark Diving and Whale Watching Tours - Oahu, Hawaii">
-    <meta property="og:description" content="Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available.">
+    <meta property="og:description" content="Welcome to Hawaii Adventure Diving, your premier destination for unforgettable diving experiences in Hawaii.">
 
     <meta property="og:url" content="https://hawaiiadventurediving.com/">
     <meta property="og:site_name" content="Hawaii Adventure Diving" />
@@ -53,10 +53,10 @@
     <meta property="og:image:height" content="630" />
 
     <meta property="twitter:title" content="Hawaii Adventure Diving - Cage Free Shark Diving and Whale Watching Tours - Oahu, Hawaii">
-    <meta property="twitter:description" content="Over a decade of experience. Thousands of dives. Small groups. World-class shark divers. One of the most immersive and interactive shark encounters available.">
+    <meta property="twitter:description" content="Welcome to Hawaii Adventure Diving, your premier destination for unforgettable diving experiences in Hawaii.">
     <meta property="twitter:url" content="https://hawaiiadventurediving.com/">
     <meta property="twitter:image" content="https://hawaiiadventurediving.com/images/hawaii-adventure-diving-danny-shark-dive-oahu-1200x637.jpg">
-    <!--// Open Graph -->
+    <!--// Open Grap Stuff -->
 
     
 
@@ -66,17 +66,10 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=0bf693c1">
-    <link rel="stylesheet" href="/assets/css/how-close-section.css">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=a0f1f706">
 
     <!-- Google Fonts -->
-    <!--
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap">-->
 
     <!-- jQuery-->
     <script src="/assets/vendors/js/jquery.min.js"></script>
@@ -255,172 +248,46 @@
     <!-- Main Content-->
     <div class="content-wrap bg-dark-blue main-content-home">
 
-        
-                
-<!-- Shark Tour Hero Video Banner -->
-<section id="hero-banner" class="hero-video-banner hero-video-banner-v2 hero-banner dark-bg">
-    <div class="container-fluid gx-0">
-        <div class="video-overlay-color"></div>
+        <!-- Main Hero Video Banner -->
+        <section class="hero-video-banner hero-banner">
+            <div class="container-fluid gx-0">
+                <div class="video-overlay-color"></div>
 
 
-        <!-- VIDEO BANNER BACKGROUND -->
-<div id="shark-banner-video-bgd" class="video-container">
-    <video id="shark-hero-video" autoplay muted loop playsinline></video>
+                <!-- VIDEO BANNER BACKGROUND -->
+<div id="banner-video-bgd" class="video-container">
+    <video id="hero-video" autoplay muted loop playsinline></video>
 </div>
 <!--// VIDEO BANNER BACKGROUND -->
 
 <script>
-
-    document.addEventListener('DOMContentLoaded', (event) => {
-
-        var sharkHeroVideo = document.getElementById('shark-hero-video');
-
-        if (sharkHeroVideo) {
-            var totalHeroTextGroups = document.querySelectorAll('.hero-text').length;
-            let groupNumber = 1;
-
-            sharkHeroVideo.addEventListener('playing', function () {
-                setTimeout(function () {
-                    animateInHeroTextGroup(groupNumber, totalHeroTextGroups);
-                }, 500);
-            }, { once: true });  
-
-            loadSharkVideo(sharkHeroVideo);
-        }
-
-    });
-
-    function animateInHeroTextGroup(groupNumber, totalHeroTextGroups) {
-
-        currentGroupNumber = groupNumber;
-        currentGroupIndex = currentGroupNumber - 1;
-
-        console.log(`trace: groupNumber = ${groupNumber}, totalHeroTextGroups = ${totalHeroTextGroups}, currentGroupIndex = ${currentGroupIndex}`);
-
-        thisGroup = document.querySelectorAll('.hero-text')[currentGroupIndex];
-        thisGroup.classList.remove('fade-down');
-
-        bigTextTop = thisGroup.querySelector('h1:nth-of-type(1)');
-        bigTextMiddle = thisGroup.querySelector('h1:nth-of-type(2)');
-        bigTextBottom = thisGroup.querySelector('h1:nth-of-type(3)');
-        smallText = thisGroup.querySelector('.small-text');
-
-        setTimeout(function () {
-            bigTextTop.classList.add('fade-up');
-        }, 500);
-        
-        setTimeout(function () {
-            bigTextMiddle.classList.add('typewriter');
-            typewriterEffect(bigTextMiddle);
-        }, 800);
-
-        if (smallText) {
-            setTimeout(function () {
-                smallText.classList.add('hero-text-fade-in');
-            }, 1000);
-        }
-        
-        if (bigTextBottom) {
-            setTimeout(function () {
-                bigTextBottom.classList.add('fade-up');
-            }, 1000);
-        }
-
-        setTimeout(function () {
-            thisGroup.classList.add('fade-down');
-        }, 4000);
-
-        setTimeout(function () {
-            bigTextTop.classList.remove('fade-up');
-            bigTextMiddle.classList.remove ('typewriter');
-            bigTextMiddle.style.opacity = '0';
-            if (smallText) {
-                smallText.classList.remove('hero-text-fade-in');
-            }
-            if (bigTextBottom) {
-                bigTextBottom.classList.remove('fade-up');
-            }
-            getNextHeroTextGroup(groupNumber, totalHeroTextGroups);
-        }, 5500);
-
-    }
-
-    function getNextHeroTextGroup(groupNumber, totalHeroTextGroups) {
-
-        if (groupNumber < totalHeroTextGroups) {
-            groupNumber++;
-        } else {
-            groupNumber = 1;
-        }
-        animateInHeroTextGroup(groupNumber, totalHeroTextGroups);
-    }
-
-    function loadSharkVideo(sharkHeroVideo) {
-
-        if (window.innerWidth > 576) {
-            sharkHeroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
-            sharkHeroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
-        } else {
-            sharkHeroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
-            sharkHeroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
-        }
+    var heroVideo = document.getElementById('hero-video');
+    if (window.innerWidth > 576) {
+        heroVideo.poster = '/images/first-frame-heroBanner-portrait-v4.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-landscape-v2-r1.mp4';
+    } else {
+        heroVideo.poster = '/assets/video/first-frame-heroBanner-portrait-v7.jpg';
+        heroVideo.src = '/assets/video/shark-banner-bg-vid-portrait-v2-r7.mp4';
     }
 </script>
  
 
 
-        <div class="banner-contents">
-            <div class="banner-logo desktop-only">
-                <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
-            </div>
-
-            <div class="hero-text-container col-lg-8 offset-lg-2">
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Cage Free</h1>
-                    <h1 class="big-text-long-words">Shark Diving</h1>
-                    <h2 class="small-text">Dive into a next-level experience<br><span class="no-break"> with Hawaii's elite shark handlers</span></h2>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Swim</h1>
-                    <h1 class="big-text-long-words">Face-To-Face</h1>
-                    <h1 class="big-text-bottom-1">With Wild Sharks</h1>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Guided By</h1>
-                    <h1 class="big-text-long-words">World-Class</h1>
-                    <h1 class="big-text-bottom-1">Shark Handlers</h1>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Ultimate</h1>
-                    <h1 class="big-text">Immersion</h1>
-                    <h2 class="small-text">This is Not Your Average Shark Tour!</h2>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Ultimate</h1>
-                    <h1 class="big-text">Experience</h1>
-                    <h2 class="small-text">Led by Elite Shark Behavior Experts</h2>
-                </div>
-
-                <div class="hero-text">
-                    <h1 class="big-text-top-1">Consistently</h1>
-                    <h1 class="big-text">Top-Rated</h1>
-                    <h2 class="small-text">Rated 5-Stars by Over 4,000 Guests</h2>
-                </div>
-
-            </div>
-
-            <div id="cta-block" class="col-lg-8 offset-lg-2">
-                <h3>From $150 per person</h3>
-                
-                    <a class="btn btn-md btn-accent-1"
-                                href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour
-                                    Details</span></a>
-                
-                <div class="star-rating">
+                <div class="banner-contents" data-show="startbox">
+                    <div id="hero-text" class="col-lg-8 offset-lg-2">
+                        <div class="banner-logo desktop-only">
+                            <img src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">
+                        </div>
+                        <h1><span class="eyebrow no-break">Cage Free</span><br>Shark Diving</h1>
+                        <h2>Small groups. Closer shark encounters. <span class="no-break">World-class guides.</span>
+                        </h2>
+                    </div>
+                    <div id="cta-block" class="col-lg-8 offset-lg-2">
+                        <h3>From $150 per person</h3>
+                        <a class="btn btn-md btn-accent-1"
+                            href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><span>Tour
+                                Details</span></a>
+                        <div class="star-rating">
   <span class="review-average"></span>
   <img src="/images/5-stars.png" alt="">
   (<span class="review-total"></span>)
@@ -428,14 +295,44 @@
 <script>
   var container = document.currentScript.previousElementSibling;
   container.querySelector('.review-average').textContent = (4.95).toFixed(1);
-  container.querySelector('.review-total').textContent = (4484).toLocaleString();
+  container.querySelector('.review-total').textContent = (4142).toLocaleString();
 </script>
 
+                        <div id="mini-testimonials-ticker"></div>
+<script>
+  var ticker = document.currentScript.previousElementSibling;
+  var testimonials = [
+    '"Truly a life changing experience."',
+    '"Thanks for being so amazing and welcoming."',
+    '"Very professional team, we felt very safe."',
+    '"Top-tier staff are highly knowledgeable."',
+    '"10/10 recommend!!!"',
+    '"Our photos turned out EPIC!"',
+    '"Amazing guides, unbelievable experience!"',
+    '"We swam with a 15 foot tiger shark."'
+  ];
+  var current = Math.floor(Math.random() * testimonials.length);
+  ticker.textContent = testimonials[current];
+  setInterval(function () {
+    ticker.style.opacity = '0';
+    setTimeout(function () {
+      var next;
+      do { next = Math.floor(Math.random() * testimonials.length); } while (next === current);
+      current = next;
+      ticker.textContent = testimonials[current];
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          ticker.style.opacity = '1';
+        });
+      });
+    }, 600);
+  }, 4000);
+</script>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-
+        </section>
+        <!--// Main Hero Video Banner -->
 
         <!-- As Seen on Section -->
 <section id="as-seen-on" class="bg-white">
@@ -583,14 +480,14 @@
                                 <h1>5<span>/5</span></h1>
                                 <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
                                 <p><a href="https://www.google.com/search?q=hawaii+adventure+diving&oq=hawaii+adventure+diving&gs_lcrp=EgZjaHJvbWUqBggAEEUYQTIGCAAQRRhBMgYIARBFGDsyBggCEEUYOzIGCAMQRRg9MgYIBBBFGD0yBggFEEUYPDIGCAYQRRhBMgYIBxBFGEHSAQgzMDkwajBqN6gCALACAA&sourceid=chrome&ie=UTF-8&sei=q3QVauKGEayf0PEPkfCJkAc#lrd=0x7c0058d23f97b437:0xa894e68e162e211b,1,,,,"
-                                        target="_blank">2415 reviews</a></p>
+                                        target="_blank">2140 reviews</a></p>
                             </div>
                             <div class="review-block col-6 col-sm-3 col-md-2">
                                 <h4>Trip Advisor</h4>
                                 <h1>4.9<span>/5</span></h1>
                                 <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
                                 <p><a href="https://www.tripadvisor.com/Attraction_Review-g60647-d7625529-Reviews-Hawaii_Adventure_Diving-Haleiwa_Oahu_Hawaii.html"
-                                        target="_blank">632 reviews</a>
+                                        target="_blank">586 reviews</a>
                                 </p>
                             </div>
                             <div class="review-block col-6 col-sm-3 col-md-2">
@@ -598,14 +495,14 @@
                                 <h1>4.9<span>/5</span></h1>
                                 <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
                                 <p><a href="https://www.groupon.com/deals/hawaii-adventure-diving-3"
-                                        target="_blank">1137 reviews</a></p>
+                                        target="_blank">1127 reviews</a></p>
                             </div>
                             <div class="review-block col-6 col-sm-3 col-md-2">
                                 <h4>Yelp</h4>
                                 <h1>4.8<span>/5</span></h1>
                                 <img class="five-stars" src="/images/5-stars.png" alt="5 star review">
                                 <p><a href="https://www.yelp.com/biz/hawaii-adventure-diving-haleiwa-2"
-                                        target="_blank">215 reviews</a></p>
+                                        target="_blank">204 reviews</a></p>
                             </div>
                             <div class="review-block col-6 offset-3 col-sm-12 offset-sm-0 col-md-2"
                                 >
@@ -776,78 +673,44 @@
         <!-- OAHU SHARK DIVING TOUR GALLERY -->
 <section id="photo-grid-gallery" class="bg-white pt-60">
 
-    <!-- Photo Grid Gallery -->
-    <div class="container light-background">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 px-20 text-center-md">
-                <!--<img class="mb-50 logo" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">-->
-                <h1 class="h1-small mb-0"  data-show-delay="0">Cage Free <span class="no-break">Shark Diving</span></h1>
-                <h2 class="h2-big blue-text">Get Professional Photos for Your Next Tour</h2>
-                <p class="mb-0">Photos from our shark diving tours captured by our professional underwater photographers.</p>
-            </div>
+<!-- Photo Grid Gallery -->
+<div class="container light-background">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 px-20 text-center-md">
+            <!--<img class="mb-50 logo" src="/images/header-logo-400px.png" alt="Hawaii Adventure Diving">-->
+            <h1 class="h1-small mb-0"  data-show-delay="0">Cage Free <span class="no-break">Shark Diving</span></h1>
+            <h2 class="h2-big blue-text">Get Professional Photos for Your Next Tour</h2>
+            <p>Photos from our shark diving tours captured by our professional underwater photographers.</p>
         </div>
     </div>
-    <div class="container g-0">
-        <div class="row g-0">
-            
-            <!-- Lightbox Gallery -->
-            <div class="col-12 gallery-col">
-                <div class="gallery-wrapper">
-                </div>
-                <!--// gallery-wrapper-->
+</div>
+<div class="container-fluid gx-0 photo-grid-gallery">
+        <div class="row gx-0 text-center">
+            <div class="col-12" style="display: inline-table;">
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-free-diving-with-sharks-hawaii-shark-tour.jpg" loading="lazy" alt="Drammatically lit photo of a female freediver in her twenties swimming about ten feet underwater with two large sharks off the coast of the north shore of Oahu, Hawaii. She's wearing large diving fins, a snorkel and mask. Light rays from the sun can be seen illumanting from above creating a feeling of mystery and beauty."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/hawaii-shark-diving-free-diving-with-group-of-sharks.jpg" loading="lazy" alt="A man in his twenties is floating underwater with fins and snorkel gear looking at a group of about a dozen sharks in the water thirty feet away. He is in open ocean with the sharks without a cage. There is a safety rope next to his left shoulder. The water is a deep blue as is common in the open oceans of the coast of Hawaii."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/woman-cage-free-shark-diving-hawaii.jpg" loading="lazy" alt="A woman in a blue swimsuit and fins dives underwater surrounded by sharks off the coast of Hawaii"></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/couple-swimming-with-sharks-without-cage-hawaii-oahu.jpg" loading="lazy" alt="An underwater photo of a man and woman on a shark diving tour operated by Hawaii Adventure Diving, located in Haleiwa, Hawaii are seen floating in the blue waters of Hawaii next to a shark tour boat safety line with a group of seven large sharks swimming below them. The divers are not in a cage and appear to be entranced at the experience they are having swimming with the sharks."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-snorkeling-with-sharks-on-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater photo of a young woman freediver swimming with a group of six sharks. She is wearing freediving fins and snorkel gear. Sun rays can be seen bathing streaming through the water's surface to create a beautiful scene reminiscent of a dream. She's on a shark diving tour with Hawaiian shark tour operator Hawaii Adventure Diving."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/free-diver-with-shark-hawaii-shark-diving-tour.jpg" loading="lazy" alt="An underwater photo of a young male freediver in his twenties treading water in Hawaii with a large shark swimming by. He's in the water with the shark without a cage. The water is clear blue and the sun is shinning."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/free-divers-swimming-with-huge-tiger-shark-hawaii-crazy.jpg" loading="lazy" alt="An underwater photo of a group of hawaii shark tour snorkelers in the open ocean looking at a very large tiger shark. The are swimming in the water without a shark cage. A safety diver from the shark tour can be seen in the water between the shark and the tour guests."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/couple-holding-hands-underwater-while-swimming-with-sharks-hawaii-oahu.jpg" loading="lazy" alt="An underwater photo of a young freediving couple on a Hawaii shark diving tour holding hands and swimming toward two large sharks in the distance. They are both wearing fins and snorkel gear and are several feet below the surface of the water so that the water surface is not visible in the photo creating the appearance that they may be very deep underwater."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/shark-dive-tour-boat-with-sharks-visible-below.jpg" loading="lazy" alt="A semi underwater photo taken from the ocean of the Hawaii Adventure Diving shark diving our boat. The boat captain can be seen at the helm while a group of sharks swim in the waters just below. The composition of the photo is exceptional capturing the scenes both above and below the water's surface simulteneously."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/man-swimming-with-sharks-north-shore-oahu-hawaii.jpg" loading="lazy" alt="A male diver wearing fins floats near the surface of the ocean as sharks swim past in clear blue water off the North Shore of Oahu, Hawaii."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/woman-snorkeling-with-sharks-oahu-hawaii.jpg" loading="lazy" alt="A woman in a pink wetsuit and snorkel gear swims underwater with sharks in clear blue water off Oahu, Hawaii."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/swimmer-with-shark-no-cage-open-ocean-hawaii.jpg" loading="lazy" alt="An underwater photo of a young male freediver in swim trunks on a shark diving tour in Hawaii hovers at the surface of the ocean water with a large shark just beneth and another in the distance. The water is a clear deep blue with sun rays shining through it to create a beautiful and entrancing scene."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/images/snorkeler-on-safety-rope-surrounded-by-sharks-hawaii.jpg" loading="lazy" alt="A snorkeler holds a safety rope and dives beneath the surface surrounded by multiple sharks in the open ocean off Hawaii."></a>
+
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/woman-swiming-with-sharks-on-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater photo of a young woman swimming in the open ocean in Hawaii with sharks and no cage. She's wearing a bikini and snorkel gear and can be seen swiming to the left of the frame along a safety rope with a large grey shark just below her and three more large sharks in the distance only a few yeards away."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/woman-swmming-with-sharks-no-cage-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater shot of a young woman freediver on a oahu shark diving tour by Hawaii Adventure Diving is swimming along the surface of the open ocean without a cage while a group of five large grey sharks swim just below her. She's wearing a dark bikini with freediving fins, a snorkel, and mask. A yellow shark diving tour safety rope can be seen in the water just behind her. The water is a deep bright blue and very clear."></a>
+                <a href="/shark-diving-tours/hawaii/oahu/north-shore-haleiwa/cage-free-shark-diving-tour/"><img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/young-woman-posing-underwater-with-sharks-no-cage-hawaii.jpg" loading="lazy" alt="A beautiful underwater photo of a young woman on a Hawaii shark diving tour in a white bathing suite and snorkel gear is posing at the camera with her arms spread wide. She's floating at the surface of the open ocean and a group of eight large darg grey sharks can be seen swimming just bleow and behin her. She's swimming with the sharks without a cage."></a>
             </div>
 
         </div>
         <!--// row -->
-        
+
     </div>
-    <script type="text/javascript">
-        // Gallery Items script for lightbox gallery
-        const galleryItems = [
-            
-            'shark-divers-chasing',
-            'pink-shark-diver',
-            'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour',
-            'couple-swimming-with-sharks-without-cage-hawaii-oahu',
-            'female-diver-with-shark-striped-2',
-            'female-diver-with-shark-striped',
-            'snorkeler-on-rope-with-shark',
-            'fun-hawaii-shark-diving',
-            'shark-diving-hawaii-2',
-            'beautiful-shark-diver-hawaii',
-            'couple-shark-diving-hawaii',
-            'diver-posing-with-shark',
-            'divers-and-shark-hawaii',
-            'divers-swimming-with-a-shark',
-            'diving-down-with-shark-hawaii',
-            'hawaii-shark-diving-tour-photo',
-            'morning-sun-shark-dive',
-            'shark-dive-morning-sun',
-            'shark-diving-hawaii-camera',
-            'snorkeler-and-3-sharks',
-            'swimming-after-shark-hawaii',
-            'swimming-with-a-shark',
-            'swimming-with-shark-in-hawaii',
-            'two-divers-and-shark-hawaii',
-        ];
-
-        function buildGallery() {
-            const galleryWrapper = document.querySelector('.gallery-wrapper');
-            galleryItems.forEach(item => {
-                const galleryItem = document.createElement('a');
-                galleryItem.classList.add('gallery-item');
-                galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}.jpg`;
-
-                const img = document.createElement('img');
-                img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}.jpg`;
-                img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
-
-                galleryItem.appendChild(img);
-                galleryWrapper.appendChild(galleryItem);
-            });
-        }
-        document.addEventListener('DOMContentLoaded', buildGallery);
-    </script>
+    <!--// Photo Grid Gallery (Container-Fluid) -->
 
 </section>
 <!--// OAHU SHARK DIVING TOUR GALLERY -->
