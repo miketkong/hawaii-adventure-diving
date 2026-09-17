@@ -2,6 +2,7 @@
 
 **Live site:** `https://hawaiiadventurediving.com`
 **Stack:** Eleventy 3.1.2 (Nunjucks) → Cloudflare Pages
+**Frontend** Bootstrap 5 - Theme: StartBox by VL Themes with customizations by MK Design
 **Booking system:** FareHarbor
 **Analytics:** Google Tag Manager (`GTM-W97L82P`)
 

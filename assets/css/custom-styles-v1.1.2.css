@@ -71,6 +71,10 @@
     font-display: swap;
 }
 
+:root {
+    --adventure-yellow: #f0ce12;
+}
+
 /* 01. Helpers */
 body {
     font-family: "Poppins", sans-serif;
@@ -170,7 +174,7 @@ p a:hover {
 }
 
 .dark-background p a {
-    color: #f0ce12;
+    color: var(--adventure-yellow);
     text-decoration: underline;
 }
 
@@ -226,7 +230,7 @@ p a:hover {
 
 ::selection {
     color: #000000;
-    background-color: #f0ce12;
+    background-color: var(--adventure-yellow);
 }
 .testimonial-text {
     font-style: italic;
@@ -319,7 +323,7 @@ p a:hover {
 
 .yellow-link a,
 .yellow-link {
-    color: #f0ce12 !important;
+    color: var(--adventure-yellow) !important;
     text-decoration: underline !important;
 }
 .pano-section p {
@@ -384,7 +388,7 @@ figcaption {
 
 .navbar-topbar .nav-contacts svg {
     margin-right: 15px;
-    color: #f0ce12;
+    color: var(--adventure-yellow);
 }
 
 /* Mobile Navigation Bar */
@@ -476,7 +480,7 @@ figcaption {
 
 .btn-accent-1 {
     color: #000;
-    background-color: #f0ce12;
+    background-color: var(--adventure-yellow);
 }
 
 .btn-accent-1:hover,
@@ -648,7 +652,7 @@ figcaption {
 }
 
 .listable-content-card h2 a:hover {
-    color: #f0ce12;
+    color: var(--adventure-yellow);
 }
 
 .pano-section {
@@ -671,7 +675,7 @@ figcaption {
 /* Swiper / Carousel Styles */
 .swiper-button-dark {
     color: #000000;
-    background-color: #f0ce12;
+    background-color: var(--adventure-yellow);
 }
 
 .swiper-button-dark:hover {
@@ -941,7 +945,7 @@ figcaption {
 
 #why-us h3 {
     font-size: 20px;
-    color: #f0ce12;
+    color: var(--adventure-yellow);
     margin-bottom: 0px;
 }
 
@@ -1659,7 +1663,7 @@ ul.tour-times li {
 }
 
 .dark-background .accordion-body a {
-    color: #f0ce12;
+    color: var(--adventure-yellow);
     font-weight: bold;
 }
 
@@ -1669,7 +1673,7 @@ ul.tour-times li {
 
 .dark-background .accordion-header .accordion-button,
 .dark-background .accordion-header .accordion-button[aria-expanded=true] {
-    color: #f0ce12 !important;
+    color: var(--adventure-yellow) !important;
 }
 
 /* Tour Pages */
@@ -1772,7 +1776,7 @@ ul.tour-times li {
 }
 
 .tour-packages .call-out {
-    background-color: #f0ce12;
+    background-color: var(--adventure-yellow);
     color: #000;
     font-size: 24px !important;
     text-transform: uppercase;
@@ -1849,7 +1853,7 @@ ul.tour-times li {
     box-shadow: 0px 20px 40px #000000ab;
 }
 .tour-lp-section-v2 .most-popular {
-    outline: solid 7px #f0ce12;
+    outline: solid 7px var(--adventure-yellow);
     outline-offset: -3px;
 }
 .tour-lp-section-v2 .product-card h2 {
@@ -2106,6 +2110,15 @@ ul.tour-times li {
     border-radius: 20px;
 }
 
+/* Team Members Swiper */
+.team-members-swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 428 / 679;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 
 /* Quick Links */
 #quick-links ul {
@@ -2160,11 +2173,11 @@ ul.tour-times li {
 }
 
 .footer-menu .nav-link:hover {
-    color: #f0ce12;
+    color: var(--adventure-yellow);
 }
 
 .footer-menu .nav-link-accent-1 {
-    color: #f0ce12;
+    color: var(--adventure-yellow);
     opacity: .8 !important;
     font-weight: 600;
 }
@@ -2833,7 +2846,7 @@ ul.tour-times li {
     }
     #shark-diving-photography-packages .md-flex-row {
         border-radius: 14px;
-        outline: solid 12px #f0ce12;
+        outline: solid 12px var(--adventure-yellow);
         outline-offset: -3px;    
     }
 
@@ -3258,7 +3271,7 @@ ul.tour-times li {
 
     .navbar-brand-wrapper .top-level span:hover,
     .navbar-brand-wrapper .dropdown-menu span:hover {
-        border-color: #f0ce12;
+        border-color: var(--adventure-yellow);
         transition: border-color .3s ease-in-out;
     }
 

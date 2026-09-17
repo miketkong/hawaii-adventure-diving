@@ -1,0 +1,85 @@
+---
+layout: base
+
+pageTitle: "Swiper Test | Hawaii Adventure Diving"
+
+pageDescription: "Swiper carousel test page."
+
+ogTitle: "Swiper Test | Hawaii Adventure Diving"
+
+pageURL: "https://hawaiiadventurediving.com/swiper-test/"
+ogImage: ""
+---
+
+<body class=" has-topbar">
+    <!-- nav include -->
+    {% include "nav.njk" %}
+
+    <!-- Main Content-->
+    <div class="content-wrap main-content inner-page bg-lightrays">
+        <div class="container">
+
+            <div class="row pb-40 text-center">
+                <div class="col-lg-8 offset-lg-2" data-show="startbox" data-show-delay="100">
+                    <h1 class="h1-page-subtitle">Swiper Carousel Test</h1>
+                </div>
+            </div>
+
+            <div class="swiper team-members-swiper" data-swiper-slides="1" data-swiper-breakpoints="828:2, 1024:3" data-swiper-gap="30" data-swiper-grabcursor="true" data-show="startbox">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide pt-15">
+                            <div data-filters="branding">
+                                <img loading="lazy" src="/images/team-photos/team-member-photo-annika-1.jpg" alt="Annika">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide pt-15">
+                            <div data-filters="branding">
+                                <img loading="lazy" src="/images/team-photos/team-member-photo-danny-1.jpg" alt="Danny">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide pt-15">
+                            <div data-filters="branding">
+                                <img loading="lazy" src="/images/team-photos/team-member-photo-nick-1.jpg" alt="Nick">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide pt-15">
+                            <div data-filters="branding">
+                                <img loading="lazy" src="/images/team-photos/team-member-photo-ro-1.jpg" alt="Ro">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide pt-15">
+                            <div data-filters="branding">
+                                <img loading="lazy" src="/images/team-photos/team-member-photo-sammy-1.jpg" alt="Sammy">
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide pt-15">
+                            <div data-filters="branding">
+                                <img loading="lazy" src="/images/team-photos/team-member-photo-stacy-1.jpg" alt="Stacy">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-position-1 swiper-button-white shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                        <path fill="currentColor" fill-rule="evenodd" d="m3.96 6.15 5.08-4.515L7.91.365.445 7l7.465 6.635 1.13-1.27L3.96 7.85h15.765v-1.7H3.96Z" clip-rule="evenodd"></path>
+                    </svg></div>
+                <div class="swiper-button-next swiper-button-position-1 swiper-button-white shadow"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none">
+                        <path fill="currentColor" fill-rule="evenodd" d="m16.21 6.15-5.08-4.515 1.13-1.27L19.725 7l-7.465 6.635-1.13-1.27 5.08-4.515H.445v-1.7H16.21Z" clip-rule="evenodd"></path>
+                    </svg></div>
+            </div>
+
+        </div>
+        <!--// Container -->
+
+    </div>
+
+    <!-- footer include -->
+    {% include "footer.njk" %}
+</body>
