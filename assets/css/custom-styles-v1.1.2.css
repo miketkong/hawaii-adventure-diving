@@ -2119,6 +2119,12 @@ ul.tour-times li {
     border-radius: 20px;
 }
 
+.team-members-swiper .swiper-button-white:hover,
+.team-members-swiper .swiper-button-white:focus,
+.team-members-swiper .swiper-button-white:active {
+    color: var(--adventure-yellow);
+}
+
 
 /* Quick Links */
 #quick-links ul {
