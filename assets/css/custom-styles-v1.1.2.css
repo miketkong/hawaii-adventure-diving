@@ -2109,8 +2109,14 @@ ul.tour-times li {
 .card-img img {
     border-radius: 20px;
 }
+.swiper-button-white:hover,
+.swiper-button-white:focus,
+.swiper-button-white:active {
+    color: var(--adventure-yellow);
+}
 
 /* Team Members Swiper */
+
 .team-members-swiper .swiper-slide img {
     display: block;
     width: 100%;
@@ -2118,12 +2124,42 @@ ul.tour-times li {
     object-fit: cover;
     border-radius: 20px;
 }
-
-.team-members-swiper .swiper-button-white:hover,
-.team-members-swiper .swiper-button-white:focus,
-.team-members-swiper .swiper-button-white:active {
-    color: var(--adventure-yellow);
+.team-members-swiper .name-title-block {
+    position: absolute;
+    padding-left: 40px;
 }
+.team-members-swiper .name-title-block .name {
+    font-size: 20px;
+    margin-bottom: 1px;
+    line-height: 1;
+}
+.team-members-swiper .name-title-block .branded-text {
+    font-size: 13px;
+    color: var(--adventure-yellow);
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 50%;
+    max-width: 150px;
+    margin-bottom: 1px;
+}
+.team-members-swiper .name-title-block .title {
+    font-size: 15px;
+    line-height: 1.1;
+    max-width: 150px;
+    font-weight: 600;
+}
+.team-members-swiper .name-title-block.top {
+    padding-top: 40px;
+}
+.team-members-swiper .name-title-block.middle {
+    padding-top: 260px;
+}
+.team-members-swiper .name-title-block.bottom {
+    padding-top: 440px;
+}
+
+
+
 
 
 /* Quick Links */
