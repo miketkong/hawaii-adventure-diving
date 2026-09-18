@@ -2127,6 +2127,7 @@ ul.tour-times li {
 .team-members-swiper .name-title-block {
     position: absolute;
     padding-left: 40px;
+    color: white;
 }
 .team-members-swiper .name-title-block .name {
     font-size: 20px;
