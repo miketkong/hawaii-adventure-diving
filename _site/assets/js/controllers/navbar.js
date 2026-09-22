@@ -17,11 +17,11 @@
       var showTimer = null;
       VLTJS.throttleScroll(function (type, scroll) {
         // show / hide
-        if ('down' === type && 500 < scroll) {
+        if ('down' === type && 200 < scroll) {
           clearTimeout(showTimer);
           showTimer = null;
           VLTJS.body.removeClass(showClass).addClass(hideClass);
-        } else if ('up' === type || 'end' === type || 'start' === type) {
+        } else if (1000 > scroll && ('up' === type || 'start' === type)) {
           if (!showTimer) {
             showTimer = setTimeout(function () {
               VLTJS.body.removeClass(hideClass).addClass(showClass);
