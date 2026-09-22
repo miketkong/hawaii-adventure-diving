@@ -374,6 +374,7 @@ figcaption {
 .impact-text-banner {
     padding: 80px 20px 40px;
     text-align: center;
+    position: relative;
 }
 .impact-text-banner h1 {
     font-size: 32px;
@@ -633,6 +634,16 @@ figcaption {
     max-width: 290px;
     padding-bottom: 40px;
     padding-top: 50px;
+}
+
+.section-bottom-yellow-flare {
+    border-bottom: 4px solid var(--adventure-yellow);
+}
+.section-bottom-yellow-flare .flare {
+    width: 110px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 .inner-page {
