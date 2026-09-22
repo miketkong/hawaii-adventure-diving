@@ -21,7 +21,7 @@
           clearTimeout(showTimer);
           showTimer = null;
           VLTJS.body.removeClass(showClass).addClass(hideClass);
-        } else if (1000 > scroll && ('up' === type || 'start' === type)) {
+        } else if (800 > scroll && ('up' === type || 'start' === type)) {
           if (!showTimer) {
             showTimer = setTimeout(function () {
               VLTJS.body.removeClass(hideClass).addClass(showClass);
