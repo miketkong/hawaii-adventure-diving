@@ -27,9 +27,9 @@
                 <div id="reviews-header-r2" class="col-lg-8 offset-lg-2 text-center">
                     <img class="pt-40 pb-10" style="max-width: 150px" src="/images/five-stars-wreath.png" alt=""
                         data-show="startbox">
-                    <h1 data-show="startbox">Thousands of  <span class="no-break">5-Star Reviews.</span></h1>
+                    <h1 data-show="startbox" data-show-delay="200">Thousands of  <span class="no-break">5-Star Reviews.</span></h1>
 
-                    <div id="ratings-section-testimonials-ticker"></div>
+                    
                             
                 </div>
 
@@ -37,34 +37,28 @@
                 <div class="ratings-r2">
                     <div class="ratings-grid row g-10">
                         <div class="col-6 col-md-2">
-                            <div class="ratings-grid-item google">
+                            <div class="ratings-grid-item google" data-show="startbox">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-google.jpg" alt="Google logo">
                                 <p class="rating"><span>{{ siteData.platformRatings.Google.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Google.total | commaNumber }})</p>
                             </div>
                         </div>
-                        <div class="col-6 col-md-2">
-                            <div class="ratings-grid-item groupon">
-                                <img class="brand-logo" src="/images/ratings-r2-logo-groupon.jpg" alt="Groupon logo">
-                                <p class="rating"><span>{{ siteData.platformRatings.Groupon.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Groupon.total | commaNumber }})</p>
-                            </div>
-                        </div>
 
                         <div class="col-6 col-md-2">
-                            <div class="ratings-grid-item trip-advisor">
+                            <div class="ratings-grid-item trip-advisor" data-show="startbox" data-show-delay="100">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-tripadvisor-horizontal.png" alt="Trip Advisor logo">
                                 <p class="rating"><span>{{ siteData.platformRatings.TripAdvisor.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.TripAdvisor.total | commaNumber }})</p>
                             </div>
                         </div>
 
                         <div class="col-6 col-md-2">
-                            <div class="ratings-grid-item yelp">
+                            <div class="ratings-grid-item yelp" data-show="startbox" data-show-delay="200">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-yelp.jpg" alt="Yelp logo">
                                 <p class="rating"><span>{{ siteData.platformRatings.Yelp.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Yelp.total | commaNumber }})</p>
                             </div>
                         </div>
 
-                        <div class="col-6 col-md-2 offset-3 offset-md-0">
-                            <div class="ratings-grid-item facebook">
+                        <div class="col-6 col-md-2">
+                            <div class="ratings-grid-item facebook" data-show="startbox" data-show-delay="300">
                                 <img class="brand-logo" src="/images/ratings-r2-logo-facebook.jpg" alt="Facebook logo">
                                 <p class="rating"><span>{{ siteData.platformRatings.Facebook.average | oneDecimal }}</span> <img src="/images/5-stars.png" class="stars-icon" alt="5 star review">({{ siteData.platformRatings.Facebook.total | commaNumber }})</p>
                             </div>
@@ -72,7 +66,7 @@
                     </div>
                     <!-- Put the ratings subtext here -->
                     <div class="ratings-subtext text-center">
-                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last updated {{ siteData.ratingsLastUpdated }}.</p>
+                        <p class="ratings-attribution">All ratings sourced directly from each platform's live listing. Last <span class="no-break">updated {{ siteData.ratingsLastUpdated }}.</span></p>
                     </div>
                 </div>
                 <!--// Ratings & Reviews Section r2 -->
