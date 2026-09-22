@@ -372,7 +372,7 @@ figcaption {
 
 /* Banners */
 .impact-text-banner {
-    padding: 80px 20px 20px;
+    padding: 80px 20px 40px;
     text-align: center;
 }
 .impact-text-banner h1 {
@@ -690,6 +690,25 @@ figcaption {
 /* Lists */
 .list-style-none li {
     list-style: none !important;
+}
+.features-list {
+    margin: 0px;
+    padding: 0px;
+    border-top: 1px #ccc solid;
+    padding-top: 1em;
+
+}
+.features-list li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 19px !important;
+    text-align: center;
+    border-bottom: 1px #ccc solid;
+    padding-bottom: 1em;
+
+}
+.features-list li:last-child {
+    margin-bottom: 0px;
 }
 
 /* Icons */
@@ -1856,6 +1875,9 @@ ul.tour-times li {
     font-size: 32px;
     line-height: 38px;
 }
+.tour-lp-section-v2 h2 {
+    margin-bottom: 20px;
+}
 .tour-lp-section-v2 h3 {
     font-size: 24px;
     line-height: 28px;
@@ -2149,6 +2171,13 @@ ul.tour-times li {
 }
 
 /* Team Members Swiper */
+#team-swiper .mobile {
+    max-width: 100%;
+    overflow: hidden;
+}
+#team-swiper .mobile .swiper-slide {
+    padding-top: 1px;
+}
 
 .team-members-swiper .swiper-slide img {
     display: block;
@@ -2157,17 +2186,17 @@ ul.tour-times li {
     object-fit: cover;
     border-radius: 20px;
 }
-.team-members-swiper .name-title-block {
+.swiper-slide .name-title-block {
     position: absolute;
     padding-left: 40px;
     color: white;
 }
-.team-members-swiper .name-title-block .name {
+.swiper-slide .name-title-block .name {
     font-size: 20px;
     margin-bottom: 1px;
     line-height: 1;
 }
-.team-members-swiper .name-title-block .branded-text {
+.swiper-slide .name-title-block .branded-text {
     font-size: 13px;
     color: var(--adventure-yellow);
     text-transform: uppercase;
@@ -2176,19 +2205,19 @@ ul.tour-times li {
     max-width: 150px;
     margin-bottom: 1px;
 }
-.team-members-swiper .name-title-block .title {
+.swiper-slide .name-title-block .title {
     font-size: 15px;
     line-height: 1.1;
     max-width: 150px;
     font-weight: 600;
 }
-.team-members-swiper .name-title-block.top {
+.swiper-slide .name-title-block.top {
     padding-top: 40px;
 }
-.team-members-swiper .name-title-block.middle {
+.swiper-slide .name-title-block.middle {
     padding-top: 260px;
 }
-.team-members-swiper .name-title-block.bottom {bottom: 0px;}
+.swiper-slide .name-title-block.bottom {bottom: 0px;}
 
 
 
