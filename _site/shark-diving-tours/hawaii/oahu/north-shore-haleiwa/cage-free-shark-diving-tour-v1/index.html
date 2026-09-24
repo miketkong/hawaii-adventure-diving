@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=7865d5ff">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=d966d7d5">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -618,6 +618,63 @@
                     </div><!--// product-card -->
 
                 </div><!--// col -->
+
+                <!-- Lightbox Gallery -->
+                <div class="col-12 gallery-col desktop">
+                    <div class="photos-section-gallery-wrapper">
+                    </div>
+                    <!--// photos-section-gallery-wrapper-->
+                </div>
+
+                <script type="text/javascript">
+                // Gallery Items script for lightbox gallery
+                const photos_section_galleryItems = [
+                    
+                    'shark-divers-chasing',
+                    'pink-shark-diver',
+                    'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour',
+                    'couple-swimming-with-sharks-without-cage-hawaii-oahu',
+                    'female-diver-with-shark-striped-2',
+                    'female-diver-with-shark-striped',
+                    'snorkeler-on-rope-with-shark',
+                    'fun-hawaii-shark-diving',
+                    'shark-diving-hawaii-2',
+                    'beautiful-shark-diver-hawaii',
+                    'couple-shark-diving-hawaii',
+                    'diver-posing-with-shark',
+                    'divers-and-shark-hawaii',
+                    'divers-swimming-with-a-shark',
+                    'diving-down-with-shark-hawaii',
+                    'hawaii-shark-diving-tour-photo',
+                    'morning-sun-shark-dive',
+                    'shark-dive-morning-sun',
+                    'shark-diving-hawaii-camera',
+                    'snorkeler-and-3-sharks',
+                    'swimming-after-shark-hawaii',
+                    'swimming-with-a-shark',
+                    'swimming-with-shark-in-hawaii',
+                    'two-divers-and-shark-hawaii',
+                ];
+
+                function photos_section_buildGallery() {
+                    const photos_section_galleryWrapper = document.querySelector('.photos-section-gallery-wrapper');
+                    photos_section_galleryItems.forEach(item => {
+                        const photos_section_galleryItem = document.createElement('a');
+                        photos_section_galleryItem.classList.add('gallery-item');
+                        photos_section_galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}.jpg`;
+
+                        const img = document.createElement('img');
+                        img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}.jpg`;
+                        img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
+
+                        photos_section_galleryItem.appendChild(img);
+                        photos_section_galleryWrapper.appendChild(photos_section_galleryItem);
+                    });
+                }
+                document.addEventListener('DOMContentLoaded', photos_section_buildGallery);
+            </script>
+                
+                
             </div>
             <!--// ROW: Tour Photos Product Card -->
 

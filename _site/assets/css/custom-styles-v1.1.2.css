@@ -2932,6 +2932,9 @@ ul.tour-times li {
     .impact-text-banner {
         padding-bottom: 20px;
     }
+    .logo-banner .logo {
+
+    }
 
     /* Lists */
     .list-lg-inline li {
@@ -3038,6 +3041,7 @@ ul.tour-times li {
         background-image: url("/images/bg-get-the-shot-v2.webp");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position-y: -150px;
     }
     .get-the-shot-v2 .container-fluid {
         min-height: 860px;
@@ -3486,6 +3490,21 @@ ul.tour-times li {
         padding-top: 150px;
     }
 
+    .logo-banner .row {
+        min-height: 500px;
+        display: flex;
+        
+    }
+
+    .logo-banner .logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-banner .logo {
+        max-width: 330px;
+    }
+
     /* Product Cards */
     .product-cards {
         display: flex;
@@ -3531,7 +3550,7 @@ ul.tour-times li {
         flex-wrap: wrap;
         margin: auto;
         padding-top: 30px;
-        padding-bottom: 30px;
+        padding-bottom: 3px;
     }
     .gallery-item {
         display: inline-block;
