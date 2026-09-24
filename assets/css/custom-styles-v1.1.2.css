@@ -74,6 +74,7 @@
 :root {
     --adventure-yellow: #f0ce12;
     --adventure-blue: #016BA3;
+    --adventure-blue-rgb: 1 107 163;
 }
 
 /* 01. Helpers */
@@ -1193,6 +1194,21 @@ ul.tour-times li {
     z-index: -1;
     background-size: cover;
     background-position-y: center;
+}
+
+.pano-section .gradient-layer {
+    position: absolute;
+    z-index: 0;
+    background: radial-gradient(circle 540px at 19% 20%, rgb(1 107 163 / 65%) 0%, rgb(1 107 163 / 0%) 100%);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.pano-section .section-content {
+    position: relative;
+    z-index: 1;
 }
 
 .pano-section .section-content,
