@@ -92,3 +92,45 @@ function rotateText(selector, textArray) {
 
     initialFadeIn();
 };
+
+/* =========================================================
+   CUSTOM: Lightbox (MagnificPopup) arrow positioning
+   Repositions the prev/next arrows so they sit just outside
+   the left/right edges of the displayed image, instead of
+   pinned to the viewport edges (MagnificPopup's default).
+   ========================================================= */
+(function () {
+    var ARROW_WIDTH = 90; // matches .mfp-arrow width in magnific-popup.css
+    var EDGE_GAP = 0;    // space between image edge and arrow
+
+    function positionLightboxArrows() {
+        var content = document.querySelector('.mfp-content');
+        var arrowLeft = document.querySelector('.mfp-arrow-left');
+        var arrowRight = document.querySelector('.mfp-arrow-right');
+
+        if (!content || !arrowLeft || !arrowRight) {
+            return;
+        }
+
+        var rect = content.getBoundingClientRect();
+
+        var leftPx = Math.max(0, rect.left - EDGE_GAP - ARROW_WIDTH);
+        var rightPx = Math.max(0, window.innerWidth - ARROW_WIDTH - EDGE_GAP - rect.right);
+
+        arrowLeft.style.left = leftPx + 'px';
+        arrowRight.style.right = rightPx + 'px';
+    }
+
+    // Fires whenever MagnificPopup swaps in a new <img class="mfp-img">
+    // (initial open, and every next()/prev() navigation). Deferred with
+    // setTimeout so MagnificPopup's own load handler runs first and
+    // removes the "mfp-loading" class that hides .mfp-figure - otherwise
+    // .mfp-content is measured while still collapsed to its loading size.
+    document.addEventListener('load', function (e) {
+        if (e.target && e.target.classList && e.target.classList.contains('mfp-img')) {
+            setTimeout(positionLightboxArrows, 0);
+        }
+    }, true);
+
+    window.addEventListener('resize', positionLightboxArrows);
+})();
