@@ -1776,7 +1776,7 @@ ul.tour-times li {
 .accordion-header .accordion-button {
     font-size: 20px;
     padding: 20px;
-    line-height: 30px;
+    line-height: 1.4em;
 }
 
 .accordion-button::after {
@@ -2158,6 +2158,10 @@ ul.tour-times li {
 
 .accordion-item+.accordion-item {
     margin-top: 0px;
+}
+
+.accordion-item h2 {
+    margin-bottom: 0px;
 }
 
 .accordion-header .accordion-button {
