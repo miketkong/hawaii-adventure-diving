@@ -638,12 +638,14 @@ figcaption {
 
 .section-bottom-yellow-flare {
     border-bottom: 4px solid var(--adventure-yellow);
+    height: 20px;
+    position: relative;
 }
 .section-bottom-yellow-flare .flare {
     width: 110px;
     position: absolute;
-    bottom: 0px;
     left: 0px;
+    bottom: 0px;
 }
 
 .inner-page {
@@ -2217,10 +2219,11 @@ ul.tour-times li {
     margin-bottom: 1px;
 }
 .swiper-slide .name-title-block .title {
-    font-size: 15px;
-    line-height: 1.1;
+    font-size: 18px;
+    line-height: 1.2;
     max-width: 150px;
     font-weight: 600;
+    margin-top: -1px;
 }
 .swiper-slide .name-title-block.top {
     padding-top: 40px;
