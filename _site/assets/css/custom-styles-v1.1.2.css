@@ -715,15 +715,20 @@ figcaption {
 }
 .features-list li {
     list-style: none;
-    font-weight: bold;
-    font-size: 19px !important;
+    font-size: 16px !important;
     text-align: center;
     border-bottom: 1px #ccc solid;
     padding-bottom: 1em;
-
+    color: black;
+}
+.features-list li h3 {
+    font-size: 20px;
+    color: var(--adventure-blue);
+    margin-bottom: 0px;
 }
 .features-list li:last-child {
     margin-bottom: 0px;
+    border-bottom: none;
 }
 
 /* Icons */
