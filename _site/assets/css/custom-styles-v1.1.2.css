@@ -742,7 +742,20 @@ figcaption {
     background-color: #032f50;
 }
 
-/*Photo Grid Gallery */
+/* Lightbox Gallery Styles */
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    width: 50%;
+    padding: 2px;
+}
+.gallery-item img {
+    width: 100%;
+}
+
+/*Photo Grid Gallery - obsolete? */
 #photo-grid-gallery {
     background-color: #000;
 }
@@ -3477,6 +3490,21 @@ ul.tour-times li {
 
     .product-tags ul {
         margin-top: 6px;
+    }
+
+    /* Lightbox Gallery Styles */
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .gallery-item {
+        display: inline-block;
+        width: 25%;
+        padding: 2px;
     }
 
     /* Photo Gallery Grid */
