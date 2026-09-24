@@ -372,7 +372,7 @@ figcaption {
 
 /* Banners */
 .impact-text-banner {
-    padding: 80px 20px 40px;
+    padding: 60px 20px 60px;
     text-align: center;
     position: relative;
 }
@@ -387,7 +387,7 @@ figcaption {
     padding-top: 3em;
     padding-bottom: 2.5em;
 }
-.impact-text-banner p {
+.impact-text-banner p.kicker {
     font-weight: bold;
     font-size: 18px;
     line-height: 1.4em;
@@ -637,9 +637,10 @@ figcaption {
 }
 
 .section-bottom-yellow-flare {
-    border-bottom: 4px solid var(--adventure-yellow);
-    height: 20px;
     position: relative;
+    height: 20px;
+    margin-top: -20px;
+    border-bottom: 4px solid var(--adventure-yellow);
 }
 .section-bottom-yellow-flare .flare {
     width: 110px;
@@ -937,9 +938,7 @@ figcaption {
 }
 
 /* Team Swiper Section */
-#team-swiper {
-    padding-bottom: 30px
-}
+
 
 /* Tour Schedule Section r2 */
 #tour-schedule table {
