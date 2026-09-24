@@ -14,6 +14,10 @@
  * 03. Components
  */
 
+ :root {
+    --button-radius: 24px;
+  }
+
 /* Fonts */
 @font-face {
     font-family: 'Josefin Sans';
@@ -56,6 +60,14 @@
 }
 
 @font-face {
+    font-family: 'Karantina';
+    src: url('/assets/fonts/Karantina-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Asap Condensed';
     src: url('/assets/fonts/asap-condensed-v18-latin-regular.woff2') format('woff2');
     font-weight: 400;
@@ -69,11 +81,6 @@
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-}
-
-:root {
-    --adventure-yellow: #f0ce12;
-    --adventure-blue: #016BA3;
 }
 
 /* 01. Helpers */
@@ -165,6 +172,10 @@ p a:hover {
     margin-bottom: 10px;
 }
 
+.btn {
+    text-decoration: none;
+}
+
 .body-text .btn {
     margin-top: -20px;
     margin-bottom: 30px;
@@ -175,7 +186,7 @@ p a:hover {
 }
 
 .dark-background p a {
-    color: var(--adventure-yellow);
+    color: #f0ce12;
     text-decoration: underline;
 }
 
@@ -193,7 +204,7 @@ p a:hover {
     margin-bottom: 0px;
 }
 
-#hero-text {
+.hero-text {
     text-shadow: -2px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -213,7 +224,7 @@ p a:hover {
 }
 
 .blue-text {
-    color: var(--adventure-blue) !important;
+    color: #016BA3 !important;
 }
 .dark-blue-text {
     color: #012E4F !important;
@@ -231,7 +242,7 @@ p a:hover {
 
 ::selection {
     color: #000000;
-    background-color: var(--adventure-yellow);
+    background-color: #f0ce12;
 }
 .testimonial-text {
     font-style: italic;
@@ -324,12 +335,11 @@ p a:hover {
 
 .yellow-link a,
 .yellow-link {
-    color: var(--adventure-yellow) !important;
+    color: #f0ce12 !important;
     text-decoration: underline !important;
 }
 .pano-section p {
-    line-height: 1.em;
-
+    line-height: 26px;
 }
 
 .pano-section .disclaimer {
@@ -353,12 +363,6 @@ p a:hover {
     margin-top: 10px;
 }
 
-
-figcaption {
-    font-size: 12px;
-    padding: 10px;
-}
-
 .photo-caption {
     font-size: 16px;
     padding: 0px 20px;
@@ -368,31 +372,6 @@ figcaption {
 
 .underline-strong li strong {
     text-decoration: underline;
-}
-
-/* Banners */
-.impact-text-banner {
-    padding: 60px 20px 60px;
-    text-align: center;
-    position: relative;
-}
-.impact-text-banner h1 {
-    font-size: 32px;
-}
-.impact-text-banner h2 {
-    text-transform: uppercase;
-    line-height: 1em;
-    letter-spacing: .7em;
-    font-size: 11px;
-    padding-top: 3em;
-    padding-bottom: 2.5em;
-}
-.impact-text-banner p.kicker {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 1.4em;
-    max-width: 490px;
-    margin: auto;
 }
 
 /* Forms */
@@ -415,7 +394,7 @@ figcaption {
 
 .navbar-topbar .nav-contacts svg {
     margin-right: 15px;
-    color: var(--adventure-yellow);
+    color: #f0ce12;
 }
 
 /* Mobile Navigation Bar */
@@ -507,7 +486,7 @@ figcaption {
 
 .btn-accent-1 {
     color: #000;
-    background-color: var(--adventure-yellow);
+    background-color: #f0ce12;
 }
 
 .btn-accent-1:hover,
@@ -636,19 +615,6 @@ figcaption {
     padding-top: 50px;
 }
 
-.section-bottom-yellow-flare {
-    position: relative;
-    height: 20px;
-    margin-top: -20px;
-    border-bottom: 4px solid var(--adventure-yellow);
-}
-.section-bottom-yellow-flare .flare {
-    width: 110px;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-}
-
 .inner-page {
     margin-top: -118px;
     padding-top: 160px;
@@ -692,7 +658,7 @@ figcaption {
 }
 
 .listable-content-card h2 a:hover {
-    color: var(--adventure-yellow);
+    color: #f0ce12;
 }
 
 .pano-section {
@@ -705,25 +671,6 @@ figcaption {
 .list-style-none li {
     list-style: none !important;
 }
-.features-list {
-    margin: 0px;
-    padding: 0px;
-    border-top: 1px #ccc solid;
-    padding-top: 1em;
-
-}
-.features-list li {
-    list-style: none;
-    font-weight: bold;
-    font-size: 19px !important;
-    text-align: center;
-    border-bottom: 1px #ccc solid;
-    padding-bottom: 1em;
-
-}
-.features-list li:last-child {
-    margin-bottom: 0px;
-}
 
 /* Icons */
 .feature-icon {
@@ -734,7 +681,7 @@ figcaption {
 /* Swiper / Carousel Styles */
 .swiper-button-dark {
     color: #000000;
-    background-color: var(--adventure-yellow);
+    background-color: #f0ce12;
 }
 
 .swiper-button-dark:hover {
@@ -742,52 +689,7 @@ figcaption {
     background-color: #032f50;
 }
 
-/* Lightbox Gallery Styles */
-.gallery-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-.gallery-item {
-    width: 50%;
-    padding: 2px;
-}
-.gallery-item img {
-    width: 100%;
-}
-
-.mfp-close {
-    width: 46px !important;
-    height: 46px !important;
-    background-image: url('/images/UI/lightbox-close-branded.png') !important;
-    background-size: contain !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    background-color: transparent !important;
-    color: transparent !important;
-    opacity: 1 !important;
-    top: 56px !important;
-    left: 12px !important;
-    font-size: 0 !important;
-}
-button.mfp-arrow {
-    background: #ffffff1a;
-}
-.mfp-arrow-left {
-    border-top-right-radius: var(--button-radius);
-    border-bottom-right-radius: var(--button-radius);
-}
-.mfp-arrow-right {
-    border-top-left-radius: var(--button-radius);
-    border-bottom-left-radius: var(--button-radius);
-}
-.mfp-figure:after {
-    bottom: 60px;
-}
-.mfp-content figcaption {
-    margin-top: -24px;
-}
-
-/*Photo Grid Gallery - obsolete? */
+/*Photo Grid Gallery */
 #photo-grid-gallery {
     background-color: #000;
 }
@@ -977,13 +879,10 @@ button.mfp-arrow {
     margin: 20px 0px;
 }
 .ratings-r2 .ratings-subtext p {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 18px;
     margin: 0px;
 }
-
-/* Team Swiper Section */
-
 
 /* Tour Schedule Section r2 */
 #tour-schedule table {
@@ -1052,7 +951,7 @@ button.mfp-arrow {
 
 #why-us h3 {
     font-size: 20px;
-    color: var(--adventure-yellow);
+    color: #f0ce12;
     margin-bottom: 0px;
 }
 
@@ -1134,6 +1033,72 @@ ul.tour-times li {
     color: #016ba3;
     text-decoration: underline;
 }
+#faq .accordion-item .btn {
+    text-decoration: none;
+}
+
+/* Hero Banner V2 */
+/* -------------------------------- */
+.hero-video-banner-v2 .banner-contents {
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+.hero-video-banner-v2 .banner-contents .hero-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.hero-video-banner-v2 .hero-text {
+    position: absolute;
+}
+
+.hero-video-banner-v2 h1.big-text, .hero-video-banner-v2 h1.big-text-long-words {
+    font-family: "Karantina", system-ui;
+}
+.hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+    font-family: "Josefin Sans", system-ui;
+    font-weight: 700;
+}
+
+/* Hero Banner V2 - Text Styles */
+.hero-video-banner-v2 h1.big-text {
+    font-size: 118px;
+    line-height: 118px;
+    margin-top: -26px;
+    margin-bottom: -8px;
+    opacity: 0;
+}
+.hero-video-banner-v2 h1.big-text-long-words {
+    font-size: 104px;
+    line-height: 104px;
+    margin-top: -26px;
+    margin-bottom: -8px;
+    opacity: 0;
+}
+
+.hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+    font-size: 30px;
+    opacity: 0;
+}
+.hero-video-banner-v2 h1.big-text-top-2, .hero-video-banner-v2 h1.big-text-bottom-2 {
+    opacity: 0;
+    
+}
+.hero-video-banner-v2 h1.big-text-top-3, .hero-video-banner-v2 h1.big-text-bottom-3 {
+    opacity: 0;
+    
+}
+.hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+    margin-top: -14px
+}
+.hero-video-banner-v2 .small-text {
+    font-size: 24px;
+    line-height: 26px;
+    opacity: 0;
+}
+
 
 /* Product Landing Page General Styles */
 .page-title-img-wrapper h1 {
@@ -1175,6 +1140,12 @@ ul.tour-times li {
     z-index: -1;
 }
 
+#how-close-section-photos {
+    background-color: #0d1933;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
 /* Panoramic Hero Section Styles - General */
 .pano-section {
     position: relative;
@@ -1206,15 +1177,13 @@ ul.tour-times li {
 }
 
 .pano-section h2 {
-    font-size: 38px;
-    line-height: 1.1em;
+    font-size: 48px;
+    line-height: 49px;
     margin-bottom: 10px;
 }
 
 .pano-section p {
-    font-size: 17px;
-    max-width: 360px;
-
+    font-size: 20px;
 }
 
 .pano-section .credit {
@@ -1243,16 +1212,16 @@ ul.tour-times li {
     margin-top: -40px;
 }
 
-#small-groups-section .container-fluid {
+#an-exclusive-experience .container-fluid {
     background-color: #4277ad;
 }
 
-#small-groups-section .hero-img {
+#an-exclusive-experience .hero-img {
     position: relative;
     z-index: 0;
 }
 
-#small-groups-section .text-box {
+#an-exclusive-experience .text-box {
     position: relative;
     z-index: 1;
     margin-top: 90px;
@@ -1369,6 +1338,10 @@ ul.tour-times li {
 
 .tour-packages .product-card {
     margin-bottom: 20px;
+}
+
+.tour-packages a:has(.product-card) {
+    text-decoration: none;
 }
 
 #tour-packages .text-box .disclaimer {
@@ -1751,6 +1724,9 @@ ul.tour-times li {
     padding-bottom: 10px;
     margin-top: 40px;
 }
+.section-heading-underlined .accordion {
+    margin-top: 0px;
+}
 
 .accordion-header .accordion-button {
     font-size: 20px;
@@ -1772,7 +1748,7 @@ ul.tour-times li {
 }
 
 .dark-background .accordion-body a {
-    color: var(--adventure-yellow);
+    color: #f0ce12;
     font-weight: bold;
 }
 
@@ -1782,7 +1758,7 @@ ul.tour-times li {
 
 .dark-background .accordion-header .accordion-button,
 .dark-background .accordion-header .accordion-button[aria-expanded=true] {
-    color: var(--adventure-yellow) !important;
+    color: #f0ce12 !important;
 }
 
 /* Tour Pages */
@@ -1885,7 +1861,7 @@ ul.tour-times li {
 }
 
 .tour-packages .call-out {
-    background-color: var(--adventure-yellow);
+    background-color: #f0ce12;
     color: #000;
     font-size: 24px !important;
     text-transform: uppercase;
@@ -1932,9 +1908,6 @@ ul.tour-times li {
     font-size: 32px;
     line-height: 38px;
 }
-.tour-lp-section-v2 h2 {
-    margin-bottom: 20px;
-}
 .tour-lp-section-v2 h3 {
     font-size: 24px;
     line-height: 28px;
@@ -1965,7 +1938,7 @@ ul.tour-times li {
     box-shadow: 0px 20px 40px #000000ab;
 }
 .tour-lp-section-v2 .most-popular {
-    outline: solid 7px var(--adventure-yellow);
+    outline: solid 7px #f0ce12;
     outline-offset: -3px;
 }
 .tour-lp-section-v2 .product-card h2 {
@@ -2125,8 +2098,8 @@ ul.tour-times li {
 .accordion {
     border-top: 1px solid rgba(177, 177, 180, 0.3);
     border-bottom: 1px solid rgba(177, 177, 180, 0.3);
-    margin-top: 20px;
 }
+
 .accordion-item {
     border-radius: 0px !important;
 }
@@ -2221,64 +2194,6 @@ ul.tour-times li {
 .card-img img {
     border-radius: 20px;
 }
-.swiper-button-white:hover,
-.swiper-button-white:focus,
-.swiper-button-white:active {
-    color: var(--adventure-yellow);
-}
-
-/* Team Members Swiper */
-#team-swiper .mobile {
-    max-width: 100%;
-    overflow: hidden;
-}
-#team-swiper .mobile .swiper-slide {
-    padding-top: 1px;
-}
-
-.team-members-swiper .swiper-slide img {
-    display: block;
-    width: 100%;
-    aspect-ratio: 428 / 679;
-    object-fit: cover;
-    border-radius: 20px;
-}
-.swiper-slide .name-title-block {
-    position: absolute;
-    padding-left: 40px;
-    color: white;
-}
-.swiper-slide .name-title-block .name {
-    font-size: 20px;
-    margin-bottom: 1px;
-    line-height: 1;
-}
-.swiper-slide .name-title-block .branded-text {
-    font-size: 13px;
-    color: var(--adventure-yellow);
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: 50%;
-    max-width: 150px;
-    margin-bottom: 1px;
-}
-.swiper-slide .name-title-block .title {
-    font-size: 18px;
-    line-height: 1.2;
-    max-width: 150px;
-    font-weight: 600;
-    margin-top: -1px;
-}
-.swiper-slide .name-title-block.top {
-    padding-top: 40px;
-}
-.swiper-slide .name-title-block.middle {
-    padding-top: 260px;
-}
-.swiper-slide .name-title-block.bottom {bottom: 0px;}
-
-
-
 
 
 /* Quick Links */
@@ -2334,11 +2249,11 @@ ul.tour-times li {
 }
 
 .footer-menu .nav-link:hover {
-    color: var(--adventure-yellow);
+    color: #f0ce12;
 }
 
 .footer-menu .nav-link-accent-1 {
-    color: var(--adventure-yellow);
+    color: #f0ce12;
     opacity: .8 !important;
     font-weight: 600;
 }
@@ -2347,8 +2262,114 @@ ul.tour-times li {
     opacity: 1 !important;
 }
 
+/* Lightbox - Magnific Popup */
+
+.mfp-close {
+    width: 46px !important;
+    height: 46px !important;
+    background-image: url('/images/UI/lightbox-close-branded.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    opacity: 1 !important;
+    top: 56px !important;
+    left: 12px !important;
+    font-size: 0 !important;
+}
+button.mfp-arrow {
+    background: #ffffff1a;
+}
+.mfp-arrow-left {
+    border-top-right-radius: var(--button-radius);
+    border-bottom-right-radius: var(--button-radius);
+}
+.mfp-arrow-right {
+    border-top-left-radius: var(--button-radius);
+    border-bottom-left-radius: var(--button-radius);
+}
+
+
+
+/* Text Effects */
+
+/* Fade up: element fades in while sliding up from 50px below */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    opacity: 0;
+    animation: fadeUp 1.5s cubic-bezier(.19, 1, .22, 1) forwards;
+}
+
+/* Fade up: element fades in while sliding up from 50px below */
+@keyframes fadeDown {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+.fade-down {
+    opacity: 1;
+    animation: fadeDown 1.5s cubic-bezier(.16, 1, .3, 1) forwards;
+}
+
+/* Fade in: element fades in */
+@keyframes heroTextFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-text-fade-in {
+    opacity: 0;
+    animation: heroTextFadeIn 0.5s ease-out forwards;
+}
+
+/* Typewriter: characters fade in and scale down from 150% */
+@keyframes charIn {
+    from {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.typewriter {
+    opacity: 0; /* hidden until JS splits and triggers */
+}
+
+.typewriter .char {
+    display: inline-block; /* required for transform to work */
+    opacity: 0;
+    animation: charIn 0.4s ease forwards;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 /* ========================================================== */
-/* PHONE STYLES 
+/* MOBILE STYLES 
 /* ========================================================== */
 @media screen and (max-width: 576px) {
     .mobile-hide {
@@ -2360,7 +2381,7 @@ ul.tour-times li {
     }
 
 
-    
+    /* Navigation */
     .navbar-brand {
         top: 0px;
     }
@@ -2413,12 +2434,23 @@ ul.tour-times li {
         text-decoration: none;
     }
 
+    /* Hero Banner - V1 */
+
     .hero-banner {
         height: auto;
         aspect-ratio: 1080 / 1776;
     }
+
+    /* ------------------------------------------------------------------------*/
+    /* Hero Banner V2 */
+    /* ------------------------------------------------------------------------*/
+    
+
+
+
     #mini-testimonials-ticker {
         margin-top: 13px;
+        height: 50px;
     }
 
     
@@ -2520,11 +2552,49 @@ ul.tour-times li {
         font-size: 17px;
         line-height: 20px;
     }
+    #an-exclusive-experience h2 {
+        font-size: 37px;
+        line-height: 1em;
+    }
 
     
     /* Hide the last 3 slides to only show a total of 4 slides on mobile */
     #customer-reviews .swiper-slide:nth-child(n+5) {
         display: none;
+    }
+    
+    /* Section Styles */
+    #how-close-section-photos {
+        background-color: #0d1933;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #how-close-section-photos .gallery-wrapper {
+        padding-bottom: 0px;
+    }
+
+    #shark-diving-photography-packages.tour-lp-section-v2 {
+        background-color: #033460;
+    }
+
+
+
+    /* Lightbox Gallery Mobile Styles */
+
+    .gallery-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .gallery-item {
+        width: 50%;
+        padding: 2px;
+    }
+
+    .gallery-item img {
+    width: 100%;
     }
     
     #photo-grid-gallery .h2-big {
@@ -2539,9 +2609,13 @@ ul.tour-times li {
         margin-top: -80px;
     }
 
-    .homepage #photo-grid-gallery {
+    .homepage #photo-grid-gallery, .homepage #photo-grid-gallery .gallery-wrapper {
         padding-bottom: 0px;
     }
+    .homepage #photo-grid-gallery .gallery-wrapper {
+        padding-top: 20px
+    }
+    
     .CTA-section .big-button span::after {
         width: 21px;
         height: 21px;  
@@ -2553,6 +2627,14 @@ ul.tour-times li {
 
     .shark-tour-page .big-CTA-pre-footer {
         background-color: #0d233f;
+    }
+
+    #homepage-bottom-CTA .container {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #homepage-bottom-CTA .container .rounded-4 {
+        border-radius: 0px !important;
     }
 
     .mt-sm-0 {
@@ -2692,6 +2774,31 @@ ul.tour-times li {
     }
 }
 
+@media screen and (max-width: 360px) {
+
+    /* Hero Banner V2 Fonts & Sizes */
+    .hero-video-banner-v2 h1.big-text {
+        
+    }
+    .hero-video-banner-v2 h1.big-text-long-words {
+        font-size: 90px;
+        line-height: 90px;
+        margin-top: -26px;
+        margin-bottom: -8px;
+        opacity: 0;
+    }
+    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+        font-size: 30px;
+    }
+
+    .hero-video-banner-v2 .small-text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+}
+
+
 /* ========================================================== */
 /* 577px And UP
 /* ========================================================== */
@@ -2723,7 +2830,7 @@ ul.tour-times li {
     }
 
     .hero-banner #cta-block {
-        margin-top: 50px;
+        margin-top: 20px;
     }
     #mini-testimonials-ticker {
         font-size: 19px;
@@ -2796,6 +2903,45 @@ ul.tour-times li {
 
     .text-center-sm {
         text-align: center;
+    }
+
+
+    .navbar-brand {
+        top: 8px;
+    }
+}
+
+/* ========================================================== */
+/* TABLET STYLES 
+/* ========================================================== */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    /* Hero Banner V2 - Text Styles */
+    .hero-video-banner-v2 .banner-contents {
+        padding-bottom: 20px;
+    }
+    .hero-video-banner-v2 h1.big-text {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+    .hero-video-banner-v2 h1.big-text-long-words {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+
+    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+        font-size: 36px;
+    }
+    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+        margin-top: -20px
+    }
+    .hero-video-banner-v2 .small-text {
+        font-size: 28px;
+        line-height: 32px;
     }
 }
 
@@ -2903,15 +3049,48 @@ ul.tour-times li {
         text-align: center;
     }
 
+    /* Hero Banner V2 - Text Styles */
+    .hero-video-banner-v2 .banner-contents {
+        padding-bottom: 30px;
+    }
+    .hero-video-banner-v2 h1.big-text {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+    .hero-video-banner-v2 h1.big-text-long-words {
+        font-size: 160px;
+        line-height: 160px;
+        margin-top: -36px;
+        margin-bottom: -14px;
+    }
+
+    .hero-video-banner-v2 h1.big-text-top-1, .hero-video-banner-v2 h1.big-text-bottom-1 {
+        font-size: 36px;
+    }
+    .hero-video-banner-v2 h1.big-text-bottom-1, .hero-video-banner-v2 h1.big-text-bottom-2, .hero-video-banner-v2 h1.big-text-bottom-3 {
+        margin-top: -20px
+    }
+    .hero-video-banner-v2 .small-text {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
     /* Homepage Desktop Styles */
     .homepage-bottom-CTA {
         padding-top: 60px;
     }
     .homepage #photo-grid-gallery {
-        padding-bottom: 100px;
+        padding-bottom: 50px;
     }
-    #homepage-bottom-CTA .shape-parent {
+    #homepage-bottom-CTA .container {
+        max-width: 1228px;
+    }
+    #homepage-bottom-CTA .shape-parent .rounded-4 {
         margin-top: -80px;
+        border-top-right-radius: 0px !important;
+        border-top-left-radius: 0px !important;
     }
     .homepage #footer {
         padding-top: 600px !important;
@@ -2927,10 +3106,6 @@ ul.tour-times li {
         font-size: 90px;
         font-style: italic;
         margin-bottom: 20px;
-    }
-    /* Banners */
-    .impact-text-banner {
-        padding-bottom: 20px;
     }
 
     /* Lists */
@@ -3011,7 +3186,7 @@ ul.tour-times li {
     }
     #shark-diving-photography-packages .md-flex-row {
         border-radius: 14px;
-        outline: solid 12px var(--adventure-yellow);
+        outline: solid 12px #f0ce12;
         outline-offset: -3px;    
     }
 
@@ -3024,6 +3199,7 @@ ul.tour-times li {
     /* Photo Packages v2 Styles - Desktop */
     #shark-diving-photography-packages.tour-lp-section-v2 {
         background-color: #001a33;
+        padding-bottom: 70px;
     }
     #shark-diving-photography-packages.tour-lp-section-v2 .container {
         padding-top: 140px;
@@ -3031,13 +3207,14 @@ ul.tour-times li {
     #shark-diving-photography-packages.tour-lp-section-v2 .pano-bgd {
         position: absolute;
         display: block;
-        opacity: .4;
+        opacity: .2;
         width: 100%;
         height: stretch;
         z-index: 0;
         background-image: url("/images/bg-get-the-shot-v2.webp");
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
+        background-position-y: -70px;
     }
     .get-the-shot-v2 .container-fluid {
         min-height: 860px;
@@ -3050,8 +3227,30 @@ ul.tour-times li {
         max-width: 530px;
     }
 
+    #how-close-section-photos {
+        background-color: #04274e;
+    }
+
+    /* Lightbox Styles */
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .gallery-item {
+        display: inline-block;
+        width: 25%;
+        padding: 2px;
+    }
+    .gallery-item img {
+        width: 100%;
+    }
+
     /* Exclusive Tour Section Styles - Desktop */
-    #small-groups-section.tour-lp-section-v2 .section-content .text-box {
+    #an-exclusive-experience.tour-lp-section-v2 .section-content .text-box {
         margin-top: 0px;
     }
 
@@ -3228,15 +3427,15 @@ ul.tour-times li {
         background-image: url("/images/section-bgd-no-limits.jpeg");
     }
 
-    #small-groups-section .pano-bgd {
+    #an-exclusive-experience .pano-bgd {
         background-image: url("/images/section-bgd-private-tours.jpeg");
     }
 
-    #small-groups-section .section-content {
+    #an-exclusive-experience .section-content {
         padding-top: 100px;
     }
 
-    #small-groups-section .text-box {
+    #an-exclusive-experience .text-box {
         width: 40%;
         text-shadow: 1px 1px #0000006e;
     }
@@ -3436,7 +3635,7 @@ ul.tour-times li {
 
     .navbar-brand-wrapper .top-level span:hover,
     .navbar-brand-wrapper .dropdown-menu span:hover {
-        border-color: var(--adventure-yellow);
+        border-color: #f0ce12;
         transition: border-color .3s ease-in-out;
     }
 
@@ -3483,7 +3682,7 @@ ul.tour-times li {
     }
 
     .hero-banner .banner-contents {
-        padding-top: 150px;
+        padding-top: 130px;
     }
 
     /* Product Cards */
@@ -3522,21 +3721,6 @@ ul.tour-times li {
 
     .product-tags ul {
         margin-top: 6px;
-    }
-
-    /* Lightbox Gallery Styles */
-    .gallery-wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: auto;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .gallery-item {
-        display: inline-block;
-        width: 25%;
-        padding: 2px;
     }
 
     /* Photo Gallery Grid */
