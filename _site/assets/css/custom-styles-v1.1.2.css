@@ -2007,7 +2007,7 @@ ul.tour-times li {
 }
 .tour-lp-section-v2 .btn-phone {
     font-family: "Poppins", sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     padding: 13px 30px 11px 28px !important;
 }
 .tour-lp-section-v2 #get-the-shot h2 {
@@ -2200,7 +2200,9 @@ ul.tour-times li {
 
 .tour-quick-guide p {
     font-size: 14px;
+    line-height: 1em;
     margin-bottom: 0px;
+    margin-top: 3px;
 }
 
 #tour-features-grid {
