@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>{{ pageTitle | default("Hawaii Adventure Diving") }}</title>
+
+    <link rel="icon" type="image/png" href="/assets/img/root/favicon.png">
+
+    {% include "head-top.njk" %}
+    
+    <meta name="description" content="{{ pageDescription }}">   
+    <link rel="canonical" href="{{ pageURL }}"> 
+
+    <!-- Open Grap Stuff -->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ ogTitle }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+
+    <meta property="og:url" content="{{ pageURL }}">
+    <meta property="og:site_name" content="Hawaii Adventure Diving" />
+    <meta property="article:modified_time" content="<?php echo $formattedTime; ?>" />
+
+    <meta property="og:image" content="{{ ogImage }}">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="twitter:title" content="{{ ogTitle }}">
+    <meta property="twitter:description" content="{{ pageDescription }}">
+    <meta property="twitter:url" content="{{ pageURL }}">
+    <meta property="twitter:image" content="{{ ogImage }}">
+    <!--// Open Grap Stuff -->
+
+    
+
+    <!-- Third Party CSS -->
+    <link rel="stylesheet" href="/assets/vendors/css/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/vendors/css/swiper-bundle.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!-- MK Design Customizations -->
+    <link rel="stylesheet" href="/assets/css/custom-styles-var-2.css?v={% cssVersion 'assets/css/custom-styles-var-2.css' %}">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+
+    <!-- jQuery-->
+    <script src="/assets/vendors/js/jquery.min.js"></script>
+
+</head>
+
+<!-- body -->
+{{ content | safe }}
+<!--// body -->  
+
+</html>
