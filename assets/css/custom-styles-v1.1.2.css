@@ -2199,7 +2199,7 @@ ul.tour-times li {
 
 .accordion-button::after {
     position: relative;
-    left: 10px;
+    left: 0px;
 }
 
 
@@ -2361,7 +2361,7 @@ ul.tour-times li {
 }
 
 .shark-tour-page .big-CTA-pre-footer {
-    padding-top: 320px;
+    padding-top: 280px;
     background-color: #032e50;
 }
 
