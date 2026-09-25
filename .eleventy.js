@@ -16,16 +16,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("commaNumber", value => Number(value).toLocaleString());
   eleventyConfig.addFilter("oneDecimal", value => Number(value).toFixed(1));
 
-  eleventyConfig.addPassthroughCopy([
-    "articles/images",
-    "assets",
-    "images",
-    "shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023",
-    "snorkel-tour/images",
-    "robots.txt",
-    "_redirects",
-    "!**/.DS_Store",
-  ]);
+  const skipDSStore = { filter: (filePath) => path.basename(filePath) !== ".DS_Store" };
+
+  eleventyConfig.addPassthroughCopy("articles/images", skipDSStore);
+  eleventyConfig.addPassthroughCopy("assets", skipDSStore);
+  eleventyConfig.addPassthroughCopy("images", skipDSStore);
+  eleventyConfig.addPassthroughCopy("shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023", skipDSStore);
+  eleventyConfig.addPassthroughCopy("snorkel-tour/images", skipDSStore);
+  eleventyConfig.addPassthroughCopy("robots.txt");
+  eleventyConfig.addPassthroughCopy("_redirects");
 
 
   return {
