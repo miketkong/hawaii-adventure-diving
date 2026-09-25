@@ -4,11 +4,11 @@ const crypto = require('crypto');
 
 module.exports = function (eleventyConfig) {
 
-  eleventyConfig.addShortcode("cssVersion", function(filePath) {
+  eleventyConfig.addShortcode("cssVersion", function (filePath) {
     try {
       const content = fs.readFileSync(path.join(__dirname, filePath));
       return crypto.createHash('md5').update(content).digest('hex').slice(0, 8);
-    } catch(e) {
+    } catch (e) {
       return Date.now();
     }
   });
@@ -16,17 +16,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("commaNumber", value => Number(value).toLocaleString());
   eleventyConfig.addFilter("oneDecimal", value => Number(value).toFixed(1));
 
-  eleventyConfig.addPassthroughCopy("articles");
+  eleventyConfig.addPassthroughCopy("articles/images");
   eleventyConfig.addPassthroughCopy("assets");
-  eleventyConfig.addPassthroughCopy("assets/video");
-  eleventyConfig.addPassthroughCopy("assets/fonts");
   eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("shark-diving-oahu");
-  eleventyConfig.addPassthroughCopy("shark-diving-tours");
-  eleventyConfig.addPassthroughCopy("snorkel-tour");
-  eleventyConfig.addPassthroughCopy("whale-watching-tour");
+  eleventyConfig.addPassthroughCopy("shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023");
+  eleventyConfig.addPassthroughCopy("snorkel-tour/images");
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_redirects");
+
 
   return {
     dir: {
