@@ -1,14 +1,10 @@
 @charset "UTF-8";
 /* Custom Stylesheet
- * Version: 0.1.0.5
- * Updated 514-24
+ * Updated 9-25-26
  *
  * Coded by Mike Kong, MK Design Marketing
  *
- Changes
- - added styles for ul lists in article pages.
  
-
  * 01. Helpers
  * 02. Page Styles
  * 03. Components
@@ -1573,7 +1569,7 @@ ul.tour-times li {
     justify-content: space-between;
     align-items: center;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 20px;
     color: #fff !important;
     overflow: hidden;
@@ -1592,14 +1588,14 @@ ul.tour-times li {
 }
 
 .top-bar .btn {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0px;
 }
 
 .top-bar .btn ::after {
     content: " ";
-    width: 12px;
-    height: 15px;
+    width: 10px;
+    height: 13px;
     top: 0px;
     margin-left: 5px;
     background-image: url(/images/chevron-black-v1r1.svg);
