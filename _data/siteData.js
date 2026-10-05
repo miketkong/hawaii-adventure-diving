@@ -97,7 +97,7 @@ module.exports = {
   contact: {
     phonePretty: "+1 (808) 829-2203",
     phoneLink: "+18088292203",
-    contactEmail: "nickloewenstine@gmail.com",
+    contactEmail: "OpenWaterSharkDive@gmail.com",
   },
   platformRatings,
   reviewSummary: calculateReviewSummary(platformRatings),
