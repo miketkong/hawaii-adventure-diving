@@ -1763,12 +1763,25 @@ ul.tour-times li {
 }
 
 .tour-packages .product-card {
+    position: relative; /* contains the .stretched-link overlay so the whole card is clickable */
     text-align: center;
     background-color: #000;
     color: #fff;
     border-radius: 20px;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     /*min-width: 370px;*/
+}
+
+/* Whole-card hover: lift the card and show the button's hover state */
+.tour-packages .product-card:has(.stretched-link):hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.tour-packages .product-card:hover .btn-accent-1.stretched-link {
+    color: #000 !important;
+    background-color: #f3e79c !important;
 }
 
 .tour-packages .call-out {
