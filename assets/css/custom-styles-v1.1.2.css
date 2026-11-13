@@ -1784,6 +1784,15 @@ ul.tour-times li {
     background-color: #f3e79c !important;
 }
 
+/* The theme lifts .btn on hover with a transform (main.css). A transform makes the
+   button the containing block for its ::after overlay, shrinking the stretched
+   click area to the button and causing a hover flicker loop. Disable the lift on
+   stretched links only. */
+.stretched-link:hover,
+.stretched-link:focus {
+    transform: none !important;
+}
+
 .tour-packages .call-out {
     background-color: #f0ce12;
     color: #000;
