@@ -1995,7 +1995,54 @@ ul.tour-times li {
     color: #000;
 }
 
+/* Lightbox Gallery Styles */
+#tour-photos-lightbox-gallery .container {
+    padding-top: 0px !important;
+    padding-bottom: 30px;
+}
+.gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-item {
+    width: 50%;
+    padding: 2px;
+}
+.gallery-item img {
+    width: 100%;
+}
 
+.mfp-close {
+    width: 46px !important;
+    height: 46px !important;
+    background-image: url('/images/UI/lightbox-close-branded.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: transparent !important;
+    color: transparent !important;
+    opacity: 1 !important;
+    top: 56px !important;
+    left: 12px !important;
+    font-size: 0 !important;
+}
+button.mfp-arrow {
+    background: #ffffff1a;
+}
+.mfp-arrow-left {
+    border-top-right-radius: var(--button-radius);
+    border-bottom-right-radius: var(--button-radius);
+}
+.mfp-arrow-right {
+    border-top-left-radius: var(--button-radius);
+    border-bottom-left-radius: var(--button-radius);
+}
+.mfp-figure:after {
+    bottom: 60px;
+}
+.mfp-content figcaption {
+    margin-top: -24px;
+}
 
 /* 404 Page */
 .page-404 .main-content {
@@ -3342,6 +3389,21 @@ ul.tour-times li {
 
     .product-tags ul {
         margin-top: 6px;
+    }
+
+    /* Lightbox Gallery Styles */
+    .gallery-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 3px;
+    }
+    .gallery-item {
+        display: inline-block;
+        width: 25%;
+        padding: 2px;
     }
 
     /* Photo Gallery Grid */

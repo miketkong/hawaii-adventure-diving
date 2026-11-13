@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- MK Design Customizations -->
-    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=da6403de">
+    <link rel="stylesheet" href="/assets/css/custom-styles-v1.1.2.css?v=07422ca3">
 
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -677,7 +677,7 @@
 </section>
 <!--// TOUR PACKAGES SECTION -->
 
-<!-- TOUR PHOTOS SECTION -->
+        <!-- TOUR PHOTOS SECTION -->
 <section>
     <div id="shark-diving-photography-packages" class="container-fluid tour-packages tour-lp-section-v2 text-md-white px-0">
         <div class="pano-bgd"></div>
@@ -738,30 +738,75 @@
             </div>
             <!--// Tour Photos Details -->
 
+            <!-- Tour Photos: Lightbox Gallery *** ================================================= **** -->
 
-            <!-- Tour Photos Gallery-->
-            <div class="row photo-grid-gallery gx-0 py-20 text-left">
-                
-                <div class="col-12" style="display: inline-table;">
-                    <img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/woman-swmming-with-sharks-no-cage-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater shot of a young woman freediver on a oahu shark diving tour by Hawaii Adventure Diving is swimming along the surface of the open ocean without a cage while a group of five large grey sharks swim just below her. She's wearing a dark bikini with freediving fins, a snorkel, and mask. A yellow shark diving tour safety rope can be seen in the water just behind her. The water is a deep bright blue and very clear.">
+            <section id="tour-photos-lightbox-gallery">
 
-                    <img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/couple-holding-hands-underwater-while-swimming-with-sharks-hawaii-oahu.jpg" loading="lazy" alt="An underwater photo of a young freediving couple on a Hawaii shark diving tour holding hands and swimming toward two large sharks in the distance. They are both wearing fins and snorkel gear and are several feet below the surface of the water so that the water surface is not visible in the photo creating the appearance that they may be very deep underwater.">
-
-
-                    <img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/beautiful-woman-snorkeling-with-sharks-on-hawaii-shark-tour.jpg" loading="lazy" alt="An underwater photo of a young woman freediver swimming with a group of six sharks. She is wearing freediving fins and snorkel gear. Sun rays can be seen bathing streaming through the water's surface to create a beautiful scene reminiscent of a dream. She's on a shark diving tour with Hawaiian shark tour operator Hawaii Adventure Diving.">
-
-                    <img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/free-diver-with-shark-hawaii-shark-diving-tour.jpg" loading="lazy" alt="An underwater photo of a young male freediver in his twenties treading water in Hawaii with a large shark swimming by. He's in the water with the shark without a cage. The water is clear blue and the sun is shinning.">
-
-                    <img src="/images/woman-cage-free-shark-diving-hawaii.jpg" loading="lazy" alt="A woman in a blue swimsuit and fins dives underwater surrounded by sharks off the coast of Hawaii">
-
-                    <img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/shark-dive-tour-boat-with-sharks-visible-below.jpg" loading="lazy" alt="A semi underwater photo taken from the ocean of the Hawaii Adventure Diving shark diving our boat. The boat captain can be seen at the helm while a group of sharks swim in the waters just below. The composition of the photo is exceptional capturing the scenes both above and below the water's surface simulteneously.">
-                        
-                    <img src="/images/man-swimming-with-sharks-north-shore-oahu-hawaii.jpg" loading="lazy" alt="A male diver wearing fins floats near the surface of the ocean as sharks swim past in clear blue water off the North Shore of Oahu, Hawaii.">
-
-                    <img src="/shark-diving-tours/hawaii/oahu/oahu-shark-diving-tour-photos/from-insta-2023/swimmer-with-shark-no-cage-open-ocean-hawaii.jpg" loading="lazy" alt="An underwater photo of a young male freediver in swim trunks on a shark diving tour in Hawaii hovers at the surface of the ocean water with a large shark just beneth and another in the distance. The water is a clear deep blue with sun rays shining through it to create a beautiful and entrancing scene.">
+    <div class="container g-0">
+        <div class="row g-0">
+            
+            <!-- Lightbox Gallery -->
+            <div class="col-12 gallery-col">
+                <div class="gallery-wrapper">
                 </div>
+                <!--// gallery-wrapper-->
             </div>
-            <!--// Tour Photos Gallery-->
+
+        </div>
+        <!--// row -->
+        
+    </div>
+</section>
+
+<script type="text/javascript">
+    // Gallery Items script for lightbox gallery
+    const galleryItems = [
+        
+        'shark-divers-chasing',
+        'pink-shark-diver',
+        'beautiful-woman-free-diving-with-sharks-hawaii-shark-tour',
+        'couple-swimming-with-sharks-without-cage-hawaii-oahu',
+        'female-diver-with-shark-striped-2',
+        'female-diver-with-shark-striped',
+        'snorkeler-on-rope-with-shark',
+        'fun-hawaii-shark-diving',
+        'shark-diving-hawaii-2',
+        'beautiful-shark-diver-hawaii',
+        'couple-shark-diving-hawaii',
+        'diver-posing-with-shark',
+        'divers-and-shark-hawaii',
+        'divers-swimming-with-a-shark',
+        'diving-down-with-shark-hawaii',
+        'hawaii-shark-diving-tour-photo',
+        'morning-sun-shark-dive',
+        'shark-dive-morning-sun',
+        'shark-diving-hawaii-camera',
+        'snorkeler-and-3-sharks',
+        'swimming-after-shark-hawaii',
+        'swimming-with-a-shark',
+        'swimming-with-shark-in-hawaii',
+        'two-divers-and-shark-hawaii',
+    ];
+
+    function buildGallery() {
+        const galleryWrapper = document.querySelector('.gallery-wrapper');
+        galleryItems.forEach(item => {
+            const galleryItem = document.createElement('a');
+            galleryItem.classList.add('gallery-item');
+            galleryItem.href = `/images/lightbox-galleries/shark-tour-lp-photos-section/${item}.jpg`;
+
+            const img = document.createElement('img');
+            img.src = `/images/lightbox-galleries/shark-tour-lp-photos-section/thumbs/tn_${item}.jpg`;
+            img.alt = `Shark diving photo: ${item.replace(/-/g, ' ').replace(/\.[^/.]+$/, '')}`;
+
+            galleryItem.appendChild(img);
+            galleryWrapper.appendChild(galleryItem);
+        });
+    }
+    document.addEventListener('DOMContentLoaded', buildGallery);
+</script>
+
+            <!-- Lightbox Gallery *** END *** ================================================= **** -->
 
             <!-- Tour Photos: More Details-->
             <div class="row" id="tour-photos-details">
