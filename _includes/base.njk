@@ -11,7 +11,10 @@
 
     {% include "head-top.njk" %}
     
-    <meta name="description" content="{{ pageDescription }}">   
+    <meta name="description" content="{{ pageDescription }}">
+    {% if noindex %}
+      <meta name="robots" content="noindex,follow">
+    {% endif %}  
     <link rel="canonical" href="{{ pageURL }}"> 
 
     <!-- Open Grap Stuff -->
