@@ -2025,13 +2025,17 @@ ul.tour-times li {
 .gallery-wrapper {
     display: flex;
     flex-wrap: wrap;
+    gap: 4px; /* space between photos (replaces the old 2px padding on .gallery-item) */
 }
 .gallery-item {
     position: relative; /* anchors the enlarge icon to each photo */
-    width: 50%;
-    padding: 2px;
+    width: calc(50% - 2px); /* 2 per row, minus their share of the 4px gap */
+    padding: 0;
+    border-radius: 15px;
+    isolation: isolate; /* keeps Safari clipping the hover zoom to the rounded corners */
 }
 .gallery-item img {
+    display: block; /* removes the gap under inline images so the bottom corners round on the photo */
     width: 100%;
 }
 
@@ -2039,8 +2043,8 @@ ul.tour-times li {
 .gallery-item::after {
     content: "";
     position: absolute;
-    top: 8px; /* 2px item padding + 6px inset */
-    right: 8px;
+    top: 6px;
+    right: 6px;
     width: 24px;
     height: 24px;
     background: url('/images/UI/icon-enlarge.png') center / contain no-repeat;
@@ -3447,12 +3451,12 @@ button.mfp-arrow {
     }
     .gallery-item {
         display: inline-block;
-        width: 25%;
-        padding: 2px;
+        width: calc(25% - 3px); /* 4 per row, minus their share of the three 4px gaps */
+        padding: 0;
     }
     .gallery-item::after {
-        top: 10px; /* 2px item padding + 8px inset */
-        right: 10px;
+        top: 8px;
+        right: 8px;
         width: 28px;
         height: 28px;
     }
