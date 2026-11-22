@@ -25,7 +25,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("snorkel-tour/images", skipDSStore);
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_redirects");
-  eleventyConfig.addPassthroughCopy("landing-pages/**/*.css");
+  // Copy every .css file in the project into _site at the same path
+  eleventyConfig.addTemplateFormats("css");
 
 
   return {
