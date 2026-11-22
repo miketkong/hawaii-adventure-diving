@@ -1,0 +1,63 @@
+{% if thisPage == "sharks" %}
+  {% set tourText = "Our expert guides offer unrivaled expertise in shark behavior and safety for the ultimate shark diving experience." %}
+{% elif thisPage == "whales" %}
+  {% set tourText = "Our crew have the experience and qualifications to make your experience whale watching thrilling, educational, and safe." %}
+{% endif %}
+
+<section id="team" class="pano-section bg-lt-gray text-left pt-40">
+  <div class="container pt-10">
+    <div class="row text-center-md">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="heading-text">
+          <h1 class="h1-small-leader-text md-text-center" style="color: #000;">
+            Hawaii's Best Shark <span class="no-break">Diving Tour</span>
+          </h1>
+          <h2 class="blue-text">A Legendary Team</h2>
+        </div>
+        <p>{{ tourText }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid pb-20">
+    <div class="row media-cards" id="team-cards">
+      {% for bio in siteData.teamBios %}
+      <div class="col-sm-6 col-lg-3 team-bio">
+        <div class="media-card">
+          <img src="{{ bio.image }}" alt="{{ bio.alt }}" />
+          <div class="text">
+            <a class="insta-link" target="_blank" rel="noreferrer" href="{{ bio.instagramUrl }}"><span>{{ bio.instagram }}</span></a>
+            <h2>{{ bio.name }}</h2>
+            <h3>{{ bio.role }}</h3>
+            <p>{{ bio.description }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- CTA BUTTON -->
+    <!--<div class="row">
+      <div class="col text-center">
+        <a class="btn btn-md btn-accent-1" href="https://fareharbor.com/embeds/book/h2oadventureshawaii/items/3485/calendar"><span>Go Shark Diving</span></a>
+      </div>
+    </div>-->
+    <!--// CTA BUTTON -->
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("team-cards");
+    if (!container) return;
+    const cards = Array.from(container.querySelectorAll(".team-bio"));
+    const shuffled = cards.slice();
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    container.innerHTML = "";
+    shuffled.slice(0, 4).forEach((card) => container.appendChild(card));
+  });
+</script>

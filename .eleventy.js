@@ -25,6 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("snorkel-tour/images", skipDSStore);
   eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("_redirects");
+  eleventyConfig.addPassthroughCopy("landing-pages/**/*.css");
 
 
   return {
