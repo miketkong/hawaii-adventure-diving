@@ -2027,11 +2027,34 @@ ul.tour-times li {
     flex-wrap: wrap;
 }
 .gallery-item {
+    position: relative; /* anchors the enlarge icon to each photo */
     width: 50%;
     padding: 2px;
 }
 .gallery-item img {
     width: 100%;
+}
+
+/* Enlarge icon - upper right corner of each gallery photo */
+.gallery-item::after {
+    content: "";
+    position: absolute;
+    top: 8px; /* 2px item padding + 6px inset */
+    right: 8px;
+    width: 24px;
+    height: 24px;
+    background: url('/images/UI/icon-enlarge.png') center / contain no-repeat;
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    pointer-events: none; /* clicks pass through to the photo link */
+}
+
+/* Hover effect - only on devices with a real hover (avoids sticky hover on touch) */
+@media (hover: hover) {
+    .gallery-item:hover::after {
+        opacity: 1;
+        transform: scale(1.15);
+    }
 }
 
 .mfp-close {
@@ -3426,6 +3449,12 @@ button.mfp-arrow {
         display: inline-block;
         width: 25%;
         padding: 2px;
+    }
+    .gallery-item::after {
+        top: 10px; /* 2px item padding + 8px inset */
+        right: 10px;
+        width: 28px;
+        height: 28px;
     }
 
     /* Photo Gallery Grid */
