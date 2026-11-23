@@ -1860,8 +1860,8 @@ ul.tour-times li {
     margin-bottom: 20px;
 }
 .tour-lp-section-v2 ul li {
-    font-size: 17px;
-    margin-bottom: 19px;
+    font-size: 20px;
+    margin-bottom: 24px;
 } 
 #tour-packages.tour-lp-section-v2 #main-products {
     position: relative;
@@ -1980,7 +1980,7 @@ ul.tour-times li {
 
 .tour-packages p {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 26px;
 }
 
 /* Article Page Styles - All Screen Widths */
