@@ -1018,10 +1018,21 @@ ul.tour-times li {
     color: #000;
     text-decoration: none;
 }
-
+.accordion h1 {
+    text-align: center;
+    background-color: #016ba3;
+    color: white;
+    font-size: 27px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 13px 20px;
+}
 #faq .accordion-item a {
     color: #016ba3;
     text-decoration: underline;
+}
+.accordion.border-top {
+    border-top: 1px;
 }
 
 /* Product Landing Page General Styles */
@@ -2212,7 +2223,6 @@ button.mfp-arrow {
 }
 
 .accordion {
-    border-top: 1px solid rgba(177, 177, 180, 0.3);
     border-bottom: 1px solid rgba(177, 177, 180, 0.3);
     margin-top: 20px;
 }
@@ -2235,8 +2245,8 @@ button.mfp-arrow {
 
 .accordion-body {
     padding: 20px;
-    background-color: #016ba3;
-    color: #fff;
+    background-color: #f2f2f2a1;
+    color: #000000;
 }
 .accordion-body p {
     font-size: 20px;
@@ -2553,6 +2563,11 @@ button.mfp-arrow {
     }
     .review-block p {
         font-size: 18px;
+    }
+
+    #an-exclusive-experience h2 {
+        font-size: 40px;
+        line-height: 40px;
     }
 
     
@@ -3360,6 +3375,13 @@ button.mfp-arrow {
 
     .ratings-r2 .ratings-grid .col-md-2 {
         width: 20%;
+    }
+
+    /* FAQ Section -------------------------------- */
+    #faq.tour-lp-section-v2 .accordion {
+        border: 1px solid #dadada;
+        border-radius: 20px;
+        overflow: hidden;
     }
 
     /* Whale Watching Tour Page */
