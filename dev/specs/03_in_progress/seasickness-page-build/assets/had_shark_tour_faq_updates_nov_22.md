@@ -56,7 +56,7 @@ There is no fixed distance because every encounter is different and the sharks c
 
 Sharks often come quite close. When conditions and shark behavior allow, the team gives guests the freedom to have a more immersive encounter rather than simply observing from one position. If you would rather keep more distance, that is completely fine too.
 
-### What kinds of sharks might we see?
+### What kinds of sharks are there?
 
 Common encounters can include Galapagos sharks, tiger sharks, hammerheads, and other pelagic shark species found around Oʻahu.
 
@@ -70,9 +70,25 @@ Every day in the ocean is different, and shark activity can vary with conditions
 
 ### What happens on a typical tour?
 
-The experience begins in Haleiwa with a boat ride roughly three miles offshore. During the ride, the crew explains what to expect, provides a safety briefing, reviews the equipment, and answers questions.
+Your tour begins at Haleʻiwa Harbor, where you’ll meet the crew and get settled on the boat. Plan to arrive at least 15 minutes before your scheduled departure so there’s plenty of time to check in and get ready.
 
-Once at the dive site, a safety diver enters the water first to evaluate conditions. Guests are then brought into the water for the shark encounter.
+From the harbor, it’s roughly a 15–30 minute boat ride to the shark diving site, about three miles offshore. Along the way, you’ll get great views of Oʻahu’s North Shore and may spot wildlife such as sea turtles, dolphins, flying fish, or even surfers near the harbor depending on the season and conditions.
+
+During the ride out, your safety diver will go over what to expect in the water, explain the equipment and safety procedures, talk about the sharks and surrounding marine environment, and answer any questions you have. It’s also a chance to get to know the crew and, if you’ve booked the photo package, your photographer.
+
+When you reach the dive site, a safety diver enters the water first to evaluate the conditions and shark activity. Once everything looks good, you’ll put on your snorkel gear and enter the water with the crew.
+
+Most guests spend around 45 minutes in the water, although the exact amount of dive time can vary with conditions. You’ll be able to snorkel at the surface, watch the sharks move through the water, and simply take in the experience. Guests who have booked photography can also work with the photographer on positioning, hand signals, and the kinds of shots they’d like to capture.
+
+If you want to take a break, you can return to the boat and get back in the water afterward, as conditions and timing allow.
+
+When the dive is finished, you’ll climb back aboard, dry off, change if you’d like, and get settled for the ride back to Haleʻiwa Harbor. The return trip is another chance to enjoy the North Shore from offshore and talk with the crew about the dive.
+
+Once back at the harbor, you’ll gather your belongings and head out from there. The full experience is usually just under two hours from departure to return.
+
+### Is there a bathroom on the boat?
+
+There is no restroom on the boat, so it’s a good idea to use a restroom before arriving at the harbor.
 
 ### How many people will be on the tour?
 
@@ -90,7 +106,7 @@ The complete experience is approximately two hours round trip from Haleiwa, incl
 
 Your tour includes the approximately two-hour boat trip, safety briefing, experienced crew and safety divers, and the snorkel equipment needed for the dive.
 
-Transportation to and from Haleiwa is not included.
+Transportation to Haleiwa harbor from other parts of the island is not included.
 
 ### What should I bring?
 
@@ -108,13 +124,13 @@ You’ll be entering the open ocean directly from the boat, so choose something 
 
 ### Where does the tour leave from?
 
-Tours depart from Haleiwa on Oʻahu’s North Shore.
+Tours depart from Haleiwa Harbor on Oʻahu’s North Shore.
 
 Your booking confirmation should provide the exact meeting and check-in instructions for your tour.
 
 ### Can someone come along if they don’t want to get in the water?
 
-Yes. Hawaii Adventure Diving offers a **Non-Diver Ride Along** option for guests who want to join the boat trip and experience the adventure without entering the water.
+Yes. Hawaii Adventure Diving offers a **Non-Diver Ride Along** (make this a link to the Tour packages section) option for guests who want to join the boat trip and experience the adventure without entering the water.
 
 This can be a great option for couples, families, or groups where not everyone wants to shark dive.
 
