@@ -2058,6 +2058,61 @@ ul.tour-times li {
     border-left: 4px solid #f0ce12;
     background-color: rgba(255, 255, 255, 0.08);
 }
+
+/* Keep jumped-to headings from landing under the sticky nav bar */
+.seasickness-guide [id] {
+    scroll-margin-top: 100px;
+}
+
+/* Mini navigation ("On This Page") */
+.seasickness-guide .guide-toc {
+    margin: 30px 0 0;
+    padding: 20px 24px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.seasickness-guide .guide-toc-title {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.seasickness-guide .guide-toc ol {
+    margin: 0;
+    padding-left: 22px;
+}
+.seasickness-guide .guide-toc ul {
+    margin: 4px 0 0;
+    padding-left: 18px;
+    list-style: disc;
+}
+.seasickness-guide .guide-toc li {
+    font-size: 17px;
+    line-height: 1.35;
+    margin-bottom: 8px;
+    break-inside: avoid; /* keep a section and its subsections together in one column */
+}
+.seasickness-guide .guide-toc ul li {
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+.seasickness-guide .guide-toc a {
+    color: #fff;
+    text-decoration: none;
+}
+.seasickness-guide .guide-toc a:hover,
+.seasickness-guide .guide-toc a:focus {
+    color: #f0ce12;
+    text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+    .seasickness-guide .guide-toc ol {
+        column-count: 2;
+        column-gap: 40px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .seasickness-guide h2 {
         font-size: 26px;

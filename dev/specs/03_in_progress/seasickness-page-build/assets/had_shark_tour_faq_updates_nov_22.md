@@ -32,9 +32,15 @@ Guests with serious health conditions should consult their physician before part
 
 ### What if I get seasick?
 
-Seasickness can happen, especially for guests who are sensitive to boat motion.
+Seasickness can happen, especially for guests who are sensitive to boat motion, and being on a small boat in the open ocean can cause seasickness even for people who don’t normally think of themselves as prone to it.
 
-If you know you’re prone to motion sickness, the crew strongly recommends preparing ahead of time with an appropriate over-the-counter motion-sickness remedy such as Dramamine or Bonine and following the medication directions.
+If you’re sensitive to motion or think there’s a chance you may get seasick, the best thing you can do is prepare ahead of time. Motion-sickness medications and other preventative strategies are generally most effective when used before symptoms begin, so it’s worth looking into your options before the day of your tour.
+
+Getting a good night’s sleep, staying hydrated, avoiding alcohol the night before, and eating appropriately before the trip can also help.
+
+It’s also a good idea to familiarize yourself with what to do if you start feeling seasick while you’re on the boat. A little preparation can make a big difference in how much you enjoy the experience.
+
+Read our complete guide to preventing and managing seasickness before your tour. (make this last sentence stand out and have it link to the page we just built on seasickness)
 
 ## The Shark Diving Experience
 
