@@ -2442,6 +2442,9 @@ button.mfp-arrow {
         font-size: 17px;
         line-height: 20px;
     }
+    .review-block p {
+        font-size: 18px;
+    }
 
     
     /* Hide the last 3 slides to only show a total of 4 slides on mobile */
