@@ -2,13 +2,13 @@
 
 ## Goal
 
-Update the FAQ section on the new Shark Tour landing page so that it uses the questions and answers from the supplied FAQ Markdown file.
+Update the FAQ section on the new Shark Tour landing page ("landing-pages/oahu-shark-diving/sections/shark-tour-faq.njk") so that it uses the questions and answers from the supplied FAQ Markdown file.
 
-Replace the existing FAQ content completely, while preserving the existing FAQ accordion implementation and visual system.
+Replace the existing FAQ content completely, while preserving the existing FAQ accordion implementation.
 
 ## Source Content
 
-Use the supplied FAQ Markdown file as the source of truth for:
+Use the supplied FAQ Markdown file ("dev/specs/03_in_progress/faq-section-updates/had_shark_tour_faq_updates_nov_22.md") as the source of truth for:
 
 - FAQ section groupings
 - Section headings
