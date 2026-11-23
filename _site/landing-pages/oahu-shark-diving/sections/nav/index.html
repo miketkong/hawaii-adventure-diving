@@ -88,6 +88,30 @@
     </div>
     <!--// MOBILE NAV -->
 
+    <script>
+        // Mobile nav: close the menu when a same-page section link (#section) is tapped, then scroll to it.
+        // Scrolling waits for the popup's 160ms fade-out, because on close Magnific Popup returns focus
+        // to the hamburger button, which would otherwise jump the page back up.
+        document.addEventListener('click', function (e) {
+            var link = e.target.closest('#navbar-mobile-style-1 a[href^="#"]');
+            if (!link) return;
+
+            var hash = link.getAttribute('href');
+            if (hash === '#') return; // the menu's own close button, already handled by the theme
+
+            var target = document.querySelector(hash);
+            if (!target) return;
+
+            e.preventDefault();
+            $.magnificPopup.close();
+
+            setTimeout(function () {
+                target.scrollIntoView(); // follows the page's CSS scroll-behavior, same as desktop anchor links
+                history.pushState(null, '', hash); // keeps the #section in the URL like a normal anchor click
+            }, 200);
+        });
+    </script>
+
     
     <!-- Topbar-->
     <div class="navbar navbar-topbar navbar-expand-xl navbar-dark navbar-absolute top-0 d-xl-flex">
